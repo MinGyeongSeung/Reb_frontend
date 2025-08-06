@@ -24,9 +24,9 @@
 #main-container{
   width : 1200px;
   height : 100%; /*알아서 넣기*/
-  background-color:yellow;
+  background-color:#3f3b3b;
   margin : auto;
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -66,7 +66,7 @@ label > .y_p{
 .login-container{
   width: 800px;
   height : 600px;
-  background-color: yellowgreen;
+  background-color: #FFFACD;
   display: flex;
    align-items: center;
   justify-content: center;
@@ -79,24 +79,27 @@ label > .y_p{
   align-items: center;
   justify-content: center;
   width: 500px;
-  height: 100%;
+  height: 70%;
 }
 .id-box, .pw-box{
   display: flex;
   margin: 20px;
-  
+  width: 100%;
 }
 
 input{
   border-radius: 15px;
   border: 0px;
-  width: 200px;
+  width: 80%;
   height: 30px;
   padding: 10px;
 }
 
 button{
   width: 500px;
+}
+button:hover{
+  cursor: pointer;
 }
 
 .basicBtn{
@@ -107,4 +110,25 @@ button{
 
 .kakaoBtn{
   background-color: #FEE500;
+}
+
+.kakao{
+  width: 20px;
+  height: 20px;
+  padding-right: 30px;
+}
+button > .y_p{
+  line-height:30px;
+}
+a{
+  color: #929292;
+  text-decoration-line: none;
+}
+.login-etc{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+a:hover{
+  color:black;
 }
