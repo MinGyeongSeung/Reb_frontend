@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+.ibm-plex-sans-kr-regular {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 main {
   background-color: #EEEEEE;
   height: 100vh;
@@ -18,6 +24,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Yeon Sung", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #logo {
@@ -29,6 +38,9 @@ main {
 
 p {
   font-size: 48px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 form {
@@ -41,11 +53,12 @@ form {
   height: 60px;
   width: 450px;
   border-radius: 20px;
-  margin: 20px;
+  margin: 20px auto;
   padding: 0 10px;
   font-size: 32px;
 }
-#submit{
+
+#submit {
   background-color: #818181;
   color: white;
   height: 80px;
@@ -53,4 +66,11 @@ form {
   border-radius: 25px;
   font-size: 30px;
   margin: auto;
+}
+
+#login-warning {
+  font-size: 30px;
+  color: red;
+  margin: 0 0 20px;
+  display: none;
 }
