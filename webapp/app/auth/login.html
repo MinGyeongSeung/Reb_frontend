@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&family=Yeon+Sung&display=swap" rel="stylesheet">
+<script defer src="./../../assets/js/auth/login.js"></script>
   <title>틈새빛</title>
 </head>
 <body>
@@ -18,18 +19,24 @@
   <main>
     <div id="main-container">
       <div class="login-container">
-         <form action="" method="" class="login-box" autocomplete="off">
-              <div class="id-box">
-                <label for="id"><p class="y_p">아이디 : </p></label>
-                <input type="text" class="id-input" id="id">
-              </div>
-              <div class="pw-box">
-                <label for="pw"><p class="y_p">비밀번호 : </p></label>
-                <input type="password" class="pw-input" id="pw">
-              </div>
+          <form action="" method="" class="login-box" autocomplete="off">
+            <div class="id-box">
+              <label for="id"><p class="y_p">아이디 : </p></label>
+              <input type="text" class="id-input" id="id">
+            </div>
+            <div class="pw-box">
+              <label for="pw"><p class="y_p">비밀번호 : </p></label>
+              <input type="password" class="pw-input" id="pw">
+            </div>
             <button class="basicBtn"> <p class="y_p">로그인</p></button>
             <button class="kakaoBtn"> <p class="y_p">카카오 로그인</p></button>
-         </form>
+          </form>
+          <hr width="100%">
+          <div class="login-etc">
+            <a href="find-id-modal.html" class="y_p">아이디 찾기</a>
+            <a href="find-password-modal.html" class="y_p">비밀번호 찾기</a>
+            <a href="signup.html" class="y_p">회원가입</a>
+          </div>
       </div>
     </div>
   </main>
