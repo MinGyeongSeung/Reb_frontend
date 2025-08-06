@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.body{
+  font-family: "Yeon Sung", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+#header{
+  height: 110px;
+  width: 100%;
+  position: fixed;
+  background-color: #FFFACD;
+}
+
+#footer{
+  width: 100%;
+  height: 125px;
+  background-color: #FFFACD;
+}
+
+#main-container{
+  width : 1200px;
+  height : 100%; /*알아서 넣기*/
+  background-color:yellow;
+  margin : auto;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+  padding-top: 110px;
+  height : 800px;
+  width: 100%;
+  background-color: #3F3B3B;
+}
+
+button{
+  border-radius: 13px;
+  padding : 0px 20px;
+  height: 40px;
+  border : 0px;
+}
+
+.ib_p{
+  font-size: 18px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color : white;
+}
+
+.y_p{
+  font-family: "Yeon Sung", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 50px;
+}
+label > .y_p{
+   width: 100px;
+}
+.login-container{
+  width: 800px;
+  height : 600px;
+  background-color: yellowgreen;
+  display: flex;
+   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.login-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 100%;
+}
+.id-box, .pw-box{
+  display: flex;
+  margin: 20px;
+  
+}
+
+input{
+  border-radius: 15px;
+  border: 0px;
+  width: 200px;
+  height: 30px;
+  padding: 10px;
+}
+
+button{
+  width: 500px;
+}
+
+.basicBtn{
+  margin: 20px;
+  background-color: #f59d85;
+  color: white;
+}
+
+.kakaoBtn{
+  background-color: #FEE500;
+}
