@@ -1,20 +1,20 @@
-const sideMenuBtnClose = document.querySelector(".mypage-sidemenubtn-close");
-const sideMenuBtnOpen = document.querySelector(".mypage-sidemenubtn-open");
-const sideMenu = document.querySelector(".mypage-sidemenumove");
+
 const buttonPw = document.querySelector(".button-pw");
+
+const correctPw = '12345';
 const wrongpw = document.querySelector(".wrongpw");
 
+buttonPw.addEventListener('click', (e) => {
+  inputPw(document.get(e.target.value)[0].value);
+  e.target.removeEventListener('click');
+});
 
-sideMenuBtnClose.addEventListener('click',()=>{moveSideMenu("-300px");});
-sideMenuBtnOpen.addEventListener('click',()=>{moveSideMenu("0px");});
-
-function moveSideMenu(left){
-    sideMenu.style.left = left;
-    sideMenu.style.transition = '0.3s ease';
-    
-    sideMenuBtnClose.innerHTML = "&lt;";
-}
-
-function inputPw(){
-    alert("비밀번호 입력");
+function inputPw(pw) {
+  if (pw === correctPw) {
+    wrongpw.style.display = "none";
+    location.href = "personal-info.html";
+    location.replace(link);
+  }
+  else
+    wrongpw.style.display = "block";
 }
