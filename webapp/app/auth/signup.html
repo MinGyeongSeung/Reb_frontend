@@ -1,28 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./../../assets/css/auth/signup.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&display=swap"
+    rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&family=Yeon+Sung&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&family=Yeon+Sung&display=swap"
+    rel="stylesheet">
   <title>틈새빛</title>
 </head>
+
 <body>
-  <div id = "header">
+  <div id="header">
   </div>
   <main>
     <div id="main-container">
-        <div class="signup-container">
-            
-        </div>
+      <div class="signup-container">
+        <form action="" method="post" class="form-signup">
+          <div class="div-signup"><span class="span-signup">* 아이디 : </span>
+            <div class="div-signup-hide">
+              <input class="input-basic" type="text" placeholder="아이디 입력" name="id">
+              <p class="p-warning">아이디는 필수 입력입니다</p>
+            </div>
+          </div>
+          <div class="div-signup"><span class="span-signup">* 비밀번호 : </span>
+            <div class="div-signup-hide">
+              <input class="input-basic" type="password" placeholder="비밀번호 입력" name="pw">
+              <p class="p-warning">비밀번호는 필수 입력입니다</p>
+            </div>
+          </div>
+          <div class="div-signup"><span class="span-signup">* 생년월일 : </span>
+            <div class="div-signup-hide">
+              <input class="input-basic" type="date" name="birth">
+              <p class="p-warning">생년월일은 필수 입력입니다</p>
+            </div>
+          </div>
+          <div class="div-signup"><span class="span-signup">* 주소 : </span>
+            <div class="div-signup-address"><input class="input-address-basic" type="text" name="addressBasic">
+              <div><input class="input-address-add" type="text" name="addressAdd"><button>찾기</button></div>
+            </div>
+          </div>
+          <div class="div-signup"><span class="span-signup">이메일 :</span><input class="input-basic" type="" name="email"></div>
+          <div class="div-signup"><span class="span-signup">* 이름 : </span><input class="input-basic" type="" name="name"></div>
+          <div class="div-signup"><span class="span-signup">* 성별 :</span><input class="input-basic" type="" name="gender"></div>
+          <div class="div-signup"><span class="span-signup">* 닉네임 :</span><input class="input-basic" type="" name="nickName"></div>
+          <div class="div-signup"><span class="span-signup">* 전화번호 :</span><input class="input-basic" type="" name="phoneNumber"></div>
+          <div class="div-signup"><span class="span-signup">개인정보자리</span><input class="input-basic" type=""></div>
+        </form>
+      </div>
     </div>
   </main>
-  <div id = "footer">
+  <div id="footer">
   </div>
 </body>
+
 </html>

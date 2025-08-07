@@ -1,46 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./../../assets/css/auth/login.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&display=swap"
+    rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&family=Yeon+Sung&display=swap" rel="stylesheet">
-<script defer src="./../../assets/js/auth/login.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&family=Yeon+Sung&display=swap"
+    rel="stylesheet">
+  <script defer src="./../../assets/js/auth/login.js"></script>
   <title>틈새빛</title>
 </head>
+
 <body>
-  <div id = "header">
+  <div id="header">
   </div>
   <main>
     <div id="main-container">
       <div class="login-container">
-          <form action="" method="" class="login-box" autocomplete="off">
-            <div class="id-box">
-              <label for="id"><p class="y_p">아이디 : </p></label>
-              <input type="text" class="id-input" id="id">
-            </div>
-            <div class="pw-box">
-              <label for="pw"><p class="y_p">비밀번호 : </p></label>
-              <input type="password" class="pw-input" id="pw">
-            </div>
-            <button class="basicBtn"> <p class="y_p">로그인</p></button>
-            <button class="kakaoBtn"> <p class="y_p">카카오 로그인</p></button>
-          </form>
-          <hr width="100%">
-          <div class="login-etc">
-            <a href="find-id-modal.html" class="y_p">아이디 찾기</a>
-            <a href="find-password-modal.html" class="y_p">비밀번호 찾기</a>
-            <a href="signup.html" class="y_p">회원가입</a>
+        <form action="" method="post" class="form-login" autocomplete="off">
+          <div class="div-id">
+            <label for="id">
+              <p class="font-menu">아이디 : </p>
+            </label>
+            <input type="text" class="input-id" id="id">
           </div>
+          <div class="div-pw">
+            <label for="pw">
+              <p class="font-menu">비밀번호 : </p>
+            </label>
+            <input type="password" class="input-pw" id="pw">
+          </div>
+          <button class="button-basic" type="submit">
+            <p class="font-menu">로그인</p>
+          </button>
+          <button class="button-kakao" type="button">
+            <p class="font-menu">카카오 로그인</p>
+          </button>
+        </form>
+        <hr>
+        <div class="div-login-etc">
+          <a href="find-id-modal.html" class="font-menu">아이디 찾기</a>
+          <a href="find-password-modal.html" class="font-menu">비밀번호 찾기</a>
+          <a href="signup.html" class="font-menu">회원가입</a>
+        </div>
       </div>
     </div>
   </main>
-  <div id = "footer">
+  <div id="footer">
   </div>
 </body>
+
 </html>

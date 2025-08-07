@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  margin: auto;
+}
+
+#garbage {
+  background-color: #d9d9d9;
+  width: 440px;
+  height: 110px;
+}
+
+#admin-notice-header>p{
+  font-size: 30px;
+  margin : 35px 30px;
+} 
+
+#admin-notice-header {
+  background-color: #bebebe;
+  height: 110px;
+  width: 1280px;
+}
+
+main{
+  display: flex;
+  margin: auto;
+}
+
+#admin-list-menu{
+  background-color: #d9d9d9;
+  width: 440px;
+}
+
+#admin-list{
+  margin: 140px 70px;
+  width: 300px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#admin-list>li{
+  font-size: 30px;
+  margin: 45px 0;
+}
+
+#admin-list>li>a{
+  text-decoration: none;
+  color: black;
+}
+
+#admin-main{
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#notice-list{
+  width: 1200px;
+  margin-top: 200px;
+}
+
+#notice-list{
+  /* background-color: pink; */
+  font-size: 32px;
+  height: 770px;
+}
+
+#notice-list>div{
+  background-color: #d9d9d9;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  padding: 0 25px;
+}
+
+
+.title{
+  width: 780px;
+  text-align: center;
+}
+
+.author{
+  width:180px;
+  text-align: center;
+}
+
+.create-date{
+  width: 190px;
+  text-align: center;
+}
+
+#notice-list>li{
+  display: flex;
+  height: 70px;
+  align-items: center;
+  padding: 0 25px;
+  border-bottom: 3px solid #d9d9d9;
+}
+
+.must-read{
+  background-color: #ededed;
+  color: red;
+}
+
+#notice-list>li>p:first-child{
+  text-align: left;
+}
+
+#create-notice{
+  background-color: #818181;
+  height: 80px;
+  width: 230px;
+  border-radius: 25px;
+  border: 0;
+  font-size: 30px;
+  color: white;
+  margin: 100px 0 40px;
+}
+
+#page-number{
+  display: flex;
+  width: 530px;
+  font-size: 30px;
+}
+
+#page-number>a{
+  margin: 0 40px;
+  text-decoration: none;
+  color: black;
+}
+
+#notice-search{
+  height: 70px;
+  width: 1200px;
+  /* background-color: pink; */
+  font-size: 30px;
+  display: flex;
+  align-self: start;
+  margin: 35px 40px;
+}
+
+#search-title{
+  height: 70px;
+  width: 165px;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search{
+  width: 600px;
+  height: 70px;
+  border-radius: 20px;
+  margin: 0 25px;
+}
