@@ -16,6 +16,8 @@ body {
 header {
   display: flex;
   margin: auto;
+  position: fixed;
+  z-index: 2;
 }
 
 #header-garbage {
@@ -38,7 +40,6 @@ header {
 main{
   background-color: white;
   display: flex;
-  margin: auto;
 }
 
 #main-admin-list-menu{
