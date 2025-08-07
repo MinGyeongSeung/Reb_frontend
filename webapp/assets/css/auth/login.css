@@ -68,12 +68,12 @@ label > .y_p{
   height : 600px;
   background-color: #FFFACD;
   display: flex;
-   align-items: center;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
 }
-.login-box{
+.form-login{
   display: flex;
   flex-direction: column;
   align-items: center;

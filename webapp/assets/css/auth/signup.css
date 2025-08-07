@@ -1,74 +1,100 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-}
-
-#header{
+#header {
   height: 110px;
   width: 100%;
   position: fixed;
-  background-color: #f59d85;
+  background-color: #FFFACD;
 }
 
-#footer{
+#footer {
   width: 100%;
   height: 125px;
-  background-color: #f59d85;
+  background-color: #FFFACD;
 }
 
-#main-container{
-  width : 1200px;
-  height : 100%; /*알아서 넣기*/
-  background-color:#3F3B3B;
-  margin : auto;
+#main-container {
+  width: 1200px;
+  height: 100%;
+  /*알아서 넣기*/
+  background-color: #3F3B3B;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-main{
+main {
   padding-top: 110px;
-  height : 1200px;
+  height: 1200px;
   width: 100%;
-  background-color:#3F3B3B;
+  background-color: #3F3B3B;
 }
 
-button{
+button {
   border-radius: 13px;
-  padding : 0px 20px;
+  padding: 0px 20px;
   height: 40px;
   background-color: #f59d85;
-  border : 0px;
+  border: 0px;
 }
 
-.ib_p{
+.ib_p {
   font-size: 18px;
   font-family: "Noto Sans KR", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color : white;
+  color: white;
 }
 
-.y_p{
+.y_p {
   font-family: "Yeon Sung", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
 
-.signup-container{
+.signup-container {
   width: 800px;
-  height : 1000px;
+  height: 1000px;
   background-color: #FFFACD;
   display: flex;
-   align-items: center;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+}
+
+.form-signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 85%;
+}
+
+.div-signup {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+input {
+  border-radius: 15px;
+  border: 0px;
+  width: 60%;
+  height: 30px;
+  padding: 10px;
+}
+
+.span-signup {
+  line-height: 50px;
+  width: 100px;
+  text-align: end;
 }
