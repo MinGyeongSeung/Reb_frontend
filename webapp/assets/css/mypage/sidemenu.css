@@ -6,7 +6,7 @@
 
 .mypage-sidemenumove {
   position: absolute;
-  left: 0px;
+  left: -300px;
 
   width: 250px;
   height: 410px;
