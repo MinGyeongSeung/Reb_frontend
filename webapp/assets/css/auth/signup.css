@@ -85,6 +85,13 @@ button {
   margin: 15px;
 }
 
+.div-signup-hide {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: flex-end;
+}
+
 .div-signup-address {
   display: flex;
   flex-direction: column;
@@ -95,29 +102,36 @@ button {
 .input-basic {
   border-radius: 15px;
   border: 0px;
-  width: 60%;
+  width: 80%;
   height: 30px;
   padding: 10px;
+  text-align: center;
 }
 
-.input-address-1 {
+.input-address-basic {
   border-radius: 15px;
   border: 0px;
-  width: 300px;
+  width: 80%;
   height: 15px;
   padding: 10px;
+  text-align: center;
 }
 
-.input-address-2 {
+.input-address-add {
   border-radius: 15px;
   border: 0px;
-  width: 233px;
+  width: 60%;
   height: 15px;
   padding: 10px;
+  text-align: center;
 }
 
 .span-signup {
   line-height: 50px;
   width: 100px;
   text-align: end;
+}
+
+.p-warning {
+  display: none;
 }
