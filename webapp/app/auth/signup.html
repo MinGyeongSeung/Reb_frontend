@@ -16,14 +16,14 @@
     rel="stylesheet">
   <title>틈새빛</title>
 </head>
-
+<script defer src="./../../assets/js/auth/signup.js"></script>
 <body>
   <div id="header">
   </div>
   <main>
     <div id="main-container">
       <div class="signup-container">
-        <form action="" method="post" class="form-signup">
+        <form action="" method="post" class="form-signup" autocomplete="off">
           <div class="div-signup"><span class="span-signup">* 아이디 : </span>
             <div class="div-signup-hide">
               <input class="input-basic" type="text" placeholder="아이디 입력" name="id">
@@ -43,16 +43,60 @@
             </div>
           </div>
           <div class="div-signup"><span class="span-signup">* 주소 : </span>
-            <div class="div-signup-address"><input class="input-address-basic" type="text" name="addressBasic">
-              <div><input class="input-address-add" type="text" name="addressAdd"><button>찾기</button></div>
+            <div class="div-signup-address"><input class="input-address-basic" type="text" name="addressBasic"
+                placeholder="기본 주소">
+              <div class="div-signup-address-add"><input class="input-address-add" type="text" name="addressAdd"
+                  placeholder="추가 주소"><button>찾기</button>
+                <p class="p-warning">주소는 필수 입력입니다</p>
+              </div>
             </div>
           </div>
-          <div class="div-signup"><span class="span-signup">이메일 :</span><input class="input-basic" type="" name="email"></div>
-          <div class="div-signup"><span class="span-signup">* 이름 : </span><input class="input-basic" type="" name="name"></div>
-          <div class="div-signup"><span class="span-signup">* 성별 :</span><input class="input-basic" type="" name="gender"></div>
-          <div class="div-signup"><span class="span-signup">* 닉네임 :</span><input class="input-basic" type="" name="nickName"></div>
-          <div class="div-signup"><span class="span-signup">* 전화번호 :</span><input class="input-basic" type="" name="phoneNumber"></div>
-          <div class="div-signup"><span class="span-signup">개인정보자리</span><input class="input-basic" type=""></div>
+          <div class="div-signup"><span class="span-signup">이메일 :</span>
+            <div class="div-signup-hide">
+              <div class="div-signup-email">
+                <input class="input-email-first" type="text" name="email" placeholder="이메일입력">
+                <span class="span-email-at">@</span>
+                <input class="input-email-end" type="text" name="email" placeholder="주소 입력">
+                <select class="select-email">
+                  <option value="choose">직접 입력</option>
+                  <option value="naver.com">naver.com</option>
+                  <option value="gmail.com">gmail.com</option>
+                  <option value="hanmail.net">hanmail.net</option>
+                  <option value="nate.com">nate.com</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="div-signup"><span class="span-signup">* 이름 : </span>
+            <div class="div-signup-hide">
+              <input class="input-basic" type="text" name="name">
+              <p class="p-warning">이름은 필수 입력입니다</p>
+            </div>
+          </div>
+          <div class="div-signup"><span class="span-signup">* 성별 :</span>
+            <div class="div-signup-radio">
+              <input type='radio' name='gender' value='male' id="male" /><label for="male">남자</label>
+              <input type='radio' name='gender' value='female' id="female" /><label for="female">여자</label>
+            </div>
+          </div>
+          <div class="div-signup"><span class="span-signup">* 닉네임 :</span>
+            <div class="div-signup-hide">
+              <input class="input-basic" type="text" name="nickName">
+              <p class="p-warning">닉네임은 필수 입력입니다</p>
+            </div>
+          </div>
+          <div class="div-signup"><span class="span-signup">* 전화번호 :</span>
+            <div class="div-signup-hide">
+              <input class="input-basic" type="text" name="phoneNumber"><button class="" type="button">인증번호받기</button>
+              <input class="input-cert" type="text" readonly><button class="" type="button" disabled>인증하기</button> 
+              <p class="p-warning">전화번호는 필수 입력입니다</p>
+            </div>
+          </div>
+          <div class="div-signup"><input class="input-terms" type="checkbox" id="id-terms">
+            <label for="id-terms" class="label-terms">개인정보 수집 및 이용 동의(필수)</label></span>
+            <span class="span-add">보기</span>
+          </div>
+          <button type="button" class="button-basic">회원가입하기</button>
         </form>
       </div>
     </div>
