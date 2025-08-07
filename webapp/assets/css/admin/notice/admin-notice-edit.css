@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.font-menu {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+  width: 1512px;
+  height: 100vh;
+  margin: auto;
+}
+
+header{
+  background-color: #fffacd;
+  height: 110px;
+}
+
+main{
+  background-color: #fffef1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-admin-notice-create{
+  margin-top: 100px;
+  height: 70px;
+  width: 1200px;
+  font-size: 48px;
+  color: #f38a6e;
+}
+
+form{
+  margin-top: 30px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#main-admin-notice-create-title{
+  height: 50px;
+  width: 600px;
+  border-radius: 20px;
+  font-size: 30px;
+  padding: 0 20px;
+  border: 0.1px solid lightgray;
+}
+
+#main-admin-notice-create-file{
+  background-color: white;
+  padding: 0 20px;
+  margin: 20px 0;
+  height: 40px;
+  width: 1160px;
+  border-radius: 10px;
+  line-height: 40px;
+  border: 0.1px solid lightgray;
+}
+
+#main-admin-notice-create-content{
+  height: 600px;
+  width: 1200px;
+  border-radius: 10px;
+  border: 0.1px solid lightgray;
+}
+
+.main-btn{
+  height: 66px;
+  width: 147px;
+  border-radius: 25px;
+  font-size: 30px;
+  margin: 100px 56px 200px;
+}
+
+.main-btn:first-child{
+  background-color: #f59d85;
+  color: white;
+  border: 0;
+}
+
+.main-btn:last-child{
+  background-color: white;
+  color: red;
+  border: 3px solid red;
+}
+
+
+
+footer{
+  background-color: #fff1cd;
+  height: 125px;
+}

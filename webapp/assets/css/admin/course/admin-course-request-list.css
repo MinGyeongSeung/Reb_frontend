@@ -1,8 +1,12 @@
-// css 관리자 페이지 기본 틀
-
 * {
   margin: 0;
   padding: 0;
+}
+
+.font-menu {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
@@ -10,42 +14,40 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "IBM Plex Sans KR", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 header {
   display: flex;
   margin: auto;
+  position: fixed;
+  transform: translateX(155px);
+  z-index: 2;
 }
 
-#header-garbage {
-  background-color: #d9d9d9;
-  width: 310px;
-  height: 80px;
-}
-
-#header-admin-notice>p{
-  font-size: 20px;
-  margin : 35px 30px;
+#header-admin-course-request>p{
+  margin : 0 30px;
 } 
 
-#header-admin-notice {
+#header-admin-course-request {
   background-color: #bebebe;
   height: 80px;
   width: 895px;
+  font-size: 20px;
+  line-height: 80px;
 }
 
 main{
-  background-color: white;
   display: flex;
-  margin: auto;
+  position: relative;
+  top: 80px;
+
 }
 
 #main-admin-list-menu{
   background-color: #d9d9d9;
   width: 310px;
+  position: fixed;
+  transform: translate(-155px, -80px);
 }
 
 #main-admin-list{
@@ -67,9 +69,134 @@ main{
   color: black;
 }
 
-#main-notice{
+#main-course-request{
+  background-color: white;
+  height: 91vh;
   width: 895px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transform: translateX(155px);
+}
+
+#main-course-request-list{
+  width: 875px;
+  margin-top: 100px;
+  font-size: 14px;
+  height: 495px;
+}
+
+#main-course-request-list>div{
+  background-color: #d9d9d9;
+  display: flex;
+  height: 45px;
+  align-items: center;
+  padding: 0 10px;
+}
+
+
+.main-course-request-number{
+  width: 70px;
+  text-align: center;
+}
+
+.main-course-request-id{
+  width: 110px;
+  text-align: center;
+}
+
+.main-course-request-nickname{
+  width: 90px;
+  text-align: center;
+}
+.main-course-request-title{
+  margin-left: 40px;
+  width: 250px;
+  text-align: center;
+}
+.main-course-request-type{
+  width: 74px;
+  text-align: center;
+}
+.main-course-request-start{
+  width: 110px;
+  text-align: center;
+}
+.main-course-request-end{
+  width: 110px;
+  text-align: center;
+}
+
+#main-course-request-list>li{
+  display: flex;
+  height: 40px;
+  align-items: center;
+  padding: 0 10px;
+  border-bottom: 3px solid #a7a7a7;
+}
+
+.main-course-request-link{
+  display: flex;
+  text-decoration: none;
+  color:black;
+}
+
+.main-course-request-link>p:nth-child(4){
+  text-align: left;
+}
+
+#main-page-number{
+  display: flex;
+  width: 370px;
+  font-size: 20px;
+}
+
+#main-page-number>a{
+  margin: 0 28px;
+  text-decoration: none;
+  color: black;
+}
+
+#main-course-request-search{
+  height: 45px;
+  width: 840px;
+  font-size: 20px;
+  display: flex;
+  align-self: start;
+  margin: 30px 28px;
+}
+
+#main-course-request-search-title>p{
+  height: 45px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-course-request-search-input{
+  width: 370px;
+  height: 45px;
+  border-radius: 10px;
+  margin: 0 5px;
+  border: 1px solid black;
+}
+
+form{
+  display: flex;
+  align-items: center;
+}
+
+form>button{
+  background-color: white;
+  border: 0;
+  transform: translateX(-40px);
+}
+
+form>button>img{
+  height: 30px;
+  width: 30px;
+  border: 0px;
 }
