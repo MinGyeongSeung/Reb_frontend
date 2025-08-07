@@ -3,10 +3,10 @@ let loginWarning = document.querySelector("#login-warning");
 
 
 
-loginBtn.addEventListener('click', (id, pw) => {
+loginBtn.addEventListener('click', () => {
   const id = document.querySelector("#id");
   const pw = document.querySelector("#pw");
-  if (id === 'admin' && pw === 'admin') {
+  if (id.value === 'admin' && pw.value === 'admin') {
     alert("성공입니다.");
   } else {
     loginWarning.style.display = "block";
