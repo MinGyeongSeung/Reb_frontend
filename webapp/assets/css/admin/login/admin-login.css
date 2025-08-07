@@ -60,6 +60,11 @@ form {
   border: 0;
 }
 
+div{
+  height: 65px;
+  width: 650px;
+}
+
 #main-login-warning {
   font-size: 30px;
   color: red;
