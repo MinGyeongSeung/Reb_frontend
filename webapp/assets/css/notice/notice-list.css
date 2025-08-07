@@ -28,7 +28,7 @@ main {
   padding-top: 110px;
   height: 1200px;
   width: 100%;
-  background-color: gray;
+  background-color: rgb(255, 254, 241);
 }
 
 button {
@@ -93,7 +93,7 @@ button {
   text-align: right;
 }
 
-.must-read-emphasize {
+.must-read-emphasize>div {
   border-bottom: 1px solid black;
   display: flex;
   /* justify-content: space-between; */
@@ -108,7 +108,7 @@ button {
 }
 
 
-.notice-list {
+.notice-list>div {
   border-bottom: 1px solid black;
   display: flex;
   align-items: center;
@@ -116,36 +116,20 @@ button {
   padding: 10px;
 }
 
-.notice-list-title
-, .notice-list-writer {
+.must-read-emphasize-title,
+.notice-list-title {
   width: 70%;
   font-weight: lighter;
 }
 
-.must-read-1-2,
-.must-read-2-2,
-.notice-list-1-2,
-.notice-list-2-2,
-.notice-list-3-2,
-.notice-list-4-2,
-.notice-list-5-2,
-.notice-list-6-2,
-.notice-list-7-2,
-.notice-list-8-2 {
+.must-read-emphasize-writer,
+.notice-list-writer {
   width: 15%;
   text-align: center;
 }
 
-.must-read-1-3,
-.must-read-2-3,
-.notice-list-1-3,
-.notice-list-2-3,
-.notice-list-3-3,
-.notice-list-4-3,
-.notice-list-5-3,
-.notice-list-6-3,
-.notice-list-7-3,
-.notice-list-8-3 {
+.must-read-emphasize-day,
+.notice-list-day {
   width: 15%;
   text-align: right;
 }
@@ -174,11 +158,7 @@ button {
   gap: 10px;
 }
 
-.nul-1,
-.nul-2,
-.nul-3,
-.nul-4,
-.nul-5 {
+.num {
   cursor: pointer;
   padding: 6px 12px;
 }
@@ -190,7 +170,7 @@ button {
   margin-top: 30px;
 }
 
-.filter-select {
+.select-filter {
   border: 2px solid black;
   border-radius: 13px;
   font-size: 15px;
@@ -206,21 +186,21 @@ button {
   background-color: white;
 }
 
-.search-input {
+.input-search-input {
   border: none;
   outline: none;
   padding: 0 15px;
   flex-grow: 1;
 }
 
-.search-button {
+.button-search {
   background: none;
   border: none;
   padding: 0 16px;
   cursor: pointer;
 }
 
-.search-button img {
+.button-search > img {
   width: 20px;
   height: 20px;
 }
