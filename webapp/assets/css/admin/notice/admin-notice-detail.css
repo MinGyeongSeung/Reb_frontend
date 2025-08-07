@@ -28,6 +28,13 @@ main{
   margin-top: 110px;
 }
 
+#main-notice-detail-author{
+  height: 48px;
+  width: 1200px;
+  display: flex;
+  justify-content: end;
+  font-size: 32px;
+}
 
 
 
