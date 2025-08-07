@@ -87,7 +87,7 @@ button {
 .div-signup-address{
   display: flex;
   flex-direction: column;
-  width:100%;
+  width:80%;
   align-items: flex-end;
 }
 
