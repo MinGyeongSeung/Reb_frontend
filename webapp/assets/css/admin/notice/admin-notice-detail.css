@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 1512px;
+  height: 100vh;
+  margin: auto;
+}
+
+header{
+  background-color: #fffacd;
+  height: 110px;
+}
+
+main{
+  background-color: #fffef1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-notice-detail-title{
+  height: 66px;
+  width: 1200px;
+  color: #f38a6e;
+  margin-top: 110px;
+}
+
+
+
+
+footer{
+  background-color: #fff1cd;
+  height: 125px;
+  align-self: 
+}
