@@ -3,6 +3,13 @@
   padding: 0;
 }
 
+.font-menu {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 body{
   width: 1512px;
   height: 100vh;
@@ -21,14 +28,14 @@ main{
   align-items: center;
 }
 
-#main-notice-detail-title{
+#main-admin-notice-detail-title{
   height: 66px;
   width: 1200px;
   color: #f38a6e;
   margin-top: 110px;
 }
 
-#main-notice-detail-author{
+.main-admin-notice-detail-author{
   height: 48px;
   width: 1200px;
   display: flex;
@@ -36,10 +43,37 @@ main{
   font-size: 32px;
 }
 
+#main-admin-notice-detail-content{
+  margin: 50px 0 170px;
+  width: 1200px;
+  font-size: 24px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main-btn{
+  height: 66px;
+  width: 147px;
+  border-radius: 25px;
+  font-size: 30px;
+  margin: 0 56px 40px;
+}
+
+.main-btn:first-child{
+  background-color: #f59d85;
+  color: white;
+  border: 0;
+}
+
+.main-btn:last-child{
+  background-color: white;
+  color: red;
+  border: 3px solid red;
+}
 
 
 footer{
   background-color: #fff1cd;
   height: 125px;
-  align-self: 
 }

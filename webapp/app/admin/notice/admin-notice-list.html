@@ -14,11 +14,10 @@
     rel="stylesheet">
 </head>
 
-<body>
+<body class="font-menu">
   <header>
-    <section id="header-garbage"></section>
     <section id="header-admin-notice">
-      <p>공지사항 목록</p>
+      <p><strong>공지사항 목록</strong></p>
     </section>
   </header>
   <main>
@@ -74,12 +73,14 @@
           <p class="main-notice-create-date">작성날짜</p>
         </div>
         <li class="main-must-read">
-          <p class="main-notice-title">[필독] 틈새빛 사이트 이용 수칙</p>
-          <p class="main-notice-author">관리자</p>
-          <p class="main-notice-create-date">2025.08.07</p>
+          <a href="./admin-notice-detail.html" class="main-must-read-link">
+            <p class="main-notice-title">[필독] 틈새빛 사이트 이용 수칙</p>
+            <p class="main-notice-author">관리자</p>
+            <p class="main-notice-create-date">2025.08.07</p>
+          </a>
         </li>
       </ul>
-      <button id="main-create-notice">등록</button>
+      <button id="main-create-notice"><a href="./admin-notice-create.html">등록</a></button>
       <div id="main-page-number">
         <p>&lt</p>
         <a href="">1</a>
@@ -94,7 +95,7 @@
           <p>제목</p>
         </div>
         <form action="" method="">
-          <input type="text"  id="main-notice-search-input">
+          <input type="text" id="main-notice-search-input">
           <button><img src="./../../../assets/img/search.jpg" alt="돋보기"></button>
         </form>
       </div>
