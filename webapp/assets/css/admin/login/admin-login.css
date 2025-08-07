@@ -12,7 +12,7 @@ main {
   align-items: center;
 }
 
-#login {
+#main-login {
   height: 900px;
   width: 1200px;
   display: flex;
@@ -20,7 +20,7 @@ main {
   align-items: center;
 }
 
-#logo {
+#main-login-logo {
   height: 300px;
   width: 300px;
   position: relative;
@@ -39,8 +39,8 @@ form {
   flex-direction: column;
 }
 
-#id,
-#pw {
+#main-login-id,
+#main-login-pw {
   height: 60px;
   width: 450px;
   border-radius: 20px;
@@ -49,7 +49,7 @@ form {
   font-size: 32px;
 }
 
-#submit {
+#main-login-submit {
   background-color: #818181;
   color: white;
   height: 80px;
@@ -60,7 +60,7 @@ form {
   border: 0;
 }
 
-#login-warning {
+#main-login-warning {
   font-size: 30px;
   color: red;
   margin: 0 0 20px;
