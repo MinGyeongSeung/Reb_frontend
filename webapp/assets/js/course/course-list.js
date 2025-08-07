@@ -1,0 +1,1 @@
+const listClick = document.querySelectorAll(".div-li-course-list");
