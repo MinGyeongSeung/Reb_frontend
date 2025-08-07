@@ -1,0 +1,75 @@
+// css 관리자 페이지 기본 틀
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #757575;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  margin: auto;
+}
+
+#header-garbage {
+  background-color: #d9d9d9;
+  width: 310px;
+  height: 80px;
+}
+
+#header-admin-notice>p{
+  font-size: 20px;
+  margin : 35px 30px;
+} 
+
+#header-admin-notice {
+  background-color: #bebebe;
+  height: 80px;
+  width: 895px;
+}
+
+main{
+  background-color: white;
+  display: flex;
+  margin: auto;
+}
+
+#main-admin-list-menu{
+  background-color: #d9d9d9;
+  width: 310px;
+}
+
+#main-admin-list{
+  margin: 100px 55px;
+  width: 200px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-admin-list>li{
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+#main-admin-list>li>a{
+  text-decoration: none;
+  color: black;
+}
+
+#main-notice{
+  width: 895px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
