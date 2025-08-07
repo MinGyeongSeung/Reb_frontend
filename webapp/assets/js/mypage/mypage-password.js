@@ -9,12 +9,12 @@ sideMenuBtnClose.addEventListener('click',()=>{moveSideMenu("-300px");});
 sideMenuBtnOpen.addEventListener('click',()=>{moveSideMenu("0px");});
 
 function moveSideMenu(left){
-    sideMenu.style.left= left;
+    sideMenu.style.left = left;
     sideMenu.style.transition = '0.3s ease';
     
     sideMenuBtnClose.innerHTML = "&lt;";
 }
 
 function inputPw(){
-    wrongpw.style.color = "white";
+    alert("비밀번호 입력");
 }
