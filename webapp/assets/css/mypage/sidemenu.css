@@ -1,0 +1,114 @@
+#mypage-sidemenu-container {
+  position: fixed;
+  top: 140px;
+  left: 30px;
+}
+
+.mypage-sidemenumove {
+  position: absolute;
+  left: 0px;
+
+  width: 250px;
+  height: 410px;
+  background-color: #FFFACD;
+  border-radius: 10px;
+}
+
+.mypage-sidemenu {
+  margin-top: 60px;
+}
+
+.mypage-sidemenubtn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: #F59D85;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  line-height: 35px;
+}
+
+.mypage-sidemenubtn-open {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: #F59D85;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  line-height: 35px;
+}
+
+
+.ul-mainsidemenu {
+  list-style-type: none;
+}
+
+.nav-mypage-sidemenu {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.li-mainsidemenu a {
+  color: #F38A6E;
+  text-decoration: none;
+  font-size: 25px;
+
+  font-family: "Yeon Sung", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.li-mainsidemenu li {
+  height: 35px;
+  line-height: 35px;
+}
+
+.li-mainsidemenu li {
+  text-decoration: none;
+}
+
+.ul-subsidemenu {
+  margin-left: 50px;
+}
+
+
+.ul-subsidemenu {
+  list-style-type: disc;
+}
+
+.li-subsidemenu {
+  color: #FFB9A6;
+}
+
+.li-subsidemenu a {
+  color: #FFB9A6;
+  font-size: 20px;
+}
+
+.li-mainsidemenu a:hover {
+  color: #eb491d;
+  text-decoration: underline;
+}
+
+.li-subsidemenu a:hover {
+  color: #f17553;
+}
+
+.mypage-sidemenubtn-open:hover {
+  background-color: #f17553;
+}
+
+.mypage-sidemenubtn-close:hover {
+  background-color: #f17553;
+}
