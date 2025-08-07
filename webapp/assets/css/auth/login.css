@@ -47,7 +47,7 @@ button {
   border: 0px;
 }
 
-.ib_p {
+.font-main {
   font-size: 18px;
   font-family: "Noto Sans KR", sans-serif;
   font-optical-sizing: auto;
@@ -56,14 +56,14 @@ button {
   color: white;
 }
 
-.y_p {
+.font-menu {
   font-family: "Yeon Sung", system-ui;
   font-weight: 400;
   font-style: normal;
   line-height: 50px;
 }
 
-label>.y_p {
+label>.font-menu {
   width: 100px;
 }
 
@@ -87,8 +87,8 @@ label>.y_p {
   height: 70%;
 }
 
-.id-box,
-.pw-box {
+.div-id,
+.div-pw {
   display: flex;
   margin: 20px;
   width: 100%;
@@ -110,13 +110,13 @@ button:hover {
   cursor: pointer;
 }
 
-.basicBtn {
+.button-basic {
   margin: 20px;
   background-color: #f59d85;
   color: white;
 }
 
-.kakaoBtn {
+.button-kakao {
   background-color: #FEE500;
 }
 
@@ -126,7 +126,7 @@ button:hover {
   padding-right: 30px;
 }
 
-button>.y_p {
+button>.font-menu {
   line-height: 30px;
 }
 
@@ -135,7 +135,7 @@ a {
   text-decoration-line: none;
 }
 
-.login-etc {
+.div-login-etc {
   width: 100%;
   display: flex;
   justify-content: space-around;
