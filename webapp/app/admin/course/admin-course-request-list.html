@@ -1,5 +1,3 @@
-<!-- html 관리자 페이지 기본 틀 -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./../../../assets/css/admin/notice/admin-notice-list.css">
-  <script defer src="./../../../assets/js/admin/notice/admin-notice-list.js"></script>
+  <link rel="stylesheet" href="./../../../assets/css/admin/course/admin-course-request-list.css">
+  <script defer src="./../../../assets/js/admin/course/admin-course-request-list.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -16,11 +14,10 @@
     rel="stylesheet">
 </head>
 
-<body>
+<body class="font-menu">
   <header>
-    <section id="header-garbage"></section>
-    <section id="header-admin-notice">
-      <p>공지사항 목록</p>
+    <section id="header-admin-course-request">
+      <p><strong>공지사항 목록</strong></p>
     </section>
   </header>
   <main>
@@ -28,12 +25,12 @@
       <ul id="main-admin-list">
         <li>
           <a href="./admin-notice-list.html">
-            <strong>공지 사항 목록</strong>
+            공지 사항 목록
           </a>
         </li>
         <li>
           <a href="">
-            수업 목록
+            <strong>수업 목록</strong>
           </a>
         </li>
         <li>
@@ -68,8 +65,47 @@
         </li>
       </ul>
     </section>
-    <section id="main-notice">
-      
+    <section id="main-course-request">
+      <ul id="main-course-request-list">
+        <div>
+          <p class="main-course-request-number">회원번호</p>
+          <p class="main-course-request-id">아이디</p>
+          <p class="main-course-request-nickname">닉네임</p>
+          <p class="main-course-request-title">제목</p>
+          <p class="main-course-request-type">유형</p>
+          <p class="main-course-request-start">시작 기간</p>
+          <p class="main-course-request-end">종료 기간</p>
+        </div>
+        <li class="main-must-read">
+          <a href="./admin-course-request-detail.html" class="main-course-request-link">
+            <p class="main-course-request-number">123123</p>
+            <p class="main-course-request-id">gildong123</p>
+            <p class="main-course-request-nickname">길동이에유</p>
+            <p class="main-course-request-title">웹 보안 수업 개설</p>
+            <p class="main-course-request-type">개설</p>
+            <p class="main-course-request-start">2025-07-01</p>
+            <p class="main-course-request-end">2025-08-01</p>
+          </a>
+        </li>
+      </ul>
+      <div id="main-page-number">
+        <p>&lt</p>
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+        <p>&gt</p>
+      </div>
+      <div id="main-course-request-search">
+        <div id="main-course-request-search-title">
+          <p>제목</p>
+        </div>
+        <form action="" method="">
+          <input type="text" id="main-course-request-search-input">
+          <button><img src="./../../../assets/img/search.jpg" alt="돋보기"></button>
+        </form>
+      </div>
     </section>
   </main>
 </body>
