@@ -1,18 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./../../../assets/css/admin/notice/admin-notice-list.css">
+  <script defer src="./../../../assets/js/admin/notice/admin-notice-list.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&family=Yeon+Sung&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
   <header>
-    <section id="admin-list">
-
-    </section>
-    <section id="admin-">
-
+    <section id="garbage"></section>
+    <section id="admin-notice-header">
+      <p>공지사항 목록</p>
     </section>
   </header>
+  <main>
+    <section id="admin-list-menu">
+      <ul id="admin-list">
+        <li>
+          <a href="./admin-notice-list.html">
+            <strong>공지 사항 목록</strong>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            수업 목록
+          </a>
+        </li>
+        <li>
+          <a href="">
+            루틴 모임 목록
+          </a>
+        </li>
+        <li>
+          <a href="">
+            회원 목록
+          </a>
+        </li>
+        <li>
+          <a href="">
+            후원자 목록
+          </a>
+        </li>
+        <li>
+          <a href="">
+            전문가 승인 목록
+          </a>
+        </li>
+        <li>
+          <a href="">
+            활동 후기
+          </a>
+        </li>
+        <li>
+          <a href="">
+            배너 등록
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section id="admin-main">
+      <ul id="notice-list">
+        <div>
+          <p class="title">제목</p>
+          <p class="author">작성자</p>
+          <p class="create-date">작성날짜</p>
+        </div>
+        <li class="must-read">
+          <p class="title">[필독] 틈새빛 사이트 이용 수칙</p>
+          <p class="author">관리자</p>
+          <p class="create-date">2025.08.07</p>
+        </li>
+      </ul>
+
+      <button id="create-notice">등록</button>
+      <div id="page-number">
+        <p>&lt</p>
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+        <p>&gt</p>
+      </div>
+      <div id="notice-search">
+        <div id="search-title">
+          <p>제목</p>
+        </div>
+        <form action="" method="">
+          <input type="text"  id="search">
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
