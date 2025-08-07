@@ -66,7 +66,15 @@ button {
 .course-list-container {
     background-color: #FFFACD;
     display: flex;
-    
+    flex-direction: column;    
     width: 1200px;
     height: 800px;
+}
+.p-title{
+    font-size:48px;
+    color: #F38A6E;
+}
+.course-list-box{
+    width: 100%;
+    height: 100%;
 }
