@@ -5,7 +5,7 @@ const correctPw = '12345';
 const wrongpw = document.querySelector(".wrongpw");
 
 buttonPw.addEventListener('click', (e) => {
-  inputPw(document.get(e.target.value)[0].value);
+  inputPw(document.getElementById(e.target.value).value);
   e.target.removeEventListener('click');
 });
 

@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
       sideMenuBtnOpen = document.querySelector(".mypage-sidemenubtn-open");
       sideMenu = document.querySelector(".mypage-sidemenumove");
       
-      
+     expertCourceMenus = document.querySelectorAll(`#li-expert-course-menu a`);
 
       sideMenuBtnClose.addEventListener('click', () => { moveSideMenu("-300px"); });
       sideMenuBtnOpen.addEventListener('click', () => { moveSideMenu("0px"); });
@@ -19,6 +19,8 @@ window.addEventListener('DOMContentLoaded', () => {
 let sideMenuBtnClose;
 let sideMenuBtnOpen;
 let sideMenu;
+
+let expertCourseMenus;
 
 
 function moveSideMenu(left) {
