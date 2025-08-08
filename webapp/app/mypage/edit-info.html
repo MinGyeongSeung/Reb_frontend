@@ -18,6 +18,7 @@
   <script defer src="./../../assets/js/mypage/edit-info.js"></script>
   <title>틈새빛</title>
 </head>
+
 <body>
   <div id="header">
   </div>
@@ -25,11 +26,101 @@
     <aside id="mypage-sidemenu-container">
     </aside>
     <div id="main-container">
-        <div class="pagetitle">개인정보 수정</div>
+      <div class="pagetitle">개인정보 수정</div>
+      <form action="" method="post">
+        <div class="edit-info-container">
+          <div class="edit-info-list">
+            <div class="edit-info-type">ID</div>
+            <div class="edit-info-data">boradori</div>
+          </div>
+          <div class="edit-info-list edit-info-two-row">
+            <div class="edit-info-type">비밀번호</div>
+            <div class="edit-info-data edit-info-input-two-row">
+              <div id="password-first-input">
+                <input type="password" name="editInfoPw" placeholder="패스워드 입력">
+                <div class="edit-info-pw-warning" id="edit-info-pw-first-warning">숫자, 특수 문자(!,@,#,$), 문자 조합<br>8문자 이상 입력
+                  필요</div>
+              </div>
+              <div id="password-re-input">
+                <input type="password" name="editInfoPwRe" placeholder="패스워드 재입력">
+                <div class="edit-info-pw-warning" id="edit-info-pw-re-warning">비밀번호 불일치</div>
+              </div>
+            </div>
+          </div>
+          <div class="edit-info-list">
+            <div class="edit-info-type">이름</div>
+            <div class="edit-info-data">전보라</div>
+          </div>
+          <div class="edit-info-list">
+            <div class="edit-info-type">닉네임</div>
+            <div class="edit-info-data">
+              <input type="text" id="edit-info-nickname" name="editInfoNicname" placeholder="닉네임">
+              <button type="button" name="editInfoNicname" value="edit-info-nickname">중복 확인</button>
+            </div>
+          </div>
+          <div class="edit-info-list">
+            <div class="edit-info-type">생년월일</div>
+            <div class="edit-info-data">1995.01.21</div>
+          </div>
+          <div class="edit-info-list">
+            <div class="edit-info-type">성별</div>
+            <div class="edit-info-data">여</div>
+          </div>
+          <div class="edit-info-list  edit-info-two-row">
+            <div class="edit-info-type">실거주지</div>
+            <div class="edit-info-data edit-info-input-two-row">
+              <div id="edit-info-address-main">
+                <div id="edit-info-address-text">
+                  우편번호 기준 주소지
+                </div>
+                <div id="edit-info-address-post">
+                  00000
+                </div>
+                <button type="button" name="addressSearchBtn">주소 검색</button>
+              </div>
+              <div id="address-re-input">
+                <input type="text" name="editInfoDetailAddress" placeholder="실거주지 주소">
+              </div>
+            </div>
+          </div>
+          <div class="edit-info-list">
+            <div class="edit-info-type">이메일</div>
+            <div class="edit-info-data">
+              <input type="email" id="input-edit-info-email" name="email" placeholder="이메일 주소">
+            </div>
+          </div>
+          <div class="edit-info-list">
+            <div class="edit-info-type">전화번호</div>
+            <div class="edit-info-data"></div>
+          </div>
+          <div class="edit-info-list">
+            <div class="edit-info-type">전문가 인증</div>
+            <div class="edit-info-data">
+              <div id="edit-info-expert-status">확인 중</div>
+              <button name="editExpertFile" id="button-edit-expert-info">수정</button>
+            </div>
+          </div>
+          <div class="edit-info-list">
+            <div class="edit-info-type">프로필 사진</div>
+            <div class="edit-info-data">
+              <div id="profile-picture"><img id="img-edit-profile-pic" src="../../assets/img/profilePicture/dog.jpg"
+                  alt="프로필"></div>
+              <button id="button-edit-profile-pic" name="editProfilePic">수정</button>
+            </div>
+          </div>
+        </div>
+        <div id="form-bottom-button">
+          <button type="button" name="personalInfoEdit" id="button-edit-user-complete"
+            onclick="editUserInfo()">수정</button>
+          <button type="button" name="personalInfoDel" id="button-edit-user-cancel"
+            onclick="deleteUserInfo()">취소</button>
+        </div>
+      </form>
     </div>
   </main>
   <div id="footer">
   </div>
   <script src="./../../assets/js/mypage/sidemenu.js"></script>
 </body>
+
 </html>
