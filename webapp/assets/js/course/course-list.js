@@ -1,1 +1,11 @@
-const listClick = document.querySelectorAll(".div-li-course-list");
+const listClick = document.querySelector(".div-li-course-list");
+
+const writeBtn = document.querySelector(".button-write");
+const writeLink = './expert-course-create-request.html'
+writeBtn.addEventListener('click',()=>{
+  location.href= writeLink;
+})
+// listClick.addEventListener('click',(e)=>{
+//   e
+
+// });

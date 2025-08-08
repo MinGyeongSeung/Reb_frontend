@@ -31,11 +31,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 main {
     padding-top: 110px;
-    height: 1400px;
+    min-height: calc(100vh - 235px);
     width: 100%;
     background-color: #FFFEF1;
     font-family: "Noto Sans KR", sans-serif;
@@ -166,4 +168,18 @@ a {
     height: 50px;
     padding: 10px;
     background-color: #FFFEF1;
+}
+.button-write {
+  border-radius: 15px;
+  border: 0px;
+  width: 70px;
+  height: 60px;
+  padding: 10px;
+  background-color: #F38A6E;
+  color:white;
+  float: right;
+  /* display: none; */
+}
+.button-write:hover{
+    cursor: pointer;
 }
