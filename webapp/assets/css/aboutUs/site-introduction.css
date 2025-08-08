@@ -1,60 +1,60 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-#header{
+#header {
   height: 110px;
   width: 100%;
   position: fixed;
   background-color: #f59d85;
 }
 
-#footer{
+#footer {
   width: 100%;
   height: 125px;
   background-color: #f59d85;
 }
 
 #main-container {
-    width: 1200px;
-    height: 100%;
-    /*알아서 넣기*/
-    background-color: #FFFEF1;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
+  width: 1200px;
+  height: 100%;
+  /*알아서 넣기*/
+  background-color: #FFFEF1;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
-    padding-top: 110px;
-    height: auto;
-    width: 100%;
-    background-color: #FFFEF1;
-    font-family: "Noto Sans KR", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  padding-top: 110px;
+  height: auto;
+  width: 100%;
+  background-color: #FFFEF1;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-button{
+button {
   border-radius: 13px;
-  padding : 0px 20px;
+  padding: 0px 20px;
   height: 40px;
   background-color: #f59d85;
-  border : 0px;
+  border: 0px;
 }
 
-.font-main{
+.font-main {
   font-size: 18px;
   font-family: "Noto Sans KR", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color : white;
+  color: black;
 }
 
-.font-menu{
+.font-menu {
   font-family: "Yeon Sung", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -64,33 +64,86 @@ button{
   background-color: #f59d85;
 }
 
+/* 메인 최상단 제목 시작 */
 .introduction-main-title {
   background-color: rgb(255, 234, 48);
-  height: 115px;
-  width: 1087px;
-  color: black;
+  width: 1000px;
   display: flex;
-  margin-top: 35px;
+  color: black;
+  justify-content: flex-end;
   border-radius: 13px;
-  margin: 2% auto;
+  margin: 5% auto;
 }
 
 .main-title-text {
   padding: 35px;
+  font-size: 37px;
 }
 
 .main-title-logo {
-  border-radius: 60%;
+  align-items: center;
   background-color: none;
-  width: 160px;
-  height: 160px;
+  width: 130px;
+  height: 130px;
 }
 
 .logo-image {
   width: 100%;
   height: 100%;
 }
+/* 메인 최상단 제목 끝 */
 
+/* 메인 전체*/
 .introduction-container {
-  background-color: aqua;
+
 }
+
+/* 소개글 CSS 시작 */
+.introduction-text-container {
+  background-color: rgb(255, 234, 48);
+  text-wrap: wrap;
+  line-height: 50px;
+  margin: 5% auto;
+  border-radius: 13px;
+}
+
+.introduction-intro-bold{
+  text-shadow: 1px 1px 2px rgb(63, 60, 60);
+  font-size: 30px;
+}
+/* 소개글 CSS 끝*/
+
+/* 루틴 모임 모집 소개 시작 */
+.introduction-routine-meeting-container {
+  background-color: rgb(255, 234, 48);
+  margin: 5% auto;
+  border-radius: 13px;
+}
+
+.introduction-routine-meeting-image-container {
+  background-color: white;
+  justify-content: space-between;
+}
+
+/* 루틴 모임 모집 소개 끝 */
+
+/* 수업 수강 소개 시작 */
+.introduction-class-container {
+  background-color: rgb(255, 234, 48);
+  margin: 5% auto;
+  border-radius: 13px;
+}
+
+.introduction-class-image-container{
+background-color: white;
+justify-content: space-between;
+}
+/* 수업 수강 소개 끝 */
+
+/*  클로징 시작 */
+.introduction-closing-container {
+  background-color: rgb(255, 234, 48);
+  margin: 5% auto;
+  border-radius: 13px;
+}
+/*  클로징 끝 */
