@@ -16,31 +16,43 @@
   background-color: #f59d85;
 }
 
-#main-container{
-  width : 1200px;
-  height : 100%; /*알아서 넣기*/
-  background-color: #FFFEF1;
-  margin : auto;
+#main-container {
+    width: 1200px;
+    height: 100%;
+    background-color: #FFFEF1;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
 
-main{
-  padding-top: 110px;
-  height : 1200px;
-  width: 100%;
-  background-color: #FFFEF1;
+main {
+    padding-top: 110px;
+    /* height는 컨텐츠에 따라 */
+    height: 900px; 
+    min-height: calc(100vh - 235px);
+    width: 100%;
+    background-color: #FFFEF1;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 button{
-  cursor: pointer;
+  border-radius: 13px;
+  padding : 0px 20px;
+  height: 50px;
+  background-color: #f59d85;
+  border : 0px;
+  font-size: 20px;
 }
 
 .font-main{
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color : white;
 }
 
 .font-menu{
@@ -50,7 +62,7 @@ button{
 }
 
 .pagetitle{
-  font-size : 48px;
+  font-size : 30px;
   color : #F38A6E;
 
   padding-top : 100px;
@@ -61,4 +73,180 @@ button{
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
+}
+
+
+#edit-info-container{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-info-list{
+  display: flex;
+  height: 50px;
+
+  padding-left: 30px;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  line-height: 50px;
+
+  border-bottom: 1px solid #f59d85;
+}
+
+.edit-info-data button{
+  background-color:#f59d85 ;
+  height: 60px;
+
+  border: none;
+  color : white;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  margin-top: 5px;
+  
+  border-radius: 20px;
+}
+
+#button-edit-expert-info{
+  background-color:#f59d85 ;
+  height: 60px;
+  width : 147px;
+
+  border: none;
+  color : white;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  
+  border-radius: 20px;
+}
+
+.edit-info-type{
+  width : 360px;
+  color : #6E6E6E;
+}
+
+.edit-info-data{
+  width : 505px;
+  display: flex;
+}
+
+#edit-info-address-main{
+  display: flex;
+  width: 800px;
+}
+
+#edit-info-address-text{
+  width:505px;
+}
+
+#edit-info-address-post{
+  text-align: right;
+  width : 200px;
+  margin-right: 15px;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#profile-picture{
+  margin-top: 2px;
+  width: 66px;
+  height: 66px;
+
+}
+
+#profile-picture img{
+  border-radius: 60%;
+  width: 100%;
+  height: 100%
+}
+
+#form-bottom-button{
+  width: 100%;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+}
+
+#form-bottom-button button{
+  margin-top: 60px;
+  width : 147px;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  border-radius: 20px;
+}
+
+#button-edit-user-complete{
+  background-color: #f59d85;
+  color : white;
+  border : none;
+  margin-right: 200px;
+}
+
+#button-edit-user-cancel{
+  background-color: white;
+  color : red;
+  border : red solid;
+  position: relative;
+  height: 66px;
+}
+
+form{
+  display: flex;
+}
+
+.edit-info-two-row{
+  height: 140px;
+}
+
+.edit-info-input-two-row form{
+  display: flex;
+  flex-direction: column;
+  width : 840px;
+}
+
+#password-first-input{
+  display: flex;
+}
+
+#password-re-input{
+  display: flex;
+}
+
+.edit-info-pw-warning{
+  width:288px;
+  height:70px; 
+  padding-top: 10px;
+  line-height: 25px;
+  font-size: 15px;
+  color:red;
+  text-align: right;
+}
+
+#edit-info-pw-re-warning{
+  line-height: 50px;
+}
+
+input{
+  height: 50px;
+  margin-top:3px;
+  width: 500px;
 }

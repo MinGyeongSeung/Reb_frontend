@@ -3,7 +3,6 @@
   padding: 0;
 }
 
-
 #header{
   height: 110px;
   width: 100%;
@@ -17,31 +16,43 @@
   background-color: #f59d85;
 }
 
-#main-container{
-  width : 1200px;
-  height : 100%; /*알아서 넣기*/
-  background-color: #FFFEF1;
-  margin : auto;
+#main-container {
+    width: 1200px;
+    height: 100%;
+    background-color: #FFFEF1;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
 
-main{
-  padding-top: 110px;
-  height : 1200px;
-  width: 100%;
-  background-color: #FFFEF1;
+main {
+    padding-top: 110px;
+    /* height는 컨텐츠에 따라 */
+    height: 900px; 
+    min-height: calc(100vh - 235px);
+    width: 100%;
+    background-color: #FFFEF1;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 button{
-  cursor: pointer;
+  border-radius: 13px;
+  padding : 0px 20px;
+  height: 50px;
+  background-color: #f59d85;
+  border : 0px;
+  font-size: 20px;
 }
 
 .font-main{
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color : white;
 }
 
 .font-menu{
@@ -51,7 +62,7 @@ button{
 }
 
 .pagetitle{
-  font-size : 48px;
+  font-size : 30px;
   color : #F38A6E;
 
   padding-top : 100px;
@@ -73,8 +84,8 @@ button{
 
 .personal-info-list{
   display: flex;
-  height: 70px;
-  font-size:30px;
+  height: 50px;
+  font-size:20px;
 
   padding-left: 30px;
 
@@ -83,19 +94,16 @@ button{
   font-weight: 400;
   font-style: normal;
 
-  line-height: 70px;
+  line-height: 50px;
 
   border-bottom: 1px solid #f59d85;
 }
 
 #button-edit-expert-info{
   background-color:#f59d85 ;
-  height: 60px;
-  width : 147px;
 
   border: none;
   color : white;
-  font-size: 30px;
 
   font-family: "Noto Sans KR", sans-serif;
   font-optical-sizing: auto;
@@ -103,6 +111,8 @@ button{
   font-style: normal;
   
   border-radius: 20px;
+
+  margin:auto;
 }
 
 .personal-info-type{
@@ -111,14 +121,14 @@ button{
 }
 
 .personal-info-data{
-  width : 660px;
+  width : 720px;
 }
 
 #personal-info-data-postcode{
   text-align: center;
-  width : 147px;
+  width : 90px;
 
-  font-size: 30px;
+  font-size: 20px;
 
   font-family: "Noto Sans KR", sans-serif;
   font-optical-sizing: auto;
@@ -127,9 +137,9 @@ button{
 }
 
 #profile-picture{
-  margin-top: 2px;
-  width: 66px;
-  height: 66px;
+  margin-top: 0px;
+  width: 50px;
+  height: 50px;
 
 }
 
@@ -148,9 +158,6 @@ button{
 
 #form-bottom-button button{
   margin-top: 60px;
-  width : 147px;
-  font-size: 30px;
-
   font-family: "Noto Sans KR", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -161,7 +168,6 @@ button{
 
 #button-edit-user{
   background-color: #f59d85;
-  height: 66px;
   color : white;
   border : none;
 }
@@ -171,6 +177,5 @@ button{
   color : red;
   border : red solid;
   position: relative;
-  height: 66px;
-  left: 450px;
+  left: 500px;
 }

@@ -18,6 +18,7 @@
   <script defer src="./../../assets/js/mypage/personal-info.js"></script>
   <title>틈새빛</title>
 </head>
+
 <body>
   <div id="header">
   </div>
@@ -26,55 +27,55 @@
     </aside>
     <div id="main-container">
       <div class="pagetitle">개인정보 조회</div>
-      <div id="personal-info-container">
-        <div class="personal-info-list">
-          <div class="personal-info-type">ID</div>
-          <div class="personal-info-data">boradori</div>
-        </div>
-        <div class="personal-info-list">
-          <div class="personal-info-type">이름</div>
-          <div class="personal-info-data">전보라</div>
-        </div>
-        <div class="personal-info-list">
-          <div class="personal-info-type">닉네임</div>
-          <div class="personal-info-data">보라도리짱</div>
-        </div>
-        <div class="personal-info-list">
-          <div class="personal-info-type">생년월일</div>
-          <div class="personal-info-data">1995.01.21</div>
-        </div>
-        <div class="personal-info-list">
-          <div class="personal-info-type">성별</div>
-          <div class="personal-info-data">여</div>
-        </div>
-        <div class="personal-info-list">
-          <div class="personal-info-type">주소</div>
-          <div class="personal-info-data">서울시 송파구 잠실동</div>
-          <div id="personal-info-data-postcode">00000</div>
-        </div>
-        <div class="personal-info-list">
-          <div class="personal-info-type">이메일</div>
-          <div class="personal-info-data">boradori@naver.com</div>
-        </div>
-        <div class="personal-info-list">
-          <div class="personal-info-type">전화번호</div>
-          <div class="personal-info-data">010-1234-5678</div>
-        </div>
-        <div class="personal-info-list">
-          <div class="personal-info-type">전문가 인증</div>
-          <div class="personal-info-data">확인 중</div>
-          <form action="" method="" class="form-edit-expert-info">
-            <button id="button-edit-expert-info" onclick="editExpertFile()">
+      <form action="" method="post">
+        <div id="personal-info-container">
+          <div class="personal-info-list">
+            <div class="personal-info-type">ID</div>
+            <div class="personal-info-data">boradori</div>
+          </div>
+          <div class="personal-info-list">
+            <div class="personal-info-type">이름</div>
+            <div class="personal-info-data">전보라</div>
+          </div>
+          <div class="personal-info-list">
+            <div class="personal-info-type">닉네임</div>
+            <div class="personal-info-data">보라도리짱</div>
+          </div>
+          <div class="personal-info-list">
+            <div class="personal-info-type">생년월일</div>
+            <div class="personal-info-data">1995.01.21</div>
+          </div>
+          <div class="personal-info-list">
+            <div class="personal-info-type">성별</div>
+            <div class="personal-info-data">여</div>
+          </div>
+          <div class="personal-info-list">
+            <div class="personal-info-type">주소</div>
+            <div class="personal-info-data">서울시 송파구 잠실동</div>
+            <div id="personal-info-data-postcode">00000</div>
+          </div>
+          <div class="personal-info-list">
+            <div class="personal-info-type">이메일</div>
+            <div class="personal-info-data">boradori@naver.com</div>
+          </div>
+          <div class="personal-info-list">
+            <div class="personal-info-type">전화번호</div>
+            <div class="personal-info-data">010-1234-5678</div>
+          </div>
+          <div class="personal-info-list">
+            <div class="personal-info-type">전문가 인증</div>
+            <div class="personal-info-data">확인 중</div>
+            <button id="button-edit-expert-info" class="form-edit-expert-info" onclick="editExpertFile()">
               수정
             </button>
-          </form>
+          </div>
+          <div class="personal-info-list">
+            <div class="personal-info-type">프로필 사진</div>
+            <div class="personal-info-data">
+              <div id="profile-picture"><img src="../../assets/img/profilePicture/dog.jpg" alt="프로필"></div>
+            </div>
+          </div>
         </div>
-        <div class="personal-info-list">
-          <div class="personal-info-type">프로필 사진</div>
-          <div class="personal-info-data"><div id="profile-picture"><img src="../../assets/img/profilePicture/dog.jpg" alt="프로필"></div></div>
-        </div>
-      </div>
-      <form action="" method="">
         <div id="form-bottom-button">
           <button type="button" name="personalInfoEdit" id="button-edit-user" onclick="editUserInfo()">수정</button>
           <button type="button" name="personalInfoDel" id="button-del-user" onclick="deleteUserInfo()">회원 탈퇴</button>
@@ -86,4 +87,5 @@
   </div>
   <script src="./../../assets/js/mypage/sidemenu.js"></script>
 </body>
+
 </html>
