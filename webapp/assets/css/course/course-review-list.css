@@ -1,0 +1,171 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#header{
+  height: 110px;
+  width: 100%;
+  position: fixed;
+  background-color: #f59d85;
+}
+
+#footer{
+  width: 100%;
+  height: 125px;
+  background-color: #f59d85;
+}
+
+#main-container {
+    width: 1200px;
+    height: 100%;
+    /*알아서 넣기*/
+    background-color: #FFFEF1;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding-top: 110px;
+    height: 100%;
+    width: 100%;
+    background-color: #FFFEF1;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 130px;
+}
+
+button{
+  border-radius: 13px;
+  padding : 0px 20px;
+  height: 40px;
+  background-color: #f59d85;
+  border : 0px;
+}
+
+.font-main{
+  font-size: 18px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color : white;
+}
+
+.font-menu{
+  font-family: "Yeon Sung", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pagetitle{
+  font-size : 30px;
+  color : #F38A6E;
+
+  padding-top : 100px;
+  height: 110px;
+  line-height: 110px;
+  
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.div-review-title{
+  display: flex;
+  background-color: #FFB29D;
+  height: 50px;
+  line-height: 50px;  
+}
+.review-title{
+  text-align: center;
+  width: 50%;
+}
+.review-like,.review-author{
+  text-align: center;
+  width: 10%;
+}
+.review-date{
+  text-align: center;
+  width: 30%;
+}
+
+.div-review-content{
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #f59d85;
+}
+
+.div-review-title > p{
+  font-size: 20px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.div-page {
+    display: flex;
+    justify-content: center;
+}
+
+.div-pagenation {
+    margin-top:50px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.select-find {
+    border-radius: 10px;
+    border: 0px;
+    height: 30px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.input-find {
+    margin-top: 30px;
+    border-radius: 15px;
+    border: 0px;
+    width: 30%;
+    height: 30px;
+    padding: 10px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.button-find {
+    border-radius: 15px;
+    border: 0px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: #FFFEF1;
+}
+
+.button-write {
+    border-radius: 15px;
+    border: 0px;
+    width: 147px;
+    height: 66px;
+    padding: 10px;
+    background-color: #F38A6E;
+    color: white;
+    float: right;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* display: none; */
+}
+
+.button-write:hover {
+    cursor: pointer;
+}
