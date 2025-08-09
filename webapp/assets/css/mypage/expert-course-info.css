@@ -1,0 +1,189 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#header{
+  height: 110px;
+  width: 100%;
+  position: fixed;
+  background-color: #f59d85;
+}
+
+#footer{
+  width: 100%;
+  height: 125px;
+  background-color: #f59d85;
+}
+
+#main-container {
+    width: 1200px;
+    height: 100%;
+    background-color: #FFFEF1;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding-top: 110px;
+    /* height는 컨텐츠에 따라 */
+    height: 1050px; 
+    min-height: calc(100vh - 235px);
+    width: 100%;
+    background-color: #FFFEF1;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button{
+  border-radius: 13px;
+  padding : 0px 20px;
+  height: 50px;
+  background-color: #f59d85;
+  border : 0px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.font-main{
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-menu{
+  font-family: "Yeon Sung", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pagetitle{
+  font-size : 30px;
+  color : #F38A6E;
+
+  padding-top : 100px;
+  height: 110px;
+  line-height: 110px;
+  
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.expert-course-col-type {
+  display: flex;
+  background-color: #FFB29D;
+  height: 50px;
+  line-height: 50px;
+  color : white;
+}
+
+.expert-course-title {
+  padding-left: 15px;
+  text-align: left;
+  width: 70%;
+}
+
+.expert-course-list{
+    background-color: white;
+}
+
+p{
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.expert-course-status,
+.expert-course-count {
+  text-align: center;
+  width: 10%;
+}
+
+.expert-course-date {
+  text-align: center;
+  width: 10%;
+}
+
+.li-expert-course-content {
+  list-style: none;
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #f59d85;
+}
+
+.expert-course-title>p {
+  font-size: 20px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.page-list {
+  display: flex;
+  justify-content: center;
+}
+
+.pagenation {
+  margin-top: 50px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.select-search {
+  border-radius: 10px;
+  border: 1px black solid;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  height: 45px;
+  padding-left: 3px;
+}
+
+.input-search {
+  margin-top: 30px;
+  border-radius: 15px;
+  border: 1px black solid;
+  width: 30%;
+  height: 45px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  padding-left: 3px;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.button-search {
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  padding : 0;
+  position : relative;
+  right : 46px;
+  top : 10px;
+}
+
+.button-search img{
+  width: 100%;
+  height: 100%;
+}
+
+a:hover{
+    text-decoration: underline;
+}

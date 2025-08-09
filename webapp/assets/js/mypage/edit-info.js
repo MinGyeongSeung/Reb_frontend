@@ -13,6 +13,8 @@ const nicknameInputOriginalColor = nicknameInput.style.color;
 const nicknameInputOriginalText = nicknameInput.placeholder;
 const buttonEditNickname = document.querySelector("#button-edit-info-nickname");
 
+
+
 pwFirstInput.addEventListener('change',
     () => {
         checkPassword();
@@ -58,6 +60,10 @@ nicknameInput.addEventListener('focus', () => {
         nicknameInput.value = "";
         nicknameInput.style.color = nicknameInputOriginalColor;
     }
+})
+
+nicknameInput.addEventListener('input', () => {
+    nicknameAlert.style.display = "none";
 })
 
 function editCompleteUserInfo() {
