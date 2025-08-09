@@ -90,29 +90,30 @@ main{
   display: flex;
   align-items: center;
   text-align: center;
+  font-size: 22px;
 }
 
 .main-sponsor-list-number{
   margin: 0 30px;
-  font-size: 22px;
+  font-size: 20px;
   width: 100px;
 }
 
 .main-sponsor-list-id{
   margin: 0 30px;
-  font-size: 22px;
+  font-size: 20px;
   width: 100px;
 }
 
 .main-sponsor-list-nickname{
   margin: 0 30px;
-  font-size: 22px;
+  font-size: 20px;
   width: 100px;
 }
 
 .main-sponsor-list-support{
   margin: 0 30px;
-  font-size: 22px;
+  font-size: 20px;
   width: 310px;
   text-align: end;
 }
@@ -128,6 +129,7 @@ main{
   list-style-type: none;
   text-align: center;
   border-bottom: 3px solid #a7a7a7;
+  line-height: 50px;
 }
 
 #main-page-number{
@@ -170,6 +172,10 @@ main{
 
 #main-search-menu>div>p{
   align-self: center;
+}
+
+#main-search-menu>div>p:first-child{
+  border-bottom: 1px solid black;
 }
 
 #main-search-basic>div>p{

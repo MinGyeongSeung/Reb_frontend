@@ -133,11 +133,11 @@ main{
 }
 .main-course-request-title{
   margin-left: 40px;
-  width: 250px;
+  width: 214px;
   text-align: center;
 }
 .main-course-request-type{
-  width: 74px;
+  width: 110px;
   text-align: center;
 }
 .main-course-request-start{
@@ -200,8 +200,6 @@ main{
 }
 
 #main-search-menu>div{
-  height: 102px;
-  height: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -209,6 +207,11 @@ main{
 
 #main-search-menu>div>p{
   align-self: center;
+}
+
+#main-search-menu>div>p:first-child,
+#main-search-menu>div>p:nth-child(2){
+  border-bottom: 1px solid black;
 }
 
 #main-search-basic>div>p{
