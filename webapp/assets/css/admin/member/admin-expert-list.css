@@ -112,6 +112,7 @@ main {
   font-size: 18px;
   width: 360px;
   text-align: center;
+  margin-right: 10px
 }
 
 .main-expert-list-approval{
@@ -128,7 +129,7 @@ main {
 
 #main-expert-list{
   height: 480px;
-  width: 860px;
+  width: 880px;
 }
 
 #main-expert-list>li{
@@ -165,7 +166,7 @@ main {
 }
 
 .main-expert-list-file{
-  padding: 5px;
+  padding: 5px 0;
 }
 
 .main-expert-list-file>button{
