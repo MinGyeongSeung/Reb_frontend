@@ -107,8 +107,10 @@
 
 .mypage-sidemenubtn-open:hover {
   background-color: #f17553;
+  cursor: pointer;
 }
 
 .mypage-sidemenubtn-close:hover {
   background-color: #f17553;
+  cursor: pointer;
 }
