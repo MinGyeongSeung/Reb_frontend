@@ -112,6 +112,12 @@
 
 .li-subsidemenu a:hover {
   color: #f17553;
+  text-decoration: underline;
+}
+
+.li-subsidemenu button:hover {
+  color: #f17553;
+  text-decoration: underline;
 }
 
 .mypage-sidemenubtn-open:hover {
