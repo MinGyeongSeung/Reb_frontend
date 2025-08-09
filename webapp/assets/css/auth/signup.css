@@ -168,6 +168,11 @@ button {
 
 .p-warning {
   display: none;
+  font-size: 16px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ff0000;
 }
 
 .input-email-first,
