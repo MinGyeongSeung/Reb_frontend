@@ -94,24 +94,28 @@ main {
   font-size: 18px;
   width: 70px;
   text-align: center;
+  align-self: center;
 }
 
 .main-expert-list-id{
   font-size: 18px;
   width: 120px;
   text-align: center;
+  align-self: center;
 }
 
 .main-expert-list-nickname{
   font-size: 18px;
   width: 100px;
   text-align: center;
+  align-self: center;
 }
 
 .main-expert-list-info{
   font-size: 18px;
   width: 360px;
   text-align: center;
+  margin-right: 10px
 }
 
 .main-expert-list-approval{
@@ -128,7 +132,7 @@ main {
 
 #main-expert-list{
   height: 480px;
-  width: 860px;
+  width: 880px;
 }
 
 #main-expert-list>li{
@@ -156,20 +160,20 @@ main {
   color: white;
 }
 
-.main-expert-list-approval>button:first-child{
+.accept{
   background-color: #818181;
 }
 
-.main-expert-list-approval>button:last-child{
+.cancel{
   background-color: #be0000;
 }
 
 .main-expert-list-file{
-  padding: 5px;
+  padding: 5px 0;
 }
 
 .main-expert-list-file>button{
-  background-color: #be0000;
+  background-color: #818181;
   width: 90px;
   height: 35px;
   border: 0;
@@ -252,4 +256,66 @@ form>button>img{
   height: 30px;
   width: 30px;
   border: 0px;
+}
+
+#modal-background{
+  height: 100vh;
+  width: 1205px;
+  background-color: #0000003e;
+  position: absolute;
+  display: none;
+
+}
+
+#cancel-modal{
+  background-color: white;
+  height: 430px;
+  width: 700px;
+  display: flex;
+  border-radius: 20px;
+  transform: translate(40%, 50%);
+}
+
+#cancel-modal>button{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 0;
+  font-size: 20px;
+  color: white;
+  background-color: #818181;
+  transform: translate(140px,20px);
+}
+
+#cancel-modal-in{
+  transform: translate(100px, 70px);
+  height: 350px;
+  width: 500px;
+}
+
+#cancel-modal-in>p{
+  font-size: 25px
+}
+
+#cancel-input{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cancel-input>input{
+  height: 200px;
+  width: 500px;
+  border-radius: 20px;
+}
+
+#submit{
+  background-color: #818181;
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+  border-radius: 7px;
+  transform: translate(0px, 20px);
+  color: white;
 }

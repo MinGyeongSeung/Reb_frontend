@@ -1,0 +1,201 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#header{
+  height: 110px;
+  width: 100%;
+  position: fixed;
+  background-color: #f59d85;
+}
+
+#footer{
+  width: 100%;
+  height: 125px;
+  background-color: #f59d85;
+}
+
+#main-container {
+    width: 1200px;
+    height: 100%;
+    /*알아서 넣기*/
+    background-color: #FFFEF1;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding-top: 110px;
+    height: 100%;
+    width: 100%;
+    background-color: #FFFEF1;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button{
+  border-radius: 20px;
+  width: 110px;
+  height: 55px;
+  background-color: #f59d85;
+  border: 0px;
+  margin: 45px;
+  color: white;
+  font-size: 22px;
+}
+
+.font-main{
+  font-size: 18px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color : white;
+}
+
+.font-menu{
+  font-family: "Yeon Sung", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pagetitle{
+  font-size : 30px;
+  color : #F38A6E;
+  text-align: center;
+  padding-top : 100px;
+  height: 110px;
+  line-height: 110px;
+  
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.p-title {
+  color: #F38A6E;
+  font-size: 36px;
+  text-align: center;
+}
+
+.course-detail-container {
+  background-color: #FFFEF1;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 100%;
+}
+
+.div-detail-area {
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size:18px;
+}
+
+.img-detail {
+  width: 600px;
+  height: 500px;
+}
+
+.div-img {
+  display: flex;
+  justify-content: center;
+}
+
+.div-write-date {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.p-expert-info-title{
+  font-size: 20px;
+  color: #F38A6E;
+}
+.div-expert-detail{
+  margin-top:50px;
+  
+}
+
+.div-expert-detail-button{
+  margin-top:50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.div-expert-info-detail{
+  margin-left : 100px;
+}
+
+.button-cancel{
+  background-color: white;
+  border: 2px solid red;
+  color: red;
+}
+
+#modal-background{
+  height: 100vh;
+  width: 100%;
+  background-color: #0000003e;
+  position: sticky; 
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+#cancel-modal{
+  background-color: white;
+  height: 430px;
+  width: 700px;
+  display: flex;
+  border-radius: 20px;
+}
+
+#cancel-modal>button{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 0;
+  font-size: 20px;
+  color: white;
+  background-color: #818181;
+  transform: translate(90px,-20px);
+}
+
+#cancel-modal-in{
+  transform: translate(100px, 70px);
+  height: 300px;
+  width: 500px;
+}
+
+#cancel-modal-in>p{
+  font-size: 25px
+}
+
+#cancel-input{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cancel-input>input{
+  height: 200px;
+  width: 500px;
+  border-radius: 20px;
+}
+
+#submit{
+  background-color: #818181;
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+  border-radius: 7px;
+  color: white;
+  margin: 20px;
+}
