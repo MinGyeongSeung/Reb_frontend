@@ -45,7 +45,7 @@ button {
   background-color: #f59d85;
   border: 0px;
   font-size: 20px;
-  color:white;
+  color: white;
 }
 
 .font-main {
@@ -188,6 +188,7 @@ button:hover {
 .button-kakao {
   width: 100%;
   background-color: #FEE500;
+  color:black;
 }
 
 .kakao {
@@ -200,7 +201,7 @@ button>.font-menu {
   line-height: 30px;
 }
 
-a{
+a {
   color: #929292;
   text-decoration-line: none;
 }
@@ -215,11 +216,11 @@ a{
   color: #929292;
 }
 
-.div-login-etc>a>p{
+.div-login-etc>a>p {
   color: #929292;
 }
 
-.div-login-etc>a>p:hover{
+.div-login-etc>a>p:hover {
   color: black;
   cursor: pointer;
 }
@@ -229,19 +230,19 @@ a{
   cursor: pointer;
 }
 
-.modal-id-background{
+.modal-id-background {
   height: 100vh;
   width: 100%;
   background-color: #0000003e;
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   align-items: center;
   justify-content: center;
-  display: none;  
+  display: none;
 }
 
-.div-findid-modal{
+.div-findid-modal {
   background-color: #FFFEF1;
   height: 500px;
   width: 700px;
@@ -251,7 +252,7 @@ a{
   flex-direction: column;
 }
 
-.span-modal-title{
+.span-modal-title {
   color: #F38A6E;
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: bold;
@@ -259,7 +260,8 @@ a{
   font-size: 24px;
   text-align: center;
 }
-.input-delete-modal{
+
+.input-delete-modal {
   width: 100%;
   height: 250px;
   font-size: 20px;
@@ -268,7 +270,8 @@ a{
   font-style: normal;
 
 }
-.textarea-delete-modal{
+
+.textarea-delete-modal {
   width: 100%;
   height: 250px;
   font-size: 20px;
@@ -279,32 +282,34 @@ a{
   border-radius: 13px;
 }
 
-.div-modal-head{
+.div-modal-head {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.div-modal-x{
+.div-modal-x {
   text-align: end;
 }
+
 .button-id-x,
-.button-pw-x{
+.button-pw-x {
   background-color: #FFFEF1;
-  color:black;
+  color: black;
 }
-.button-modal-find{
+
+.button-modal-find {
   width: 100%;
   height: 50px;
   font-size: 30px;
   background-color: #F38A6E;
   border-radius: 13px;
   padding: 0px 20px;
-  margin-top:50px;
-  font-size : 20px;
+  margin-top: 50px;
+  font-size: 20px;
   color: white;
 }
 
-.span-modal{
+.span-modal {
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -313,25 +318,26 @@ a{
   text-align: end;
   padding-right: 30px;
   white-space: nowrap;
-  padding-top:10px;
+  padding-top: 10px;
 }
 
 .div-modal-name,
 .div-modal-pn,
-.div-modal-id{
+.div-modal-id {
   display: flex;
   margin: 30px;
   justify-content: space-between;
   align-items: center;
 }
-.div-modal-pn{
+
+.div-modal-pn {
   align-items: flex-start;
   gap: 10px;
 }
 
 .input-modal-name,
 .input-modal-id,
-.input-modal-pn{
+.input-modal-pn {
   border-radius: 15px;
   border: 0px;
   width: 80%;
@@ -343,31 +349,32 @@ a{
   font-style: normal;
 }
 
-.button-injung{
+.button-injung {
   border-radius: 13px;
   padding: 0px 20px;
   height: 45px;
   background-color: #f59d85;
   border: 0px;
   font-size: 14px;
-  color:white;
+  color: white;
   white-space: nowrap;
 }
 
-.div-phone-input{
+.div-phone-input {
   display: flex;
   gap: 10px;
   align-items: center;
-  
+
 }
-.div-phone-input-area{
+
+.div-phone-input-area {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 100%;
 }
 
-.input-modal-pn-injung{
+.input-modal-pn-injung {
   border-radius: 15px;
   border: 0px;
   width: 80%;
@@ -379,31 +386,33 @@ a{
   font-style: normal;
   background-color: #d9d9d9;
 }
-.button-injung-do{
+
+.button-injung-do {
   border-radius: 13px;
   padding: 0px 20px;
   height: 45px;
   background-color: #d9d9d9;
   border: 0px;
   font-size: 14px;
-  color:black;
+  color: black;
   white-space: nowrap;
 }
 
-
-.modal-id-end-background{
+.modal-id-end-background,
+.modal-pw-end-background {
   height: 100vh;
   width: 100%;
   background-color: #0000003e;
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   align-items: center;
   justify-content: center;
-  display: none;  
+  display: none;
 }
 
-.div-findid-end-modal{
+.div-findid-end-modal,
+.div-findpw-end-modal {
   background-color: #FFFEF1;
   height: 500px;
   width: 700px;
@@ -412,41 +421,44 @@ a{
   display: flex;
   flex-direction: column;
 }
-.div-modal-main-findid-end{
+
+.div-modal-main-findid-end {
   height: 284px;
   text-align: center;
 }
-.span-findid-end{
+
+.span-findid-end {
   font-size: 24px;
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-.button-modal-find-end{
+
+.button-modal-find-end {
   width: 100%;
   height: 50px;
   font-size: 30px;
   background-color: #F38A6E;
   border-radius: 13px;
   padding: 0px 20px;
-  margin-top:50px;
-  font-size : 20px;
+  margin-top: 50px;
+  font-size: 20px;
   color: white;
 }
 
-.modal-pw-background{
+.modal-pw-background {
   height: 100vh;
   width: 100%;
   background-color: #0000003e;
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   align-items: center;
   justify-content: center;
-  display: none;  
+  display: none;
 }
 
-.div-findpw-modal{
+.div-findpw-modal {
   background-color: #FFFEF1;
   height: 600px;
   width: 700px;
@@ -454,4 +466,10 @@ a{
   padding: 50px;
   display: flex;
   flex-direction: column;
+}
+
+.kakao-img{
+  width: 30px;
+  height: 20px;
+  background-color: #FEE500;
 }
