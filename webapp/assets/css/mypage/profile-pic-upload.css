@@ -1,0 +1,24 @@
+#profile-pic-upload-middle{
+    display: flex;
+    justify-content: space-around;
+    height: 45px;
+    top:50px;
+    left: 90px;
+    position: relative;
+    line-height: 45px;
+}
+
+#profile-pic-upload-middle label{
+    color : #F38A6E;
+}
+
+#button-profile-pic-search{
+    color: white;
+}
+
+#button-profile-pic-upload{
+    color: white;
+    top: 120px;
+    left: 405px;
+    position: relative;
+}

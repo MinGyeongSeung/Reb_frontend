@@ -36,6 +36,7 @@ const expertFileUpload = "expertFileUpload";
 const profilePicUpload = "profilePicUpload";
 const expertStatus = "expertStatus";
 const expertRejectionReason = "expertRejectionReason";
+const courseRejectionReason = "courseRejectionReason";
 
 function openModal(modalType) {
     
@@ -67,6 +68,14 @@ function openModal(modalType) {
         modalTitle.innerHTML = "전문가 인증 반려 사유"
         
         fetch("./../../app/mypage/expert-rejection-reason.html")
+        .then(response => response.text())
+        .then(data => {
+            modalContent.innerHTML = data;
+            });
+    }else if(courseRejectionReason === modalType){
+        modalTitle.innerHTML = "반려 사유"
+        
+        fetch("./../../app/mypage/course-rejection-reason.html")
         .then(response => response.text())
         .then(data => {
             modalContent.innerHTML = data;
