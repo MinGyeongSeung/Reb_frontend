@@ -2,64 +2,128 @@
   margin: 0;
   padding: 0;
 }
+
 #header {
   height: 110px;
   width: 100%;
   position: fixed;
-  background-color: #FFFACD;
+  background-color: #f59d85;
 }
 
 #footer {
   width: 100%;
   height: 125px;
-  background-color: #FFFACD;
+  background-color: #f59d85;
 }
 
 #main-container {
   width: 1200px;
   height: 100%;
   /*알아서 넣기*/
-  background-color: #3f3b3b;
+  background-color: #FFFEF1;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 main {
   padding-top: 110px;
-  min-height: calc(100vh - 235px);
+  height: 718px;
   width: 100%;
-  background-color: #3F3B3B;
+  background-color: #FFFEF1;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-style: normal;
 }
 
 button {
   border-radius: 13px;
   padding: 0px 20px;
-  height: 40px;
+  height: 50px;
+  background-color: #f59d85;
   border: 0px;
+  font-size: 20px;
 }
 
 .font-main {
-  font-size: 18px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-optical-sizing: auto;
+  font-size: 20px;
+  font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
-  line-height: 50px;
+  color: white;
 }
 
 .font-menu {
   font-family: "Yeon Sung", system-ui;
   font-weight: 400;
   font-style: normal;
+}
+
+.pagetitle {
+  font-size: 30px;
+  color: #F38A6E;
+
+  padding-top: 100px;
+  height: 110px;
+  line-height: 110px;
+
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.button-pw {
+  width: 184px;
+  height: 50px;
+  background-color: #F59D85;
+  border: 0;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.form-pw {
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+  height: 45px;
   line-height: 50px;
 }
 
-label>.font-main{
+.form-pw input {
+  margin: 0px 30px;
+  width: 550px;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 17px;
+}
+
+.label-pw {
+  text-align: right;
+  font-size: 20px;
+
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wrongpw {
+  margin-top: 30px;
+  font-size: 20px;
+  margin-left: 545px;
+  color: red;
+  display: none;
+}
+
+
+label>.font-main {
   width: 100px;
+  line-height: 65px;
+  color: black;
+  padding-right: 15px;
 }
 
 .login-container {
@@ -72,9 +136,11 @@ label>.font-main{
   flex-direction: column;
   text-align: center;
 }
-hr{
+
+hr {
   width: 100%;
 }
+
 .form-login {
   display: flex;
   flex-direction: column;
@@ -91,30 +157,35 @@ hr{
   width: 100%;
 }
 
-input{
+.div-id>label,
+.div-pw>label {
+  text-align: end;
+}
+
+
+input {
   border-radius: 15px;
   border: 0px;
   width: 80%;
-  height: 30px;
+  height: 45px;
   padding: 10px;
   font-size: 18px;
 }
 
-button {
-  width: 500px;
-}
 
 button:hover {
   cursor: pointer;
 }
 
 .button-basic {
+  width: 100%;
   margin: 20px;
   background-color: #f59d85;
   color: white;
 }
 
 .button-kakao {
+  width: 100%;
   background-color: #FEE500;
 }
 
@@ -139,6 +210,10 @@ a {
   justify-content: space-around;
 }
 
-a:hover {
+.div-login-etc>a {
+  color: #929292;
+}
+
+.div-login-etc>a:hover {
   color: black;
 }
