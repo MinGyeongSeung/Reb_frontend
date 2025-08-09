@@ -254,3 +254,12 @@ form>button>img{
   width: 30px;
   border: 0px;
 }
+
+#modal-background{
+  height: 100vh;
+  width: 1205px;
+  background-color: #0000003e;
+  position: fixed;
+  z-index: 3;
+  display: none;
+}
