@@ -14,12 +14,25 @@
     rel="stylesheet">
 </head>
 
-<body class="font-menu">
+
   <header>
     <section id="header-admin-expert">
       <p><strong>전문가 승인 목록</strong></p>
     </section>
   </header>
+  <body class="font-menu">
+  <div id="modal-background">
+    <div id="cancel-modal">
+      <div id="cancel-modal-in">
+        <p>전문가 승인 반려/승인 취소 사유</p>
+        <form action="" method="get" id="cancel-input">
+          <input type="text" name="modal" placeholder="사유 입력">
+          <button type="button" id="submit">등록</button>
+        </form>
+      </div>
+      <button type="button">X</button>
+    </div>
+  </div>
   <main>
     <section id="main-admin-list-menu">
       <ul id="main-admin-list">
@@ -84,11 +97,43 @@
             <p>[핸드폰 번호] 010-7652-8846</p>
           </div>
           <div class="main-expert-list-approval">
-            <button type="button" >승인</button>
-            <button type="button" >반려</button>
+            <button type="button" class="accept">승인</button>
+            <button type="button" class="cancel">반려</button>
           </div>
           <div class="main-expert-list-file">
-            <button>다운로드</button>
+            <button type="button" class="file">다운로드</button>
+          </div>
+        </li>
+        <li>
+          <p class="main-expert-list-status">확인중</p>
+          <p class="main-expert-list-id">gildong123</p>
+          <p class="main-expert-list-nickname">gildong123</p>
+          <div class="main-expert-list-info">
+            <p>[주소] 서울 특별시 동작구 대방동 27길 65 202호</p>
+            <p>[핸드폰 번호] 010-7652-8846</p>
+          </div>
+          <div class="main-expert-list-approval">
+            <button type="button" class="accept">승인</button>
+            <button type="button" class="cancel">반려</button>
+          </div>
+          <div class="main-expert-list-file">
+            <button type="button" class="file">다운로드</button>
+          </div>
+        </li>
+        <li>
+          <p class="main-expert-list-status">확인중</p>
+          <p class="main-expert-list-id">gildong123</p>
+          <p class="main-expert-list-nickname">gildong123</p>
+          <div class="main-expert-list-info">
+            <p>[주소] 서울 특별시 동작구 대방동 27길 65 202호</p>
+            <p>[핸드폰 번호] 010-7652-8846</p>
+          </div>
+          <div class="main-expert-list-approval">
+            <button type="button" class="accept">승인</button>
+            <button type="button" class="cancel">반려</button>
+          </div>
+          <div class="main-expert-list-file">
+            <button type="button" class="file">다운로드</button>
           </div>
         </li>
       </ul>
@@ -107,9 +152,7 @@
             <p>▼아이디</p>
             <div id="main-search-menu">
               <div>
-                <p>회원번호</p>
                 <p>닉네임</p>
-                <p>회원 유형</p>
               </div>
             </div>
           </div>
@@ -120,7 +163,8 @@
         </form>
       </div>
     </section>
-      </main>
+  </main>
+  
 </body>
 
 </html>
