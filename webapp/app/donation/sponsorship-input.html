@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./../../assets/css/donation/sponsorship-input.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&family=Yeon+Sung&display=swap"
+    rel="stylesheet">
+  <script defer src="./../../assets/js/donation/sponsorship-input.js"></script>
+  <title>틈새빛</title>
+</head>
+<body>
+  <div id="header">
+  </div>
+  <main>
+    <div id="main-container">
+      <div class="pagetitle">함께 해주셔서 감사합니다</div>
+      <section class="sponsorship-input-section-content">
+        <form action="">
+          <div id="choose-money">
+            <div id="choose-money-label" class="font-main">후원금액</div>
+            <div id="money-buttons">
+              <button class="div-money-button font-main">10,000원</button>
+              <button class="div-money-button font-main">30,000원</button>
+              <button class="div-money-button font-main">50,000원</button>
+            </div>
+            <div id="money-input-text font-main">
+                <input type="text" id="input-donation-money" name="donationMoney" class="font-main" placeholder="직접 금액 입력"><div class="font-main">원</div>
+            </div>
+          </div>
+          <div id="sponsorship-bottom" class="font-main">
+            <button type="button" id="button-ok-donation" name="donationBtn" onclick="movePage('sponsorship-complete.html')">확인</button>
+            <button type="button" id="button-cancle-donation" name="donationCancelBtn" onclick="movePage('./../../main.html')">취소</button>  
+        </div>
+        </form>
+      </section>
+    </div>
+  </main>
+  <div id="footer">
+  </div>
+</body>
+
+</html>
