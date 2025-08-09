@@ -8,11 +8,11 @@
     line-height: 45px;
 }
 
-#profile-pic-upload-middle label{
-    color : #F38A6E;
+#label-profile-pic{
+    color:  #F38A6E;
 }
 
-#button-profile-pic-search{
+#input-profile-pic-search{
     display: none;
 }
 
