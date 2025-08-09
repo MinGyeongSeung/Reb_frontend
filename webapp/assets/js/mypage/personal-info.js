@@ -1,3 +1,13 @@
+const expertStatusText = document.querySelector("#personal-info-expert-status");
+
+if(expertStatusText.innerHTML === "반려"){
+    expertStatusText.style.cursor = "pointer";
+    expertStatusText.style.textDecoration = "underline";
+    expertStatusText.addEventListener('click', ()=>{
+        openModal("expertRejectionReason");
+    })
+}
+
 function editUserInfo() {
     location.href = "edit-info.html";
     location.replace(link);
