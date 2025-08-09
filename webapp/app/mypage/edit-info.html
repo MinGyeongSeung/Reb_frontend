@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./../../assets/css/mypage/edit-info.css">
   <link rel="stylesheet" href="./../../assets/css/mypage/sidemenu.css">
+  <link rel="stylesheet" href="./../../assets/css/mypage/mypage-modal.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&display=swap"
@@ -16,13 +18,18 @@
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&family=Yeon+Sung&display=swap"
     rel="stylesheet">
   <script defer src="./../../assets/js/mypage/edit-info.js"></script>
+
+
   <title>틈새빛</title>
 </head>
 
 <body>
+
   <div id="header">
   </div>
   <main>
+    <div class="mypage-modal">
+    </div>
     <aside id="mypage-sidemenu-container">
     </aside>
     <div id="main-container">
@@ -37,12 +44,12 @@
             <div class="edit-info-type">비밀번호</div>
             <div class="edit-info-data edit-info-input-two-row">
               <div id="password-first-input">
-                <input type="password" name="editInfoPw" placeholder="패스워드 입력">
+                <input type="password" name="editInfoPw" id="input-password-first" placeholder="패스워드 입력">
                 <div class="edit-info-pw-warning" id="edit-info-pw-first-warning">숫자, 특수 문자(!,@,#,$), 문자 조합<br>8문자 이상 입력
                   필요</div>
               </div>
               <div id="password-re-input">
-                <input type="password" name="editInfoPwRe" placeholder="패스워드 재입력">
+                <input type="password" name="editInfoPwRe" id="input-password-re" placeholder="패스워드 재입력">
                 <div class="edit-info-pw-warning" id="edit-info-pw-re-warning">비밀번호 불일치</div>
               </div>
             </div>
@@ -54,8 +61,10 @@
           <div class="edit-info-list">
             <div class="edit-info-type">닉네임</div>
             <div class="edit-info-data">
-              <input type="text" id="edit-info-nickname" name="editInfoNicname" placeholder="닉네임">
-              <button type="button" name="editInfoNicname" value="edit-info-nickname">중복 확인</button>
+              <input type="text" id="input-edit-info-nickname" name="editInfoNicname" placeholder="닉네임">
+              <div id="possible-nickname-text">사용 가능</div>
+              <button type="button" name="editInfoNicname" id="button-edit-info-nickname" value="edit-info-nickname">중복
+                확인</button>
             </div>
           </div>
           <div class="edit-info-list">
@@ -66,12 +75,12 @@
             <div class="edit-info-type">성별</div>
             <div class="edit-info-data">여</div>
           </div>
-          <div class="edit-info-list  edit-info-two-row">
+          <div class="edit-info-list edit-info-two-row">
             <div class="edit-info-type">실거주지</div>
             <div class="edit-info-data edit-info-input-two-row">
               <div id="edit-info-address-main">
                 <div id="edit-info-address-text">
-                  우편번호 기준 주소지
+                  서울시 송파구 잠실동
                 </div>
                 <div id="edit-info-address-post">
                   00000
@@ -91,13 +100,13 @@
           </div>
           <div class="edit-info-list">
             <div class="edit-info-type">전화번호</div>
-            <div class="edit-info-data"></div>
+            <div class="edit-info-data">010-1234-5678</div>
           </div>
           <div class="edit-info-list">
             <div class="edit-info-type">전문가 인증</div>
             <div class="edit-info-data">
               <div id="edit-info-expert-status">확인 중</div>
-              <button name="editExpertFile" id="button-edit-expert-info">수정</button>
+              <button type="button" name="editExpertFile" class="button-modal-open" id="button-edit-expert-info">수정</button>
             </div>
           </div>
           <div class="edit-info-list">
@@ -105,15 +114,15 @@
             <div class="edit-info-data">
               <div id="profile-picture"><img id="img-edit-profile-pic" src="../../assets/img/profilePicture/dog.jpg"
                   alt="프로필"></div>
-              <button id="button-edit-profile-pic" name="editProfilePic">수정</button>
+              <button type="button" id="button-edit-profile-pic" class="button-modal-open" name="editProfilePic">수정</button>
             </div>
           </div>
         </div>
-        <div id="form-bottom-button">
+        <div id="bottom-button">
           <button type="button" name="personalInfoEdit" id="button-edit-user-complete"
-            onclick="editUserInfo()">수정</button>
+            onclick="editCompleteUserInfo()">수정</button>
           <button type="button" name="personalInfoDel" id="button-edit-user-cancel"
-            onclick="deleteUserInfo()">취소</button>
+            onclick="cacelEditUserInfo()">취소</button>
         </div>
       </form>
     </div>
@@ -121,6 +130,8 @@
   <div id="footer">
   </div>
   <script src="./../../assets/js/mypage/sidemenu.js"></script>
+  <script src="./../../assets/js/mypage/mypage-modal.js"></script>
+
 </body>
 
 </html>

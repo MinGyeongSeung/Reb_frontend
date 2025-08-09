@@ -1,0 +1,33 @@
+.mypage-modal{
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.582);
+    z-index: 2;
+    position: fixed;
+    display: none;
+}
+
+.button-modal-close{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 30%;
+    top : 20px;
+    left: 930px;
+    background-color: #F59D85;
+    line-height: 45px;
+    text-align: center;
+    font-size: 30px;
+    color : white;
+    cursor: pointer;
+}
+
+.window-modal{
+    margin : auto;
+    margin-top: 300px;
+    height: 500px;
+    width : 1000px;
+    border-radius: 15px;
+    background-color: #FFFACD;
+}
