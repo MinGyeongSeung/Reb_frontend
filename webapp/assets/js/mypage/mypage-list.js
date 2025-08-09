@@ -10,7 +10,10 @@ window.addEventListener('DOMContentLoaded', () => {
                 const listPageTitle = item.querySelector('.pagetitle');
                 const listColType = item.querySelector('.list-col-type');
                 const listContentList = item.querySelectorAll('.li-content');
-                inputList(listPageTitle, listColType, listContentList,  item.getAttribute("id"));
+                const searchTypeFirst = item.querySelectorAll('.search-type-first');
+                const searchTypeSecond = item.querySelectorAll('.search-type-second');
+
+                inputList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, item.getAttribute("id"));
             });
         });
 })
@@ -68,24 +71,27 @@ const myComments = new ListInfo(
     ]
 );
 
-function inputList(listPageTitle, listColType, listContentList,  id){
+function inputList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, id){
     if(id === "my-courses-routine")
-        loadList(listPageTitle, listColType, listContentList, id, myRoutine);
+        loadList(listPageTitle, listColType, listContentList,searchTypeFirst, searchTypeSecond, id, myRoutine);
     else if(id === "my-courses-courses")
-        loadList(listPageTitle, listColType, listContentList, id, myCourse);
+        loadList(listPageTitle, listColType, listContentList,searchTypeFirst, searchTypeSecond, id, myCourse);
     else if(id === "my-post")
-        loadList(listPageTitle, listColType, listContentList, id, myPosts);
+        loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond,id, myPosts);
     else if(id === "my-comment")
-        loadList(listPageTitle, listColType, listContentList, id, myComments);
+        loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, id, myComments);
 }
 
-function loadList(listPageTitle, listColType, listContentList, id, listInfo){
+function loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, id, listInfo){
     listPageTitle.innerHTML = listInfo.title;
 
     listColType.querySelector('.list-title').innerHTML = listInfo.colText['title'];
     listColType.querySelector('.list-user-name').innerHTML = listInfo.colText.userName;
     listColType.querySelector('.list-date').innerHTML = listInfo.colText.date;
     
+    searchTypeFirst.innerHTML = listInfo.colText['title'];
+    searchTypeSecond.innerHTML = listInfo.colText.userName;
+
     let count = 0;
 
     listContentList.forEach((e)=>
