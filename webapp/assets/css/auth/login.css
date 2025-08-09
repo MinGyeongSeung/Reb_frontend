@@ -308,7 +308,8 @@ a {
 }
 
 .div-modal-name,
-.div-modal-pn{
+.div-modal-pn,
+.div-modal-id{
   display: flex;
   margin: 30px;
   justify-content: space-between;
@@ -319,17 +320,8 @@ a {
   gap: 10px;
 }
 
-.input-modal-name{
-  border-radius: 15px;
-  border: 0px;
-  width: 80%;
-  height: 45px;
-  padding: 10px;
-  font-size: 18px;
-  font-family: "IBM Plex Sans KR", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+.input-modal-name,
+.input-modal-id,
 .input-modal-pn{
   border-radius: 15px;
   border: 0px;
@@ -399,7 +391,7 @@ a {
   left: 0;
   align-items: center;
   justify-content: center;
-  display: flex;  
+  display: none;  
 }
 
 .div-findid-end-modal{
@@ -442,12 +434,12 @@ a {
   left: 0;
   align-items: center;
   justify-content: center;
-  display: flex;  
+  display: none;  
 }
 
 .div-findpw-modal{
   background-color: #FFFEF1;
-  height: 500px;
+  height: 600px;
   width: 700px;
   border-radius: 20px;
   padding: 50px;
