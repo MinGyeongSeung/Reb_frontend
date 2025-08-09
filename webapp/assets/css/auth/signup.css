@@ -1,57 +1,56 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Yeon Sung", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 50px;
 }
 
 #header {
   height: 110px;
   width: 100%;
   position: fixed;
-  background-color: #FFFACD;
+  background-color: #f59d85;
 }
 
 #footer {
   width: 100%;
   height: 125px;
-  background-color: #FFFACD;
+  background-color: #f59d85;
 }
 
 #main-container {
   width: 1200px;
   height: 100%;
   /*알아서 넣기*/
-  background-color: #3F3B3B;
+  background-color: #FFFEF1;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 main {
   padding-top: 110px;
-  min-height: calc(100vh - 235px);
+  height: 100%;
   width: 100%;
-  background-color: #3F3B3B;
+  background-color: #FFFEF1;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 button {
   border-radius: 13px;
   padding: 0px 20px;
-  height: 40px;
+  height: 50px;
   background-color: #f59d85;
   border: 0px;
+  font-size: 20px;
 }
 
 .font-main {
-  font-size: 18px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-optical-sizing: auto;
+  font-size: 20px;
+  font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: white;
@@ -63,10 +62,24 @@ button {
   font-style: normal;
 }
 
+.pagetitle {
+  font-size: 30px;
+  color: #F38A6E;
+
+  padding-top: 100px;
+  height: 110px;
+  line-height: 110px;
+
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 
 .signup-container {
   width: 800px;
-  height: 1300px;
+  height: 100%;
   background-color: #FFFACD;
   display: flex;
   align-items: center;
@@ -110,22 +123,25 @@ button {
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;
+  align-items: center;
 }
 
 .input-basic {
   border-radius: 15px;
   border: 0px;
   width: 80%;
-  height: 30px;
   padding: 10px;
   text-align: center;
+  font-size: 18px;
+  height: 45px;
 }
 
 .input-address-basic {
   border-radius: 15px;
   border: 0px;
   width: 80%;
-  height: 15px;
+  font-size: 18px;
+  height: 45px;
   padding: 10px;
   text-align: center;
 }
@@ -133,8 +149,9 @@ button {
 .input-address-add {
   border-radius: 15px;
   border: 0px;
-  width: 64%;
-  height: 15px;
+  width: 60%;
+  font-size: 18px;
+  height: 45px;
   padding: 10px;
   text-align: center;
 }
@@ -143,6 +160,10 @@ button {
   line-height: 50px;
   width: 100px;
   text-align: end;
+  font-size: 20px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .p-warning {
@@ -154,12 +175,25 @@ button {
   border-radius: 15px;
   border: 0px;
   width: 30%;
-  height: 30px;
+  font-size: 14px;
+  height: 45px;
   padding: 10px;
   text-align: center;
 }
 
+.input-email-first {
+  margin-right: 10px;
+}
+
+.input-email-end {
+  margin-left: 10px;
+}
+
 .span-email-at {
+  font-size: 20px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   line-height: 50px;
 }
 
@@ -173,7 +207,8 @@ button {
   border-radius: 15px;
   border: 0px;
   width: 30%;
-  height: 50px;
+  font-size: 12px;
+  height: 60px;
 }
 
 .div-signup-radio {
@@ -199,11 +234,13 @@ button {
   color: white;
 }
 
+
 .input-cert {
   border-radius: 15px;
   border: 0px;
   width: 80%;
-  height: 30px;
+  font-size: 18px;
+  height: 45px;
   padding: 10px;
   text-align: center;
   background-color: #d9d9d9;
