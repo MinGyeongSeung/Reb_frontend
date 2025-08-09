@@ -110,7 +110,8 @@ main {
 
 .main-expert-list-info{
   font-size: 18px;
-  width: 370px;
+  width: 360px;
+  text-align: center;
 }
 
 .main-expert-list-approval{
@@ -125,14 +126,31 @@ main {
   text-align: center;
 }
 
+#main-expert-list{
+  height: 480px;
+  width: 860px;
+}
+
 #main-expert-list>li{
   list-style-type: none;
   display: flex;
+  padding: 0 5px;
+  height: 45px;
+}
+
+#main-expert-list>li>div>p{
+  margin: 0 10px;
+  font-size: 14px;
+  float: left;
+}
+
+.main-expert-list-approval{
+  padding: 5px;
 }
 
 .main-expert-list-approval>button{
   width: 40px;
-  height: 40px;
+  height: 35px;
   border-radius: 8px;
   border: 0;
   color: white;
@@ -143,5 +161,95 @@ main {
 }
 
 .main-expert-list-approval>button:last-child{
-  background-color: #d20000;
+  background-color: #be0000;
+}
+
+.main-expert-list-file{
+  padding: 5px;
+}
+
+.main-expert-list-file>button{
+  background-color: #be0000;
+  width: 90px;
+  height: 35px;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+}
+
+#main-page-number{
+  display: flex;
+  width: 370px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#main-page-number>a{
+  margin: 0 28px;
+  text-decoration: none;
+  color: black;
+}
+
+#main-search{
+  height: 45px;
+  width: 840px;
+  font-size: 20px;
+  display: flex;
+  align-self: start;
+  margin: 30px 28px;
+}
+
+#main-search-basic>div{
+  border: 1px solid black;
+  border-radius: 12px;
+}
+
+
+#main-search-menu{
+  display: none;
+}
+
+#main-search-menu>div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-search-menu>div>p{
+  align-self: center;
+}
+
+#main-search-basic>div>p{
+  height: 45px;
+  width: 102px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-search-input{
+  width: 370px;
+  height: 45px;
+  border-radius: 10px;
+  margin: 0 5px;
+  border: 1px solid black;
+}
+
+form{
+  display: flex;
+  align-items: center;
+}
+
+form>button{
+  background-color: white;
+  border: 0;
+  transform: translateX(-40px);
+}
+
+form>button>img{
+  height: 30px;
+  width: 30px;
+  border: 0px;
 }
