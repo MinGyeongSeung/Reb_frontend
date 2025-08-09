@@ -19,7 +19,7 @@
     <section id="header-admin-course">
       <p><strong>수업 목록</strong></p>
     </section>
-    <section id="header-admin-course-request">
+    <section id="header-admin-course-list">
       <ul>
         <li>
           <a href="./../course/admin-course-request-list.html">
@@ -81,9 +81,68 @@
       </ul>
     </section>
     <section id="main-course">
-      
+      <div id="main-course-list-title">
+        <p class="main-course-number">회원번호</p>
+        <p class="main-course-id">아이디</p>
+        <p class="main-course-nickname">닉네임</p>
+        <p class="main-course-title">제목</p>
+        <p class="main-course-type">개강 여부</p>
+        <p class="main-course-start">시작 기간</p>
+        <p class="main-course-end">종료 기간</p>
+      </div>
+      <ul id="main-course-list">
+        <li class="main-must-read">
+          <a href="./admin-course-detail.html" class="main-course-link">
+            <p class="main-course-number">123123</p>
+            <p class="main-course-id">gildong123</p>
+            <p class="main-course-nickname">길동이에유</p>
+            <p class="main-course-title">웹 보안 수업 개설</p>
+            <p class="main-course-type">개강</p>
+            <p class="main-course-start">2025-07-01</p>
+            <p class="main-course-end">2025-08-01</p>
+          </a>
+        </li>
+        <li class="main-must-read">
+          <a href="./admin-course-detail.html" class="main-course-link">
+            <p class="main-course-number">123123</p>
+            <p class="main-course-id">gildong123</p>
+            <p class="main-course-nickname">길동이에유</p>
+            <p class="main-course-title">웹 보안 수업 개설</p>
+            <p class="main-course-type">종강</p>
+            <p class="main-course-start">2025-07-01</p>
+            <p class="main-course-end">2025-08-01</p>
+          </a>
+        </li>
+      </ul>
+      <div id="main-page-number">
+        <p>&lt</p>
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+        <p>&gt</p>
+      </div>
+      <div id="main-search">
+        <div id="main-search-basic">
+          <div>
+            <p>▼제목</p>
+            <div id="main-search-menu">
+              <div>
+                <p>회원번호</p>
+                <p>아이디</p>
+                <p>닉네임</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form action="" method="">
+          <input type="text" id="main-search-input">
+          <button><img src="./../../../assets/img/search.jpg" alt="돋보기"></button>
+        </form>
+      </div>
     </section>
-      </main>
+  </main>
 </body>
 
 </html>

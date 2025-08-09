@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./../../../assets/css/admin/banner/admin-banner-list.css">
+  <script defer src="./../../../assets/js/admin/banner/admin-banner-list.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&family=Yeon+Sung&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="font-menu">
+  <header>
+    <section id="header-admin-sponsor">
+      <p><strong>배너 등록</strong></p>
+    </section>
+  </header>
+  <main>
+    <section id="main-admin-list-menu">
+      <ul id="main-admin-list">
+        <li>
+          <a href="./../notice/admin-notice-list.html">
+            공지 사항 목록
+          </a>
+        </li>
+        <li>
+          <a href="./../course/admin-course-request-list.html">
+            수업 목록
+          </a>
+        </li>
+        <li>
+          <a href="./../routine/admin-routine-list.html">
+            루틴 모임 목록
+          </a>
+        </li>
+        <li>
+          <a href="./../member/admin-member-list.html">
+            회원 목록
+          </a>
+        </li>
+        <li>
+          <a href="./../member/admin-sponsor-list.html">
+            후원자 목록
+          </a>
+        </li>
+        <li>
+          <a href="./../member/admin-expert-list.html">
+            전문가 승인 목록
+          </a>
+        </li>
+        <li>
+          <a href="./../review/admin-routine-review-list.html">
+            활동 후기
+          </a>
+        </li>
+        <li>
+          <a href="./../banner/admin-banner-list.html">
+            <strong>배너 등록</strong>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section id="main-sponsor">
+      <div class="main-banner-title">
+        <div class="main-banner-up-down"></div>
+        <p class="main-banner-number">번호</p>
+        <p class="main-banner-name">배너명</p>
+        <p class="main-banner-image">이미지 명</p>
+        <div class="main-banner-delete"></div>
+      </div>
+      <ul id="main-banner-list">
+        <li>
+          <div class="main-banner-up-down">
+            <form action="" method="get">
+              <button class="up">▲</button>
+              <button class="down">▼</button>
+            </form>
+          </div>
+          <p class="main-banner-number">1</p>
+          <p class="main-banner-name">환영 인사</p>
+          <p class="main-banner-image">인사이미지.jpg</p>
+          <div class="main-banner-delete">
+            <form action="" method="get">
+              <button class="delete">삭제</button>
+            </form>
+          </div>
+        </li>
+      </ul>
+
+      <form action="" get="">
+        <a href="./admin-banner-create.html">
+          <button id="main-banner-add">추가</button>
+        </a>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
