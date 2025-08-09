@@ -37,6 +37,7 @@ header {
 }
 
 main{
+  height: 100vh;
   display: flex;
   position: relative;
   top: 80px;
@@ -44,6 +45,7 @@ main{
 
 #main-admin-list-menu{
   background-color: #d9d9d9;
+  height: 100vh;
   width: 310px;
   position: fixed;
   transform: translate(-155px, -80px);

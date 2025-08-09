@@ -26,21 +26,21 @@ header {
 }
 
 #header-admin-course>p{
+  font-size: 20px;
   margin : 0 30px;
 } 
 
-#header-admin-course{
+#header-admin-course {
   background-color: #bebebe;
   height: 80px;
   width: 895px;
-  font-size: 20px;
   line-height: 80px;
 }
 
 #header-admin-course-request{
   background-color: #d9d9d9;
   height: 42px;
-  display: flex;
+  display:flex;
   align-items: center;
 }
 
@@ -60,14 +60,15 @@ header {
 }
 
 main{
+  height: 100vh;
   display: flex;
   position: relative;
   top: 80px;
-
 }
 
 #main-admin-list-menu{
   background-color: #d9d9d9;
+  height: 100vh;
   width: 310px;
   position: fixed;
   transform: translate(-155px, -80px);
@@ -92,9 +93,9 @@ main{
   color: black;
 }
 
+
 #main-course-request{
   background-color: white;
-  height: 91vh;
   width: 895px;
   display: flex;
   flex-direction: column;
