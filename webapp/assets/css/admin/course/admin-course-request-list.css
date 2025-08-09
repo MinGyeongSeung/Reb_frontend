@@ -102,14 +102,8 @@ main{
   transform: translateX(155px);
 }
 
-#main-course-request-list{
-  width: 875px;
+#main-course-request-list-title{
   margin-top: 100px;
-  font-size: 14px;
-  height: 495px;
-}
-
-#main-course-request-list>div{
   background-color: #d9d9d9;
   display: flex;
   height: 45px;
@@ -117,6 +111,11 @@ main{
   padding: 0 10px;
 }
 
+#main-course-request-list{
+  width: 875px;
+  font-size: 14px;
+  height: 430px;
+}
 
 .main-course-request-number{
   width: 70px;
@@ -169,6 +168,7 @@ main{
 }
 
 #main-page-number{
+  margin-top: 20px;
   display: flex;
   width: 370px;
   font-size: 20px;

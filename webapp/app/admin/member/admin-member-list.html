@@ -14,9 +14,8 @@
 
 <body class="font-menu">
   <header>
-    <section id="header-garbage"></section>
-    <section id="header-admin-notice">
-      <p>공지사항 목록</p>
+    <section id="header-admin-member">
+      <p><strong>회원 목록</strong></p>
     </section>
   </header>
   <main>
@@ -24,7 +23,7 @@
       <ul id="main-admin-list">
         <li>
           <a href="./../notice/admin-notice-list.html">
-            <strong>공지 사항 목록</strong>
+            공지 사항 목록
           </a>
         </li>
         <li>
@@ -39,7 +38,7 @@
         </li>
         <li>
           <a href="./../member/admin-member-list.html">
-            회원 목록
+            <strong>회원 목록</strong>
           </a>
         </li>
         <li>
@@ -64,15 +63,25 @@
         </li>
       </ul>
     </section>
-    <section id="main-notice">
-      <ul id="main-admin-member-list-title">
-        <div>
-          <p class="main-admin-member-list-number">회원 번호</p>
-          <p class="main-admin-member-list-id">아이디</p>
-          <p class="main-admin-member-list-nickname">닉네임</p>
-          <p class="main-admin-member-list-info">인적사항</p>
-          <p class="main-admin-member-list-type">회원 유형</p>
-        </div>
+    <section id="main-member">
+      <div id="main-admin-member-list-title">
+        <p class="main-admin-member-list-number">회원 번호</p>
+        <p class="main-admin-member-list-id">아이디</p>
+        <p class="main-admin-member-list-nickname">닉네임</p>
+        <p class="main-admin-member-list-info">인적사항</p>
+        <p class="main-admin-member-list-type">회원 유형</p>
+      </div>
+      <ul id="main-admin-member-list">
+        <li>
+          <p class="main-admin-member-list-number">123123</p>
+          <p class="main-admin-member-list-id">gildong123</p>
+          <p class="main-admin-member-list-nickname">돌굴러가유</p>
+          <div class="main-admin-member-list-info-li">
+            <p>[주소] 서울특별시 동작구 대방동 27길 65 202호</p>
+            <p>[핸드폰 번호] 010-7652-8846</p>
+          </div>
+          <p class="main-admin-member-list-type">일반인</p>
+        </li>
         <li>
           <p class="main-admin-member-list-number">123123</p>
           <p class="main-admin-member-list-id">gildong123</p>
@@ -96,12 +105,12 @@
       <div id="main-search">
         <div id="main-search-basic">
           <div>
-            <p>▼제목</p>
+            <p>▼아이디</p>
             <div id="main-search-menu">
               <div>
                 <p>회원번호</p>
-                <p>아이디</p>
                 <p>닉네임</p>
+                <p>회원 유형</p>
               </div>
             </div>
           </div>

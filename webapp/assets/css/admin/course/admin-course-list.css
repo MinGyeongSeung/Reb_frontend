@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.font-menu {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #757575;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  margin: auto;
+  position: fixed;
+  transform: translateX(155px);
+  flex-direction: column;
+  z-index: 2;
+}
+
+#header-admin-course>p{
+  font-size: 20px;
+  margin : 0 30px;
+} 
+
+#header-admin-course {
+  background-color: #bebebe;
+  height: 80px;
+  width: 895px;
+	line-height: 80px;
+}
+
+#header-admin-course-request{
+  background-color: #d9d9d9;
+  height: 42px;
+  display: flex;
+  align-items: center;
+}
+
+#header-admin-course-request>ul{
+  display: flex;
+  margin: 0 10px;
+  list-style-type: none;
+}
+
+#header-admin-course-request>ul>li{
+  margin: 0 20px;
+}
+
+#header-admin-course-request>ul>li>a{
+  text-decoration: none;
+  color: black;
+}
+
+main{
+  display: flex;
+  position: relative;
+  top: 80px;
+}
+
+#main-admin-list-menu{
+  background-color: #d9d9d9;
+  width: 310px;
+  position: fixed;
+  transform: translate(-155px, -80px);
+}
+
+#main-admin-list{
+  margin: 150px 55px;
+  width: 200px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-admin-list>li{
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+#main-admin-list>li>a{
+  text-decoration: none;
+  color: black;
+}
+
+#main-course{
+  background-color: white;
+  width: 895px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(155px);
+}
+
+
+
+
+
+
