@@ -1,7 +1,3 @@
-function editExpertFile() {
-
-}
-
 function editUserInfo() {
     location.href = "edit-info.html";
     location.replace(link);
