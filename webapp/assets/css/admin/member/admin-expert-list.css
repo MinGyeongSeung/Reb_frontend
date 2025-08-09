@@ -24,33 +24,34 @@ header {
   z-index: 2;
 }
 
-#header-admin-expert>p{
+#header-admin-expert>p {
   font-size: 20px;
-  margin : 0 30px;
-} 
+  margin: 0 30px;
+}
 
-#header-admin-expert{
+#header-admin-expert {
   background-color: #bebebe;
   height: 80px;
   width: 895px;
   line-height: 80px;
 }
 
-main{
+main {
   background-color: white;
   display: flex;
   position: relative;
   top: 80px;
+  height: 100vh;
 }
 
-#main-admin-list-menu{
+#main-admin-list-menu {
   background-color: #d9d9d9;
   width: 310px;
   position: fixed;
   transform: translate(-155px, -80px);
 }
 
-#main-admin-list{
+#main-admin-list {
   margin: 150px 55px;
   width: 200px;
   list-style-type: none;
@@ -59,17 +60,17 @@ main{
   align-items: center;
 }
 
-#main-admin-list>li{
+#main-admin-list>li {
   font-size: 20px;
   margin: 30px 0;
 }
 
-#main-admin-list>li>a{
+#main-admin-list>li>a {
   text-decoration: none;
   color: black;
 }
 
-#main-expert{
+#main-expert {
   background-color: white;
   width: 895px;
   display: flex;
@@ -78,8 +79,69 @@ main{
   transform: translateX(155px);
 }
 
+#main-expert-list-title {
+  background-color: #bebebe;
+  margin-top: 100px;
+  display: flex;
+  height: 45px;
+  width: 860px;
+  font-size: 18px;
+  align-items: center;
+  padding: 0 10px;
+}
 
+.main-expert-list-status{
+  font-size: 18px;
+  width: 70px;
+  text-align: center;
+}
 
+.main-expert-list-id{
+  font-size: 18px;
+  width: 120px;
+  text-align: center;
+}
 
+.main-expert-list-nickname{
+  font-size: 18px;
+  width: 100px;
+  text-align: center;
+}
 
+.main-expert-list-info{
+  font-size: 18px;
+  width: 370px;
+}
 
+.main-expert-list-approval{
+  font-size: 18px;
+  width: 100px;
+  text-align: center;
+}
+
+.main-expert-list-file{
+  font-size: 18px;
+  width: 100px;
+  text-align: center;
+}
+
+#main-expert-list>li{
+  list-style-type: none;
+  display: flex;
+}
+
+.main-expert-list-approval>button{
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 0;
+  color: white;
+}
+
+.main-expert-list-approval>button:first-child{
+  background-color: #818181;
+}
+
+.main-expert-list-approval>button:last-child{
+  background-color: #d20000;
+}
