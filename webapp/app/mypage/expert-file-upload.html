@@ -1,13 +1,13 @@
 <form action="" method="post">
     <div id="expert-file-upload-middle">
-        <label for="input-expert-file" class="font-main">
+        <label for="input-expert-file" id="label-expert-file" class="font-main">
             첨부파일
         </label>
         <input type="text" readonly id="input-expert-file" name="expertFile" class="font-main">
-        <label for="button-expert-file-search" id="label-expert-file-search" class="font-main">...</label>
-        <input type="file" name="expertFileSearch" id="button-expert-file-search" class="font-main">
+        <label for="input-expert-file-search" id="label-expert-file-search" class="font-main">...</label>
+        <input type="file" name="expertFileSearch" id="input-expert-file-search" class="font-main" onchange="loadFile(event)">
     </div>
     <div id="expert-file-upload-bottom">
-        <button type="button" id="button-expert-file-upload"  class="font-main" name="expertFileUpload">등록</button>
+        <button type="button" id="button-expert-file-upload"  class="font-main" name="expertFileUpload" onclick="saveFile()">등록</button>
     </div>
 </form>
