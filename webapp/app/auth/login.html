@@ -21,6 +21,84 @@
 <body>
   <div id="header">
   </div>
+  <!-- 아이디찾기 모달 -->
+  <div class="modal-id-background">
+    <div class="div-findid-modal">
+      <form action="" method="get">
+        <div class="div-modal-x"><button class="button-id-x" type="button">X</button></div>
+        <div class="div-modal-head">
+          <span class="span-modal-title">아이디 찾기</span>
+        </div>
+        <div class="div-modal-main">
+          <div class="div-modal-id-name"><span class="span-modal">이름 : </span>
+            <input type="text" placeholder="이름을 입력해주세요" name="modalName" class="input-modal-name">
+          </div>
+          <div class="div-modal-id-pn"><span class="span-modal">전화번호 : </span>
+            <div class="div-phone-input-area">
+              <div class="div-phone-input">
+                <input type="text" placeholder="전화번호를 입력해주세요" name="modalPhone" class="input-modal-pn">
+                <button type="button" class="button-injung">인증번호 받기</button>
+              </div>
+              <div class="div-phone-input">
+                <input type="text" placeholder="" name="modalPhone" class="input-modal-pn-injung" readonly>
+                <button type="button" class="button-injung-do" disabled>인증하기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div-modal-button-area">
+          <button class="button-modal-find" type="button">아이디 찾기</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 아이디찾기 모달 완료 -->
+  <div class="modal-id-end-background">
+    <div class="div-findid-end-modal">
+      <div class="div-modal-head">
+        <span class="span-modal-title">아이디</span>
+      </div>
+      <div class="div-modal-main-findid-end">
+        <span class="span-findid-end">홍길동님의 ID는 <span class="findid">test1234</span> 입니다</span>
+      </div>
+      <div class="div-modal-button-area">
+        <button class="button-modal-find-end" type="button">로그인 창으로 돌아가기</button>
+      </div>
+    </div>
+  </div>
+  <!-- 비밀번호찾기 모달 -->
+  <div class="modal-pw-background">
+    <div class="div-findpw-modal">
+      <form action="" method="get">
+        <div class="div-modal-x"><button class="button-pw-x" type="button">X</button></div>
+        <div class="div-modal-head">
+          <span class="span-modal-title">비밀번호 찾기</span>
+        </div>
+        <div class="div-modal-main">
+          <div class="div-modal-name"><span class="span-modal">이름 : </span>
+            <input type="text" placeholder="이름을 입력해주세요" name="modalName" class="input-modal-name">
+          </div>
+          <div class="div-modal-pn"><span class="span-modal">전화번호 : </span>
+            <div class="div-phone-input-area">
+              <div class="div-phone-input">
+                <input type="text" placeholder="전화번호를 입력해주세요" name="modalPhone" class="input-modal-pn">
+                <button type="button" class="button-injung">인증번호 받기</button>
+              </div>
+              <div class="div-phone-input">
+                <input type="text" placeholder="" name="modalPhone" class="input-modal-pn-injung" readonly>
+                <button type="button" class="button-injung-do" disabled>인증하기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div-modal-button-area">
+          <button class="button-modal-find" type="button">아이디 찾기</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <main>
     <div id="main-container">
       <div class="login-container">
@@ -46,9 +124,9 @@
         </form>
         <hr>
         <div class="div-login-etc">
-          <a href="find-id-modal.html" class="font-main">아이디 찾기</a>
-          <a href="find-password-modal.html" class="font-main">비밀번호 찾기</a>
-          <a href="signup.html" class="font-main">회원가입</a>
+          <p class="p-findid font-main">아이디 찾기</p>
+          <p class="font-main">비밀번호 찾기</p>
+          <p class="font-main">회원가입</p>
         </div>
       </div>
     </div>

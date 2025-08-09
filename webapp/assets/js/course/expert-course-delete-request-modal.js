@@ -1,10 +1,12 @@
-const search = document.querySelector("#modal-background");
+const modal = document.querySelector(".modal-background");
 const deleteBtn = document.querySelector(".button-delete");
+const modalClose = document.querySelector(".button-x");
+
 
 deleteBtn.addEventListener('click', () => {
-  search.style.display = "flex";
+  modal.style.display = "flex";
 });
 
-// chooseMenu.addEventListener('blur', () => {
-//   search.style.display = "none";
-// });
+modalClose.addEventListener('click',()=>{
+  modal.style.display = "none";
+});
