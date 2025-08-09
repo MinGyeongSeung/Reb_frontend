@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.font-menu {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #757575;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  margin: auto;
+  position: fixed;
+  transform: translateX(155px);
+  z-index: 2;
+}
+
+#header-admin-expert>p {
+  font-size: 20px;
+  margin: 0 30px;
+}
+
+#header-admin-expert {
+  background-color: #bebebe;
+  height: 80px;
+  width: 895px;
+  line-height: 80px;
+}
+
+main {
+  background-color: white;
+  display: flex;
+  position: relative;
+  top: 80px;
+  height: 100vh;
+}
+
+#main-admin-list-menu {
+  background-color: #d9d9d9;
+  width: 310px;
+  position: fixed;
+  transform: translate(-155px, -80px);
+}
+
+#main-admin-list {
+  margin: 150px 55px;
+  width: 200px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-admin-list>li {
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+#main-admin-list>li>a {
+  text-decoration: none;
+  color: black;
+}
+
+#main-expert {
+  background-color: white;
+  width: 895px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(155px);
+}
+
+#main-expert-list-title {
+  background-color: #bebebe;
+  margin-top: 100px;
+  display: flex;
+  height: 45px;
+  width: 860px;
+  font-size: 18px;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.main-expert-list-status{
+  font-size: 18px;
+  width: 70px;
+  text-align: center;
+}
+
+.main-expert-list-id{
+  font-size: 18px;
+  width: 120px;
+  text-align: center;
+}
+
+.main-expert-list-nickname{
+  font-size: 18px;
+  width: 100px;
+  text-align: center;
+}
+
+.main-expert-list-info{
+  font-size: 18px;
+  width: 360px;
+  text-align: center;
+}
+
+.main-expert-list-approval{
+  font-size: 18px;
+  width: 100px;
+  text-align: center;
+}
+
+.main-expert-list-file{
+  font-size: 18px;
+  width: 100px;
+  text-align: center;
+}
+
+#main-expert-list{
+  height: 480px;
+  width: 860px;
+}
+
+#main-expert-list>li{
+  list-style-type: none;
+  display: flex;
+  padding: 0 5px;
+  height: 45px;
+}
+
+#main-expert-list>li>div>p{
+  margin: 0 10px;
+  font-size: 14px;
+  float: left;
+}
+
+.main-expert-list-approval{
+  padding: 5px;
+}
+
+.main-expert-list-approval>button{
+  width: 40px;
+  height: 35px;
+  border-radius: 8px;
+  border: 0;
+  color: white;
+}
+
+.main-expert-list-approval>button:first-child{
+  background-color: #818181;
+}
+
+.main-expert-list-approval>button:last-child{
+  background-color: #be0000;
+}
+
+.main-expert-list-file{
+  padding: 5px;
+}
+
+.main-expert-list-file>button{
+  background-color: #be0000;
+  width: 90px;
+  height: 35px;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+}
+
+#main-page-number{
+  display: flex;
+  width: 370px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#main-page-number>a{
+  margin: 0 28px;
+  text-decoration: none;
+  color: black;
+}
+
+#main-search{
+  height: 45px;
+  width: 840px;
+  font-size: 20px;
+  display: flex;
+  align-self: start;
+  margin: 30px 28px;
+}
+
+#main-search-basic>div{
+  border: 1px solid black;
+  border-radius: 12px;
+}
+
+
+#main-search-menu{
+  display: none;
+}
+
+#main-search-menu>div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-search-menu>div>p{
+  align-self: center;
+}
+
+#main-search-basic>div>p{
+  height: 45px;
+  width: 102px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-search-input{
+  width: 370px;
+  height: 45px;
+  border-radius: 10px;
+  margin: 0 5px;
+  border: 1px solid black;
+}
+
+form{
+  display: flex;
+  align-items: center;
+}
+
+form>button{
+  background-color: white;
+  border: 0;
+  transform: translateX(-40px);
+}
+
+form>button>img{
+  height: 30px;
+  width: 30px;
+  border: 0px;
+}
