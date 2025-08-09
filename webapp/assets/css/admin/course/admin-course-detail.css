@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  height: 110px;
+  width: 100%;
+  position: fixed;
+  background-color: #fffacd;
+  display: flex;
+  justify-content: center;
+}
+
+header>a>img{
+  height: 110px;
+  width: 110px;
+}
+
+#footer{
+  margin-top: 100px;
+  width: 100%;
+  height: 125px;
+  background-color: #fff1cd;
+}
+
+#main-container {
+    width: 1200px;
+    height: 100%;
+    /*알아서 넣기*/
+    background-color: #FFFEF1;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding-top: 110px;
+    height: 100%;
+    width: 100%;
+    background-color: #FFFEF1;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-main{
+  font-size: 18px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color : white;
+}
+
+.font-menu{
+  font-family: "Yeon Sung", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pagetitle{
+  font-size : 30px;
+  color : #F38A6E;
+
+  padding-top : 100px;
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
+  
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.p-title {
+  color: #F38A6E;
+  font-size: 36px;
+  text-align: center;
+}
+
+.course-detail-container {
+  background-color: #FFFEF1;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 100%;
+}
+
+.div-detail-area {
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size:18px;
+}
+
+.img-detail {
+  width: 600px;
+  height: 500px;
+}
+
+.div-img {
+  display: flex;
+  justify-content: center;
+}
+
+.div-write-date {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.p-expert-info-title{
+  font-size: 20px;
+  color: #F38A6E;
+}
+.div-expert-detail{
+  margin-top:50px;
+  
+}
+
+.div-expert-detail-button{
+  margin-top:50px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+.div-expert-info-detail{
+  margin-left : 100px;
+}
+
