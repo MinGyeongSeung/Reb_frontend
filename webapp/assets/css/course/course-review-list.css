@@ -95,7 +95,7 @@ button {
   width: 30%;
 }
 
-.ul-review-list{
+.ul-review-list {
   background-color: white;
 }
 
@@ -107,7 +107,8 @@ button {
   width: 100%;
   border-bottom: 1px solid #f59d85;
 }
-.div-review-content{
+
+.div-review-content {
   display: flex;
   width: 1200px;
 }
