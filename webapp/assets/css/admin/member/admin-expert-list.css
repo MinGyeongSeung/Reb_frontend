@@ -63,7 +63,7 @@ main {
 
 #main-admin-list>li {
   font-size: 20px;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 #main-admin-list>li>a {
@@ -305,10 +305,13 @@ form>button>img{
   align-items: center;
 }
 
-#cancel-input>input{
+#cancel-input>textarea{
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
   height: 200px;
   width: 500px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 #submit{

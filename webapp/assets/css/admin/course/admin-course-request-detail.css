@@ -192,7 +192,10 @@ button{
   align-items: center;
 }
 
-#cancel-input>input{
+#cancel-input>textarea{
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
   height: 200px;
   width: 500px;
   border-radius: 20px;
