@@ -24,10 +24,10 @@ header {
   z-index: 2;
 }
 
-#header-admin-sponsor>p{
+#header-admin-sponsor>p {
   font-size: 20px;
-  margin : 0 30px;
-} 
+  margin: 0 30px;
+}
 
 #header-admin-sponsor {
   background-color: #bebebe;
@@ -36,14 +36,14 @@ header {
   line-height: 80px;
 }
 
-main{
-  height: 100vh;
+main {
+  height: 91vh;
   display: flex;
   position: relative;
   top: 80px;
 }
 
-#main-admin-list-menu{
+#main-admin-list-menu {
   background-color: #d9d9d9;
   height: 100vh;
   width: 310px;
@@ -51,7 +51,7 @@ main{
   transform: translate(-155px, -80px);
 }
 
-#main-admin-list{
+#main-admin-list {
   margin: 150px 55px;
   width: 200px;
   list-style-type: none;
@@ -60,17 +60,17 @@ main{
   align-items: center;
 }
 
-#main-admin-list>li{
+#main-admin-list>li {
   font-size: 20px;
   margin: 30px 0;
 }
 
-#main-admin-list>li>a{
+#main-admin-list>li>a {
   text-decoration: none;
   color: black;
 }
 
-#main-banner{
+#main-banner {
   background-color: white;
   width: 895px;
   display: flex;
@@ -79,3 +79,55 @@ main{
   transform: translateX(155px);
 }
 
+#main-banner-div {
+  height: 250px;
+  width: 350px;
+  display: flex;
+  transform: translateY(250px);
+  display: flex;
+}
+
+#main-banner-input-name {
+  margin: 30px 0;
+  height: 35px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+#main-banner-input-file {}
+
+#main-banner-input-file-input {
+  display: none;
+}
+
+#main-banner-input-file>input:nth-child(2) {
+  margin: 0 30px 50px 0;
+  height: 35px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+#main-banner-input-file>label>button{
+  height: 30px;
+  width: 50px;
+  font-size: 20px;
+  background-color: #818181;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+}
+
+#main-banner-btn{
+  display: flex;
+}
+
+#main-banner-btn>button{
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #818181;
+  color: white;
+  font-size: 18px;
+  margin-right: 50px;
+}
