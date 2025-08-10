@@ -15,18 +15,21 @@
 </head>
 
 
-  <header>
-    <section id="header-admin-expert">
-      <p><strong>전문가 승인 목록</strong></p>
-    </section>
+<header>
+    <p><strong>전문가 승인 목록</strong></p>
+    <button>
+      <img src="./../../../assets/img/logout.png" alt="로그아웃">
+    </button>
   </header>
-  <body class="font-menu">
+
+
+<body class="font-menu">
   <div id="modal-background">
     <div id="cancel-modal">
       <div id="cancel-modal-in">
         <p>전문가 승인 반려/승인 취소 사유</p>
         <form action="" method="get" id="cancel-input">
-          <textarea name="modal" placeholder="사유 입력"></textarea>
+          <textarea name="modal" placeholder="사유 입력" id="return-message" autofocus></textarea>
           <button type="button" id="submit">등록</button>
         </form>
       </div>
@@ -101,7 +104,11 @@
             <button type="button" class="cancel">반려</button>
           </div>
           <div class="main-expert-list-file">
-            <button type="button" class="file">다운로드</button>
+            <a href="./../../../assets/img/yujin.jpg" download="카리나.jpg">
+              <button type="button" class="file">
+                다운로드
+              </button>
+            </a>
           </div>
         </li>
         <li>
@@ -117,7 +124,11 @@
             <button type="button" class="cancel">반려</button>
           </div>
           <div class="main-expert-list-file">
-            <button type="button" class="file">다운로드</button>
+            <a href="./../../../assets/img/karina.jpg" download="카리나.jpg">
+              <button type="button" class="file">
+                다운로드
+              </button>
+            </a>
           </div>
         </li>
         <li>
@@ -133,7 +144,11 @@
             <button type="button" class="cancel">반려</button>
           </div>
           <div class="main-expert-list-file">
-            <button type="button" class="file">다운로드</button>
+            <a href="./../../../assets/img/winter.jpg" download="카리나.jpg">
+              <button type="button" class="file">
+                다운로드
+              </button>
+            </a>
           </div>
         </li>
       </ul>
@@ -164,7 +179,7 @@
       </div>
     </section>
   </main>
-  
+
 </body>
 
 </html>

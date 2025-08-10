@@ -16,9 +16,10 @@
 
 <body class="font-menu">
   <header>
-    <section id="header-admin-sponsor">
-      <p><strong>배너 등록</strong></p>
-    </section>
+    <p><strong>배너 등록</strong></p>
+    <button>
+      <img src="./../../../assets/img/logout.png" alt="로그아웃">
+    </button>
   </header>
   <main>
     <section id="main-admin-list-menu">
@@ -69,13 +70,7 @@
       <div id="main-banner-div">
         <form action="" method="get">
           <input type="text" id="main-banner-input-name" placeholder="배너 명">
-          <div id="main-banner-input-file">
-            <input type="file"  name="input-file" id="main-banner-input-file-input">
-            <input type="text" for="main-banner-input-file-input" placeholder="이미지 파일">
-            <label for="main-banner-input-file-input">
-              <button type="button">...</button>
-            </label>
-          </div>
+          <input type="file" placeholder="이미지 파일">
           <div id="main-banner-btn">
             <button type="button">
               등록

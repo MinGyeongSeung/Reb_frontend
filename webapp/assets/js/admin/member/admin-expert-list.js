@@ -4,10 +4,9 @@ const chooseMenu = document.querySelector("#main-search-basic>div>p");
 const modalBackground = document.querySelector("#modal-background");
 const acceptBtn = document.querySelectorAll(".accept");
 const cancelBtn = document.querySelectorAll(".cancel");
-// const cancelBtn = document.querySelector(".cancel");
-// const acceptBtn = document.querySelector(".accept");
 const submitBtn = document.querySelector("#submit");
 const closeModal = document.querySelector("#close-modal");
+const returnMsg = document.querySelector("#return-message");
 
 dropdown.addEventListener('click', () => {
   search.style.display = "block";
@@ -36,21 +35,20 @@ cancelBtn.forEach(btn => {
     modalBackground.style.zIndex = 5;
     submitBtn.addEventListener('click', () => {
       alert("취소/반려 사유 등록 완료");
-      // location.href = "./../../../app/admin/member/admin-expert-list.html";
+      returnMsg.value= "";
       modalBackground.style.display = "none";
-      const list= e.target.nextElementSibling.nextElementSibling;
+      const list= e.target.parentNode.parentNode;
       list.remove();
     });
   });
 });
 
-// submitBtn.addEventListener('click', () => {
-//   alert("취소/반려 사유 등록 완료");
-//   // location.href = "./../../../app/admin/member/admin-expert-list.html";
-//   modalBackground.style.display= "none";
-// });
-
 
 closeModal.addEventListener(('click'), () => {
   modalBackground.style.display = "none";
+});
+
+const logoutBtn = document.querySelector("header>button>img");
+logoutBtn.addEventListener('click', ()=>{
+  location.href= "./../login/admin-login.html";
 });
