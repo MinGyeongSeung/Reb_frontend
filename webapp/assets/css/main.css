@@ -3,6 +3,21 @@
   padding: 0;
 }
 
+#header {
+  height: 110px;
+  width: 100%;
+  position: fixed;
+  background-color: #f59d85;
+  z-index: 1000;
+}
+
+#footer {
+  width: 100%;
+  height: 125px;
+  background-color: #f59d85;
+}
+
+
 #main-container {
   width: 1200px;
   height: 100%;
@@ -49,26 +64,49 @@ button {
   font-style: normal;
 }
 
+/* 슬라이스 배너 시작 */
+
 .main-banner-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.box {
+.main-banner-box {
   overflow: hidden;
   width: 949px;
+  height: 415px;
 }
 
-.main-banner-image-container {
-  width: 1200px;
-  transition: 0.5s;
+.main-banner-slide_box {
+  display: flex;
+  transition: .5s ease;
 }
 
-.main_slide_item {
-  float: left;
+.slide_item {
+  flex: 0 0 949px;
 }
 
+.slide_item img {
+  width: 949px;
+  height: 415px;
+  display: block;
+}
+
+.prev,
+.next {
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.prev:hover,
+.next:hover {
+  background: white;
+  color: black;
+}
+
+/* 슬라이스 배너 끝 */
 
 .main-menu-botton-containter {
   background-color: darkolivegreen;
