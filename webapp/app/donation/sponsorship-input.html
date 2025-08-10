@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./../../assets/css/donation/sponsorship-input.css">
+
+  <link rel="stylesheet" href="./../../assets/css/header-login.css">
+  <link rel="stylesheet" href="./../../assets/css/footer.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&display=swap"
@@ -17,6 +21,7 @@
   <script defer src="./../../assets/js/donation/sponsorship-input.js"></script>
   <title>틈새빛</title>
 </head>
+
 <body>
   <div id="header">
   </div>
@@ -33,12 +38,14 @@
               <button type="button" name="money50000" value="50000" class="div-money-button font-main">50,000원</button>
             </div>
             <div id="money-input-text font-main">
-                <input type="number" min="0" step="10000" id="input-donation-money" name="donationMoney" class="font-main" placeholder="직접 금액 입력">원
+              <input type="number" min="0" step="10000" id="input-donation-money" name="donationMoney" class="font-main"
+                placeholder="직접 금액 입력">원
             </div>
           </div>
           <div id="sponsorship-bottom" class="font-main">
             <button type="button" id="button-ok-donation" name="donationBtn" onclick="okDonation()">확인</button>
-            <button type="button" id="button-cancle-donation" name="donationCancelBtn" onclick="cancelDonation()">취소</button>  
+            <button type="button" id="button-cancle-donation" name="donationCancelBtn"
+              onclick="cancelDonation()">취소</button>
           </div>
         </form>
       </section>
@@ -47,5 +54,6 @@
   <div id="footer">
   </div>
 </body>
-
+<script src="./../../assets/js/header-login.js"></script>
+<script src="./../../assets/js/footer.js"></script>
 </html>
