@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/main.css">
+
+  <link rel="stylesheet" href="./assets/css/header-login.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&display=swap"
@@ -20,28 +24,29 @@
 <body>
   <div id="header"></div>
   <main>
-    <div id="main-container">
-
-      <div class="main-banner-container">
-        <div class="prev"><i class="fa-sharp fa-solid fa-arrow-left">&lt;</i></div>
-        <div class="main-banner-box">
-          <div class="main-banner-slide_box">
-            <div class="slide_item">
-              <a href=""><img src="./assets/img/routine.png" alt="1"></a>
-            </div>
-            <div class="slide_item">
-              <a href=""><img src="./assets/img/routine.png" alt="2"></a>
-            </div>
-            <div class="slide_item">
-              <a href=""><img src="./assets/img/routine.png" alt="3"></a>
-            </div>
-            <div class="slide_item">
-              <a href=""><img src="./assets/img/routine.png" alt="4"></a>
-            </div>
+    <!-- 피그마처럼 바깥 배경색을 채우기 위해 main-container 밖으로 뺌 -->
+    <div class="main-banner-container">
+      <div class="prev"><i class="fa-sharp fa-solid fa-arrow-left">&lt;</i></div>
+      <div class="main-banner-box">
+        <div class="main-banner-slide_box">
+          <div class="slide_item">
+            <a href=""><img src="./assets/img/routine.png" alt="1"></a>
+          </div>
+          <div class="slide_item">
+            <a href=""><img src="./assets/img/routine.png" alt="2"></a>
+          </div>
+          <div class="slide_item">
+            <a href=""><img src="./assets/img/routine.png" alt="3"></a>
+          </div>
+          <div class="slide_item">
+            <a href=""><img src="./assets/img/routine.png" alt="4"></a>
           </div>
         </div>
-        <div class="next"><i class="main-banner-right">&gt;</i></div>
       </div>
+      <div class="next"><i class="main-banner-right">&gt;</i></div>
+    </div>
+
+    <div id="main-container">
 
       <div class="main-menu-botton-containter">
         <button class="main-aboutus-botton">게시판 소개글</button>
@@ -121,6 +126,8 @@
   </main>
   <div id="footer"></div>
   <script src="./assets/js/main.js"></script>
+  <script src="/webapp/assets/js/header-login.js"></script>
+  <script src="/webapp/assets/js/footer.js"></script>
 </body>
 
 </html>
