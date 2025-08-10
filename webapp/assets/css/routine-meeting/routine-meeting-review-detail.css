@@ -168,3 +168,7 @@ button{
   display: flex;
   justify-content: space-evenly;
 }
+.div-font-awesome-line{
+  flex: 1;
+  text-align: right;
+}
