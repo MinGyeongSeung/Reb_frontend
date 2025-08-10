@@ -13,15 +13,72 @@ const nicknameInputOriginalColor = nicknameInput.style.color;
 const nicknameInputOriginalText = nicknameInput.placeholder;
 const buttonEditNickname = document.querySelector("#button-edit-info-nickname");
 
+const buttonUpdatePhoneNumber = document.querySelector("#button-update-phone-number");
+const inputEditInfoPhoneNumber = document.querySelector("#input-edit-info-phone-number");
 
+const buttonSendVerificationCode = document.querySelector("#button-send-verification-code");
+
+const buttonCheckVerificationCode = document.querySelector("#button-check-verification-code");
+
+const inputVerificationCode = document.querySelector("#input-verification-code");
+let verificatioCode = "123456";
+
+const buttonColor = "#f59d85";
+const buttonDisabledColor = "#797979ff";
+
+inputVerificationCode.addEventListener('focus',
+    () => {
+        inputVerificationCode.value = "";
+        inputVerificationCode.style.color = "black";
+    }
+);
 
 pwFirstInput.addEventListener('change',
     () => {
         checkPassword();
         compareEqualPassword();
     }
-)
+);
 
+buttonUpdatePhoneNumber.addEventListener('click', ()=>{
+    inputEditInfoPhoneNumber.removeAttribute("disabled");
+
+    buttonUpdatePhoneNumber.removeAttribute("disabled");
+    buttonUpdatePhoneNumber.style.backgroundColor = buttonColor;
+
+    inputVerificationCode.setAttribute("disabled", true);
+
+    buttonSendVerificationCode.removeAttribute("disabled");
+    buttonSendVerificationCode.style.backgroundColor = buttonColor;
+
+    buttonCheckVerificationCode.removeAttribute("disabled");
+    buttonCheckVerificationCode.style.backgroundColor = buttonColor;
+});
+
+buttonSendVerificationCode.addEventListener('click', ()=>{
+    inputEditInfoPhoneNumber.setAttribute("disabled", true);
+    inputVerificationCode.removeAttribute("disabled");
+
+    buttonSendVerificationCode.setAttribute("disabled", true);
+    buttonSendVerificationCode.style.backgroundColor = buttonDisabledColor;
+
+    alert("인증 번호를 전송하였습니다.");
+});
+
+buttonCheckVerificationCode.addEventListener('click', ()=>{
+    if(verificatioCode === inputVerificationCode.value){
+        buttonCheckVerificationCode.setAttribute("disabled", true);
+        buttonCheckVerificationCode.style.backgroundColor = buttonDisabledColor;
+
+        inputVerificationCode.setAttribute("disabled", true);
+        buttonSendVerificationCode.setAttribute("disabled", true);
+        buttonSendVerificationCode.style.backgroundColor = buttonDisabledColor;
+        alert("전화번호 변경을 성공하였습니다.");
+    }else{
+        inputVerificationCode.value ="발송한 인증번호와 다른 입력";
+        inputVerificationCode.style.color = "red";
+    }
+});
 
 pwReInput.addEventListener('change', compareEqualPassword);
 
@@ -29,7 +86,7 @@ function checkPassword() {
     if (pwFirstInput.value.length < 8) {
         pwFirstWarning.style.display = "inline";
     } else {
-        pwReInputWarning.style.display = "none";
+        pwFirstWarning.style.display = "none";
     }
 }
 
@@ -77,7 +134,7 @@ function moveToPersonalInfo() {
 }
 
 function cacelEditUserInfo() {
-    if (confirm("정말 취소하시겠습니까?")) {
+    if (confirm("수정하신 내용이 사라집니다.\n정말 취소하시겠습니까?")) {
         moveToPersonalInfo();
     }
 }
