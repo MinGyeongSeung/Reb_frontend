@@ -62,26 +62,28 @@ button {
   font-style: normal;
 }
 
-.main-banner-container {
+.slides-wrap {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.box {
+  position: relative;
   overflow: hidden;
+}
+
+.slide-box{
+  display: flex;
+  /* width: 100%; */
+  /* height: 100%; */
+  /* position: absolute; */
+}
+
+li {
+  list-style-type: none;
+}
+
+.slide-img{
   width: 949px;
+  height: 415px;
 }
-
-.main-banner-image-container {
-  width: 1200px;
-  transition: 0.5s;
-}
-
-.main_slide_item {
-  float: left;
-}
-
 
 .main-menu-botton-containter {
   background-color: darkolivegreen;
