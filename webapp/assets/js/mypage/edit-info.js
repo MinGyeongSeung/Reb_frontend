@@ -74,7 +74,6 @@ function editCompleteUserInfo() {
 
 function moveToPersonalInfo() {
     location.href = "personal-info.html";
-    location.replace(link);
 }
 
 function cacelEditUserInfo() {
