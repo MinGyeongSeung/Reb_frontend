@@ -1,5 +1,16 @@
 const expertStatusText = document.querySelector("#personal-info-expert-status");
 
+document.querySelector("#button-edit-user").addEventListener('click', ()=>{
+    editUserInfo();
+});
+
+document.querySelector("#button-del-user").addEventListener('click', ()=>{
+    deleteUserInfo();
+});
+
+
+
+
 if(expertStatusText.innerHTML === "반려"){
     expertStatusText.style.cursor = "pointer";
     expertStatusText.style.textDecoration = "underline";
