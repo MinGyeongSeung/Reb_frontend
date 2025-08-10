@@ -22,9 +22,10 @@
   /*알아서 넣기*/
   background-color: #FFFEF1;
   margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* justify-content: center; */
 }
 
 main {
@@ -62,5 +63,49 @@ button {
 }
 
 .main-banner-container {
-  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  overflow: hidden;
+  width: 949px;
+}
+
+.main-banner-image-container {
+  width: 1200px;
+  transition: 0.5s;
+}
+
+.main_slide_item {
+  float: left;
+}
+
+
+.main-menu-botton-containter {
+  background-color: darkolivegreen;
+  text-align: start;
+  justify-content: space-around;
+  display: flex;
+}
+
+.main-routine-containter {
+  background-color: darkgoldenrod;
+}
+
+.main-routine-class-container {
+  text-align: start;
+  justify-content: space-around;
+  display: flex;
+}
+
+.main-routine-review-containter {
+  background-color: blue;
+}
+
+.main-routine-review-box-containter {
+  text-align: start;
+  justify-content: space-around;
+  display: flex;
 }
