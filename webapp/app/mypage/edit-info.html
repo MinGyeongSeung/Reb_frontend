@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./../../assets/css/mypage/expert-file-upload.css">
   <link rel="stylesheet" href="./../../assets/css/mypage/profile-pic-upload.css">
   <link rel="stylesheet" href="./../../assets/css/mypage/expert-status.css">
-  
+
   <link rel="stylesheet" href="./../../assets/css/header-login.css">
   <link rel="stylesheet" href="./../../assets/css/footer.css">
 
@@ -93,7 +93,7 @@
                 <div id="edit-info-address-post">
                   00000
                 </div>
-                <button type="button" name="addressSearchBtn">주소 검색</button>
+                <button type="button" name="addressSearchBtn" id="button-search-address">주소 검색</button>
               </div>
               <div id="address-re-input">
                 <input type="text" name="editInfoDetailAddress" placeholder="실거주지 주소">
@@ -106,15 +106,34 @@
               <input type="email" id="input-edit-info-email" name="email" placeholder="이메일 주소">
             </div>
           </div>
-          <div class="edit-info-list">
-            <div class="edit-info-type">전화번호</div>
-            <div class="edit-info-data">010-1234-5678</div>
+          <div class="edit-info-list edit-info-two-row">
+            <div class="edit-info-type">
+              <div>전화번호</div>
+              <div>인증번호</div>
+            </div>
+            <div class="edit-info-data edit-info-input-two-row">
+              <div id="div-send-verification-code">
+                <input type="text" id="input-edit-info-phone-number" name="phoneNumber" disabled value="010-1234-5678" placeholder="전화번호">
+                <div id = "div-button-update-phone-number">
+                  <button type="button" name="updatePhoneNumber" id="button-update-phone-number"
+                    value="update-phone-number">변경</button>
+                  <button type="button" name="sendVerificationCode" id="button-send-verification-code"
+                    value="send-verification-code" disabled>인증번호 전송</button>
+                </div>
+              </div>
+              <div id="div-check-verification-code">
+                <input type="text" id="input-verification-code"  name="verificationCode" placeholder="인증번호" disabled>
+                <button type="button" name="checkVerificationCode" id="button-check-verification-code"
+                  value="check-verification-code" disabled>확인</button>
+              </div>
+            </div>
           </div>
           <div class="edit-info-list">
             <div class="edit-info-type">전문가 인증</div>
             <div class="edit-info-data">
               <div id="edit-info-expert-status">확인 중</div>
-              <button type="button" name="expertFileUpload" class="button-modal-open" id="button-edit-expert-info">수정</button>
+              <button type="button" name="expertFileUpload" class="button-modal-open"
+                id="button-edit-expert-info">수정</button>
             </div>
           </div>
           <div class="edit-info-list">
@@ -122,7 +141,8 @@
             <div class="edit-info-data">
               <div id="profile-picture"><img id="img-edit-profile-pic" src="../../assets/img/profilePicture/dog.jpg"
                   alt="프로필"></div>
-              <button type="button" id="button-edit-profile-pic" class="button-modal-open" name="profilePicUpload">수정</button>
+              <button type="button" id="button-edit-profile-pic" class="button-modal-open"
+                name="profilePicUpload">수정</button>
             </div>
           </div>
         </div>

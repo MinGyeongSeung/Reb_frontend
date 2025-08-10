@@ -132,6 +132,36 @@ button{
   margin-right: 15px;
 }
 
+#edit-info-send-phonenumber{
+  display: flex;
+}
+
+#input-verification-code{
+  margin-top: 0px;
+  height: 40px;
+}
+
+#div-button-update-phone-number{
+  margin-left:75px;
+}
+
+#button-check-verification-code{
+  margin-left:230px;
+}
+
+#edit-info-check-code{
+  display: flex;
+}
+
+#div-send-verification-code{
+  display: flex;
+}
+
+#div-send-verification-code{
+  display: flex;
+}
+
+
 #profile-picture{
   width: 50px;
   height: 50px;
@@ -207,8 +237,9 @@ button{
   line-height: 50px;
 }
 
-input{
-  height: 48px;
+#main-container input{
+  height: 40px;
   width: 500px;
+  margin-top: 4px;
   padding-left: 3px;
 }
