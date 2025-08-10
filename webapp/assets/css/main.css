@@ -63,11 +63,23 @@ button {
 }
 
 .main-banner-container {
-  background-color: aqua;
-  text-align: start;
-  justify-content: space-around;
   display: flex;
+  justify-content: center;
   align-items: center;
+}
+
+.box {
+  overflow: hidden;
+  width: 949px;
+}
+
+.main-banner-image-container {
+  width: 1200px;
+  transition: 0.5s;
+}
+
+.main_slide_item {
+  float: left;
 }
 
 
