@@ -102,8 +102,8 @@ button {
 
 .prev:hover,
 .next:hover {
-  background: #000;
-  color: #fff;
+  background: white;
+  color: black;
 }
 
 /* 슬라이스 배너 끝 */
