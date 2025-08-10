@@ -121,13 +121,21 @@ button{
 
 .div-expert-detail-button{
   margin-top:50px;
-  display: flex;
+  display: none;
   justify-content: space-around;
   margin-bottom: 100px;
 }
 .div-expert-info-detail{
   margin-left : 100px;
 }
+
+.div-expert-edit-button{
+  margin-top:50px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
 
 .button-application{
   width: 50%;
@@ -152,9 +160,7 @@ button{
   border: 1px solid #ff0000;
 }
 
-
 .button-edit{
-  width: 147px;
   height: 50px;
   color:white;
   border-radius: 13px;
@@ -164,8 +170,6 @@ button{
   border: 0px;
 }
 .button-delete{
-  /* display: none; */
-  width: 147px;
   height: 50px;
   font-size: 30px;
   background-color: white;
@@ -175,3 +179,78 @@ button{
   color:#ff0000;
   border: 1px solid #ff0000;
 }
+
+.modal-background{
+  height: 100vh;
+  width: 100%;
+  background-color: #0000003e;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  display: none;  
+}
+
+.cancel-modal{
+  background-color: #FFFEF1;
+  height: 430px;
+  width: 700px;
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.span-delete-title{
+  color: #F38A6E;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 24px;
+  text-align: center;
+}
+.input-delete-modal{
+  width: 100%;
+  height: 250px;
+  font-size: 20px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.textarea-delete-modal{
+  width: 100%;
+  height: 250px;
+  font-size: 20px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  resize: none;
+  border-radius: 13px;
+}
+
+.div-modal-head{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.div-modal-x{
+  text-align: end;
+}
+.button-x{
+  background-color: #FFFEF1;
+}
+.button-modal-delete{
+  width: 100%;
+  height: 50px;
+  font-size: 30px;
+  background-color: white;
+  border-radius: 13px;
+  padding: 0px 20px;
+  margin-top:50px;
+  font-size : 20px;
+  color:#ff0000;
+  border: 1px solid #ff0000;
+}
+
