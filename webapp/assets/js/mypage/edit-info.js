@@ -23,6 +23,8 @@ const buttonCheckVerificationCode = document.querySelector("#button-check-verifi
 const inputVerificationCode = document.querySelector("#input-verification-code");
 let verificatioCode = "123456";
 
+const buttonSearchAddress = document.querySelector("#button-search-address");
+const editInfoAddressText = document.querySelector("#edit-info-address-text");
 const buttonColor = "#f59d85";
 const buttonDisabledColor = "#797979ff";
 
@@ -40,7 +42,11 @@ pwFirstInput.addEventListener('change',
     }
 );
 
-buttonUpdatePhoneNumber.addEventListener('click', ()=>{
+buttonSearchAddress.addEventListener('click', () => {
+    editInfoAddressText.innerHTML = prompt("(API 대체 예정)주소 입력");
+});
+
+buttonUpdatePhoneNumber.addEventListener('click', () => {
     inputEditInfoPhoneNumber.removeAttribute("disabled");
 
     buttonUpdatePhoneNumber.removeAttribute("disabled");
@@ -55,7 +61,7 @@ buttonUpdatePhoneNumber.addEventListener('click', ()=>{
     buttonCheckVerificationCode.style.backgroundColor = buttonColor;
 });
 
-buttonSendVerificationCode.addEventListener('click', ()=>{
+buttonSendVerificationCode.addEventListener('click', () => {
     inputEditInfoPhoneNumber.setAttribute("disabled", true);
     inputVerificationCode.removeAttribute("disabled");
 
@@ -65,8 +71,8 @@ buttonSendVerificationCode.addEventListener('click', ()=>{
     alert("인증 번호를 전송하였습니다.");
 });
 
-buttonCheckVerificationCode.addEventListener('click', ()=>{
-    if(verificatioCode === inputVerificationCode.value){
+buttonCheckVerificationCode.addEventListener('click', () => {
+    if (verificatioCode === inputVerificationCode.value) {
         buttonCheckVerificationCode.setAttribute("disabled", true);
         buttonCheckVerificationCode.style.backgroundColor = buttonDisabledColor;
 
@@ -74,8 +80,8 @@ buttonCheckVerificationCode.addEventListener('click', ()=>{
         buttonSendVerificationCode.setAttribute("disabled", true);
         buttonSendVerificationCode.style.backgroundColor = buttonDisabledColor;
         alert("전화번호 변경을 성공하였습니다.");
-    }else{
-        inputVerificationCode.value ="발송한 인증번호와 다른 입력";
+    } else {
+        inputVerificationCode.value = "발송한 인증번호와 다른 입력";
         inputVerificationCode.style.color = "red";
     }
 });
