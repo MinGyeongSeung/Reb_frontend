@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../webapp/header-login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&family=Yeon+Sung&display=swap"
+      rel="stylesheet"
+    />
+    <title>틈새빛 로그인 헤더</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="header-inner">
+        <!-- 좌측 -->
+        <nav class="header-nav-container font-menu">
+          <ul class="header-nav-menu">
+            <li>
+              <a href="#">소식</a>
+              <div class="header-submenu">
+                <a href="#">소개글</a>
+                <a href="#">공지사항</a>
+                <a href="#">채용공고</a>
+              </div>
+            </li>
+            <li>
+              <a href="#">수업</a>
+              <div class="header-submenu">
+                <a href="#">수업 게시판</a>
+                <a href="#">수업 후기 게시판</a>
+              </div>
+            </li>
+            <li>
+              <a href="#">루틴모임</a>
+              <div class="header-submenu">
+                <a href="#">루틴 모임 게시판</a>
+                <a href="#">루틴 모임 후기 게시판</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- 가운데 -->
+        <a class="header-brand-containter" href="#">
+          <img
+            src="./../webapp/assets/img/team_logo.png"
+            class="logo-image"
+            alt="로고"
+          />
+        </a>
+
+        <!-- 우측 -->
+        <a class="header-donate-containter" href="#">
+          <button class="header-donate font-menu">후원</button>
+        </a>
+
+        <div class="header-actions-container">
+          <div class="login-box font-main">
+            <a href="#"><span class="signup-text">로그아웃</span></a>
+          </div>
+          <a href="#">
+            <img
+              src="./../webapp/assets/img/mypage.png"
+              class="mypage-image"
+              alt="마이페이지"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".header-nav-menu > li").forEach((item) => {
+          const submenu = item.querySelector(".header-submenu");
+          if (!submenu) return;
+
+          let hideTimer;
+
+          const show = () => {
+            clearTimeout(hideTimer);
+            submenu.style.display = "flex";
+          };
+          const hide = () => {
+            hideTimer = setTimeout(() => (submenu.style.display = "none"), 200);
+          };
+
+          item.addEventListener("mouseenter", show);
+          item.addEventListener("mouseleave", hide);
+          submenu.addEventListener("mouseenter", show);
+          submenu.addEventListener("mouseleave", hide);
+        });
+      });
+    </script>
+  </body>
+</html>
+
+
+
+

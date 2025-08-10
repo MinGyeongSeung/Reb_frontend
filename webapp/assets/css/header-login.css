@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  height: 110px;
+  width: 100%;
+  position: fixed;
+  background-color: rgb(255, 250, 205);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+
+.font-menu {
+  font-family: "Yeon Sung", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header-text-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-submenu {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  /* right: -200px; */
+  top: 83px;
+  gap: 32px;
+  white-space: nowrap;
+  background: rgba(255,250,205,.9);
+  /* visibility: hidden; */
+  font-size: 24px;
+}
+
+.header-submenu a {
+  color: rgb(243, 138, 110);
+}
+
+/* .header-nav-menu > li:hover .header-submenu {
+  visibility: visible;
+} */
+
+.header-nav-menu > li {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.header-nav-menu > li:hover > a,
+.header-submenu a:hover {
+  color: red;
+  font-weight: bold;
+}
+
+.page {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  border-radius: 13px;
+  padding: 0px 20px;
+  height: 45px;
+  width: 100px;
+  background-color: #f59d85;
+  border: 0px;
+  cursor: pointer;
+}
+
+.header-donate-containter {
+  transform: translate(170px);
+}
+
+.header-donate {
+  color: white;
+  font-size: 30px;
+}
+
+.header-inner {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav-container ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+}
+
+.header-nav-menu > li > a {
+  font-size: 30px;
+  text-decoration: none;
+  color: inherit;
+  color: rgb(243, 138, 110);
+}
+
+.header-submenu > a {
+  text-decoration: none;
+  color: inherit;
+  color: rgb(243, 138, 110);
+}
+
+.login-box > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mypage-image {
+  transform: translate(14px, 3px);
+}
+
+.logo {
+  border-radius: 50%;
+  background-color: white;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.logo-image {
+  width: 110px;
+  height: 110px;
+}
+
+.mypage-image {
+  width: 31px;
+  height: 36px;
+}
