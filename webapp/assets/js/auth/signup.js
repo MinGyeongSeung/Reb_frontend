@@ -1,6 +1,9 @@
 const emailList = document.querySelector(".select-email");
 const emailInput = document.querySelector(".input-email-end");
 
+let dupliButton = document.querySelector(".button-no-duplication"); 
+let noDupliP = document.querySelector(".p-no-duplication");
+let dupliP = document.querySelector(".p-duplication");
 let id = document.querySelector("input[name='id']");
 let pw = document.querySelector("input[name='pw']");
 let birth = document.querySelector("input[name='birth']");
@@ -123,5 +126,16 @@ buttonSignUp.addEventListener('click',(e)=>{
     if(check === false){
         alert("필수 입력 확인해주세요");
          e.preventDefault();
+    }
+});
+
+dupliButton.addEventListener('click',()=>{
+    if(nickName.value === '가나다'){
+        noDupliP.style.display = 'none';
+        dupliP.style.display = 'block';
+    }
+    else{
+        noDupliP.style.display = 'block';
+        dupliP.style.display = 'none';
     }
 });

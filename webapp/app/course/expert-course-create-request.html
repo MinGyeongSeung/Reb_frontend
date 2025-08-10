@@ -60,6 +60,7 @@
                 <input type="date" name="courseStartDate">
                 <input type="date" name="courseEndDate">
               </div>
+              <p class="p-warning">강의일이 모집기간보다 빠를 수 없습니다</p>
             </div>
             <div class="div-info-line">
               <p class="font-main">요일</p>
@@ -77,20 +78,20 @@
             <div class="div-info-line">
               <p class="font-main">모집 인원</p>
               <div class="div-input-info">
-                <input type="text" name="recruitmentNumber">
+                <input type="number" name="recruitmentNumber">
               </div>
             </div>
             <div class="div-info-line">
               <p class="font-main">가격</p>
               <div class="div-input-info">
-                <input type="text" name="recruitmentPrice">
+                <input type="number" name="recruitmentPrice">
               </div>
             </div>
           </div>
         </div>
         <div class="div-create-course">
           <div class="div-button-line">
-            <button class="button-ok" type="submit">확인</button>
+            <button class="button-ok" type="button">확인</button>
             <button class="button-cancel" type="button">취소</button>
           </div>
         </div>

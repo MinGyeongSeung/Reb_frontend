@@ -4,7 +4,7 @@ const modal = document.querySelector(".modal-background");
 const deleteBtn = document.querySelector(".button-delete");
 const modalClose = document.querySelector(".button-x");
 const buttonModalDelete = document.querySelector(".button-modal-delete");
-
+let textarea = document.querySelector(".textarea-delete-modal");
 
 buttonApp.addEventListener("click",()=>{
   if(confirm("신청하시겠습니까?")){
@@ -30,5 +30,6 @@ modalClose.addEventListener('click',()=>{
 
 buttonModalDelete.addEventListener('click',()=>{
   alert("삭제 요청 완료되었습니다");
+  textarea.value = null;
   modal.style.display ="none";
 });
