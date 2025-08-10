@@ -95,6 +95,10 @@ button {
   width: 30%;
 }
 
+.ul-review-list{
+  background-color: white;
+}
+
 .li-review-content {
   list-style: none;
   display: flex;
