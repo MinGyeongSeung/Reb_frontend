@@ -42,6 +42,9 @@ button{
   height: 40px;
   background-color: #f59d85;
   border : 0px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .font-main{
@@ -121,7 +124,7 @@ button{
 
 .div-expert-detail-button{
   margin-top:50px;
-  display: none;
+  display: flex;
   justify-content: space-around;
   margin-bottom: 100px;
 }
@@ -136,6 +139,15 @@ button{
   margin-bottom: 100px;
 }
 
+.div-expert-edit-ing-button,
+.div-expert-delete-ing-button,
+.div-expert-before-button,
+.div-expert-after-button{
+  margin-top:50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
 
 .button-application{
   width: 50%;
@@ -146,6 +158,9 @@ button{
   font-size : 20px;
   background-color: #f59d85;
   border: 0px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .button-cancel{
   display: none;
@@ -158,6 +173,9 @@ button{
   font-size : 20px;
   color:#ff0000;
   border: 1px solid #ff0000;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .button-edit{
@@ -168,6 +186,9 @@ button{
   font-size : 20px;
   background-color: #f59d85;
   border: 0px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .button-delete{
   height: 50px;
@@ -178,7 +199,27 @@ button{
   font-size : 20px;
   color:#ff0000;
   border: 1px solid #ff0000;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+.button-edit-ing,
+.button-delete-ing,
+.button-before,
+.button-after{
+  height: 50px;
+  color:black;
+  border-radius: 13px;
+  padding: 0px 20px;
+  font-size : 20px;
+  background-color: #d9d9d9;
+  border: 0px;
+  width: 50%;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .modal-background{
   height: 100vh;
@@ -240,6 +281,9 @@ button{
 }
 .button-x{
   background-color: #FFFEF1;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .button-modal-delete{
   width: 100%;
@@ -252,5 +296,8 @@ button{
   font-size : 20px;
   color:#ff0000;
   border: 1px solid #ff0000;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 

@@ -166,13 +166,22 @@ button {
   font-style: normal;
 }
 
-.p-warning {
+.p-warning,
+.p-duplication{
   display: none;
   font-size: 16px;
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #ff0000;
+}
+.p-no-duplication{
+   display: none;
+  font-size: 16px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:green;
 }
 
 .input-email-first,

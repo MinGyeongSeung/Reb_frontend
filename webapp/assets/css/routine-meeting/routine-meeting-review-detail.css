@@ -110,22 +110,19 @@ button{
   justify-content: flex-end;
 }
 
-.p-expert-info-title{
-  font-size: 20px;
-  color: #F38A6E;
-}
-.div-expert-detail{
+
+.div-routine-detail{
   margin-top:50px;
   
 }
 
-.div-expert-detail-button{
+.div-routine-detail-button{
   margin-top:50px;
   display: flex;
   justify-content: space-around;
   margin-bottom: 100px;
 }
-.div-expert-info-detail{
+.div-routine-info-detail{
   display: flex;
   justify-content: center;
 }
@@ -153,7 +150,7 @@ button{
   border: 1px solid #ff0000;
 }
 
-.p-expert-detail-comment{
+.p-routine-detail-comment{
   width: 600px;
 }
 .div-user-integration{
@@ -170,4 +167,8 @@ button{
   /* 여기 display를 none으로 해서 내 게시물만 display flex로 변경 */
   display: flex;
   justify-content: space-evenly;
+}
+.div-font-awesome-line{
+  flex: 1;
+  text-align: right;
 }

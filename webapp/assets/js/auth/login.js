@@ -59,4 +59,7 @@ loginBtn.addEventListener('click',(e)=>{
     alert("로그인 실패");
     e.preventDefault();
   }
+  else{
+    location.href="./../../main.html";
+  }
 });
