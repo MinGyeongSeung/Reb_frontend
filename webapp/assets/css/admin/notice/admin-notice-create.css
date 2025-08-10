@@ -24,7 +24,11 @@ header{
 }
 
 header>a>img{
+<<<<<<< Updated upstream
   height: 100px;
+=======
+  height: 110px;
+>>>>>>> Stashed changes
   width: 110px;
 }
 
