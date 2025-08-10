@@ -1,143 +1,230 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 #header {
   height: 110px;
   width: 100%;
   position: fixed;
-  background-color: rgb(255, 250, 205);
+
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #f59d85;
+}
+
+/* 메뉴 */
+.header-container-menu {
+  display: flex;
+  height: 110px;
+  padding: 0;
   justify-content: center;
   align-items: center;
-  border-bottom: 3px solid black;
-}
-
-.font-menu {
-  font-family: "Yeon Sung", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.header-text-nav ul {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.header-submenu {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  /* right: -200px; */
-  top: 83px;
-  gap: 32px;
-  white-space: nowrap;
-  background: rgba(255,250,205,.9);
-  /* visibility: hidden; */
-  font-size: 24px;
-}
-
-.header-submenu a {
-  color: rgb(243, 138, 110);
-}
-
-/* .header-nav-menu > li:hover .header-submenu {
-  visibility: visible;
-} */
-
-.header-nav-menu > li {
+  background-color: #FFFACD;
+  z-index: 1;
   position: relative;
-  padding-bottom: 10px;
+  width: 100%;
 }
 
-.header-nav-menu > li:hover > a,
-.header-submenu a:hover {
-  color: red;
-  font-weight: bold;
-}
 
-.page {
-  width: 1200px;
+.header-menu-bar {
+  position: relative;
+  width: 100%;
+  height: 113px;
+  background-color: #fffacdd5;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
-button {
-  border-radius: 13px;
-  padding: 0px 20px;
-  height: 45px;
-  width: 100px;
-  background-color: #f59d85;
-  border: 0px;
+.header-menu-bar-top {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  top: 15px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.header-menu-bar-top a{
+  width : 150px;
+}
+
+.header-menu-bar-top a:hover {
+  text-decoration: underline;
+}
+
+#header-menu-bar-top-left {
+  margin-right: 330px;
+}
+
+#header-menu-bar-top-right {
+  margin-left: 950px;
+  width : 250px;
+  font-size: 15px;
+  text-align: right;
+}
+
+#header-menu-bar-top-right a {
+  text-decoration: none;
+  color: #A39E9E;
+  font-size: 15px;
+}
+
+
+.header-menu-dropdown-list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 63px;
+  top: 0px;
+}
+
+.header-menu-dropdown-left {
+  top: 0px;
+  display: flex;
+  margin-left: 0px;
+  margin-right: 430px;
+  margin-top: 3px;
+  width: 280px;
+}
+
+.header-menu-dropdown-left a {
+  color: #F38A6E;
+  text-decoration: none;
+}
+
+#header-menu-center img:hover {
   cursor: pointer;
 }
 
-.header-donate-containter {
-  transform: translate(170px);
-}
+#header-menu-center {
+  width: 100%;
+  height: 110px;
+  position: absolute;
 
-.header-donate {
-  color: white;
-  font-size: 30px;
-}
-
-.header-inner {
-  width: 1200px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.header-nav-container ul {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  list-style: none;
-}
-
-.header-nav-menu > li > a {
-  font-size: 30px;
-  text-decoration: none;
-  color: inherit;
-  color: rgb(243, 138, 110);
-}
-
-.header-submenu > a {
-  text-decoration: none;
-  color: inherit;
-  color: rgb(243, 138, 110);
-}
-
-.login-box > a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.mypage-image {
-  transform: translate(70px, 3px);
-}
-
-.logo {
-  border-radius: 50%;
-  background-color: white;
-  overflow: hidden;
+#header-menu-center a {
   width: 100px;
   height: 100px;
-  border: 1px solid black;
+  margin-top: 20px;
+  cursor: pointer;
+  z-index: 1;
 }
 
-.logo-image {
-  width: 110px;
-  height: 110px;
+#header-menu-center img {
+  width: 100px;
+  height: 100px;
 }
 
-.mypage-image {
-  width: 31px;
-  height: 36px;
+.header-menu-dropdown-right {
+  top: 0px;
+  display: flex;
+  margin-left: 250px;
+  margin-top: 3px;
+  width: 270px;
+}
+
+.header-menu-dropdown-right a {
+  color: #F38A6E;
+  text-decoration: none;
+}
+
+.header-menu-dropdown-menu-content {
+  display: none;
+  margin-top: 0px;
+  width: 100px;
+}
+
+.header-menu-dropdown-menu {
+  text-align: center;
+  font-size: 19px;
+  margin: 0;
+  padding: 0;
+  line-height: 60px;
+  width: 100px;
+}
+
+.header-menu-dropdown {
+  width: 100px;
+  top: 0px;
+}
+
+.header-menu-dropdown-bg {
+  position: absolute;
+  top: 63px;
+  width: 100%;
+  height: 50px;
+  left: 0px;
+  display: none;
+
+  background-color: #fffacd8a;
+}
+
+.header-menu-dropdown:hover .header-menu-dropdown-bg {
+  display: flex;
+}
+
+.header-menu-dropdown:hover .header-menu-dropdown-menu-content {
+  display: flex;
+}
+
+.header-menu-dropdown-menu-content {
+  transform: translate(-50px, 0);
+  width: 400px;
+}
+
+.header-menu-dropdown-menu-content a {
+  margin: 10px 10px;
+}
+
+.header-menu-dropdown:hover .header-menu-dropdown-menu a {
+  padding-bottom: 15px;
+  border-bottom: 2px solid #F38A6E;
+}
+
+/* 헤더 오른쪽 사이드 */
+.header-menu-side-right {
+  top: 0px;
+  display: flex;
+  margin-left: 0px;
+  margin-top: 3px;
+  width: 80px;
+}
+
+
+.header-menu-right {
+  top: 0px;
+  display: flex;
+  justify-content: right;
+  margin-top: 10px;
+  width: 220px;
+  margin-left: 220px;
+}
+
+.header-menu-right a {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.header-menu-right a img {
+  width: 30px;
+  height: 30px;
+}
+
+#div-a-donation-link {
+  width: 300px;
+  border-radius: 10px;
+  background-color: #F38A6E;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-right: 100px;
+}
+
+#div-a-donation-link a{
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  line-height: 40px;
 }
