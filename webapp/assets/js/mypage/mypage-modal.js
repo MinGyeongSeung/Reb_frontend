@@ -19,7 +19,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 });
             });
 
-
             modalTitle = document.querySelector(`.modal-title`);
             modalContent = document.querySelector(`.modal-content`);
         });

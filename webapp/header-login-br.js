@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
     fetch("./../../header-login-br.html")
         .then(response => response.text())
         .then(data => {
-            modal = document.querySelector(`#header`);
-            modal.innerHTML = data;
+            header = document.querySelector(`#header`);
+            header.innerHTML = data;
         });
 })
