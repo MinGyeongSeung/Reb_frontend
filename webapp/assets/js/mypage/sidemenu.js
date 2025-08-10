@@ -16,6 +16,10 @@ window.addEventListener('DOMContentLoaded', () => {
       sideMenuBtnClose.addEventListener('click', () => { moveSideMenu("-300px"); });
       sideMenuBtnOpen.addEventListener('click', () => { moveSideMenu("0px"); });
 
+      document.querySelector("#button-sidemenu-expert-status").addEventListener('click', () => {
+        openModal('expertStatus');
+      });
+
       const expertStatusText = getExpertStatus();
       if (expertStatusText !== null) {
         setActiveExpertMenu(expertStatusText === "인증 완료");
@@ -70,15 +74,15 @@ function setActiveExpertMenu(isExpert) {
 }
 
 
-function getExpertStatus(){
+function getExpertStatus() {
   let expertStatus = document.querySelector("#personal-info-expert-status");
-  if(expertStatus !== null)
+  if (expertStatus !== null)
     return expertStatus.innerHTML;
-  else{
+  else {
     expertStatus = document.querySelector("#edit-info-expert-status");
 
-    if(expertStatus !== null)
-    return expertStatus.innerHTML;
+    if (expertStatus !== null)
+      return expertStatus.innerHTML;
   }
   return null;
 }
