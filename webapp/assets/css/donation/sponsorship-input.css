@@ -28,7 +28,7 @@
 main {
     padding-top: 110px;
     /* height는 컨텐츠에 따라 */
-    height: 1050px; 
+    height: 50px; 
     min-height: calc(100vh - 235px);
     width: 100%;
     background-color: #FFFEF1;
@@ -74,6 +74,7 @@ button{
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
+  text-align: center;
 }
 
 #choose-money{
@@ -118,10 +119,11 @@ button{
   position: relative;
 }
 
-input{
+#input-donation-money{
   height: 48px;
   width: 300px;
   
+  margin-right: 10px;
   margin-left: 20px;
   padding-left: 3px;
   font-size: 18px;
