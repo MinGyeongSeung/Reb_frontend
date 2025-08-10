@@ -99,6 +99,10 @@ button {
   padding-top: 30px;
 }
 
+.textarea-text{
+  resize: none;
+}
+
 .div-recruit-info {
   padding-left: 200px;
 }

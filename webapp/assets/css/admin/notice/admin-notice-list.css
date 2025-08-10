@@ -37,7 +37,8 @@ header {
 }
 
 main{
-  /* height: 100vh; */
+  background-color: white;
+  height: 100vh;
   display: flex;
   position: relative;
   top: 80px;
