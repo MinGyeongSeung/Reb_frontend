@@ -17,7 +17,6 @@ window.addEventListener('DOMContentLoaded', () => {
       sideMenuBtnOpen.addEventListener('click', () => { moveSideMenu("0px"); });
 
       const expertStatusText = getExpertStatus();
-      console.log(expertStatusText);
       if (expertStatusText !== null) {
         setActiveExpertMenu(expertStatusText === "인증 완료");
       }

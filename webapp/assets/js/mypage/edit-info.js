@@ -129,7 +129,17 @@ nicknameInput.addEventListener('input', () => {
     nicknameAlert.style.display = "none";
 })
 
+function checkAllInfo(){
+    //필수 입력 값 확인
+    return true;
+}
+
 function editCompleteUserInfo() {
+    if(!checkAllInfo()){
+        alert("모든 정보를 입력해주시길 바랍니다.");
+        return;
+    }
+
     if (confirm("개인정보를 수정하시겠습니까?")) {
         moveToPersonalInfo();
     }
