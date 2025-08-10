@@ -52,7 +52,7 @@ button {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: white;
+  color: black;
 }
 
 .font-menu {
@@ -62,6 +62,5 @@ button {
 }
 
 .main-banner-container {
-  display: flex;
-  justify-content: center;
+  background-color: aqua;
 }
