@@ -28,6 +28,14 @@ const editInfoAddressText = document.querySelector("#edit-info-address-text");
 const buttonColor = "#f59d85";
 const buttonDisabledColor = "#797979ff";
 
+document.querySelector("#button-edit-user-complete").addEventListener(('click'), () => {
+    editCompleteUserInfo();
+});
+
+document.querySelector("#button-edit-user-cancel").addEventListener(('click'), () => {
+    cacelEditUserInfo()
+});
+
 inputVerificationCode.addEventListener('focus',
     () => {
         inputVerificationCode.value = "";
@@ -129,13 +137,13 @@ nicknameInput.addEventListener('input', () => {
     nicknameAlert.style.display = "none";
 })
 
-function checkAllInfo(){
+function checkAllInfo() {
     //필수 입력 값 확인
     return true;
 }
 
 function editCompleteUserInfo() {
-    if(!checkAllInfo()){
+    if (!checkAllInfo()) {
         alert("모든 정보를 입력해주시길 바랍니다.");
         return;
     }

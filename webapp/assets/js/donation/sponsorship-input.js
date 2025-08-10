@@ -1,6 +1,15 @@
 const moneyButtons = document.querySelectorAll('.div-money-button');
 const inputMoney = document.querySelector("#input-donation-money");
 
+
+document.querySelector("#button-cancle-donation").addEventListener('click', ()=>{
+    cancelDonation();
+});
+
+document.querySelector("#button-ok-donation").addEventListener('click', ()=>{
+    okDonation();
+});
+
 moneyButtons.forEach((m) => {
     m.addEventListener('click', (e) => {
         const pushed = e.target.value;
