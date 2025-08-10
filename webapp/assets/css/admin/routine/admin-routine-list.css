@@ -220,3 +220,14 @@ form>button>img{
   width: 30px;
   border: 0px;
 }
+
+#main-create-routine{
+  height: 40px;
+  width: 70px;
+  position: relative;
+  left: 300px;
+  font-size: 16px;
+  background-color: #818181;
+  border-radius: 10px;
+  color: white;
+}

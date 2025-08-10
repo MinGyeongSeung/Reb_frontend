@@ -79,15 +79,6 @@ main{
   transform: translateX(155px);
 }
 
-#main-sponsor{
-  background-color: white;
-  width: 895px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transform: translateX(155px);
-}
-
 .main-banner-title{
   height: 50px;
   width: 850px;

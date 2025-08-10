@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./../../../assets/css/admin/banner/admin-banner-create.css">
+  <script defer src="./../../../assets/js/admin/banner/admin-banner-create.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&family=Yeon+Sung&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="font-menu">
+  <header>
+    <section id="header-admin-sponsor">
+      <p><strong>배너 등록</strong></p>
+    </section>
+  </header>
+  <main>
+    <section id="main-admin-list-menu">
+      <ul id="main-admin-list">
+        <li>
+          <a href="./../notice/admin-notice-list.html">
+            공지 사항 목록
+          </a>
+        </li>
+        <li>
+          <a href="./../course/admin-course-request-list.html">
+            수업 목록
+          </a>
+        </li>
+        <li>
+          <a href="./../routine/admin-routine-list.html">
+            루틴 모임 목록
+          </a>
+        </li>
+        <li>
+          <a href="./../member/admin-member-list.html">
+            회원 목록
+          </a>
+        </li>
+        <li>
+          <a href="./../member/admin-sponsor-list.html">
+            후원자 목록
+          </a>
+        </li>
+        <li>
+          <a href="./../member/admin-expert-list.html">
+            전문가 승인 목록
+          </a>
+        </li>
+        <li>
+          <a href="./../review/admin-routine-review-list.html">
+            활동 후기
+          </a>
+        </li>
+        <li>
+          <a href="./../banner/admin-banner-list.html">
+            <strong>배너 등록</strong>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section id="main-banner">
+      <div id="main-banner-div">
+        <form action="" method="get">
+          <input type="text" id="main-banner-input-name" placeholder="배너 명">
+          <div id="main-banner-input-file">
+            <input type="file"  name="input-file" id="main-banner-input-file-input">
+            <input type="text" for="main-banner-input-file-input" placeholder="이미지 파일">
+            <label for="main-banner-input-file-input">
+              <button type="button">...</button>
+            </label>
+          </div>
+          <div id="main-banner-btn">
+            <button type="button">
+              등록
+            </button>
+            <button type="button">
+              취소
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
