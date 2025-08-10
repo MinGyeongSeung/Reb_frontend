@@ -1,0 +1,265 @@
+/* *{
+    margin:0;
+    padding:0;
+}
+
+
+header{
+  margin : 0;
+  padding: 0;
+}
+
+header{
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color:#F38A6E; 
+    height:900px;
+} */
+
+#header {
+  height: 110px;
+  width: 100%;
+  position: fixed;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #f59d85;
+}
+
+/* 메뉴 */
+.header__container_menu {
+  display: flex;
+  height: 110px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFACD;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+}
+
+
+.header__menu_bar {
+  position: relative;
+  width: 100%;
+  height: 113px;
+  background-color: #fffacdd5;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__menu_bar_top {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.header__menu_bar_top a:hover {
+  text-decoration: underline;
+}
+
+#header__menu_bar_top_left {
+  margin-right: 330px;
+}
+
+#header__menu_bar_top_right {
+  margin-left: 680px;
+}
+
+#header__menu_bar_top_right a {
+  text-decoration: none;
+  color: #A39E9E;
+}
+
+#header__menu_bar_top_left nav ul {
+  margin-left: 340px;
+}
+
+#header__menu_bar_top_right nav ul {
+  margin-right: 340px;
+}
+
+.header__menu_bar_top nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 200px;
+}
+
+.header__menu_bar_top nav ul li {
+  list-style: none;
+  font-size: 13px;
+}
+
+.header__menu_bar_top nav ul li a {
+  color: #F38A6E;
+  text-decoration: none;
+}
+
+.header__menu_dropdown_list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 63px;
+  top: 0px;
+}
+
+.header__menu_dropdown_left {
+  top: 0px;
+  display: flex;
+  margin-left: 0px;
+  margin-top: 3px;
+  width: 280px;
+}
+
+.header__menu_dropdown_left a {
+  color: #F38A6E;
+  text-decoration: none;
+}
+
+#header__menu_center img:hover {
+  cursor: pointer;
+}
+
+#header__menu_center {
+  width: 100%;
+  height: 110px;
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+}
+
+#header__menu_center a {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#header__menu_center img {
+  width: 100px;
+  height: 100px;
+}
+
+.header__menu_dropdown_right {
+  top: 0px;
+  display: flex;
+  margin-left: 250px;
+  margin-top: 3px;
+  width: 270px;
+}
+
+.header__menu_dropdown_right a {
+  color: #F38A6E;
+  text-decoration: none;
+}
+
+.header__menu_dropdown_menu_content {
+  display: none;
+  margin-top: 0px;
+  width: 100px;
+}
+
+.header__menu_dropdown_menu {
+  text-align: center;
+  font-size: 19px;
+  margin: 0;
+  padding: 0;
+  line-height: 60px;
+  width: 100px;
+}
+
+.header__menu_dropdown {
+  width: 100px;
+  top: 0px;
+}
+
+.header__menu_dropdown_bg {
+  position: absolute;
+  top: 63px;
+  width: 100%;
+  height: 50px;
+  left: 0px;
+  display: none;
+
+  background-color: #fffacd91;
+}
+
+.header__menu_dropdown:hover .header__menu_dropdown_bg {
+  display: flex;
+}
+
+.header__menu_dropdown:hover .header__menu_dropdown_menu_content {
+  display: flex;
+}
+
+.header__menu_dropdown_menu_content {
+  transform: translate(-50px, 0);
+  width: 400px;
+}
+
+.header__menu_dropdown_menu_content a {
+  margin: 10px 10px;
+}
+
+.header__menu_dropdown:hover .header__menu_dropdown_menu a {
+  padding-bottom: 15px;
+  border-bottom: 2px solid #F38A6E;
+}
+
+/* 헤더 오른쪽 사이드 */
+.header__menu_side_right {
+  top: 0px;
+  display: flex;
+  margin-left: 0px;
+  margin-top: 3px;
+  width: 80px;
+}
+
+
+.header__menu_right {
+  top: 0px;
+  display: flex;
+  justify-content: right;
+  margin-top: 10px;
+  width: 200px;
+  margin-left: 300px;
+}
+
+.header__menu_right a {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.header__menu_right a img {
+  width: 30px;
+  height: 30px;
+}
+
+#div-a-donation-link {
+  width: 100px;
+  border-radius: 10px;
+  background-color: #F38A6E;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-right: 100px;
+}
+
+#div-a-donation-link a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  line-height: 40px;
+}
