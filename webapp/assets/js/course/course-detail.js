@@ -1,6 +1,8 @@
 const buttonApp = document.querySelector(".button-application");
 const buttonCancel = document.querySelector(".button-cancel");
-
+const modal = document.querySelector(".modal-background");
+const deleteBtn = document.querySelector(".button-delete");
+const modalClose = document.querySelector(".button-x");
 
 buttonApp.addEventListener("click",()=>{
   if(confirm("신청하시겠습니까?")){
@@ -16,3 +18,10 @@ buttonCancel.addEventListener("click",()=>{
   }
 });
 
+deleteBtn.addEventListener('click', () => {
+  modal.style.display = "flex";
+});
+
+modalClose.addEventListener('click',()=>{
+  modal.style.display = "none";
+});

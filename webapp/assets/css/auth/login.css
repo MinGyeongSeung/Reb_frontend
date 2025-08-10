@@ -297,7 +297,8 @@ a {
   color: black;
 }
 
-.button-modal-find {
+.button-modal-find-id,
+.button-modal-find-pw{
   width: 100%;
   height: 50px;
   font-size: 30px;
@@ -434,7 +435,8 @@ a {
   font-style: normal;
 }
 
-.button-modal-find-end {
+.button-modal-find-end-id,
+.button-modal-find-end-pw {
   width: 100%;
   height: 50px;
   font-size: 30px;
