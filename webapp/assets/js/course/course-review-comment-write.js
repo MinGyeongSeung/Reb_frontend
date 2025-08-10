@@ -1,15 +1,17 @@
+let count = 3;
+
 let edit = document.querySelectorAll(".span-comment-edit");
 let commentAdd = document.querySelector(".input-comment");
 const buttonWrite = document.querySelector(".button-write");
 const commentList = document.querySelector(".ul-comment-list");
 buttonWrite.addEventListener('click', (e) => {
-  console.log(commentAdd.length);
     let newLi = document.createElement('li');
     newLi.setAttribute('class', 'li-comment');
+    newLi.setAttribute('id', `li-comment-${count}`);
     newLi.innerHTML = '<div class="div-user-profile"><img src="./../../assets/img/karina.jpg" class="img-user-profile"></div>' +
       '<div class="div-user-info">' +
       '<div class="div-user-name-area">' +
-      '<p class="p-user-name">곰융</p><span class="span-comment-edit">수정</span>' +
+      `<p class="p-user-name">곰융</p><span class="span-comment-edit" value="li-comment-${count}" onclick="editComment(event)">수정</span>` +
       '</div>' +
       '<div class="div-user-text-area">' +
       '<p class="p-comment-text">' + commentAdd.value + '</p><span class="span-comment-delete">삭제</span>' +
@@ -18,16 +20,16 @@ buttonWrite.addEventListener('click', (e) => {
       '</div>';
     if (commentAdd != null && commentAdd.length != 0) {
       commentList.appendChild(newLi);
+      count++;
       commentAdd.value = null;
     }
-  
 });
 
-for(let i=0;i<edit.length;i++){
-  edit[i].addEventListener('click', (e) => {
-    newEdit = e.target;
-    console.log(newEdit);
+function editComment(event){
+  const comment = commentList.querySelector(`#${event.target.getAttribute('value')}`);
   
-  });
-
+  comment.querySelector('.p-comment-text').style.display ='none';
 }
+
+
+
