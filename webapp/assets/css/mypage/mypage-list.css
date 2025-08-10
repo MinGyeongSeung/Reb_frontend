@@ -16,7 +16,7 @@
     background-color: white;
 }
 
-a{
+#main-container a{
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
