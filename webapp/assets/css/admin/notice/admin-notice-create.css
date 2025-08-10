@@ -64,6 +64,8 @@ form{
 }
 
 #main-admin-notice-create-content{
+  font-size: 14px;
+  resize: none;
   height: 600px;
   width: 1200px;
   border-radius: 10px;
