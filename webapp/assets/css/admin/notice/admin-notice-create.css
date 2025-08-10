@@ -10,18 +10,26 @@
 }
 
 body{
+  background-color: #a6a6a6;
   width: 1512px;
   height: 100vh;
   margin: auto;
 }
 
 header{
-  background-color: #fffacd;
+  background-color: #757575;
   height: 110px;
+  display: flex;
+  justify-content: center;
+}
+
+header>a>img{
+  height: 100px;
+  width: 110px;
 }
 
 main{
-  background-color: #fffef1;
+  background-color: #bebebe;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +40,7 @@ main{
   height: 70px;
   width: 1200px;
   font-size: 48px;
-  color: #f38a6e;
+  color: #000000;
 }
 
 form{
@@ -82,7 +90,7 @@ form{
 }
 
 .main-btn:first-child{
-  background-color: #f59d85;
+  background-color: #757575;
   color: white;
   border: 0;
 }
@@ -96,6 +104,6 @@ form{
 
 
 footer{
-  background-color: #fff1cd;
+  background-color: #d9d9d9;
   height: 125px;
 }

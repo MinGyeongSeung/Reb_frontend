@@ -1,5 +1,12 @@
 const okBtn = document.querySelector(".button-ok");
 const cancelBtn = document.querySelector(".button-cancel");
+const startDate = document.querySelector("#start-date");
+const endDate = document.querySelector("#end-date");
+const rStartDate = document.querySelector("#routine-start-date");
+const rEndDate = document.querySelector("#routine-end-date");
+const today = new Date().toISOString().split('T')[0];
+startDate.setAttribute('min', today);
+rStartDate.setAttribute('min', today);
 
 okBtn.addEventListener('click', ()=>{
   alert("등록 완료되었습니다.");
@@ -12,3 +19,27 @@ cancelBtn.addEventListener('click', ()=>{
     location.href= "./../../../app/admin/routine/admin-routine-list.html";
   }
 });
+
+startDate.addEventListener('change', function(){
+  if(startDate.value){
+    endDate.min=startDate.value;
+  }
+}, false);
+
+endDate.addEventListener('change', function(){
+  if(endDate.value){
+    startDate.max= endDate.value;
+  }
+}, false);
+
+rStartDate.addEventListener('change', function(){
+  if(rStartDate.value){
+    rEndDate.min=rStartDate.value;
+  }
+}, false);
+
+endDate.addEventListener('change', function(){
+  if(rEndDate.value){
+    rStartDate.max= rEndDate.value;
+  }
+}, false);
