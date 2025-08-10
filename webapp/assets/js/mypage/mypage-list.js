@@ -73,16 +73,16 @@ const myComments = new ListInfo(
 
 function inputList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, id){
     if(id === "my-courses-routine")
-        loadList(listPageTitle, listColType, listContentList,searchTypeFirst, searchTypeSecond, id, myRoutine);
+        loadList(listPageTitle, listColType, listContentList,searchTypeFirst, searchTypeSecond, "./../routine-meeting/routine-meeting-detail.html", myRoutine);
     else if(id === "my-courses-courses")
-        loadList(listPageTitle, listColType, listContentList,searchTypeFirst, searchTypeSecond, id, myCourse);
+        loadList(listPageTitle, listColType, listContentList,searchTypeFirst, searchTypeSecond, "./../course/course-detail.html", myCourse);
     else if(id === "my-post")
-        loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond,id, myPosts);
+        loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond,"./../course/course-review-detail.html", myPosts);
     else if(id === "my-comment")
-        loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, id, myComments);
+        loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, "./../routine-meeting/routine-meeting-review-detail.html", myComments);
 }
 
-function loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, id, listInfo){
+function loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, href, listInfo){
     listPageTitle.innerHTML = listInfo.title;
 
     listColType.querySelector('.list-title').innerHTML = listInfo.colText['title'];
@@ -99,6 +99,7 @@ function loadList(listPageTitle, listColType, listContentList, searchTypeFirst, 
         if(listInfo.data.length - 1 < count)
             return;
 
+        e.querySelector('.list-title').setAttribute("href", href);
         e.querySelector('.list-title').innerHTML = listInfo.data[count].title;
         e.querySelector('.list-user-name').innerHTML = listInfo.data[count].userName;
         e.querySelector('.list-date').innerHTML = listInfo.data[count].date;
