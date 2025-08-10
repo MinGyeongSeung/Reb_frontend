@@ -121,7 +121,7 @@ button{
 
 .div-expert-detail-button{
   margin-top:50px;
-  display: none;
+  display: flex;
   justify-content: space-around;
   margin-bottom: 100px;
 }
@@ -131,7 +131,7 @@ button{
 
 .div-expert-edit-button{
   margin-top:50px;
-  display: flex;
+  display: none;
   justify-content: space-around;
   margin-bottom: 100px;
 }
