@@ -19,6 +19,13 @@ body{
 header{
   background-color: #fffacd;
   height: 110px;
+  display: flex;
+  justify-content: center;
+}
+
+header>a>img{
+  height: 110px;
+  width: 110px;
 }
 
 main{

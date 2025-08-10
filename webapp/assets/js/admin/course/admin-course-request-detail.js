@@ -2,6 +2,7 @@ const createBtn = document.querySelector(".button-application");
 const dropBtn = document.querySelector(".button-cancel");
 const dropModal = document.querySelector("#modal-background");
 const submitBtn = document.querySelector("#submit");
+const closeModal = document.querySelector("#close-modal");
 
 createBtn.addEventListener('click', ()=>{
   alert("개설을 승인하였습니다.");
@@ -17,3 +18,7 @@ submitBtn.addEventListener("click", ()=>{
   alert("개설을 반려하였습니다.");
   location.href= "./../../../app/admin/course/admin-course-request-list.html";
 });
+
+closeModal.addEventListener(('click'), ()=> {
+  dropModal.style.display= "none";
+})

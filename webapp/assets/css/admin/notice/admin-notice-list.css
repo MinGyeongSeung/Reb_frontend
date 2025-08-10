@@ -37,7 +37,7 @@ header {
 }
 
 main{
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   position: relative;
   top: 80px;
@@ -62,7 +62,7 @@ main{
 
 #main-admin-list>li{
   font-size: 20px;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 #main-admin-list>li>a{
@@ -140,12 +140,10 @@ main{
   border: 0;
   font-size: 20px;
   margin: 70px 0 28px;
-}
-
-#main-create-notice>a{
-  text-decoration: none;
   color: white;
 }
+
+
 
 #main-page-number{
   display: flex;
