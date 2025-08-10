@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#header{
+  height: 110px;
+  width: 100%;
+  position: fixed;
+  background-color: #f59d85;
+}
+
+#footer{
+  width: 100%;
+  height: 125px;
+  background-color: #f59d85;
+}
+
+#main-container {
+    width: 1200px;
+    height: 100%;
+    background-color: #FFFEF1;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding-top: 110px;
+    /* height는 컨텐츠에 따라 */
+    height: 50px; 
+    min-height: calc(100vh - 235px);
+    width: 100%;
+    background-color: #FFFEF1;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button{
+  border-radius: 13px;
+  padding : 0px 20px;
+  height: 50px;
+  background-color: #f59d85;
+  border : 0px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.font-main{
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-menu{
+  font-family: "Yeon Sung", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pagetitle{
+  font-size : 30px;
+  color : #F38A6E;
+
+  padding-top : 100px;
+  height: 110px;
+  line-height: 110px;
+  
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  text-align: center;
+}
+
+#choose-money{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+}
+
+#choose-money-label{
+    margin-right: 30px;
+    line-height: 50px;
+}
+
+.div-money-button{
+    margin : 0px 5px;
+    color : white;
+}
+
+#money-input-text{
+    display: flex;
+}
+
+
+#sponsorship-bottom{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#sponsorship-bottom button{
+    margin : 0px 100px;
+}
+
+#button-ok-donation{
+    color : white;
+}
+
+#button-cancle-donation{
+  background-color: white;
+  color : red;
+  border : red solid;
+  position: relative;
+}
+
+#input-donation-money{
+  height: 48px;
+  width: 300px;
+  
+  margin-right: 10px;
+  margin-left: 20px;
+  padding-left: 3px;
+  font-size: 18px;
+  padding-left: 3px;
+}

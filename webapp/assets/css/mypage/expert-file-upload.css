@@ -8,11 +8,11 @@
     line-height: 45px;
 }
 
-#expert-file-upload-middle label{
-    color : #F38A6E;
+#label-expert-file{
+    color:  #F38A6E;
 }
 
-#button-expert-file-search{
+#input-expert-file-search{
     display: none;
 }
 
