@@ -5,7 +5,4 @@ const writeLink = './expert-course-create-request.html'
 writeBtn.addEventListener('click', () => {
   location.href = writeLink;
 })
-// listClick.addEventListener('click',(e)=>{
-//   e
-
-// });
+//버튼 클래스를 계속 바꿔줘야됨 모집중, 모집전, 모집종료

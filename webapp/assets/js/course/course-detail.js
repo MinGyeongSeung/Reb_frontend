@@ -3,6 +3,8 @@ const buttonCancel = document.querySelector(".button-cancel");
 const modal = document.querySelector(".modal-background");
 const deleteBtn = document.querySelector(".button-delete");
 const modalClose = document.querySelector(".button-x");
+const buttonModalDelete = document.querySelector(".button-modal-delete");
+
 
 buttonApp.addEventListener("click",()=>{
   if(confirm("신청하시겠습니까?")){
@@ -24,4 +26,9 @@ deleteBtn.addEventListener('click', () => {
 
 modalClose.addEventListener('click',()=>{
   modal.style.display = "none";
+});
+
+buttonModalDelete.addEventListener('click',()=>{
+  alert("삭제 요청 완료되었습니다");
+  modal.style.display ="none";
 });

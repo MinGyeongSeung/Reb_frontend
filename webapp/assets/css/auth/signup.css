@@ -237,8 +237,16 @@ button {
   width: 100%;
   background-color: #f59d85;
   color: white;
+  margin: 20px;
 }
 
+.button-back{
+   width: 100%;
+  background-color: #d9d9d9;
+  color: black;
+  margin: 20px;
+  font-size: 12px;
+}
 
 .input-cert {
   border-radius: 15px;
