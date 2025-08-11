@@ -1,5 +1,5 @@
-const updateBtn = document.querySelector(".main-btn:first-child");
-const deleteBtn = document.querySelector(".main-btn:last-child");
+const updateBtn = document.querySelector(".button-application");
+const deleteBtn = document.querySelector(".button-cancel");
 
 updateBtn.addEventListener('click', ()=>{
   location.href= "./../../../app/admin/notice/admin-notice-edit.html";
@@ -10,4 +10,9 @@ deleteBtn.addEventListener('click', ()=>{
     alert("삭제 완료되었습니다.");
     location.href= "./../../../app/admin/notice/admin-notice-list.html";
   }
+});
+
+const moveBtn = document.querySelector(".back-list");
+moveBtn.addEventListener('click', ()=>{
+  location.href= "./../../../app/admin/notice/admin-notice-list.html"
 });
