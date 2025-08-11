@@ -152,7 +152,7 @@ button {
 }
 
 /* 수업신청바로가기 */
-.main-notice-create-botton {
+.main-class-create-botton {
   background-color: #00FFFF;
   color: black;
   top: 170px;
@@ -160,7 +160,7 @@ button {
 }
 
 /* 수업후기바로가기 */
-.main-routine-review-botton:last-of-type {
+.main-class-review-botton {
   background-color: #E6E6FA;
   color: black;
   top: 200px;
