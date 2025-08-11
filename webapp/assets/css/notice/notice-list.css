@@ -101,7 +101,7 @@ button {
   background-color: rgb(237, 237, 237);
   display: flex;
   justify-content: space-around;
-  padding: 10px;
+  padding: 20px;
   border-bottom: 1px solid #f59d85;
 }
 
