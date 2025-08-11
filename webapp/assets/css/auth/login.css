@@ -352,7 +352,8 @@ a {
   font-style: normal;
 }
 
-.button-injung {
+.button-injung-id,
+.button-injung-pw{
   border-radius: 13px;
   padding: 0px 20px;
   height: 45px;
@@ -390,7 +391,8 @@ a {
   background-color: #d9d9d9;
 }
 
-.button-injung-do {
+.button-injung-do-id,.button-retry-id,
+.button-injung-do-pw,.button-retry-pw{
   border-radius: 13px;
   padding: 0px 20px;
   height: 45px;
