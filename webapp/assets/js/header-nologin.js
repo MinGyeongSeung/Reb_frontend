@@ -1,18 +1,26 @@
 window.addEventListener('DOMContentLoaded', () => {
-    //불러오기
-    var xhr = new XMLHttpRequest();
-    let path = "./header-nologin.html";
-    xhr.open('HEAD', path, false);
-    xhr.send();
+  let root = "./../../";
 
-    if (xhr.status == "404") {
-      path = "./../."+ path;
-    }
+  if (document.querySelector(`#header`).getAttribute('class') === "main-page") {
+    root = "./";
+  }
 
-    fetch(path)
-        .then(response => response.text())
-        .then(data => {
-            header = document.querySelector(`#header`);
-            header.innerHTML = data;
-        });
+  console.log(root);
+
+  fetch(root + "header-nologin.html")
+    .then(response => response.text())
+    .then(data => {
+      footer = document.querySelector(`#header`);
+      footer.innerHTML = data;
+      const aTag = document.querySelectorAll('#header a');
+      const imgTag = document.querySelectorAll('#header img');
+
+      aTag.forEach((a) => {
+        a.setAttribute('href', root + a.getAttribute('href'));
+      });
+
+      imgTag.forEach((img) => {
+        img.setAttribute('src', root + img.getAttribute('src'));
+      })
+    });
 });
