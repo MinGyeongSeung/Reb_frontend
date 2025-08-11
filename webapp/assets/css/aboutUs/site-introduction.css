@@ -3,19 +3,6 @@
   padding: 0;
 }
 
-#header {
-  height: 110px;
-  width: 100%;
-  position: fixed;
-  background-color: #f59d85;
-}
-
-#footer {
-  width: 100%;
-  height: 125px;
-  background-color: #f59d85;
-}
-
 #main-container {
   width: 1200px;
   height: 100%;
@@ -28,7 +15,9 @@
 
 main {
   padding-top: 110px;
-  height: 100%;
+  height: 3300px;
+  min-height: calc(100vh - 235px);
+
   width: 100%;
   background-color: #fffef1;
   font-family: "IBM Plex Sans KR", sans-serif;
@@ -70,6 +59,7 @@ button {
   font-weight: 400;
   font-style: normal;
 }
+
 /* 메인 최상단 제목 시작 */
 .introduction-main-title {
   background-color: #f59d85;
@@ -102,6 +92,7 @@ button {
   width: 100%;
   height: 100%;
 }
+
 /* 메인 최상단 제목 끝 */
 
 /* 메인 전체*/

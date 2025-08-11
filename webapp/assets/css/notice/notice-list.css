@@ -3,19 +3,6 @@
   padding: 0;
 }
 
-#header {
-  height: 110px;
-  width: 100%;
-  position: fixed;
-  background-color: #f59d85;
-}
-
-#footer {
-  width: 100%;
-  height: 125px;
-  background-color: #f59d85;
-}
-
 #main-container {
   width: 1200px;
   height: 100%;
@@ -26,7 +13,8 @@
 
 main {
   padding-top: 110px;
-  height: 100%;
+  height: 1150px;
+  min-height: calc(100vh - 235px);
   width: 100%;
   background-color: #fffef1;
   font-family: "IBM Plex Sans KR", sans-serif;
@@ -123,7 +111,7 @@ button {
   font-size: 20px;
 }
 
-.notice-must-read-emphasize-title > a {
+.notice-must-read-emphasize-title>a {
   text-decoration: none;
   color: inherit;
 }
@@ -197,7 +185,7 @@ button {
   border-radius: 13px;
 }
 
-.notice-page-nation > li > a {
+.notice-page-nation>li>a {
   display: flex;
   gap: 10px;
 }
@@ -219,7 +207,7 @@ button {
   margin-top: 2%;
 }
 
-#main-page-number > a {
+#main-page-number>a {
   margin: 0 28px;
   text-decoration: none;
   color: black;
@@ -234,7 +222,7 @@ button {
   margin: 30px 28px;
 }
 
-#main-search-basic > div {
+#main-search-basic>div {
   border: 1px solid black;
   border-radius: 12px;
 }
@@ -243,17 +231,17 @@ button {
   display: none;
 }
 
-#main-search-menu > div {
+#main-search-menu>div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#main-search-menu > div > p {
+#main-search-menu>div>p {
   align-self: center;
 }
 
-#main-search-basic > div > p {
+#main-search-basic>div>p {
   height: 45px;
   width: 102px;
   border: 1px solid black;
@@ -277,14 +265,14 @@ form {
   position: relative;
 }
 
-form > button {
+form>button {
   background-color: white;
   position: absolute;
   right: 6px;
   top: 3px;
 }
 
-form > button > img {
+form>button>img {
   height: 30px;
   width: 30px;
   border: 0px;
