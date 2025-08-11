@@ -9,10 +9,6 @@
   background-color: #f59d85;
 }
 
-#header *{
-  z-index: 10;
-}
-
 /* 메뉴 */
 .header-container-menu {
   display: flex;
