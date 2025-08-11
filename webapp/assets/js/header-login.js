@@ -1,7 +1,15 @@
 window.addEventListener('DOMContentLoaded', () => {
     //불러오기
+    var xhr = new XMLHttpRequest();
+    let path = "./header-login.html";
+    xhr.open('HEAD', path, false);
+    xhr.send();
+
+    if (xhr.status == "404") {
+      path = "./../."+ path;
+    } 
     
-    fetch("./../../header-login.html")
+    fetch(path)
         .then(response => response.text())
         .then(data => {
             header = document.querySelector(`#header`);
