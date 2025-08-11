@@ -4,7 +4,7 @@ const modal = document.querySelector(".modal-background");
 const deleteBtn = document.querySelector(".button-delete");
 const modalClose = document.querySelector(".button-x");
 const buttonModalDelete = document.querySelector(".button-modal-delete");
-let textarea = document.querySelector(".textarea-delete-modal");
+const textareaDelete = document.querySelector(".textarea-delete-modal");
 
 buttonApp.addEventListener("click",()=>{
   if(confirm("신청하시겠습니까?")){
@@ -29,7 +29,14 @@ modalClose.addEventListener('click',()=>{
 });
 
 buttonModalDelete.addEventListener('click',()=>{
-  alert("삭제 요청 완료되었습니다");
-  textarea.value = null;
-  modal.style.display ="none";
+  console.log(textareaDelete.value.length);
+   if(textareaDelete.value === "" || textareaDelete.value.length === 0){
+      alert("요청을 입력해주세요");
+    }
+    else{
+      alert("삭제 요청 완료되었습니다");
+      textareaDelete.value = null;
+      modal.style.display ="none";
+      location.href= "./course-detail-expert-delete-ing.html";
+    }
 });
