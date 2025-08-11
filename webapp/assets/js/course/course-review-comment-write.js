@@ -4,6 +4,8 @@ let edit = document.querySelectorAll(".span-comment-edit");
 let commentAdd = document.querySelector(".input-comment");
 const buttonWrite = document.querySelector(".button-write");
 const commentList = document.querySelector(".ul-comment-list");
+const commentDelete = document.querySelectorAll(".span-comment-delete");
+
 buttonWrite.addEventListener('click', (e) => {
     let newLi = document.createElement('li');
     newLi.setAttribute('class', 'li-comment');
@@ -32,4 +34,10 @@ commentList.addEventListener('click',(e)=>{
 });
 
 
+commentDelete.forEach(btn => {
+  btn.addEventListener('click', function(e){
+    const comment = e.target.parentNode.parentNode.parentNode;
+    comment.remove();
+  });
+});
 
