@@ -336,9 +336,11 @@ a {
   gap: 10px;
 }
 
-.input-modal-name,
-.input-modal-id,
-.input-modal-pn {
+.input-modal-name-id,
+.input-modal-name-pw,
+.input-modal-id-pw,
+.input-modal-pn-id,
+.input-modal-pn-pw {
   border-radius: 15px;
   border: 0px;
   width: 80%;

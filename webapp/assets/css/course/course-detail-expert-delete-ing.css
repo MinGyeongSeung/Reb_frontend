@@ -34,7 +34,6 @@ main {
     font-family: "IBM Plex Sans KR", sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding-bottom: 110px;
 }
 
 button{
@@ -43,6 +42,9 @@ button{
   height: 40px;
   background-color: #f59d85;
   border : 0px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .font-main{
@@ -70,6 +72,7 @@ button{
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
+  text-align: center;
 }
 
 .p-title {
@@ -78,7 +81,7 @@ button{
   text-align: center;
 }
 
-.detail-container {
+.course-detail-container {
   background-color: #FFFEF1;
   display: flex;
   flex-direction: column;
@@ -121,17 +124,36 @@ button{
 
 .div-expert-detail-button{
   margin-top:50px;
-  display: flex;
+  display: none;
   justify-content: space-around;
   margin-bottom: 100px;
 }
 .div-expert-info-detail{
-  display: flex;
+  margin-left : 100px;
+}
+
+.div-expert-edit-button{
+  margin-top:50px;
+  display: none;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.div-expert-edit-ing-button,
+.div-expert-delete-ing-button,
+.div-expert-before-button,
+.div-expert-after-button{
+  margin-top:50px;
+  display: none;
   justify-content: center;
+  margin-bottom: 100px;
+}
+.div-expert-delete-ing-button{
+  display: flex;
 }
 
 .button-application{
-  width: 147px;
+  width: 50%;
   height: 50px;
   color:white;
   border-radius: 13px;
@@ -139,10 +161,13 @@ button{
   font-size : 20px;
   background-color: #f59d85;
   border: 0px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .button-cancel{
-  /* display: none; */
-  width: 147px;
+  display: none;
+  width: 50%;
   height: 50px;
   font-size: 30px;
   background-color: white;
@@ -151,112 +176,131 @@ button{
   font-size : 20px;
   color:#ff0000;
   border: 1px solid #ff0000;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.p-expert-detail-comment{
-  width: 600px;
-}
-.div-user-integration{
-  display: flex;
-
-}
-.img-user-profile{
-  width: 30px;
-  height: 30px;
-  border-radius: 30px;
-}
-
-.div-button-area{
-  margin : 50px 0px;
-  /* 여기 display를 none으로 해서 내 게시물만 display flex로 변경 */
-  display: flex;
-  justify-content: space-evenly;
-}
-.div-font-awesome-line{
-  flex: 1;
-  text-align: right;
-}
-
-.li-comment {
-  display: flex;
-  list-style: none;
-  border-bottom: 1px solid black;
-  width: 100%;
-}
-
-.li-comment>.div-user-name-area>.span-comment-edit{
-  float: right;
-}
-
-.img-user-profile {
-  width: 50px;
+.button-edit{
   height: 50px;
-  border-radius: 30px;
-}
-
-.p-user-name {
-  font-family: "IBM Plex Sans KR", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-}
-
-.p-comment-text {
-  font-family: "IBM Plex Sans KR", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-}
-
-.p-update-date {
-  font-family: "IBM Plex Sans KR", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 12px;
-}
-
-.input-comment {
-  border-radius: 15px;
+  color:white;
+  border-radius: 13px;
+  padding: 0px 20px;
+  font-size : 20px;
+  background-color: #f59d85;
   border: 0px;
-  width: 60%;
-  height: 20px;
-  padding: 20px;
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
-  background-color: #F7F7F7;
 }
-
-.button-write {
-  height: 60px;
-}
-
-.div-comment-write {
-  margin: 15px 0px;
-  display: flex;
-  justify-content: flex-start;
-}
-.div-user-name-area, .div-user-text-area{
-  width: 1200px;
-  display: flex;
-  justify-content: space-between;
-}
-
-
-.span-comment-edit{
-  font-family: "IBM Plex Sans KR", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 24px;
-}
-
-.span-comment-delete{
-  font-family: "IBM Plex Sans KR", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 24px;
+.button-delete{
+  height: 50px;
+  font-size: 30px;
+  background-color: white;
+  border-radius: 13px;
+  padding: 0px 20px;
+  font-size : 20px;
   color:#ff0000;
+  border: 1px solid #ff0000;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+.button-edit-ing,
+.button-delete-ing,
+.button-before,
+.button-after{
+  height: 50px;
+  color:black;
+  border-radius: 13px;
+  padding: 0px 20px;
+  font-size : 20px;
+  background-color: #d9d9d9;
+  border: 0px;
+  width: 50%;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.modal-background{
+  height: 100vh;
+  width: 100%;
+  background-color: #0000003e;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  display: none;  
+}
+
+.cancel-modal{
+  background-color: #FFFEF1;
+  height: 430px;
+  width: 700px;
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.span-delete-title{
+  color: #F38A6E;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 24px;
+  text-align: center;
+}
+.input-delete-modal{
+  width: 100%;
+  height: 250px;
+  font-size: 20px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.textarea-delete-modal{
+  width: 100%;
+  height: 250px;
+  font-size: 20px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  resize: none;
+  border-radius: 13px;
+}
+
+.div-modal-head{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.div-modal-x{
+  text-align: end;
+}
+.button-x{
+  background-color: #FFFEF1;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.button-modal-delete{
+  width: 100%;
+  height: 50px;
+  font-size: 30px;
+  background-color: white;
+  border-radius: 13px;
+  padding: 0px 20px;
+  margin-top:50px;
+  font-size : 20px;
+  color:#ff0000;
+  border: 1px solid #ff0000;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+

@@ -110,19 +110,22 @@ button{
   justify-content: flex-end;
 }
 
-
-.div-routine-detail{
+.p-expert-info-title{
+  font-size: 20px;
+  color: #F38A6E;
+}
+.div-expert-detail{
   margin-top:50px;
   
 }
 
-.div-routine-detail-button{
+.div-expert-detail-button{
   margin-top:50px;
   display: flex;
   justify-content: space-around;
   margin-bottom: 100px;
 }
-.div-routine-info-detail{
+.div-expert-info-detail{
   display: flex;
   justify-content: center;
 }
@@ -150,11 +153,12 @@ button{
   border: 1px solid #ff0000;
 }
 
-.p-routine-detail-comment{
+.p-expert-detail-comment{
   width: 600px;
 }
 .div-user-integration{
   display: flex;
+
 }
 .img-user-profile{
   width: 30px;
@@ -171,4 +175,88 @@ button{
 .div-font-awesome-line{
   flex: 1;
   text-align: right;
+}
+
+.li-comment {
+  display: flex;
+  list-style: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+.li-comment>.div-user-name-area>.span-comment-edit{
+  float: right;
+}
+
+.img-user-profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+.p-user-name {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.p-comment-text {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.p-update-date {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.input-comment {
+  border-radius: 15px;
+  border: 0px;
+  width: 60%;
+  height: 20px;
+  padding: 20px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  background-color: #F7F7F7;
+}
+
+.button-write {
+  height: 60px;
+}
+
+.div-comment-write {
+  margin: 15px 0px;
+  display: flex;
+  justify-content: flex-start;
+}
+.div-user-name-area, .div-user-text-area{
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.span-comment-edit{
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.span-comment-delete{
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 24px;
+  color:#ff0000;
 }
