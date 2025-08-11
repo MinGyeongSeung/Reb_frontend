@@ -23,6 +23,10 @@ footer{
   background-color: #fff1cd;
 }
 
+button{
+  cursor: pointer;
+}
+
 #main-container {
     width: 1200px;
     height: 100%;
