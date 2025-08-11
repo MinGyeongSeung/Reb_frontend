@@ -23,6 +23,10 @@ footer{
   background-color: #fff1cd;
 }
 
+button{
+  cursor: pointer;
+}
+
 #main-container {
     width: 1200px;
     height: 100%;
@@ -60,11 +64,16 @@ button{
   color : white;
 }
 
+#detail-container-list{
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+
 .pagetitle{
   font-size : 30px;
   color : #F38A6E;
 
-  padding-top : 100px;
   height: 110px;
   line-height: 110px;
   align-self: center;
@@ -72,6 +81,19 @@ button{
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin-left: 400px;
+}
+
+.back-list{
+  height: 50px;
+  width: 80px;
+  background-color: #818181;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
 }
 
 .p-title {
@@ -87,6 +109,8 @@ button{
   width: 1200px;
   height: 100%;
 }
+
+
 
 .div-detail-area {
   width: 100%;

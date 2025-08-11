@@ -23,6 +23,10 @@ footer{
   background-color: #fff1cd;
 }
 
+button{
+  cursor: pointer;
+}
+
 #main-container {
     width: 1200px;
     height: 100%;
@@ -70,13 +74,25 @@ button{
   font-size : 30px;
   color : #F38A6E;
 
-  padding-top : 100px;
+  /* padding-top : 100px; */
   height: 110px;
   line-height: 110px;
   
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.back-list{
+  height: 50px;
+  width: 80px;
+  background-color: #818181;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
 }
 
 .p-title {
@@ -91,6 +107,12 @@ button{
   flex-direction: column;
   width: 1200px;
   height: 100%;
+}
+
+#detail-container-list{
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
 }
 
 .div-detail-area {
@@ -152,9 +174,6 @@ button{
 .p-admin-detail-comment{
   width: 600px;
 }
-.div-user-integration{
-  display: flex;
-}
 
 .img-user-profile{
   width: 30px;
@@ -189,7 +208,7 @@ button{
   width: 70px;
   position: relative;
   font-size: 14px;
-  left: 75%;
+  left: 71%;
   height: 25px;
   background-color: white;
 }

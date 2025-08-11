@@ -14,6 +14,9 @@ let nickName = document.querySelector("input[name='nickName']");
 let gender = document.querySelector("input[name='gender']")
 let phoneNumber = document.querySelector("input[name='phoneNumber']");
 const buttonSignUp = document.querySelector(".button-signup");
+
+const inputEssential = document.querySelectorAll(".input-essential");
+
 const idRegex = /^[a-z0-9]{5,19}$/;
 const pwRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$])[A-Za-z\d!@#$]{8,20}$/;
 

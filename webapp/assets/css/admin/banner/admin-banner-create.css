@@ -39,6 +39,7 @@ header>button{
   width: 50px;
   border-radius: 50%;
   margin: 15px 10px;
+  cursor: pointer;
 }
 
 header>button>img{
@@ -75,6 +76,10 @@ main {
 #main-admin-list>li {
   font-size: 20px;
   margin: 20px 0;
+}
+
+#main-admin-list>li:hover{
+  font-size: 24px;
 }
 
 #main-admin-list>li>a {
@@ -142,4 +147,5 @@ main {
   color: white;
   font-size: 18px;
   margin-right: 50px;
+  cursor: pointer;
 }

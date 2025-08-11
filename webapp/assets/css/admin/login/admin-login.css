@@ -58,6 +58,7 @@ form {
   font-size: 30px;
   margin: auto;
   border: 0;
+  cursor: pointer;
 }
 
 div{

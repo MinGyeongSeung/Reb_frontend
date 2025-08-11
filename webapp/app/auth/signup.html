@@ -31,24 +31,24 @@
         <form action="" method="post" class="form-signup" autocomplete="off">
           <div class="div-signup"><span class="span-signup">* 아이디 : </span>
             <div class="div-signup-hide">
-              <input class="input-basic" type="text" placeholder="아이디 입력" name="id">
+              <input class="input-basic input-essential" type="text" placeholder="아이디 입력" name="id">
               <p class="p-warning">아이디는 6~20자 사이 영문자,숫자를 사용해야합니다</p>
             </div>
           </div>
           <div class="div-signup"><span class="span-signup">* 비밀번호 : </span>
             <div class="div-signup-hide">
-              <input class="input-basic" type="password" placeholder="비밀번호 입력" name="pw">
+              <input class="input-basic input-essential" type="password" placeholder="비밀번호 입력" name="pw">
               <p class="p-warning">비밀번호는 최소 8자, 최대 20자 영문과 숫자, !@#$ 1개씩 반드시 포함되어야 합니다</p>
             </div>
           </div>
           <div class="div-signup"><span class="span-signup">* 생년월일 : </span>
             <div class="div-signup-hide">
-              <input class="input-basic" type="date" name="birth">
+              <input class="input-basic input-essential" type="date" name="birth">
               <p class="p-warning">생년월일은 필수 입력입니다</p>
             </div>
           </div>
           <div class="div-signup"><span class="span-signup">* 주소 : </span>
-            <div class="div-signup-address"><input class="input-address-basic" type="text" name="addressBasic"
+            <div class="div-signup-address "><input class="input-address-basic input-essential" type="text" name="addressBasic"
                 placeholder="기본 주소">
               <p class="p-warning">기본 주소는 필수 입력입니다</p>
               <div class="div-signup-address-add"><input class="input-address-add" type="text" name="addressAdd"
@@ -74,7 +74,7 @@
           </div>
           <div class="div-signup"><span class="span-signup">* 이름 : </span>
             <div class="div-signup-hide">
-              <input class="input-basic" type="text" name="name">
+              <input class="input-basic input-essential" type="text" name="name">
               <p class="p-warning">이름은 필수 입력입니다</p>
             </div>
           </div>
@@ -87,7 +87,7 @@
           </div>
           <div class="div-signup"><span class="span-signup">* 닉네임 :</span>
             <div class="div-signup-hide">
-              <input class="input-basic" type="text" name="nickName">
+              <input class="input-basic input-essential" type="text" name="nickName">
               <button class="button-no-duplication" type="button">중복확인</button>
               <p class="p-warning">닉네임은 필수 입력입니다</p>
               <p class="p-duplication">중복입니다</p>
@@ -97,17 +97,17 @@
           <div class="div-signup"><span class="span-signup">* 전화번호 :</span>
             <div class="div-signup-hide">
               <input class="input-basic" type="text" name="phoneNumber"><button class="" type="button">인증번호받기</button>
-              <input class="input-cert" type="text" readonly><button class="" type="button" disabled>인증하기</button>
+              <input class="input-cert input-essential" type="text" readonly><button class="" type="button" disabled>인증하기</button>
               <p class="p-warning">전화번호는 필수 입력입니다</p>
             </div>
           </div>
-          <div class="div-signup"><input class="input-terms" type="checkbox" id="id-terms">
+          <div class="div-signup"><input class="input-terms input-essential" type="checkbox" id="id-terms">
             <label for="id-terms" class="label-terms">개인정보 수집 및 이용 동의(필수)</label></span>
             <span class="span-add">보기</span>
           </div>
           <div class="div-signup">
             <a href="./login.html"><button type="button" class="button-back">뒤로가기</button></a>
-            <button type="submit" class="button-basic button-signup">회원가입하기</button>
+            <button type="button" class="button-basic button-signup">회원가입하기</button>
           </div>
         </form>
       </div>

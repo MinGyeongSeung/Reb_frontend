@@ -11,3 +11,8 @@ deleteBtn.addEventListener('click', ()=>{
     location.href= "./../../../app/admin/routine/admin-routine-list.html";
   }
 });
+
+const moveBtn = document.querySelector(".back-list");
+moveBtn.addEventListener('click', ()=>{
+  location.href= "./../../../app/admin/routine/admin-routine-list.html";
+});

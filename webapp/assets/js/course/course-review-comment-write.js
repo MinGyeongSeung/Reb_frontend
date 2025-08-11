@@ -31,6 +31,11 @@ commentList.addEventListener('click',(e)=>{
   if(e.target.classList.contains('span-comment-edit')){
     
   }
+  if(e.target.classList.contains('span-comment-delete')){
+    if(confirm("삭제하시겠습니까?")){
+      commentList.classList.remove();
+    }
+  }
 });
 
 
@@ -38,6 +43,9 @@ commentDelete.forEach(btn => {
   btn.addEventListener('click', function(e){
     const comment = e.target.parentNode.parentNode.parentNode;
     comment.remove();
+    
   });
 });
+
+
 
