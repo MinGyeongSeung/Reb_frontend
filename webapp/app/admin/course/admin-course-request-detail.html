@@ -13,32 +13,38 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&family=Yeon+Sung&display=swap"
-    rel="stylesheet">  
+    rel="stylesheet">
   <title>전문가 수업 요청</title>
 </head>
 <script defer src="./../../../assets/js/admin/course/admin-course-request-detail.js"></script>
+
 <body>
   <header>
     <a href="./admin-course-request-list.html">
       <img src="./../../../assets/img/team_logo.png" alt="사이트 로고 사진">
     </a>
   </header>
-    <div id="modal-background">
-      <div id="cancel-modal">
-        <div id="cancel-modal-in">
-          <p>전문가 승인 반려/승인 취소 사유</p>
-          <form action="" method="get" id="cancel-input">
-            <textarea name="modal" placeholder="사유 입력" id="return-message"></textarea>
-            <button type="button" id="submit">등록</button>
-          </form>
-        </div>
-        <button type="button" id="close-modal">X</button>
+  <div id="modal-background">
+    <div id="cancel-modal">
+      <div id="cancel-modal-in">
+        <p>전문가 승인 반려/승인 취소 사유</p>
+        <form action="" method="get" id="cancel-input">
+          <textarea name="modal" placeholder="사유 입력" id="return-message"></textarea>
+          <button type="button" id="submit">등록</button>
+        </form>
       </div>
+      <button type="button" id="close-modal">X</button>
     </div>
+  </div>
   <main>
     <div id="main-container">
       <div class="course-detail-container">
-        <p class="pagetitle">틈새빛에 오신 여러분 환영합니다</p>
+        <div id="detail-container-list">
+          <p class="pagetitle">틈새빛에 오신 여러분 환영합니다</p>
+          <div class="back-list">
+            목록
+          </div>
+        </div>
         <div class="div-detail-area">
           <div class="div-img">
             <img src="./../../../assets/img/karina.jpg" class="img-detail">
@@ -75,7 +81,7 @@
           <div class="div-expert-detail">
             <p class="p-expert-info-title">모집 정보</p>
             <div class="div-expert-info-detail">
-              <p>모집 기간 :  2025.08.03 ~ 2025.08.27</p>  
+              <p>모집 기간 : 2025.08.03 ~ 2025.08.27</p>
               <p>강의일 : 2025.08.28 ~ 2025.09.03 09:00 ~ 13 : 00 [월,화,수]</p>
               <p>모집 인원 : 15/30 명</p>
               <p>가격 : 24,000 원</p>
@@ -89,9 +95,10 @@
       </div>
     </div>
   </main>
-  <div id="footer">
-  </div>
-  
+  <footer>
+
+  </footer>
+
 </body>
 
 </html>

@@ -25,3 +25,8 @@ closeModal.addEventListener(('click'), ()=> {
   dropModal.style.display= "none";
   returnMsg.value= "";
 })
+
+const moveBtn = document.querySelector(".back-list");
+moveBtn.addEventListener('click', ()=>{
+  location.href= "./../../../app/admin/course/admin-course-request-list.html";
+});
