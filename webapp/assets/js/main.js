@@ -1,23 +1,19 @@
-        const prev = document.querySelector('.prev');
-        const next = document.querySelector('.next');
-        const slideBox = document.querySelector('.main-banner-slide_box')
-        const slide = document.querySelectorAll('.slide_item img')
-        const slideLangth = slide.length
-        let currentIndex = 0;
+const bannerContainer = document.querySelector('#main-ul-banner')
+const bannerImgList = document.querySelectorAll('.main-li-banner');
+const bannerPageNumber = document.querySelector('#banner-page-number');
 
-        const moveSlide = function(num){
-            slideBox.style.transform = `translateX(${-num * 949}px)`;
-            currentIndex = num;
-        }
+const imgWidth = bannerImgList[0].style.width;
 
-        prev.addEventListener('click', ()=>{
-            if(currentIndex !== 0){
-                moveSlide(currentIndex -1)
-            }
-        })
+let currentIdx = 0;
 
-        next.addEventListener('click', ()=>{
-            if(currentIndex !== slideLangth -1){
-                moveSlide(currentIndex +1)
-            }
-        })
+function moveBanner(add) {
+    if ((currentIdx + add < 0) || (currentIdx + add >= bannerImgList.length))
+        return;
+
+    currentIdx += add;
+    bannerContainer.style.transition = '0.5s ease';
+    bannerContainer.style.transform = `translateX(${-currentIdx * 900}px)`;
+    
+   
+    bannerPageNumber.innerHTML = (currentIdx + 1) + '/'+ bannerImgList.length;
+}

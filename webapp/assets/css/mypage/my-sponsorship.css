@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+/* 메인 컨테이너 */
 #main-container {
     width: 1200px;
     height: 100%;
@@ -12,8 +13,8 @@
     justify-content: center;
 }
 
+/* 메인 */
 main {
-    padding-top: 110px;
     /* height는 컨텐츠에 따라 */
     height: 400px; 
     min-height: calc(100vh - 235px);
@@ -25,6 +26,7 @@ main {
     font-style: normal;
 }
 
+/* 버튼 */
 button{
   border-radius: 13px;
   padding : 0px 20px;
@@ -35,6 +37,7 @@ button{
   cursor: pointer;
 }
 
+/* 메인 폰트 */
 .font-main{
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
@@ -43,12 +46,14 @@ button{
   font-style: normal;
 }
 
+/* 메뉴 버튼 */
 .font-menu{
   font-family: "Yeon Sung", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
+/* 페이지 제목 */
 .pagetitle{
   font-size : 30px;
   color : #F38A6E;
@@ -63,16 +68,18 @@ button{
   font-style: normal;
 }
 
+/* 후원 상세 정보 */
 .my-sponsorship-data{
     display: flex;
     height: 45px;
 }
 
-
+/* 후원 상세 정보 제목 */
 .my-sponsorship-data-title{
   width: 500px;
 }
 
+/* 후원 목록 속성 값 */
 .my-sponsorship-list-col-type {
   display: flex;
   background-color: #FFB29D;
@@ -81,10 +88,12 @@ button{
   color : white;
 }
 
+/* 후원 목록 */
 .my-sponsorship-list-container{
     margin-top: 50px;
 }
 
+/* 후원 목록 */
 .my-sponsorship-list{
     background-color: white;
 }
@@ -96,17 +105,20 @@ p{
   white-space: nowrap;
 }
 
+/* 후원금액 열 */
 .list-money {
   text-align: left;
   width: 70%;
   margin-left : 100px;
 }
 
+/* 후원일자 열 */
 .list-date {
   text-align: center;
   width: 30%;
 }
 
+/* 후원 목록 행 */
 .li-sponsorship-content {
   list-style: none;
   display: flex;
@@ -115,6 +127,7 @@ p{
   border-bottom: 1px solid #f59d85;
 }
 
+/* 후원 목록 행 글자 */
 .my-sponsorship-list-col-type p {
   font-size: 20px;
   font-family: "IBM Plex Sans KR", sans-serif;
@@ -122,11 +135,13 @@ p{
   font-style: normal;
 }
 
+/* 목록 페이지 */
 .page-list {
   display: flex;
   justify-content: center;
 }
 
+/* 목록 페이지 번호 리스트 */
 .pagenation {
   margin-top: 50px;
   width: 50%;

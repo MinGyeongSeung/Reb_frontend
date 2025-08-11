@@ -1,7 +1,10 @@
+/* 헤더 */
 #header {
   height: 110px;
   width: 100%;
-  position: fixed;
+  top : 0px;
+  z-index: 9999;
+  position: sticky;
 
   display: flex;
   flex-direction: column;
@@ -22,7 +25,7 @@
   width: 100%;
 }
 
-
+/* 헤더 메뉴 */
 .header-menu-bar {
   position: relative;
   width: 100%;
@@ -32,6 +35,7 @@
   flex-direction: column;
 }
 
+/* 헤더 상단 */
 .header-menu-bar-top {
   position: relative;
   width: 100%;
@@ -42,6 +46,7 @@
   margin: 0;
 }
 
+/* 헤더 상단 a */
 .header-menu-bar-top a{
   width : 150px;
 }
@@ -50,10 +55,7 @@
   text-decoration: underline;
 }
 
-#header-menu-bar-top-left {
-  margin-right: 330px;
-}
-
+/* 헤더 상단 우측 버튼 */
 #header-menu-bar-top-right {
   margin-left: 910px;
   width : 250px;
@@ -61,13 +63,14 @@
   text-align: right;
 }
 
+/* 헤더 상단 우측 버튼 a */
 #header-menu-bar-top-right a {
   text-decoration: none;
   color: #A39E9E;
   font-size: 15px;
 }
 
-
+/* 드롭 다운 가능한 메뉴 */
 .header-menu-dropdown-list {
   position: relative;
   display: flex;
@@ -77,6 +80,7 @@
   top: 0px;
 }
 
+/* 드롭 다운 가능한 메뉴 - 헤더 좌측 */
 .header-menu-dropdown-left {
   top: 0px;
   display: flex;
@@ -95,6 +99,7 @@
   cursor: pointer;
 }
 
+/* 헤더 센터 이미지 영역 */
 #header-menu-center {
   width: 100%;
   height: 110px;
@@ -116,25 +121,14 @@
   height: 100px;
 }
 
-.header-menu-dropdown-right {
-  top: 0px;
-  display: flex;
-  margin-left: 250px;
-  margin-top: 3px;
-  width: 270px;
-}
-
-.header-menu-dropdown-right a {
-  color: #F38A6E;
-  text-decoration: none;
-}
-
+/* 드롭 다운 메뉴 - 드롭 다운*/
 .header-menu-dropdown-menu-content {
   display: none;
   margin-top: 0px;
   width: 100px;
 }
 
+/* 드롭 다운 메뉴 */
 .header-menu-dropdown-menu {
   text-align: center;
   font-size: 19px;
@@ -144,11 +138,13 @@
   width: 100px;
 }
 
+/* 메뉴 - 드롭다운 메뉴 묶음 */
 .header-menu-dropdown {
   width: 100px;
   top: 0px;
 }
 
+/* 드롭다운 메뉴 배경 */
 .header-menu-dropdown-bg {
   position: absolute;
   top: 63px;
@@ -182,16 +178,7 @@
   border-bottom: 2px solid #F38A6E;
 }
 
-/* 헤더 오른쪽 사이드 */
-.header-menu-side-right {
-  top: 0px;
-  display: flex;
-  margin-left: 0px;
-  margin-top: 3px;
-  width: 80px;
-}
-
-
+/* 헤더 우측 버튼 */
 .header-menu-right {
   top: 0px;
   display: flex;
@@ -212,6 +199,7 @@
   height: 30px;
 }
 
+/* 후원 버튼 */
 #div-a-donation-link {
   width: 300px;
   border-radius: 10px;
@@ -221,6 +209,7 @@
   margin-right: 100px;
 }
 
+/* 후원 버튼 a*/
 #div-a-donation-link a{
   text-decoration: none;
   color: white;

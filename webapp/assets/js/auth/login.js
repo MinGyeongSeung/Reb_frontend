@@ -30,7 +30,7 @@ closeFindIdModal.addEventListener('click', () => {
 });
 
 buttonIdFind.addEventListener('click', () => {
-  if (inputModalNameId.value === '홍길동' && inputModalPnId.value === '01000000000') {
+  if (inputModalNameId.value === '홍길동' && inputPhoneNumberId.value === '111111') {
     idModal.style.display = "none";
     idModalEnd.style.display = "flex";
     inputModalNameId.value = "";
@@ -40,6 +40,20 @@ buttonIdFind.addEventListener('click', () => {
     alert("올바르지 못한 이름 혹은 전화번호입니다");
     inputModalNameId.value = "";
     inputModalPnId.value = "";
+    idPhoneNumber.readOnly = false;
+    idPhoneNumber.style.backgroundColor = "white";
+    buttonInjung.disabled = false;
+    buttonInjung.style.backgroundColor = "#F38A6E";
+    buttonInjung.style.color = "white";
+    buttonInjungDoId.disabled = true;
+    buttonInjungDoId.style.color = "black";
+    buttonInjungDoId.style.backgroundColor = "#d9d9d9"
+    buttonRetryId.disabled = true;
+    buttonRetryId.style.color = "black";
+    buttonRetryId.style.backgroundColor = "#d9d9d9";
+    idPhoneNumber.value = "";
+    inputPhoneNumberId.readOnly = true;
+    inputPhoneNumberId.style.backgroundColor = "#d9d9d9";
   }
 });
 
@@ -60,7 +74,7 @@ closeFindPwModal.addEventListener('click', () => {
 });
 
 buttonPwFind.addEventListener('click', () => {
-  if (inputModalNamePw.value === '홍길동' && inputModalPnPw.value === '01000000000' && inputModalIdPw.value === 'user') {
+  if (inputModalNamePw.value === '홍길동' && inputPhoneNumberPw.value === '111111' && inputModalIdPw.value === 'user') {
     pwModal.style.display = "none";
     pwModalEnd.style.display = "flex";
     inputModalNamePw.value = "";
@@ -72,6 +86,21 @@ buttonPwFind.addEventListener('click', () => {
     inputModalNamePw.value = "";
     inputModalPnPw.value = "";
     inputModalIdPw.value = "";
+    pwPhoneNumber.readOnly = false;
+    pwPhoneNumber.style.backgroundColor = "white";
+    buttonInjungPw.disabled = false;
+    buttonInjungPw.style.backgroundColor = "#F38A6E";
+    buttonInjungPw.style.color = "white";
+    buttonInjungDoPw.disabled = true;
+    buttonInjungDoPw.style.color = "black";
+    buttonInjungDoPw.style.backgroundColor = "#d9d9d9"
+    buttonRetryPw.disabled = true;
+    buttonRetryPw.style.color = "black";
+    buttonRetryPw.style.backgroundColor = "#d9d9d9";
+    pwPhoneNumber.value = "";
+    inputPhoneNumberPw.readOnly = true;
+    inputPhoneNumberPw.style.backgroundColor = "#d9d9d9";
+
   }
 });
 
@@ -89,4 +118,127 @@ loginBtn.addEventListener('click', (e) => {
     alert("로그인 실패");
     e.preventDefault();
   }
+});
+
+const inputPhoneNumberId = document.querySelector("input[name='modalIdPhoneInjung']");
+const idPhoneNumber = document.querySelector("input[name='modalIdPhone']");
+const buttonInjung = document.querySelector(".button-injung-id");
+const buttonInjungDoId = document.querySelector(".button-injung-do-id");
+const buttonRetryId = document.querySelector(".button-retry-id");
+
+buttonInjung.addEventListener('click', () => {
+  if (idPhoneNumber.value === '01011112222') {
+    alert("인증번호 전송");
+    idPhoneNumber.readOnly = true;
+    idPhoneNumber.style.backgroundColor = "#d9d9d9";
+    buttonInjung.disabled = true;
+    buttonInjung.style.color = "black";
+    buttonInjung.style.backgroundColor = "#d9d9d9";
+    inputPhoneNumberId.readOnly = false;
+    inputPhoneNumberId.style.backgroundColor = "white";
+    inputPhoneNumberId.disabled = false;
+    buttonInjungDoId.disabled = false;
+    buttonInjungDoId.style.color = "white";
+    buttonInjungDoId.style.backgroundColor = "#F38A6E"
+    buttonRetryId.disabled = false;
+    buttonRetryId.style.color = "white";
+    buttonRetryId.style.backgroundColor = "#F38A6E";
+
+  } else {
+    alert("인증할 수 없는 번호입니다");
+  }
+});
+
+buttonInjungDoId.addEventListener("click", () => {
+  if (inputPhoneNumberId.value === '111111') {
+    inputPhoneNumberId.readOnly = true;
+    inputPhoneNumberId.style.backgroundColor = "#d9d9d9";
+    buttonInjungDoId.disabled = true;
+    buttonInjungDoId.style.color = "black";
+    buttonInjungDoId.style.backgroundColor = "#d9d9d9"
+    buttonRetryId.disabled = true;
+    buttonRetryId.style.color = "black";
+    buttonRetryId.style.backgroundColor = "#d9d9d9";
+    alert("인증 성공");
+  } else {
+    alert("인증번호가 맞지 않습니다");
+  }
+});
+
+buttonRetryId.addEventListener('click', () => {
+  idPhoneNumber.readOnly = false;
+  idPhoneNumber.style.backgroundColor = "white";
+  buttonInjung.disabled = false;
+  buttonInjung.style.backgroundColor = "#F38A6E";
+  buttonInjung.style.color = "white";
+  buttonInjungDoId.disabled = true;
+  buttonInjungDoId.style.color = "black";
+  buttonInjungDoId.style.backgroundColor = "#d9d9d9"
+  buttonRetryId.disabled = true;
+  buttonRetryId.style.color = "black";
+  buttonRetryId.style.backgroundColor = "#d9d9d9";
+  idPhoneNumber.value = "";
+  inputPhoneNumberId.readOnly = true;
+  inputPhoneNumberId.style.backgroundColor = "#d9d9d9";
+});
+const inputPhoneNumberPw = document.querySelector("input[name='modalPwPhoneInjung']");
+const pwPhoneNumber = document.querySelector("input[name='modalPwPhone']");
+const buttonInjungPw = document.querySelector(".button-injung-pw");
+const buttonInjungDoPw = document.querySelector(".button-injung-do-pw");
+const buttonRetryPw = document.querySelector(".button-retry-pw");
+
+buttonInjungPw.addEventListener('click', () => {
+  if (pwPhoneNumber.value === '01011112222') {
+    alert("인증번호 전송");
+    pwPhoneNumber.readOnly = true;
+    pwPhoneNumber.style.backgroundColor = "#d9d9d9";
+    buttonInjungPw.disabled = true;
+    buttonInjungPw.style.color = "black";
+    buttonInjungPw.style.backgroundColor = "#d9d9d9";
+    inputPhoneNumberPw.readOnly = false;
+    inputPhoneNumberPw.style.backgroundColor = "white";
+    inputPhoneNumberPw.disabled = false;
+    buttonInjungDoPw.disabled = false;
+    buttonInjungDoPw.style.color = "white";
+    buttonInjungDoPw.style.backgroundColor = "#F38A6E"
+    buttonRetryPw.disabled = false;
+    buttonRetryPw.style.color = "white";
+    buttonRetryPw.style.backgroundColor = "#F38A6E";
+
+  } else {
+    alert("인증할 수 없는 번호입니다");
+  }
+});
+
+buttonInjungDoPw.addEventListener("click", () => {
+  if (inputPhoneNumberPw.value === '111111') {
+    inputPhoneNumberPw.readOnly = true;
+    inputPhoneNumberPw.style.backgroundColor = "#d9d9d9";
+    buttonInjungDoPw.disabled = true;
+    buttonInjungDoPw.style.color = "black";
+    buttonInjungDoPw.style.backgroundColor = "#d9d9d9"
+    buttonRetryPw.disabled = true;
+    buttonRetryPw.style.color = "black";
+    buttonRetryPw.style.backgroundColor = "#d9d9d9";
+    alert("인증 성공");
+  } else {
+    alert("인증번호가 맞지 않습니다");
+  }
+});
+
+buttonRetryPw.addEventListener('click', () => {
+  pwPhoneNumber.readOnly = false;
+  pwPhoneNumber.style.backgroundColor = "white";
+  buttonInjungPw.disabled = false;
+  buttonInjungPw.style.backgroundColor = "#F38A6E";
+  buttonInjungPw.style.color = "white";
+  buttonInjungDoPw.disabled = true;
+  buttonInjungDoPw.style.color = "black";
+  buttonInjungDoPw.style.backgroundColor = "#d9d9d9"
+  buttonRetryPw.disabled = true;
+  buttonRetryPw.style.color = "black";
+  buttonRetryPw.style.backgroundColor = "#d9d9d9";
+  pwPhoneNumber.value = "";
+  inputPhoneNumberPw.readOnly = true;
+  inputPhoneNumberPw.style.backgroundColor = "#d9d9d9";
 });
