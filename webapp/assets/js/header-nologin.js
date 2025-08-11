@@ -1,20 +1,13 @@
 window.addEventListener('DOMContentLoaded', () => {
-  let root = "./"
-  var xhr = new XMLHttpRequest();
-  let path = "header-nologin.html";
+  let root = "./../../";
 
-  while (true) {
-    xhr.open('HEAD', root + path, false);
-    xhr.send();
-
-    if (xhr.status == "404") {
-      root = root + "../"
-    } else {
-      break;
-    }
+  if (document.querySelector(`#header`).getAttribute('class') === "main-page") {
+    root = "./";
   }
 
-  fetch(root + path)
+  console.log(root);
+
+  fetch(root + "header-nologin.html")
     .then(response => response.text())
     .then(data => {
       footer = document.querySelector(`#header`);
