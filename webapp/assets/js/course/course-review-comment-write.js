@@ -43,6 +43,7 @@ commentDelete.forEach(btn => {
   btn.addEventListener('click', function(e){
     const comment = e.target.parentNode.parentNode.parentNode;
     comment.remove();
+    
   });
 });
 
