@@ -9,6 +9,7 @@
   background-color: #f59d85;
 }
 
+
 /* 메뉴 */
 .header-container-menu {
   display: flex;
@@ -17,7 +18,6 @@
   justify-content: center;
   align-items: center;
   background-color: #FFFACD;
-  z-index: 1;
   position: relative;
   width: 100%;
 }
@@ -100,6 +100,7 @@
   height: 110px;
   position: absolute;
 
+  z-index: 1;
   display: flex;
   justify-content: center;
 }
@@ -109,7 +110,6 @@
   height: 100px;
   margin-top: 20px;
   cursor: pointer;
-  z-index: 1;
 }
 
 #header-menu-center img {
@@ -158,7 +158,7 @@
   left: 0px;
   display: none;
 
-  background-color: #fffacd8a;
+  background-color: #f7ee9ed8;
 }
 
 .header-menu-dropdown:hover .header-menu-dropdown-bg {

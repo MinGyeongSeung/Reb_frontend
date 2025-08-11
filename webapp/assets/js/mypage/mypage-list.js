@@ -4,32 +4,37 @@ window.addEventListener('DOMContentLoaded', () => {
         .then(response => response.text())
         .then(data => {
             list = document.querySelectorAll(`.mypage-list`);
-            
-            list.forEach((item)=>{
+
+            list.forEach((item) => {
                 item.innerHTML = data;
                 const listPageTitle = item.querySelector('.pagetitle');
                 const listColType = item.querySelector('.list-col-type');
                 const listContentList = item.querySelectorAll('.li-content');
-                const searchTypeFirst = item.querySelectorAll('.search-type-first');
-                const searchTypeSecond = item.querySelectorAll('.search-type-second');
+                const searchTypeFirst = item.querySelector('.search-type-first');
+                const searchTypeSecond = item.querySelector('.search-type-second');
 
-                inputList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, item.getAttribute("id"));
+                let id = item.getAttribute("id");
+
+                item.querySelector('.button-search img').setAttribute('value', id + "_search");
+                item.querySelector('.select-search').setAttribute('id', id + "_search");
+
+                inputList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, id);
             });
         });
 })
 
-class ListInfo{
-  constructor(title, colText, data){
-    this.title = title;
-    this.colText = colText;
-    this.data = data;
-  }
+class ListInfo {
+    constructor(title, colText, data) {
+        this.title = title;
+        this.colText = colText;
+        this.data = data;
+    }
 }
 
-function ListRow(title, userName, date){
-  this.title = title;
-  this.userName = userName;
-  this.date = date;
+function ListRow(title, userName, date) {
+    this.title = title;
+    this.userName = userName;
+    this.date = date;
 };
 
 const myRoutine = new ListInfo(
@@ -71,39 +76,93 @@ const myComments = new ListInfo(
     ]
 );
 
-function inputList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, id){
-    if(id === "my-courses-routine")
-        loadList(listPageTitle, listColType, listContentList,searchTypeFirst, searchTypeSecond, "./../routine-meeting/routine-meeting-detail.html", myRoutine);
-    else if(id === "my-courses-courses")
-        loadList(listPageTitle, listColType, listContentList,searchTypeFirst, searchTypeSecond, "./../course/course-detail.html", myCourse);
-    else if(id === "my-post")
-        loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond,"./../course/course-review-detail.html", myPosts);
-    else if(id === "my-comment")
+function inputList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, id) {
+    if (id === "my-courses-routine")
+        loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, "./../routine-meeting/routine-meeting-detail.html", myRoutine);
+    else if (id === "my-courses-courses")
+        loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, "./../course/course-detail.html", myCourse);
+    else if (id === "my-post")
+        loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, "./../course/course-review-detail.html", myPosts);
+    else if (id === "my-comment")
         loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, "./../routine-meeting/routine-meeting-review-detail.html", myComments);
 }
 
-function loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, href, listInfo){
+function loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, href, listInfo) {
     listPageTitle.innerHTML = listInfo.title;
 
     listColType.querySelector('.list-title').innerHTML = listInfo.colText['title'];
     listColType.querySelector('.list-user-name').innerHTML = listInfo.colText.userName;
     listColType.querySelector('.list-date').innerHTML = listInfo.colText.date;
-    
+
     searchTypeFirst.innerHTML = listInfo.colText['title'];
     searchTypeSecond.innerHTML = listInfo.colText.userName;
 
     let count = 0;
 
-    listContentList.forEach((e)=>
-    {
-        if(listInfo.data.length - 1 < count)
+    listContentList.forEach((e) => {
+        if (listInfo.data.length - 1 < count)
             return;
 
         e.querySelector('.list-title').setAttribute("href", href);
         e.querySelector('.list-title').innerHTML = listInfo.data[count].title;
         e.querySelector('.list-user-name').innerHTML = listInfo.data[count].userName;
         e.querySelector('.list-date').innerHTML = listInfo.data[count].date;
-        
+
+        count++;
+    });
+}
+
+function search(e) {
+    let id = e.target.getAttribute('value').split('_')[0];
+    selectedIndex = document.querySelector(`#${e.target.getAttribute('value')}`).selectedIndex;
+    listContentList = document.querySelector(`#${id}`).querySelectorAll('.li-content');
+    const inputSearch = document.querySelector(`#${id}`).querySelector('.input-search');
+
+    listContentList.forEach((e) => {
+        console.log(e);
+        e.querySelector('.list-title').setAttribute("href", "");
+        e.querySelector('.list-title').innerHTML = "";
+        e.querySelector('.list-user-name').innerHTML = "";
+        e.querySelector('.list-date').innerHTML = "";
+    })
+
+    let listInfo;
+    let href;
+    if (id === "my-courses-routine") {
+        listInfo = myRoutine;
+        href = "./../routine-meeting/routine-meeting-detail.html";
+    }
+    else if (id === "my-courses-courses") {
+        listInfo = myCourse;
+        href = "./../course/course-detail.html";
+    }
+    else if (id === "my-post") {
+        listInfo = myPosts;
+        href = "./../course/course-review-detail.html";
+    }
+    else if (id === "my-comment") {
+        listInfo = myComments;
+        href = "./../routine-meeting/routine-meeting-review-detail.html";
+    }
+
+    let searchList;
+
+    if (selectedIndex == 0)
+        searchList = listInfo.data.filter(data => data.title.includes(inputSearch.value));
+    else if (selectedIndex == 1)
+        searchList = listInfo.data.filter(data => data.userName.includes(inputSearch.value));
+
+    let count = 0;
+    listContentList.forEach((e) => {
+        if (searchList.length - 1 < count)
+            return;
+
+        e.querySelector('.list-title').setAttribute("href", href);
+        e.querySelector('.list-title').innerHTML = searchList[count].title;
+        e.querySelector('.list-user-name').innerHTML = searchList[count].userName;
+        e.querySelector('.list-date').innerHTML = searchList[count].date;
+        console.log(searchList[count].title);
+
         count++;
     });
 }

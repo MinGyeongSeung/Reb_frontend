@@ -9,10 +9,6 @@
   background-color: #f59d85;
 }
 
-#header *{
-  z-index: 10;
-}
-
 /* 메뉴 */
 .header-container-menu {
   display: flex;
@@ -161,7 +157,7 @@
   left: 0px;
   display: none;
 
-  background-color: #fffacd8a;
+  background-color: #f7ee9ed8;
 }
 
 .header-menu-dropdown:hover .header-menu-dropdown-bg {

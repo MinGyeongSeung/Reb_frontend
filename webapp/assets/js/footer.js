@@ -1,17 +1,26 @@
 window.addEventListener('DOMContentLoaded', () => {
-    var xhr = new XMLHttpRequest();
-    let path = "./footer.html";
-    xhr.open('HEAD', path, false);
-    xhr.send();
+    let root = "./../../";
 
-    if (xhr.status == "404") {
-      path = "./../."+ path;
-    } 
+    if (document.querySelector(`#header`).getAttribute('class') === "main-page") {
+        root = "./";
+    }
+    
 
-    fetch(path)
+    console.log(root);
+    fetch(root + "footer.html")
         .then(response => response.text())
         .then(data => {
             footer = document.querySelector(`#footer`);
             footer.innerHTML = data;
+            const aTag = document.querySelectorAll('#footer a');
+            const imgTag = document.querySelectorAll('#footer img');
+
+            aTag.forEach((a) => {
+                a.setAttribute('href', root + a.getAttribute('href'));
+            });
+
+            imgTag.forEach((img) => {
+                img.setAttribute('src', root + img.getAttribute('src'));
+            })
         });
 });
