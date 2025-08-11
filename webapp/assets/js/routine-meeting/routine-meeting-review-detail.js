@@ -1,5 +1,10 @@
 const deleteButton = document.querySelector(".button-cancel");
 const heart = document.querySelector(".fa-heart");
+const back = document.querySelector(".p-back");
+
+back.addEventListener("click",()=>{
+  history.back();
+});
 
 deleteButton.addEventListener("click",(e)=>{
   if(confirm("정말 삭제하시겠습니까?")){
