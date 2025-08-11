@@ -304,3 +304,10 @@ button{
   font-style: normal;
 }
 
+.p-back{
+  float: right;
+  font-size: 40px;
+}
+.p-back:hover{
+  cursor: pointer;
+}

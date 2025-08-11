@@ -5,6 +5,7 @@ const deleteBtn = document.querySelector(".button-delete");
 const modalClose = document.querySelector(".button-x");
 const buttonModalDelete = document.querySelector(".button-modal-delete");
 const textareaDelete = document.querySelector(".textarea-delete-modal");
+const back = document.querySelector(".p-back");
 
 buttonApp.addEventListener("click",()=>{
   if(confirm("신청하시겠습니까?")){
@@ -39,4 +40,9 @@ buttonModalDelete.addEventListener('click',()=>{
       modal.style.display ="none";
       location.href= "./course-detail-expert-delete-ing.html";
     }
+});
+
+
+back.addEventListener("click",()=>{
+  history.back();
 });

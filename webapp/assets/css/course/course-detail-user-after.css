@@ -303,4 +303,11 @@ button{
   font-weight: 400;
   font-style: normal;
 }
+.p-back{
+  float: right;
+  font-size: 40px;
+}
+.p-back:hover{
+  cursor: pointer;
+}
 

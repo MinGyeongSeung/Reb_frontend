@@ -1,5 +1,10 @@
 const buttonApp = document.querySelector(".button-application");
 const buttonCancel = document.querySelector(".button-cancel");
+const back = document.querySelector(".p-back");
+
+back.addEventListener("click",()=>{
+  history.back();
+});
 
 
 buttonApp.addEventListener("click",()=>{
