@@ -148,12 +148,17 @@ button{
   
 }
 
-.div-expert-detail-button{
+.div-admin-detail-button{
   margin-top:50px;
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
 }
+
+.div-admin-detail-button>button{
+  cursor: pointer;
+}
+
 .div-expert-info-detail{
   margin-left : 100px;
 }

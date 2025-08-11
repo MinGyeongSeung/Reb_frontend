@@ -39,6 +39,7 @@ header>button{
   width: 50px;
   border-radius: 50%;
   margin: 15px 10px;
+  cursor: pointer;
 }
 
 header>button>img{
@@ -47,13 +48,16 @@ header>button>img{
   border-radius: 50%;
 }
 
-
 main {
   background-color: white;
   display: flex;
   position: relative;
   top: 80px;
   height: 100vh;
+}
+
+button{
+  cursor: pointer;
 }
 
 #main-admin-list-menu {
@@ -76,6 +80,10 @@ main {
 #main-admin-list>li {
   font-size: 20px;
   margin: 20px 0;
+}
+
+#main-admin-list>li:hover{
+  font-size: 24px;
 }
 
 #main-admin-list>li>a {

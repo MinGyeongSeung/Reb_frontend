@@ -34,6 +34,10 @@ header>p{
   margin : 0 30px;
 } 
 
+button{
+  cursor: pointer;
+}
+
 header>button{
   height: 50px;
   width: 50px;
@@ -75,6 +79,10 @@ main{
 #main-admin-list>li{
   font-size: 20px;
   margin: 20px 0;
+}
+
+#main-admin-list>li:hover{
+  font-size: 24px;
 }
 
 #main-admin-list>li>a{

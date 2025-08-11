@@ -21,6 +21,10 @@ header{
   height: 110px;
 }
 
+button{
+  cursor: pointer;
+}
+
 header>a>img{
   height: 110px;
   width: 110px;

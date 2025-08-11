@@ -39,6 +39,7 @@ header>button{
   width: 50px;
   border-radius: 50%;
   margin: 15px 10px;
+  cursor: pointer;
 }
 
 header>button>img{
@@ -75,6 +76,10 @@ main{
 #main-admin-list>li{
   font-size: 20px;
   margin: 20px 0;
+}
+
+#main-admin-list>li:hover{
+  font-size: 24px;
 }
 
 #main-admin-list>li>a{
@@ -152,6 +157,12 @@ main{
   color: white;
   background-color: #d9d9d9;
   font-size: 22px;
+  cursor: pointer;
+}
+
+#main-banner-list>li>p:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .delete{
@@ -163,6 +174,7 @@ main{
   background-color: #818181;
   color: white;
   font-size: 22px;
+  cursor: pointer;
 }
 
 #main-banner-add{
@@ -173,4 +185,5 @@ main{
   background-color: #818181;
   color: white;
   font-size: 24px;
+  cursor: pointer;
 }
