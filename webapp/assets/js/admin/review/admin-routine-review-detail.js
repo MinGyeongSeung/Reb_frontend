@@ -14,3 +14,8 @@ deleteCommentBtn.forEach(btn => {
     comment.remove();
   });
 });
+
+const moveBtn = document.querySelector(".back-list");
+moveBtn.addEventListener('click', ()=>{
+  location.href= "./../../../app/admin/review/admin-routine-review-list.html";
+});

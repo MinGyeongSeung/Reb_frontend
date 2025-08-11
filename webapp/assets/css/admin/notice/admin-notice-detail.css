@@ -1,24 +1,13 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-.font-menu {
-  font-family: "IBM Plex Sans KR", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-body{
-  width: 1512px;
-  height: 100vh;
-  margin: auto;
-}
-
 header{
-  background-color: #fffacd;
   height: 110px;
+  width: 100%;
+  position: fixed;
+  background-color: hsl(54, 100%, 90%);
   display: flex;
   justify-content: center;
 }
@@ -28,59 +17,170 @@ header>a>img{
   width: 110px;
 }
 
-main{
-  background-color: #fffef1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+footer{
+  width: 100%;
+  height: 125px;
+  background-color: #fff1cd;
 }
 
-#main-admin-notice-detail-title{
-  height: 66px;
-  width: 1200px;
+#main-container {
+    width: 1200px;
+    height: calc(100vh - 235px);
+    background-color: #FFFEF1;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.notice-detail-title-text-containter{
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-list{
+  height: 50px;
+  width: 80px;
+  background-color: #818181;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+main {
+    padding-top: 110px;
+    /* height는 컨텐츠에 따라 */
+    height: 900px; 
+    min-height: calc(100vh - 235px);
+    width: 100%;
+    background-color: #FFFEF1;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button{
+  border-radius: 20px;
+  width: 110px;
+  height: 55px;
+  background-color: #f59d85;
+  border: 0px;
+  margin: 45px;
+  color: white;
+  font-size: 22px;
+}
+
+.font-main {
+  font-size: 18px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
+.font-menu {
+  font-family: "Yeon Sung", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pagetitle {
+  font-size: 30px;
   color: #f38a6e;
-  margin-top: 110px;
-}
 
-.main-admin-notice-detail-author{
-  height: 48px;
-  width: 1200px;
-  display: flex;
-  justify-content: end;
-  font-size: 32px;
-}
+  padding-top: 100px;
+  height: 110px;
+  line-height: 110px;
 
-#main-admin-notice-detail-content{
-  margin: 50px 0 170px;
-  width: 1200px;
-  font-size: 24px;
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.main-btn{
-  height: 66px;
-  width: 147px;
-  border-radius: 25px;
-  font-size: 30px;
-  margin: 0 56px 40px;
+/* 게시글상세 시작 */
+
+.notice-detail-containter {
+  min-height: 557px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
+  margin-bottom: 15%;
 }
 
-.main-btn:first-child{
-  background-color: #f59d85;
-  color: white;
-  border: 0;
+.notice-detail-title-text {
+  font-size: 48px;
+  color: #f38a6e;
+  font-weight: bold;
 }
 
-.main-btn:last-child{
+.board-box-writer {
+  font-size: 32px;
+}
+
+.board-box-day {
+  font-size: 32px;
+}
+
+.notice-detail-admin-image-containter {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  border-radius: 50%;
   background-color: white;
-  color: red;
-  border: 3px solid red;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
 }
 
+.logo-image {
+  width: 100%;
+  height: 100%;
+}
 
-footer{
-  background-color: #fff1cd;
-  height: 125px;
+.notice-detail-admin-containter {
+  margin-left: 1%;
+}
+
+.board-box-writer {
+  font-size: 32px;
+}
+
+.board-box-day {
+  font-size: 32px;
+}
+
+.notice-detail-text-content-containter {
+  margin: 20px;
+}
+
+.notice-detail-text {
+  font-size: 24px;
+  font-weight: bold;
+  white-space: normal;
+  /* 줄바꿈 허용 */
+  word-break: break-word;
+  /* 긴 단어 줄바꿈 */
+  overflow-wrap: break-word;
+  /* 내용 칸 밖으로 넘치지 않게 */
+}
+
+/* 게시글상세 끝 */
+
+.div-expert-detail-button{
+  margin-top:50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.button-cancel{
+  background-color: white;
+  border: 2px solid red;
+  color: red;
 }

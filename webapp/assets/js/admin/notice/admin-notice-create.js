@@ -14,3 +14,4 @@ cancelBtn.addEventListener('click', ()=>{
     location.href= "./../../../app/admin/notice/admin-notice-list.html";
   }
 });
+
