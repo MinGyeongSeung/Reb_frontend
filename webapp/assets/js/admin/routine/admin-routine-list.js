@@ -14,3 +14,8 @@ chooseMenu.addEventListener('blur', () => {
 createBtn.addEventListener('click', ()=>{
   location.href= "./../../../app/admin/routine/admin-routine-create.html";
 });
+
+const logoutBtn = document.querySelector("header>button>img");
+logoutBtn.addEventListener('click', ()=>{
+  location.href= "./../login/admin-login.html";
+});

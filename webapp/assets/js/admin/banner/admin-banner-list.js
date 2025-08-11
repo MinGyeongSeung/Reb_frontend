@@ -10,3 +10,8 @@ deleteBtn.addEventListener('click', ()=>{
 addBtn.addEventListener('click', ()=>{
   location.href="./../../../app/admin/banner/admin-banner-create.html";
 });
+
+const logoutBtn = document.querySelector("header>button>img");
+logoutBtn.addEventListener('click', ()=>{
+  location.href= "./../login/admin-login.html";
+});

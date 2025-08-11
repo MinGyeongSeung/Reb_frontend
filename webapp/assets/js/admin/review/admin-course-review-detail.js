@@ -1,5 +1,5 @@
 const cancelBtn = document.querySelector(".button-cancel");
-const deleteCommentBtn = document.querySelector(".div-comment-area>div>button");
+const deleteCommentBtn = document.querySelectorAll(".div-comment-area>div>button");
 
 cancelBtn.addEventListener('click', ()=>{
   if(confirm("삭제하시겠습니까?")){
@@ -8,6 +8,10 @@ cancelBtn.addEventListener('click', ()=>{
   }
 });
 
-deleteCommentBtn.addEventListener('click', ()=>{
-  alert("삭제 시키려는 것입니다.");
+
+deleteCommentBtn.forEach(btn => {
+  btn.addEventListener('click', function(e){
+    const comment = e.target.parentNode;
+    comment.remove();
+  });
 });
