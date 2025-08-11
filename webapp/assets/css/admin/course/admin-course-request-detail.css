@@ -148,10 +148,24 @@ button{
   
 }
 
-.div-admin-detail-button{
+#div-admin-detail-button-create{
   margin-top:50px;
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
+}
+
+#div-admin-detail-button-update{
+  margin-top:50px;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+#div-admin-detail-button-delete{
+  margin-top:50px;
+  justify-content: center;
+  display: flex;
   margin-bottom: 100px;
 }
 

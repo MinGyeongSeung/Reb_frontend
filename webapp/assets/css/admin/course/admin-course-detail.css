@@ -7,7 +7,7 @@ header{
   height: 110px;
   width: 100%;
   position: fixed;
-  background-color: #fffacd;
+  background-color: #757575;
   display: flex;
   justify-content: center;
 }
@@ -20,7 +20,7 @@ header>a>img{
 #footer{
   width: 100%;
   height: 125px;
-  background-color: #fff1cd;
+  background-color: #d9d9d9;
 }
 
 #main-container {
@@ -37,7 +37,7 @@ main {
     padding-top: 110px;
     height: 100%;
     width: 100%;
-    background-color: #FFFEF1;
+    background-color: #a6a6a6;
     font-family: "IBM Plex Sans KR", sans-serif;
     font-weight: 400;
     font-style: normal;

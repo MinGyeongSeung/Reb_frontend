@@ -10,8 +10,8 @@ cancelBtn.addEventListener('click', ()=>{
   }
 });
 
+let tf = true;
 addBtn.addEventListener("click", (e) => {
-  let tf = true;
   if (confirm("수정하시겠습니까?")) {
     for (let i = 0; i < inputIn.length; i++) {
       if (inputIn[i].value === null || inputIn[i].value.length === 0) {
@@ -20,7 +20,7 @@ addBtn.addEventListener("click", (e) => {
     }
     if (tf === true) {
       alert("수정 완료되었습니다.");
-      location.href = "./../../../app/admin/routine/admin-routine-detail.html";
+      location.href = "./../../../app/admin/notice/admin-notice-detail.html";
     }
     else {
       alert("모든 정보가 입력되어야 합니다");
