@@ -18,124 +18,137 @@
   <link
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&family=Yeon+Sung&display=swap"
     rel="stylesheet">
+
   <title>틈새빛 메인</title>
 </head>
 
 <body>
-  <div id="header" class="main-page"></div>
+  <!-- 헤더 -->
+  <div id="header" class="main-page">
+  </div>
   <main>
-    <!-- 피그마처럼 바깥 배경색을 채우기 위해 main-container 밖으로 뺌 -->
-    <div class="main-banner-container">
-      <div class="prev"><i class="fa-sharp fa-solid fa-arrow-left">&lt;</i></div>
-      <div class="main-banner-box">
-        <div class="main-banner-slide_box">
-          <div class="slide_item">
-            <a href=""><img src="./assets/img/routine.png" alt="1"></a>
+    <!-- 배너 영역 -->
+    <div id="main-top-banner-container">
+      <!-- 배너 이미지 영역 -->
+      <div id="main-top-banner-img-box">
+        <div id="main-top-banner-img">
+          <!-- 배너 좌측 버튼 -->
+          <div class="div-button-banner" onclick="moveBanner(-1)">&lt;</div>
+          <!-- 배너 이미지 목록 -->
+          <div id="main-banner-box">
+            <ul id="main-ul-banner">
+              <li class="main-li-banner"><img src="./assets/img/stone.jpg" alt=""></li>
+              <li class="main-li-banner"><img src="./assets/img/stone.jpg" alt=""></li>
+              <li class="main-li-banner"><img src="./assets/img/stone.jpg" alt=""></li>
+              <li class="main-li-banner"><img src="./assets/img/stone.jpg" alt=""></li>
+              <li class="main-li-banner"><img src="./assets/img/stone.jpg" alt=""></li>
+              <li class="main-li-banner"><img src="./assets/img/stone.jpg" alt=""></li>
+              <li class="main-li-banner"><img src="./assets/img/stone.jpg" alt=""></li>
+              <li class="main-li-banner"><img src="./assets/img/stone.jpg" alt=""></li>
+              <li class="main-li-banner"><img src="./assets/img/stone.jpg" alt=""></li>
+              <li class="main-li-banner"><img src="./assets/img/stone.jpg" alt=""></li>
+            </ul>
           </div>
-          <div class="slide_item">
-            <a href=""><img src="./assets/img/routine.png" alt="2"></a>
-          </div>
-          <div class="slide_item">
-            <a href=""><img src="./assets/img/routine.png" alt="3"></a>
-          </div>
-          <div class="slide_item">
-            <a href=""><img src="./assets/img/routine.png" alt="4"></a>
-          </div>
+          <!-- 배너 우측 버튼 -->
+          <div class="div-button-banner" onclick="moveBanner(1)">&gt;</div>
+        </div>
+        <!-- 배너 페이지 번호 -->
+        <div id="banner-page-number">
+          1/10
         </div>
       </div>
-      <div class="next"><i class="main-banner-right">&gt;</i></div>
     </div>
-
+    <!-- 메인 컨테이너 -->
     <div id="main-container">
-
-      <div class="main-menu-botton-containter">
-        <a href="./app/aboutUs/site-introduction.html"><button class="main-aboutus-botton">게시판 소개글</button></a>
-        <a href="./app/routine-meeting/routine-meetings-list.html"><button class="main-routine-list-botton">루틴 모임
-            바로가기</button></a>
-        <a href="./app/routine-meeting/routine-meeting-review-list.html"><button class="main-routine-review-botton">루틴
-            모임 후기 바로가기</button></a>
-        <a href="./app/course/expert-course-create-request.html"><button class="main-class-create-botton">수업 신청
-            바로가기</button></a>
-        <a href="./app/course/course-review-list.html"><button class="main-class-review-botton">수업 후기 바로가기</button></a>
+      <!-- 메뉴 링크 -->
+      <div id="main-link-box">
+        <a href="./app/aboutUs/site-introduction.html">게시판 소개글</a>
+        <a href="./app/routine-meeting/routine-meeting-review-list.html">루틴 모임 후기 바로가기</a>
+        <a href="./app/routine-meeting/routine-meetings-list.html">루틴 모임 바로가기</a>
+        <a href="./app/course/course-list.html">수업 신청 바로가기</a>
+        <a href="./app/course/course-review-list.html">수업 후기 바로가기</a>
       </div>
-
-      <div class="main-routine-containter">
-        <div class="main-routine-title font-main">모집중인 루틴 모임 후기글</div>
-        <div class="main-routine-class-container">
-          <div class="main-first-routine-class">
-            <a href="./app/routine-meeting/routine-meeting-review-detail.html"><img src="./assets/img/routine.png"
-                width="340" height="266" class="main-routine-image" alt="첫번째루틴모임이미지" />
-              <div class="main-first-class-text font-main">
-                틈새빛에 처음 오신 여러분 환영합니다.
-              </div>
-              <div class="main-first-class-day-text font-main">
-                전보라 2025.08.03(일)</div>
-          </div></a>
-
-          <div class="main-second-class">
-            <a href="./app/routine-meeting/routine-meeting-review-detail.html"><img src="./assets/img/routine.png"
-                width="340" height="266" class="main-routine-image" alt="두번째루틴모임이미지" />
-              <div class="main-second-class-text font-main">
-                틈새빛에 처음 오신 여러분 환영합니다.
-              </div>
-              <div class="main-second-class-day-text font-main">
-                전보라 2025.08.03(일)</div>
-          </div></a>
-
-          <div class="main-third-class">
-            <a href="./app/routine-meeting/routine-meeting-review-detail.html"><img src="./assets/img/routine.png"
-                width="340" height="266" class="main-routine-image" alt="세번째루틴모임이미지" />
-              <div class="main-third-class-text font-main">
-                틈새빛에 처음 오신 여러분 환영합니다.
-              </div>
-              <div class="main-third-class-day-text font-main">
-                전보라 2025.08.03(일)</div>
-            </a>
+      <!-- 모집중인 루틴 모임 후기글 -->
+      <div class="review-container">
+        <div class="pagetitle" id="routine-pagetitle">모집중인 루틴 모임 후기글</div>
+        <!-- 리뷰 리스트 -->
+        <div id="review-list">
+          <!-- 리뷰 -->
+          <div class="review-box">
+            <!-- 리뷰 이미지 -->
+            <div class="review-img-box">
+              <img src="./assets/img/routine.png" alt="">
+            </div>
+            <!-- 리뷰 정보 -->
+            <!-- 리뷰 제목 -->
+            <div class="review-title">즐거운 루틴 모임 시간이었습니다!</div>
+            <div class="review-text">
+              <!-- 리뷰 작성자 -->
+              <div class="routine-review-person">전보라</div>
+              <!-- 작성일자 -->
+              <div class="routine-review-date">2025.08.03(일)</div>
+            </div>
+          </div>
+          <div class="review-box">
+            <div class="review-img-box">
+              <img src="./assets/img/routine.png" alt="">
+            </div>
+            <div class="review-title">즐거운 루틴 모임 시간이었습니다!</div>
+            <div class="review-text">
+              <div class="review-person">전보라</div>
+              <div class="review-date">2025.08.03(일)</div>
+            </div>
+          </div>
+          <div class="review-box">
+            <div class="review-img-box">
+              <img src="./assets/img/routine.png" alt="">
+            </div>
+            <div class="review-title">즐거운 루틴 모임 시간이었습니다!</div>
+            <div class="review-text">
+              <div class="review-person">전보라</div>
+              <div class="review-date">2025.08.03(일)</div>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="main-routine-review-containter">
-        <div class="main-routine-review-title font-main">모집중인 수업 후기글</div>
-        <div class="main-routine-review-box-containter">
-          <a href="./app/course/course-review-detail.html">
-            <div class="main-first-routine-review">
-              <img src="./assets/img/routine.png" width="340" height="266" class="main-routine-review-image"
-                alt="첫번째루틴리뷰이미지" />
-              <div class="main-first-routine-review-text font-main">
-                틈새빛에 처음 오신 여러분 환영합니다.
-              </div>
-              <div class="main-first-routine-review-day-text font-main">
-                전보라 2025.08.03(일)</div>
+      <div class="review-container">
+        <div class="pagetitle">모집중인 수업 후기글</div>
+        <div id="review-list">
+          <div class="review-box">
+            <div class="review-img-box">
+              <img src="./assets/img/routine.png" alt="">
             </div>
-          </a>
+            <div class="review-title">알찬 구성 수업과 실력있는 선생님~</div>
+            <div class="review-text">
+              <div class="routine-review-person">전보라</div>
+              <div class="routine-review-date">2025.08.03(일)</div>
+            </div>
+          </div>
+          <div class="review-box">
+            <div class="review-img-box">
+              <img src="./assets/img/routine.png" alt="">
+            </div>
+            <div class="review-title">알찬 구성 수업과 실력있는 선생님~</div>
+            <div class="review-text">
+              <div class="review-person">전보라</div>
+              <div class="review-date">2025.08.03(일)</div>
+            </div>
+          </div>
+          <div class="review-box">
+            <div class="review-img-box">
+              <img src="./assets/img/routine.png" alt="">
+            </div>
+            <div class="review-title">알찬 구성 수업과 실력있는 선생님~</div>
+            <div class="review-text">
+              <div class="review-person">전보라</div>
+              <div class="review-date">2025.08.03(일)</div>
+            </div>
+          </div>
         </div>
-        <div class="main-second-routine-review">
-          <a href="./app/course/course-review-detail.html">
-            <img src="./assets/img/routine.png" width="340" height="266" class="main-routine-review-image"
-              alt="두번째루틴리뷰이미지" />
-            <div class="main-second-routine-review-text font-main">
-              틈새빛에 처음 오신 여러분 환영합니다.
-            </div>
-            <div class="main-second-routine-review-day-text font-main">
-              전보라 2025.08.03(일)</div>
-        </div></a>
-
-        <div class="main-third-routine-review">
-          <a href="./app/course/course-review-detail.html">
-            <img src="./assets/img/routine.png" width="340" height="266" class="main-routine-review-image"
-              alt="세번째루틴리뷰이미지" />
-            <div class="main-third-routine-review-text font-main">
-              틈새빛에 처음 오신 여러분 환영합니다.
-            </div>
-            <div class="main-third-routine-review-day-text font-main">
-              전보라 2025.08.03(일)</div>
-        </div></a>
-
       </div>
-    </div>
     </div>
   </main>
+  <!-- 푸터 -->
   <div id="footer">
   </div>
   <script src="./assets/js/main.js"></script>

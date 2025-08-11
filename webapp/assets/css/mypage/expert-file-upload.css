@@ -1,3 +1,4 @@
+/* 컨텐츠 영역 */
 #expert-file-upload-middle{
     display: flex;
     justify-content: space-around;
@@ -8,14 +9,17 @@
     line-height: 45px;
 }
 
+/* 첨부파일 글자 */
 #label-expert-file{
     color:  #F38A6E;
 }
 
+/* 첨부 파일 불러오기 버튼 */
 #input-expert-file-search{
     display: none;
 }
 
+/* 첨부 파일 불러오기 버튼 */
 #label-expert-file-search{
     padding: 6px 20px;
     background-color:  #F38A6E;
@@ -24,6 +28,7 @@
     cursor: pointer;
 }
 
+/* 첨부 파일 등록 버튼 */
 #button-expert-file-upload{
     color: white;
     top: 120px;
