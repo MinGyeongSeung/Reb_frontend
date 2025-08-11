@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+/* 메인 컨테이너 */
 #main-container {
     width: 1200px;
     height: 100%;
@@ -12,8 +13,8 @@
     justify-content: center;
 }
 
+/* 메인 */
 main {
-    padding-top: 110px;
     /* height는 컨텐츠에 따라 */
     height: 900px; 
     min-height: calc(100vh - 235px);
@@ -25,6 +26,7 @@ main {
     font-style: normal;
 }
 
+/* 버튼 */
 button{
   border-radius: 13px;
   padding : 0px 20px;
@@ -35,6 +37,7 @@ button{
   cursor: pointer;
 }
 
+/* 메인 폰트 */
 .font-main{
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
@@ -43,12 +46,14 @@ button{
   font-style: normal;
 }
 
+/* 메뉴 폰트 */
 .font-menu{
   font-family: "Yeon Sung", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
+/* 페이지 제목 */
 .pagetitle{
   font-size : 30px;
   color : #F38A6E;
@@ -63,6 +68,7 @@ button{
   font-style: normal;
 }
 
+/* 개인정보 조회 */
 #personal-info-container{
   margin-top: 10px;
   width: 100%;
@@ -70,6 +76,7 @@ button{
   flex-direction: column;
 }
 
+/* 개인정보 행 */
 .personal-info-list{
   display: flex;
   height: 50px;
@@ -87,6 +94,7 @@ button{
   border-bottom: 1px solid #f59d85;
 }
 
+/* 전문가 인증 파일 변경 버튼 */
 #button-edit-expert-info{
   background-color:#f59d85 ;
 
@@ -103,15 +111,18 @@ button{
   margin:auto;
 }
 
+/* 개인정보 유형 */
 .personal-info-type{
   width : 360px;
   color : #6E6E6E;
 }
 
+/* 개인정보 값 */
 .personal-info-data{
   width : 720px;
 }
 
+/* 우편번호 */
 #personal-info-data-postcode{
   text-align: center;
   width : 90px;
@@ -124,6 +135,7 @@ button{
   font-style: normal;
 }
 
+/* 프로필 사진 */
 #profile-picture{
   margin-top: 0px;
   width: 50px;
@@ -131,12 +143,14 @@ button{
 
 }
 
+/* 프로필 사진 이미지 */
 #profile-picture img{
   border-radius: 60%;
   width: 100%;
   height: 100%
 }
 
+/* 하단 버튼 - 수정/회원탈퇴 */
 #form-bottom-button{
   width: 100%;
   height: 66px;
@@ -144,6 +158,7 @@ button{
   justify-content: center;
 }
 
+/* 하단 버튼 - 수정/회원탈퇴 */
 #form-bottom-button button{
   margin-top: 60px;
   font-family: "Noto Sans KR", sans-serif;
@@ -154,12 +169,14 @@ button{
   border-radius: 20px;
 }
 
+/* 회원정보 수정 버튼 */
 #button-edit-user{
   background-color: #f59d85;
   color : white;
   border : none;
 }
 
+/* 회원 탈퇴 버튼 */
 #button-del-user{
   background-color: white;
   color : red;

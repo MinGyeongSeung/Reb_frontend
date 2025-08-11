@@ -1,3 +1,4 @@
+/* 모달 들어가는 곳 */
 .mypage-modal{
     top:0;
     width: 100%;
@@ -8,10 +9,12 @@
     display: none;
 }
 
+/* 모달 내부 영역 */
 .modal-main{
     padding: 50px 30px 0px 80px;
 }
 
+/* 모달 닫기 */
 .button-modal-close{
     position: relative;
     width: 45px;
@@ -25,6 +28,7 @@
     cursor: pointer;
 }
 
+/* 모달 창 */
 .window-modal{
     margin : auto;
     margin-top: 300px;
@@ -34,6 +38,7 @@
     background-color: #FFFACD;
 }
 
+/* 모달 상단 영역 */
 .modal-header{
     display: flex;
     width: 100%;
