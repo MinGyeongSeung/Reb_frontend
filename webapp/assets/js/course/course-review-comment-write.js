@@ -31,7 +31,7 @@ commentList.addEventListener('click',(e)=>{
   }
   if(e.target.classList.contains('span-comment-delete')){
     if(confirm("삭제하시겠습니까?")){
-      commentList.remove();
+      commentList.classList.remove();
     }
   }
 });
