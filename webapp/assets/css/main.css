@@ -1,230 +1,233 @@
-* {
+*{
   margin: 0;
   padding: 0;
 }
 
+/* 메인 컨테이너 */
 #main-container {
-  width: 1200px;
-  height: 100%;
-  /*알아서 넣기*/
-  background-color: #FFFEF1;
-  margin: auto;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: space-between; */
-  /* justify-content: center; */
+    width: 1200px;
+    height: calc(100% -500px);
+    background-color: #FFFEF1;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
 
+/* 메인 */
 main {
-  padding-top: 110px;
-  height: auto;
-  width: 100%;
-  background-color: #FFFEF1;
-  font-family: "Noto Sans KR", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    /* height는 컨텐츠에 따라 */
+    height: 2000px; 
+    min-height: calc(100vh - 235px);
+    width: 100%;
+    background-color: #FFFEF1;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
 }
 
-button {
+/* 버튼 */
+button{
   border-radius: 13px;
-  padding: 0px 20px;
-  height: 40px;
+  padding : 0px 20px;
+  height: 50px;
   background-color: #f59d85;
-  border: 0px;
+  border : 0px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-.font-main {
-  font-size: 18px;
+/* 메인 폰트 */
+.font-main{
+  font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: black;
 }
 
-.font-menu {
+/* 메뉴 폰트 */
+.font-menu{
   font-family: "Yeon Sung", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
-/* 슬라이스 배너 시작 */
-.main-banner-container {
+/* 페이지 제목 */
+.pagetitle{
+  font-size : 30px;
+  color : #F38A6E;
+
+  padding-top : 100px;
+  height: 110px;
+  line-height: 110px;
+  
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* 배너 영역 */
+#main-top-banner-container{
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f59d85;
+  height: 500px;
+  width : 100%;
+}
+
+/* 배너 이미지 영역 */
+#main-top-banner-img-box{
+  display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FFB6A3;
-}
-
-.main-banner-box {
-  overflow: hidden;
-  width: 949px;
-  height: 415px;
-}
-
-.main-banner-slide_box {
-  display: flex;
-  transition: .5s ease;
-}
-
-.slide_item {
-  flex: 0 0 949px;
-}
-
-.slide_item img {
-  width: 949px;
-  height: 415px;
-  display: block;
-}
-
-.prev,
-.next {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  background: white;
-  color: black;
-}
-.prev > i,
-.next > i {
-  font-weight: bold;
-  font-size: 24px;
-}
-
-
-.prev {
-  margin-right: 20px;
-}
-.next {
-  margin-left: 20px;
-}
-
-/* 슬라이스 배너 끝 */
-
-
-/* 버튼 메뉴 시작 */
-.main-menu-botton-containter {
-  position: relative;
-  margin-top: 5%;
+  flex-direction: column;
+  
   width: 1200px;
-  height: 360px;
+  height: 100%;
+  margin: auto;
 }
 
-.main-menu-botton-containter button {
+/* 배너 이미지 틀 */
+#main-top-banner-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 배너 이미지 실제로 보이는 영역 */
+#main-banner-box{
+  display: flex;
+  justify-content :left;
+  width : 900px;
+  left : 0px;
+  margin: 0px 20px;
+  position: relative;
+  overflow: hidden;
+  top : 18px;
+}
+
+/* 배너 ul */
+#main-ul-banner{
+  display: flex;
+  position: relative;
+  list-style: none;
+}
+
+/* 배너 사진 li */
+.main-li-banner{
+  position: relative;
+}
+
+/* 배너 사진 img */
+.main-li-banner img{
+  width : 900px;
+  height: 500px;
+}
+
+/* 배너 좌/우측 버튼 */
+.div-button-banner{
+  background-color: white;
+  border-radius: 60%;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+  width : 30px;
+  height: 30px;
   cursor: pointer;
-  position: absolute;
+}
+
+/* 배너 페이지 번호 */
+#banner-page-number{
+  position: relative;
+  bottom : 50px;
+  background-color: white;
+  width : 50px;
+  text-align: center;
   border-radius: 30px;
-  width: 425px;
-  height: 56px;
-  font-size: 32px;
 }
 
-/* 버튼 색상 위치 */
-/* 게시판소개글 */
-.main-aboutus-botton {
-  background-color: #DF5F90;
-  color: black;
-  top: 0;
-  left: 120px;
+/* 메뉴 링크 */
+#main-link-box{
+  height : 250px;
+  position: relative;
+  width: 1200px;
+}
+
+/* 메뉴 링크 a */
+#main-link-box a{
+  text-decoration: none;
+  border-radius: 20px;
+  text-decoration: none;
+  position : absolute;
+  height: 45px;
+  width : 280px;
+  padding: 3px 50px;
+  line-height: 45px;
+  font-size: 25px;
+  color : black;
+  text-align: center;
+}
+
+#main-link-box :nth-child(1){
+  background-color: rgb(219, 99, 99);
+  top : 15px;
+  left : 200px;
 }
 
 
-/* 루틴모임바로가기 */
-.main-routine-list-botton {
-  background-color: yellow;
-  color: black;
-  top: 20px;
-  right: 100px;
+#main-link-box :nth-child(2){
+  background-color: rgb(185, 233, 163);
+  top : 100px;
+  left : 420px;
 }
 
-/* 루틴모임후기바로가기 */
-.main-routine-review-botton {
-  background-color: #BDFCC9;
-  color: black;
-  top: 90px;
-  left: 330px;
+#main-link-box :nth-child(3){
+  background-color: rgb(65, 217, 228);
+  
+  top : 160px;
+  left : 20px;
 }
 
-/* 수업신청바로가기 */
-.main-class-create-botton {
-  background-color: #00FFFF;
-  color: black;
-  top: 170px;
-  left: 0;
+#main-link-box :nth-child(4){
+  background-color: rgb(231, 231, 231);
+  left:700px;
+  top : 170px;
 }
 
-/* 수업후기바로가기 */
-.main-class-review-botton {
-  background-color: #E6E6FA;
-  color: black;
-  top: 200px;
-  left: 550px;
+#main-link-box :nth-child(5){
+  background-color: rgb(244, 247, 105);
+  top : 30px;
+  left : 800px;
 }
 
-/* 버튼 메뉴 끝 */
-
-
-/* 모집중인 루틴 모임 후기글 시작 */
-
-.main-routine-containter {
-  margin-bottom: 3%;
-}
-
-.main-routine-class-container {
-  text-align: start;
-  justify-content: space-around;
+/* 후기글 목록 */
+#review-list{
   display: flex;
-  gap: 30px;
+  justify-content:space-between;
 }
 
-.main-routine-title {
-  font-size: 32px;
-  color: #F38A6E;
-  padding-bottom: 10px;
-  padding-left: 20px;
+/* 후기글 */
+.review-box{
+  margin : 10px 0px;
 }
 
-.main-first-class-day-text,
-.main-second-class-day-text,
-.main-third-class-day-text {
-  text-align: right;
-  opacity: 0.2;
+/* 후기글 img */
+.review-img-box img{
+  width : 330px;
 }
 
-/* 모집중인 루틴 모임 후기글 끝 */
-
-
-/* 모집중인 수업 후기글 시작 */
-.main-routine-review-containter {
-  margin-top: 48px;
-  padding-bottom: 5%;
-}
-
-.main-routine-review-box-containter {
-  text-align: start;
-  justify-content: space-around;
+/* 후기글 글 정보 */
+.review-text{
   display: flex;
-  gap: 30px;
+  justify-content: right;
+  color : rgb(151, 151, 151);
 }
 
-.main-routine-review-title {
-  font-size: 32px;
-  color: #F38A6E;
-  padding-bottom: 10px;
-  padding-left: 20px;
+/* 후기글 작성일자 */
+.review-date{
+  margin-left: 10px;
 }
-
-.main-first-routine-review-day-text,
-.main-second-routine-review-day-text,
-.main-third-routine-review-day-text {
-  text-align: right;
-  opacity: 0.2;
-}
-
-/* 모집중인 수업 후기글 끝 */

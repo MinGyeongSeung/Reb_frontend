@@ -46,7 +46,13 @@ button {
   background-color: #f59d85;
   border: 0px;
   font-size: 20px;
+  color:white;
 }
+
+.button-retry,.button-injunging{
+  color: #d9d9d9;
+}
+
 
 .font-main {
   font-size: 20px;

@@ -1,9 +1,10 @@
+/* 전체 */
 *{
   margin: 0;
   padding: 0;
 }
 
-
+/* 메인 컨테이너 */
 #main-container {
     width: 1200px;
     height: 100%;
@@ -13,8 +14,8 @@
     justify-content: center;
 }
 
+/* 메인 */
 main {
-    padding-top: 110px;
     /* height는 컨텐츠에 따라 */
     height: 718px; 
     min-height: calc(100vh - 235px);
@@ -26,6 +27,7 @@ main {
     font-style: normal;
 }
 
+/* 버튼 */
 button{
   border-radius: 13px;
   padding : 0px 20px;
@@ -36,6 +38,7 @@ button{
   cursor: pointer;
 }
 
+/* 메인 폰트 */
 .font-main{
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
@@ -44,12 +47,14 @@ button{
   font-style: normal;
 }
 
+/* 메뉴 폰트 */
 .font-menu{
   font-family: "Yeon Sung", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
+/* 페이지 제목 */
 .pagetitle{
   font-size : 30px;
   color : #F38A6E;
@@ -65,41 +70,48 @@ button{
   text-align: center;
 }
 
+/* 후원 금액 선택 */
 #choose-money{
     display: flex;
     justify-content: center;
     margin: 100px 0px;
 }
 
+/* 후원 금액 글자 */
 #choose-money-label{
     margin-right: 30px;
     line-height: 50px;
 }
 
+/* 후원 금액 선택 버튼 */
 .div-money-button{
     margin : 0px 5px;
     color : white;
 }
 
+/* 후원 금액 입력 div */
 #money-input-text{
     display: flex;
 }
 
-
+/* 후원 창 하단 */
 #sponsorship-bottom{
     display: flex;
     justify-content: center;
     margin-top: 100px;
 }
 
+/* 후원 창 하단 버튼 */
 #sponsorship-bottom button{
     margin : 0px 100px;
 }
 
+/* 후원 버튼 */
 #button-ok-donation{
     color : white;
 }
 
+/* 후원 취소 버튼 */
 #button-cancle-donation{
   background-color: white;
   color : red;
@@ -107,6 +119,7 @@ button{
   position: relative;
 }
 
+/* 후원 금액 입력 창 */
 #input-donation-money{
   height: 48px;
   width: 300px;
