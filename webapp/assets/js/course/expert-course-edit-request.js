@@ -18,10 +18,11 @@ okButton.addEventListener("click", (e) => {
   let tf = true;
   if (confirm("정말로 수정 요청하시겠습니까?")) {
     for (let i = 0; i < inputIn.length; i++) {
-      if (inputIn[i].value === null || inputIn[i].value.length === 0 || warning.style.display === 'block') {
+      if (inputIn[i].value === null || inputIn[i].value.length === 0 ) {
         tf = false;
       }
     }
+    console.log(tf);
     if (tf === true) {
       location.href = "./course-list.html";
     }

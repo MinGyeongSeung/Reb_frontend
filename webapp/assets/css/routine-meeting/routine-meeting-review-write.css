@@ -66,10 +66,12 @@ button {
   line-height: 110px;
 
   font-family: "IBM Plex Sans KR", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
-
+button:hover{
+  cursor: pointer;
+}
 .input-title {
   border-radius: 15px;
   border: 0px;

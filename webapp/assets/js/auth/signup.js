@@ -11,7 +11,7 @@ let addressBasic = document.querySelector("input[name='addressBasic']");
 let addressAdd = document.querySelector("input[name='addressAdd']");
 let userName = document.querySelector("input[name='name']");
 let nickName = document.querySelector("input[name='nickName']");
-let gender = document.querySelector("input[name='gender']");
+let gender = document.querySelectorAll("input[name='gender']");
 let phoneNumber = document.querySelector("input[name='phoneNumber']");
 let injungPhone = document.querySelector(".input-cert");
 let injunging = document.querySelector(".button-injunging");
@@ -22,11 +22,16 @@ const buttonInjung = document.querySelector(".button-injung");
 const inputEssential = document.querySelectorAll(".input-essential");
 const retry = document.querySelector(".button-retry");
 
+let now = new Date();
+let today = new Date(now.getTime() + 9 * 60 * 60 * 1000).toISOString().split('T')[0];
+birth.setAttribute("max",today);
+
+const backButton = document.querySelector(".button-back");
+const spanAdd = document.querySelector(".span-add");
 const idRegex = /^[a-z0-9]{5,19}$/;
 const pwRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$])[A-Za-z\d!@#$]{8,20}$/;
 
 buttonSignUp.addEventListener("click", (e) => {
-  
   if (confirm("회원가입 하시겠습니까?")) {
     let isWrite = true;
     for (let i = 0; i < inputEssential.length; i++) {
@@ -47,11 +52,14 @@ buttonSignUp.addEventListener("click", (e) => {
         break;
       }
     }
+    if(!gender[0].checked && !gender[1].checked){
+      isWrite = false;
+    }
     if (isWrite) {
       alert("회원가입 완료");
       location.href = "./../../main.html";
     } else {
-      alert("필수 입력 확인해주세요");
+      alert("다시 한번 확인해주세요");
     }
   } else {
     e.preventDefault();
@@ -118,15 +126,7 @@ userName.addEventListener('blur', () => {
   }
 });
 
-gender.addEventListener('blur', () => {
-  let nearWarning = gender.closest(".div-signup");
-  let warning = nearWarning.querySelector(".p-warning");
-  if (!gender.value) {
-    warning.style.display = "block";
-  } else {
-    warning.style.display = "none";
-  }
-});
+
 
 nickName.addEventListener('blur', () => {
   let nearWarning = nickName.closest(".div-signup");
@@ -182,7 +182,6 @@ injunging.addEventListener("click", () => {
     injungPhone.readOnly = true;
     injungPhone.style.backgroundColor = "#d9d9d9";
     injunging.disabled = true;
-    retry.style.color ="#d9d9d9";
     injunging.style.color = "#d9d9d9";
     alert("인증 성공");
   } else {
@@ -194,12 +193,22 @@ retry.addEventListener('click', () => {
   phoneNumber.readOnly = false;
   phoneNumber.style.backgroundColor = "white";
   buttonInjung.disabled = false;
-  buttonInjung.color = "white";
+  buttonInjung.style.color = "white";
   injungPhone.readOnly = true;
   injungPhone.style.backgroundColor = "#d9d9d9";
+  injungPhone.value = "";
   injunging.disabled = true;
   injunging.style.color = "#d9d9d9";
   retry.disabled = true;
   retry.style.color = "#d9d9d9";
   phoneNumber.value = "";
+  
 });
+
+backButton.addEventListener('click',()=>{
+  history.back();
+});
+
+// spanAdd.addEventListener('click',()=>{
+// // 모달 열어서 약관보여주기
+// });

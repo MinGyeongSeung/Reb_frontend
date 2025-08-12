@@ -67,10 +67,12 @@ button {
   line-height: 110px;
 
   font-family: "IBM Plex Sans KR", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
-
+button:hover{
+  cursor: pointer;
+}
 .div-review-title {
   display: flex;
   background-color: #FFB29D;
