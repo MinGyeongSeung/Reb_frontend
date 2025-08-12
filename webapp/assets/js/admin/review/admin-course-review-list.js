@@ -10,7 +10,7 @@ chooseMenu.addEventListener('blur', () => {
   search.style.display = "none";
 });
 
-const logoutBtn = document.querySelector("header>section>button>img");
+const logoutBtn = document.querySelector("header>section>button");
 logoutBtn.addEventListener('click', ()=>{
   location.href= "./../login/admin-login.html";
 });

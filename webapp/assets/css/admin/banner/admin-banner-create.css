@@ -3,12 +3,14 @@
   padding: 0;
 }
 
+/* 폰트 */
 .font-menu {
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+/* 바디 */
 body {
   background-color: #757575;
   display: flex;
@@ -16,6 +18,7 @@ body {
   align-items: center;
 }
 
+/* 헤더 */
 header {
   display: flex;
   margin: auto;
@@ -30,25 +33,24 @@ header {
   justify-content: space-between;
 }
 
+/* 헤더 메뉴 이름 */
 header>p{
   margin : 0 30px;
 } 
 
-header>button{
-  height: 50px;
+/* 로그아웃 버튼 */
+header>button {
+  height: 30px;
   width: 50px;
-  border-radius: 50%;
-  margin: 15px 10px;
-  cursor: pointer;
+  border-radius: 10px;
+  margin: 25px 20px;
+  background-color: black;
+  color: white;
+  border: 0;
+  font-size: 16px;
 }
 
-header>button>img{
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-}
-
-
+/* 메인 */
 main {
   height: 91vh;
   display: flex;
@@ -56,6 +58,7 @@ main {
   top: 80px;
 }
 
+/* 사이드바 리스트 영역 */
 #main-admin-list-menu {
   background-color: #d9d9d9;
   height: 100vh;
@@ -64,6 +67,7 @@ main {
   transform: translate(-155px, -80px);
 }
 
+/* 사이드바 리스트 */
 #main-admin-list {
   margin: 150px 55px;
   width: 200px;
@@ -73,20 +77,24 @@ main {
   align-items: center;
 }
 
+/* 사이드바 리스트 목록 */
 #main-admin-list>li {
   font-size: 20px;
   margin: 20px 0;
 }
 
+/* 사이드바 리스트 목록 호버시 폰트 사이즈 증가 */
 #main-admin-list>li:hover{
   font-size: 24px;
 }
 
+/* 리스트 스타일 제거 */
 #main-admin-list>li>a {
   text-decoration: none;
   color: black;
 }
 
+/* 메인 영역 */
 #main-banner {
   background-color: white;
   width: 895px;
@@ -96,6 +104,7 @@ main {
   transform: translateX(155px);
 }
 
+/* 배너명, 배너 파일 등록, 취소 영역 */
 #main-banner-div {
   height: 250px;
   width: 350px;
@@ -104,6 +113,7 @@ main {
   display: flex;
 }
 
+/* 배너명 입력 */
 #main-banner-input-name {
   margin: 30px 0;
   height: 35px;
@@ -111,12 +121,7 @@ main {
   border-radius: 10px;
 }
 
-#main-banner-input-file {}
-
-#main-banner-input-file-input {
-  display: none;
-}
-
+/* 배너 이미지 파일 입력 */
 #main-banner-input-file>input:nth-child(2) {
   margin: 0 30px 50px 0;
   height: 35px;
@@ -124,20 +129,12 @@ main {
   border-radius: 10px;
 }
 
-#main-banner-input-file>label>button{
-  height: 30px;
-  width: 50px;
-  font-size: 20px;
-  background-color: #818181;
-  color: white;
-  border: 0;
-  border-radius: 5px;
-}
-
+/* 등록, 취소 버튼 영역 */
 #main-banner-btn{
   display: flex;
 }
 
+/* 버튼 스타일링 */
 #main-banner-btn>button{
   height: 40px;
   width: 100px;

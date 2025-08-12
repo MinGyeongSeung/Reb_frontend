@@ -4,7 +4,10 @@ const startDate = document.querySelector("#start-date");
 const endDate = document.querySelector("#end-date");
 const rStartDate = document.querySelector("#routine-start-date");
 const rEndDate = document.querySelector("#routine-end-date");
-const today = new Date().toISOString().split('T')[0];
+const startTime = document.getElementById("start-time");
+const endTime = document.getElementById("end-time");
+let now = new Date();
+let today = new Date(now.getTime() + 9 * 60 * 60 * 1000).toISOString().split('T')[0];
 startDate.setAttribute('min', today);
 rStartDate.setAttribute('min', today);
 const inputIn = document.querySelectorAll(".input-in");
@@ -25,6 +28,7 @@ startDate.addEventListener('change', function () {
 endDate.addEventListener('change', function () {
   if (endDate.value) {
     startDate.max = endDate.value;
+    rStartDate.setAttribute('min', endDate.value);
   }
 }, false);
 
@@ -39,6 +43,22 @@ endDate.addEventListener('change', function () {
     rStartDate.max = rEndDate.value;
   }
 }, false);
+
+startTime.addEventListener('input', function(){
+  endTime.min= startTime.value;
+
+  if(endTime.value && endTime.value < startTime.value){
+    endTime.value= "";
+  }
+});
+
+endTime.addEventListener('input', function(){
+  startTime.max= endTime.value;
+
+  if(startTime.value && startTime.value > endTime.value){
+    startTime.value="";
+  }
+});
 
 okBtn.addEventListener("click", (e) => {
   let tf = true;
