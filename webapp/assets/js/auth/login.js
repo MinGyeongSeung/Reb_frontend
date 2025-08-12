@@ -20,7 +20,6 @@ const inputModalPnId = document.querySelector(".input-modal-pn-id");
 const inputModalNamePw = document.querySelector(".input-modal-name-pw");
 const inputModalPnPw = document.querySelector(".input-modal-pn-pw");
 const inputModalIdPw = document.querySelector(".input-modal-id-pw");
-
 findIdModal.addEventListener('click', () => {
   idModal.style.display = "flex";
 });
@@ -54,6 +53,7 @@ buttonIdFind.addEventListener('click', () => {
     idPhoneNumber.value = "";
     inputPhoneNumberId.readOnly = true;
     inputPhoneNumberId.style.backgroundColor = "#d9d9d9";
+    inputPhoneNumberId.value = "";
   }
 });
 
@@ -100,7 +100,7 @@ buttonPwFind.addEventListener('click', () => {
     pwPhoneNumber.value = "";
     inputPhoneNumberPw.readOnly = true;
     inputPhoneNumberPw.style.backgroundColor = "#d9d9d9";
-
+    inputPhoneNumberPw.value = "";
   }
 });
 
