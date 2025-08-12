@@ -78,9 +78,9 @@ const myComments = new ListInfo(
 
 function inputList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, id) {
     if (id === "my-courses-routine")
-        loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, "./../routine-meeting/routine-meeting-detail.html", myRoutine);
+        loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, "./../routine-meeting/routine-meeting-detail-ing.html", myRoutine);
     else if (id === "my-courses-courses")
-        loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, "./../course/course-detail.html", myCourse);
+        loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, "./../course/course-detail-user-ing.html", myCourse);
     else if (id === "my-post")
         loadList(listPageTitle, listColType, listContentList, searchTypeFirst, searchTypeSecond, "./../course/course-review-detail.html", myPosts);
     else if (id === "my-comment")
