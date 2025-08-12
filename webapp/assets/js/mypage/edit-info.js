@@ -95,9 +95,10 @@ buttonCheckVerificationCode.addEventListener('click', () => {
 });
 
 pwReInput.addEventListener('change', compareEqualPassword);
+const pwRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$])[A-Za-z\d!@#$]{8,20}$/;
 
 function checkPassword() {
-    if (pwFirstInput.value.length < 8) {
+    if (!pwRegex.test(pwFirstInput.value)) {
         pwFirstWarning.style.display = "inline";
     } else {
         pwFirstWarning.style.display = "none";
