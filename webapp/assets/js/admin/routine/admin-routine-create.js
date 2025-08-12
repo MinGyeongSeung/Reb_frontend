@@ -30,6 +30,8 @@ endDate.addEventListener('change', function () {
     startDate.max = endDate.value;
     rStartDate.setAttribute('min', endDate.value);
   }
+  rStartDate.readOnly = false;
+  rEndDate.readOnly = false;
 }, false);
 
 rStartDate.addEventListener('change', function () {
@@ -38,25 +40,27 @@ rStartDate.addEventListener('change', function () {
   }
 }, false);
 
-endDate.addEventListener('change', function () {
+rEndDate.addEventListener('change', function () {
   if (rEndDate.value) {
     rStartDate.max = rEndDate.value;
   }
+  startTime.readOnly= false;
+  endTime.readOnly= false;
 }, false);
 
-startTime.addEventListener('input', function(){
-  endTime.min= startTime.value;
+startTime.addEventListener('input', function () {
+  endTime.min = startTime.value;
 
-  if(endTime.value && endTime.value < startTime.value){
-    endTime.value= "";
+  if (endTime.value && endTime.value < startTime.value) {
+    endTime.value = "";
   }
 });
 
-endTime.addEventListener('input', function(){
-  startTime.max= endTime.value;
+endTime.addEventListener('input', function () {
+  startTime.max = endTime.value;
 
-  if(startTime.value && startTime.value > endTime.value){
-    startTime.value="";
+  if (startTime.value && startTime.value > endTime.value) {
+    startTime.value = "";
   }
 });
 

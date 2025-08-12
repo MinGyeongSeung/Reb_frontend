@@ -25,6 +25,11 @@ header{
 /* 마우스 호버시 손가락 모양 */
 button{
   cursor: pointer;
+  border-radius: 13px;
+  padding : 0px 20px;
+  height: 40px;
+  background-color: #f59d85;
+  border : 0px;
 }
 
 /* 페이지 로고 */
@@ -44,7 +49,6 @@ footer{
 #main-container {
     width: 1200px;
     height: 100%;
-    /*알아서 넣기*/
     background-color: #FFFEF1;
     margin: auto;
     align-items: center;
@@ -64,14 +68,7 @@ main {
     padding-bottom: 110px;
 }
 
-/* 버튼 커스텀 */
-button{
-  border-radius: 13px;
-  padding : 0px 20px;
-  height: 40px;
-  background-color: #f59d85;
-  border : 0px;
-}
+
 
 /*  페이지 제목*/
 .pagetitle{

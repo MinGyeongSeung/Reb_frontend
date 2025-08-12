@@ -253,38 +253,15 @@ button{
   margin: 30px 28px;
 }
 
-/* 검색 종류 */
-#main-search-basic>div{
-  border: 1px solid black;
-  border-radius: 12px;
-}
-
-/* 검색 드롭다운 */
-#main-search-menu{
-  display: none;
-}
-
-/* 검색 클릭 시 내려오는 영역 */
-#main-search-menu>div{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* 검색 종류 */
-#main-search-menu>div>p{
-  align-self: center;
-}
-
-/* 검색 종류 스타일 */
-#main-search-basic>div>p{
-  height: 45px;
-  width: 102px;
-  border: 1px solid black;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* 검색 조건 영역 */
+.select-find {
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 45px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
 }
 
 /* 입력창 */
