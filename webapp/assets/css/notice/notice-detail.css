@@ -5,7 +5,8 @@
 
 #main-container {
     width: 1200px;
-    height: calc(100vh - 235px);
+    height: 100%;
+    /*알아서 넣기*/
     background-color: #FFFEF1;
     margin: auto;
     align-items: center;
@@ -15,8 +16,7 @@
 main {
     padding-top: 110px;
     /* height는 컨텐츠에 따라 */
-    height: 900px; 
-    min-height: calc(100vh - 235px);
+    height: 600px; 
     width: 100%;
     background-color: #FFFEF1;
     font-family: "Noto Sans KR", sans-serif;
@@ -34,7 +34,7 @@ button {
 }
 
 .font-main {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -63,26 +63,26 @@ button {
 /* 게시글상세 시작 */
 
 .notice-detail-containter {
-  min-height: 557px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  margin-top: 15%;
-  margin-bottom: 15%;
+  position: relative;
+  top: 90px;
+  left: 200px;
+    /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 .notice-detail-title-text {
-  font-size: 30px;
+  font-size: 18px;
   color: #f38a6e;
   font-weight: bold;
 }
 
 .board-box-writer {
-  font-size: 32px;
+  font-size: 18px;
 }
 
 .board-box-day {
-  font-size: 32px;
+  font-size: 18px;
 }
 
 .notice-detail-admin-image-containter {
@@ -105,15 +105,15 @@ button {
 }
 
 .notice-detail-admin-containter {
-  margin-left: 1%;
+  margin-left: 1px;
 }
 
 .board-box-writer {
-  font-size: 32px;
+  font-size: 18px;
 }
 
 .board-box-day {
-  font-size: 32px;
+  font-size: 18px;
 }
 
 .notice-detail-text-content-containter {
@@ -121,8 +121,7 @@ button {
 }
 
 .notice-detail-text {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 18px;
   white-space: normal;
   /* 줄바꿈 허용 */
   word-break: break-word;
