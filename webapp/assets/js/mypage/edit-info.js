@@ -28,6 +28,10 @@ const editInfoAddressText = document.querySelector("#edit-info-address-text");
 const buttonColor = "#f59d85";
 const buttonDisabledColor = "#797979ff";
 
+const inputEditInfoEmail = document.querySelector("#input-edit-info-email");
+
+let checkNickname = false;
+
 document.querySelector("#button-edit-user-complete").addEventListener(('click'), () => {
     editCompleteUserInfo();
 });
@@ -54,7 +58,10 @@ buttonSearchAddress.addEventListener('click', () => {
     editInfoAddressText.innerHTML = prompt("(API 대체 예정)주소 입력");
 });
 
+let checkPhoneNumber = false;
+
 buttonUpdatePhoneNumber.addEventListener('click', () => {
+    checkPhoneNumber = false;
     inputEditInfoPhoneNumber.removeAttribute("disabled");
 
     buttonUpdatePhoneNumber.removeAttribute("disabled");
@@ -87,6 +94,7 @@ buttonCheckVerificationCode.addEventListener('click', () => {
         inputVerificationCode.setAttribute("disabled", true);
         buttonSendVerificationCode.setAttribute("disabled", true);
         buttonSendVerificationCode.style.backgroundColor = buttonDisabledColor;
+        checkPhoneNumber = true;
         alert("전화번호 변경을 성공하였습니다.");
     } else {
         inputVerificationCode.value = "발송한 인증번호와 다른 입력";
@@ -115,14 +123,23 @@ function compareEqualPassword() {
 }
 
 const nicknamelist = ['보라도리', '보라돌이', '보라'];
+const originalNickname = nicknameInput.value;
 
 buttonEditNickname.addEventListener('click', () => {
-    if (nicknamelist.indexOf(nicknameInput.value) === -1) {
+    if (nicknameInput.value === originalNickname) {
+        nicknameAlert.innerHTML = "기존과 동일";
         nicknameAlert.style.display = "block";
+        checkNickname = true;
+    }
+    else if (nicknamelist.indexOf(nicknameInput.value) === -1) {
+        nicknameAlert.innerHTML = "사용 가능";
+        nicknameAlert.style.display = "block";
+        checkNickname = true;
     } else {
         nicknameAlert.style.display = "none";
         nicknameInput.value = "존재하는 닉네임입니다";
         nicknameInput.style.color = "red";
+        checkNickname = false;
     }
 }
 );
@@ -138,20 +155,57 @@ nicknameInput.addEventListener('input', () => {
     nicknameAlert.style.display = "none";
 })
 
+
+//필수 입력 값 확인
 function checkAllInfo() {
-    //필수 입력 값 확인
-    return true;
+    let checkMsg = ""
+    //  비밀번호 두개 다맞게
+    if (!pwRegex.test(pwFirstInput.value) || !(pwFirstInput.value === pwReInput.value)) {
+        checkMsg += "비밀번호 입력 확인 필요\n";
+    }
+
+    //  이메일 입력
+    if (inputEditInfoEmail.value === "") {
+        checkMsg += "이메일 필수 입력 필요\n";
+    }
+
+    // 기존과 동일하거나 사용 가능 여부 판단 시 넘어가기 
+    if (nicknameInput.value !== originalNickname) {
+        if (!checkNickname) {
+            checkMsg += "기존과 동일하거나 중복되지 않는 닉네임으로 확인 필요\n";
+        }
+    }
+
+    return checkMsg;
+}
+
+function checkAdditinalInfo() {
+    let checkMsg = "";
+
+
+    // [전화번호는 동일하게 유지됩니다.] 
+    // - 변경 버튼 클릭 후, 인증 확인이 안된 경우
+    // - 변경 버튼을 누르지 않은 경우
+    if (!checkPhoneNumber) {
+        checkMsg += "전화번호는 동일하게 유지됩니다.\n";
+    }
+
+    return checkMsg;
 }
 
 function editCompleteUserInfo() {
-    if (!checkAllInfo()) {
-        alert("모든 정보를 입력해주시길 바랍니다.");
+    let checkMsg = checkAllInfo();
+    if (checkMsg !== "") {
+        alert(checkMsg);
         return;
     }
 
-    if (confirm("개인정보를 수정하시겠습니까?")) {
+    checkMsg = checkAdditinalInfo();
+    if (confirm(checkMsg + "개인정보를 수정하시겠습니까?")) {
         moveToPersonalInfo();
     }
+
+    return checkMsg;
 }
 
 function moveToPersonalInfo() {

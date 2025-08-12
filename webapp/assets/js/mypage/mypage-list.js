@@ -130,11 +130,11 @@ function search(e) {
     let href;
     if (id === "my-courses-routine") {
         listInfo = myRoutine;
-        href = "./../routine-meeting/routine-meeting-detail.html";
+        href = "./../routine-meeting/routine-meeting-detail-ing.html";
     }
     else if (id === "my-courses-courses") {
         listInfo = myCourse;
-        href = "./../course/course-detail.html";
+        href = "./../course/course-detail-user-ing.html";
     }
     else if (id === "my-post") {
         listInfo = myPosts;
