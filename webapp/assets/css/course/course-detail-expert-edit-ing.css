@@ -69,11 +69,13 @@ button{
   line-height: 110px;
   
   font-family: "IBM Plex Sans KR", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   text-align: center;
 }
-
+button:hover{
+  cursor: pointer;
+}
 .p-title {
   color: #F38A6E;
   font-size: 36px;
@@ -303,3 +305,6 @@ button{
   font-style: normal;
 }
 
+.div-expert-info-detail > p{
+  padding-top : 15px;
+}

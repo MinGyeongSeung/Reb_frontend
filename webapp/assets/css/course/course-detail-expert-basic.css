@@ -9,7 +9,9 @@
 .p-back:hover{
   cursor: pointer;
 }
-
+button:hover{
+  cursor: pointer;
+}
 #header{
   height: 110px;
   width: 100%;
@@ -76,7 +78,7 @@ button{
   line-height: 110px;
   
   font-family: "IBM Plex Sans KR", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   text-align: center;
 }
@@ -306,4 +308,9 @@ button{
   font-weight: 400;
   font-style: normal;
 }
+
+.div-expert-info-detail > p{
+  padding-top : 15px;
+}
+
 
