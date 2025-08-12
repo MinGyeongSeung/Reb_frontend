@@ -9,25 +9,24 @@
   /*알아서 넣기*/
   background-color: #fffef1;
   margin: auto;
+  align-items: center;
+  justify-content: center;
+
 }
 
-.pagetitle{
-  font-size : 30px;
-  color : #F38A6E;
-
-  padding-top : 100px;
+.pagetitle {
+  font-size: 30px;
+  color: #f38a6e;
+  padding-top: 100px;
   height: 110px;
   line-height: 110px;
-  
-  font-family: "Noto Sans KR", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
 main {
-  padding-top: 110px;
-  height: 1150px;
+  height: 1250px;
   min-height: calc(100vh - 235px);
   width: 100%;
   background-color: #fffef1;
@@ -68,11 +67,11 @@ button {
 }
 
 .notice-title {
-  margin-top: 3%;
-  margin-bottom: 3%;
-  margin-left: 1%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 1px;
   color: #f59d85;
-  font-size: 48px;
+  font-size: 30px;
 }
 
 .notice-board-box-container {
@@ -201,7 +200,7 @@ button {
 }
 
 /* 검색 시작 */
-
+/* 페이지 영역 시작 */
 #main-page-number {
   display: flex;
   align-items: center;
@@ -217,7 +216,9 @@ button {
   text-decoration: none;
   color: black;
 }
+/* 페이지 영역 끝 */
 
+/* 검색영역 시작 */
 #main-search {
   height: 45px;
   width: 840px;
@@ -283,5 +284,6 @@ form>button>img {
   border: 0px;
   cursor: pointer;
 }
+/* 검색영역 끝 */
 
 /* 검색종료 */

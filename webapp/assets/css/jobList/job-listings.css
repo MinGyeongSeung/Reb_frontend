@@ -14,9 +14,20 @@
   justify-content: center;
 }
 
+.pagetitle{
+  font-size : 30px;
+  color : #F38A6E;
+  padding-top : 100px;
+  height: 110px;
+  line-height: 110px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 main {
-  padding-top: 110px;
-  height: 1550px;
+  height: 1800px;
   width: 100%;
   background-color: #fffef1;
   font-family: "Noto Sans KR", sans-serif;
@@ -53,14 +64,11 @@ button {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100%;
 }
 
 .job-title {
-  margin-top: 3%;
-  margin-bottom: 3%;
-  margin-left: 1%;
-  color: #f59d85;
-  font-size: 30px;
+
 }
 
 .job-board-box-container {
@@ -150,32 +158,37 @@ button {
 
 /* 채용공고 종료 */
 
+/* 검색 시작 */
+
+/* 페이지 영역 */
 #main-page-number {
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 20px;
   width: 370px;
   margin: 10px auto;
   justify-content: space-between;
   margin-top: 2%;
 }
 
-#main-page-number > a {
+#main-page-number>a {
   margin: 0 28px;
   text-decoration: none;
   color: black;
 }
+/* 페이지 영역끝  */
 
+/* 검색영역 시작 */
 #main-search {
   height: 45px;
   width: 840px;
-  font-size: 18px;
+  font-size: 20px;
   display: flex;
   align-self: start;
   margin: 30px 28px;
 }
 
-#main-search-basic > div {
+#main-search-basic>div {
   border: 1px solid black;
   border-radius: 12px;
 }
@@ -184,17 +197,17 @@ button {
   display: none;
 }
 
-#main-search-menu > div {
+#main-search-menu>div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#main-search-menu > div > p {
+#main-search-menu>div>p {
   align-self: center;
 }
 
-#main-search-basic > div > p {
+#main-search-basic>div>p {
   height: 45px;
   width: 102px;
   border: 1px solid black;
@@ -218,18 +231,17 @@ form {
   position: relative;
 }
 
-form > button {
+form>button {
   background-color: white;
   position: absolute;
   right: 6px;
   top: 3px;
 }
 
-form > button > img {
+form>button>img {
   height: 30px;
   width: 30px;
   border: 0px;
   cursor: pointer;
 }
-
-/* 검색 종료 */
+/* 검색영역 끝 */

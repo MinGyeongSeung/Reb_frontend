@@ -16,7 +16,7 @@
 main {
     padding-top: 110px;
     /* height는 컨텐츠에 따라 */
-    height: 500px; 
+    height: 600px; 
     width: 100%;
     background-color: #FFFEF1;
     font-family: "Noto Sans KR", sans-serif;
@@ -68,7 +68,7 @@ button {
   left: 200px;
     /* display: flex;
   justify-content: center;
-  align-items: center;*/
+  align-items: center; */
 }
 
 .notice-detail-title-text {

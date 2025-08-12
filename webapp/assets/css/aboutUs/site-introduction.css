@@ -102,7 +102,7 @@ button {
 }
 
 .introduction-span-logo-name {
-  color: rgb(245, 157, 133);
+  color: #F38A6E;
 }
 
 /* 소개글 CSS 시작 */
@@ -141,9 +141,7 @@ button {
   width: 100%;
 }
 
-.introduction-routine-meeting-title {
-  background-color: white;
-}
+
 
 .introduction-routine-meeting-image-container {
   background-color: white;
@@ -173,9 +171,9 @@ button {
   margin-top: 3%;
 }
 
-.introduction-class-title {
+/* .introduction-class-title {
   background-color: white;
-}
+} */
 
 .introduction-class-image-container {
   background-color: white;
