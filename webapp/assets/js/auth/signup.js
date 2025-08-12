@@ -190,8 +190,7 @@ dupliButton.addEventListener('click', () => {
   }
 });
 
-buttonInjung.addEventListener('click', () => {
-  if (phoneNumber.value === '01011112222') {
+buttonInjung.addEventListener('click', () => { 
     alert("인증번호 전송");
     phoneNumber.readOnly = true;
     phoneNumber.style.backgroundColor = "#d9d9d9";
@@ -203,10 +202,6 @@ buttonInjung.addEventListener('click', () => {
     injunging.style.color = "white";
     retry.disabled = false;
     retry.style.color = "white";
-
-  } else {
-    alert("인증할 수 없는 번호입니다");
-  }
 });
 
 injunging.addEventListener("click", () => {
@@ -214,7 +209,6 @@ injunging.addEventListener("click", () => {
     injungPhone.readOnly = true;
     injungPhone.style.backgroundColor = "#d9d9d9";
     injunging.disabled = true;
-    retry.style.color ="#d9d9d9";
     injunging.style.color = "#d9d9d9";
     alert("인증 성공");
   } else {
@@ -226,9 +220,10 @@ retry.addEventListener('click', () => {
   phoneNumber.readOnly = false;
   phoneNumber.style.backgroundColor = "white";
   buttonInjung.disabled = false;
-  buttonInjung.color = "white";
+  buttonInjung.style.color = "white";
   injungPhone.readOnly = true;
   injungPhone.style.backgroundColor = "#d9d9d9";
+  injungPhone.value = "";
   injunging.disabled = true;
   injunging.style.color = "#d9d9d9";
   retry.disabled = true;
