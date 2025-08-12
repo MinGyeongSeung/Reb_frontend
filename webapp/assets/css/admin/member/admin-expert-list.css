@@ -3,12 +3,14 @@
   padding: 0;
 }
 
+/* 폰트 */
 .font-menu {
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+/* 바디 */
 body {
   background-color: #757575;
   display: flex;
@@ -16,6 +18,7 @@ body {
   align-items: center;
 }
 
+/* 헤더 */
 header {
   display: flex;
   margin: auto;
@@ -30,24 +33,24 @@ header {
   justify-content: space-between;
 }
 
+/* 상단 메뉴 이름 배치 */
 header>p{
   margin : 0 30px;
 } 
 
-header>button{
-  height: 50px;
+/* 로그아웃 버튼 */
+header>button {
+  height: 30px;
   width: 50px;
-  border-radius: 50%;
-  margin: 15px 10px;
-  cursor: pointer;
+  border-radius: 10px;
+  margin: 25px 20px;
+  background-color: black;
+  color: white;
+  border: 0;
+  font-size: 16px;
 }
 
-header>button>img{
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-}
-
+/* 메인 */
 main {
   background-color: white;
   display: flex;
@@ -56,10 +59,12 @@ main {
   height: 100vh;
 }
 
+/* 마우스 호버시 손가락 모양 */
 button{
   cursor: pointer;
 }
 
+/* 사이드바 리스트 영역 */
 #main-admin-list-menu {
   background-color: #d9d9d9;
   height: 100vh;
@@ -68,6 +73,7 @@ button{
   transform: translate(-155px, -80px);
 }
 
+/* 사이드바 리스트 */
 #main-admin-list {
   margin: 150px 55px;
   width: 200px;
@@ -77,20 +83,24 @@ button{
   align-items: center;
 }
 
+/* 사이드바 리스트 목록 */
 #main-admin-list>li {
   font-size: 20px;
   margin: 20px 0;
 }
 
+/* 사이드바 리스트 목록 마우스 호버시 폰트 사이즈 증가 */
 #main-admin-list>li:hover{
   font-size: 24px;
 }
 
+/* 사이드바 리스트 스타일 제거 */
 #main-admin-list>li>a {
   text-decoration: none;
   color: black;
 }
 
+/* 메인 영역 */
 #main-expert {
   background-color: white;
   width: 895px;
@@ -100,6 +110,7 @@ button{
   transform: translateX(155px);
 }
 
+/* 전문가 리스트 제목 */
 #main-expert-list-title {
   background-color: #bebebe;
   margin-top: 100px;
@@ -111,6 +122,7 @@ button{
   padding: 0 10px;
 }
 
+/* 전문가 승인 상태 영역 */
 .main-expert-list-status{
   font-size: 18px;
   width: 70px;
@@ -118,6 +130,7 @@ button{
   align-self: center;
 }
 
+/* 전문가 아이디 영역 */
 .main-expert-list-id{
   font-size: 18px;
   width: 120px;
@@ -125,6 +138,7 @@ button{
   align-self: center;
 }
 
+/* 전문가 닉네임 영역 */
 .main-expert-list-nickname{
   font-size: 18px;
   width: 100px;
@@ -132,6 +146,7 @@ button{
   align-self: center;
 }
 
+/* 전문가 인적사항 영역 */
 .main-expert-list-info{
   font-size: 18px;
   width: 360px;
@@ -139,23 +154,27 @@ button{
   margin-right: 10px
 }
 
+/* 전문가 승인/반려 영역 */
 .main-expert-list-approval{
   font-size: 18px;
   width: 100px;
   text-align: center;
 }
 
+/* 전문가 첨부파일 영역 */
 .main-expert-list-file{
   font-size: 18px;
   width: 100px;
   text-align: center;
 }
 
+/* 전문가 요청 리스트 */
 #main-expert-list{
   height: 480px;
   width: 880px;
 }
 
+/* 전문가 요청 리스트 목록 */
 #main-expert-list>li{
   list-style-type: none;
   display: flex;
@@ -163,16 +182,19 @@ button{
   height: 45px;
 }
 
+/* 리스트 폰트 사이즈 */
 #main-expert-list>li>div>p{
   margin: 0 10px;
   font-size: 14px;
   float: left;
 }
 
+/* 인적사항 배치 */
 .main-expert-list-approval{
   padding: 5px;
 }
 
+/* 승인 반려 버튼 영역 */
 .main-expert-list-approval>button{
   width: 40px;
   height: 35px;
@@ -181,18 +203,22 @@ button{
   color: white;
 }
 
+/* 승인 버튼 */
 .accept{
   background-color: #818181;
 }
 
+/* 반려 버튼 */
 .cancel{
   background-color: #be0000;
 }
 
+/* 우측 간격 */
 .main-expert-list-file{
   padding: 5px 0;
 }
 
+/* 다운로드 버튼 */
 .main-expert-list-file>a>button{
   background-color: #818181;
   width: 90px;
@@ -202,6 +228,7 @@ button{
   color: white;
 }
 
+/* 페이지네이션 */
 #main-page-number{
   display: flex;
   width: 370px;
@@ -209,12 +236,14 @@ button{
   margin-top: 10px;
 }
 
+/* 텍스트 스타일 제거 */
 #main-page-number>a{
   margin: 0 28px;
   text-decoration: none;
   color: black;
 }
 
+/* 검색 영역 */
 #main-search{
   height: 45px;
   width: 840px;
@@ -224,26 +253,30 @@ button{
   margin: 30px 28px;
 }
 
+/* 검색 종류 */
 #main-search-basic>div{
   border: 1px solid black;
   border-radius: 12px;
 }
 
-
+/* 검색 드롭다운 */
 #main-search-menu{
   display: none;
 }
 
+/* 검색 클릭 시 내려오는 영역 */
 #main-search-menu>div{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* 검색 종류 */
 #main-search-menu>div>p{
   align-self: center;
 }
 
+/* 검색 종류 스타일 */
 #main-search-basic>div>p{
   height: 45px;
   width: 102px;
@@ -254,6 +287,7 @@ button{
   align-items: center;
 }
 
+/* 입력창 */
 #main-search-input{
   width: 370px;
   height: 45px;
@@ -262,23 +296,27 @@ button{
   border: 1px solid black;
 }
 
+/* 검색 form */
 form{
   display: flex;
   align-items: center;
 }
 
+/* 돋보기 이미지 버튼 */
 form>button{
   background-color: white;
   border: 0;
   transform: translateX(-40px);
 }
 
+/* 돋보기 이미지 */
 form>button>img{
   height: 30px;
   width: 30px;
   border: 0px;
 }
 
+/* 반려 모달 전체 창 */
 #modal-background{
   height: 100vh;
   width: 1205px;
@@ -288,6 +326,7 @@ form>button>img{
 
 }
 
+/* 반려 모달 */
 #cancel-modal{
   background-color: white;
   height: 430px;
@@ -297,6 +336,7 @@ form>button>img{
   transform: translate(40%, 50%);
 }
 
+/* 반려 모달 나가기 버튼 */
 #cancel-modal>button{
   height: 40px;
   width: 40px;
@@ -308,16 +348,19 @@ form>button>img{
   transform: translate(140px,20px);
 }
 
+/* 반려 모달 입력 창 */
 #cancel-modal-in{
   transform: translate(100px, 70px);
   height: 350px;
   width: 500px;
 }
 
+/* 반려 모달 제목 */
 #cancel-modal-in>p{
   font-size: 25px
 }
 
+/* 반려 모달 입력 form */
 #cancel-input{
   margin-top: 20px;
   display: flex;
@@ -325,6 +368,7 @@ form>button>img{
   align-items: center;
 }
 
+/* 반려 모달 입력 영역 */
 #cancel-input>textarea{
   padding: 10px;
   font-size: 16px;
@@ -334,6 +378,7 @@ form>button>img{
   border-radius: 10px;
 }
 
+/* 등록 버튼 */
 #submit{
   background-color: #818181;
   height: 50px;

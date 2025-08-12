@@ -110,8 +110,8 @@ button{
   height: auto;
   display: flex;
   flex-direction: column;
-  margin-top: 15%;
-  margin-bottom: 15%;
+  /* margin-top: 15%; */
+  /* margin-bottom: 15%; */
 }
 
 .notice-detail-title-text {

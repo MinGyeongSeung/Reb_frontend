@@ -3,12 +3,14 @@
   padding: 0;
 }
 
+/* 폰트 */
 .font-menu {
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+/* 바디 */
 body {
   background-color: #757575;
   display: flex;
@@ -16,6 +18,7 @@ body {
   align-items: center;
 }
 
+/* 헤더 */
 header {
   display: flex;
   margin: auto;
@@ -30,32 +33,29 @@ header {
   justify-content: space-between;
 }
 
+/* 헤더 메뉴 이름 */
 header>p {
   margin: 0 30px;
 }
 
+/* 버튼 커서 손가락 모양 */
 button{
   cursor: pointer;
 }
 
+/* 로그아웃 버튼 */
 header>button {
   height: 30px;
   width: 50px;
   border-radius: 10px;
   margin: 25px 20px;
-  background-color: red;
+  background-color: black;
   color: white;
   border: 0;
   font-size: 16px;
 }
 
-header>button>img {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-}
-
-
+/* 메인 */
 main {
   height: 100vh;
   display: flex;
@@ -63,6 +63,7 @@ main {
   top: 80px;
 }
 
+/* 사이드바 리스트 영역 */
 #main-admin-list-menu {
   background-color: #d9d9d9;
   height: 100vh;
@@ -71,6 +72,7 @@ main {
   transform: translate(-155px, -80px);
 }
 
+/* 사이드바 리스트 */
 #main-admin-list {
   margin: 150px 55px;
   width: 200px;
@@ -80,20 +82,24 @@ main {
   align-items: center;
 }
 
+/* 사이드바 리스트 목록 */
 #main-admin-list>li {
   font-size: 20px;
   margin: 20px 0;
 }
 
+/* 사이드바 리스트 목록 호버시 폰트 사이즈 증가 */
 #main-admin-list>li:hover {
   font-size: 24px;
 }
 
+/* 리스트 스타일 제거 */
 #main-admin-list>li>a {
   text-decoration: none;
   color: black;
 }
 
+/* 메인 영역 */
 #main-banner {
   background-color: white;
   width: 895px;
@@ -103,6 +109,7 @@ main {
   transform: translateX(155px);
 }
 
+/* 배너 리스트 제목 */
 .main-banner-title {
   height: 50px;
   width: 850px;
@@ -114,35 +121,42 @@ main {
   text-align: center;
 }
 
+/* 업다운 영역 */
 .main-banner-up-down {
   margin-left: 10px;
   height: 50px;
   width: 100px;
 }
 
+/* 배너 번호 영역 */
 .main-banner-number {
   width: 50px;
 }
 
+/* 배너명 영역 */
 .main-banner-name {
   width: 150px;
 }
 
+/* 배너 이미지명 영역 */
 .main-banner-image {
   width: 426px;
 }
 
+/* 삭제 버튼 영역 */
 .main-banner-delete {
   margin-right: 10px;
   width: 100px;
 }
 
+/* 배너 리스트 */
 #main-banner-list {
   height: 530px;
   border: 1px solid black;
   margin-bottom: 50px;
 }
 
+/* 배너 리스트 목록 */
 #main-banner-list>li {
   list-style-type: none;
   display: flex;
@@ -152,10 +166,12 @@ main {
   border-bottom: 3px solid #a7a7a7;
 }
 
+/* 업다운 버튼 수평으로 배치 */
 .main-banner-up-down>form {
   display: flex;
 }
 
+/* 업다운 버튼 커스텀 */
 .main-banner-up-down>form>button {
   margin: 10px;
   height: 30px;
@@ -167,11 +183,7 @@ main {
   cursor: pointer;
 }
 
-#main-banner-list>li>p:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
+/* 삭제 버튼 영역 */
 .delete {
   margin: 5px 0;
   height: 40px;
@@ -184,6 +196,13 @@ main {
   cursor: pointer;
 }
 
+/* 배너 리스트 목록에 마우스 호버시 믿줄 및 손가락 모양 */
+#main-banner-list>li>p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* 배너 추가 버튼 */
 #main-banner-add {
   height: 60px;
   width: 150px;

@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+/* 폰트 */
+.font-menu {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 헤더 */
 header{
   height: 110px;
   width: 100%;
@@ -12,27 +20,20 @@ header{
   justify-content: center;
 }
 
+/* 사이트 로고 */
 header>a>img{
   height: 110px;
   width: 110px;
 }
 
-#footer{
+/* 푸터 영역 */
+footer{
   width: 100%;
   height: 125px;
   background-color: #d9d9d9;
 }
 
-#main-container {
-    width: 1200px;
-    height: 100%;
-    /*알아서 넣기*/
-    background-color: #FFFEF1;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-}
-
+/* 메인 */
 main {
     padding-top: 110px;
     height: 100%;
@@ -43,26 +44,34 @@ main {
     font-style: normal;
 }
 
-.font-main{
-  font-size: 18px;
-  font-family: "IBM Plex Sans KR", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color : white;
+/* 메인 영역 */
+#main-container {
+    width: 1200px;
+    height: 100%;
+    background-color: #FFFEF1;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
 
-.font-menu{
-  font-family: "Yeon Sung", system-ui;
-  font-weight: 400;
-  font-style: normal;
+/* 메인 컨테이너 영역 */
+.course-detail-container {
+  background-color: #FFFEF1;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 100%;
+  padding: 10px;
 }
 
+/* 제목, 목록 영역 */
 #detail-container-list{
   display: flex;
   margin-top: 100px;
   justify-content: space-between;
 }
 
+/* 제목 */
 .pagetitle{
   font-size : 30px;
   color : #F38A6E;
@@ -77,6 +86,7 @@ main {
   margin-left: 400px;
 }
 
+/* 목록 이동 버튼 */
 .back-list{
   height: 50px;
   width: 80px;
@@ -89,61 +99,48 @@ main {
   margin-top: 30px;
 }
 
-.p-title {
-  color: #F38A6E;
-  font-size: 36px;
-  text-align: center;
-}
-
-.course-detail-container {
-  background-color: #FFFEF1;
-  display: flex;
-  flex-direction: column;
-  width: 1200px;
-  height: 100%;
-}
-
+/* 내용 영역 */
 .div-detail-area {
   margin-bottom: 100px;
   width: 100%;
-  /* height: 100%; */
   display: flex;
   justify-content: center;
   flex-direction: column;
   font-size:18px;
 }
 
-.img-detail {
-  width: 600px;
-  height: 500px;
-}
-
+/* 이미지 영역 */
 .div-img {
   display: flex;
   justify-content: center;
 }
 
+/* 대표 이미지 */
+.img-detail {
+  width: 600px;
+  height: 500px;
+}
+
+/* 작성날짜 영역 */
 .div-write-date {
   margin-top: 50px;
   display: flex;
   justify-content: flex-end;
 }
 
+/* 전문가 제목 */
 .p-expert-info-title{
   font-size: 20px;
   color: #F38A6E;
 }
+
+/* 전문가 정보 영역 */
 .div-expert-detail{
   margin-top:50px;
   
 }
 
-.div-expert-detail-button{
-  margin-top:50px;
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 100px;
-}
+/* 지도 api자리 */
 .div-expert-info-detail{
   margin-left : 100px;
 }

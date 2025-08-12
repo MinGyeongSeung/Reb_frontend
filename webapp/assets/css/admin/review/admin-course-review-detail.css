@@ -3,59 +3,7 @@
   padding: 0;
 }
 
-header{
-  height: 110px;
-  width: 100%;
-  position: fixed;
-  background-color: #fffacd;
-  display: flex;
-  justify-content: center;
-}
-
-button{
-  cursor: pointer;
-}
-
-header>a>img{
-  height: 110px;
-  width: 110px;
-}
-
-footer{
-  width: 100%;
-  height: 125px;
-  background-color: #fff1cd;
-}
-
-#main-container {
-    width: 1200px;
-    height: 100%;
-    /*알아서 넣기*/
-    background-color: #FFFEF1;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-}
-
-main {
-    padding-top: 110px;
-    height: 100%;
-    width: 100%;
-    background-color: #FFFEF1;
-    font-family: "IBM Plex Sans KR", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    padding-bottom: 110px;
-}
-
-button{
-  border-radius: 13px;
-  padding : 0px 20px;
-  height: 40px;
-  background-color: #f59d85;
-  border : 0px;
-}
-
+/* 폰트 */
 .font-main{
   font-size: 18px;
   font-family: "IBM Plex Sans KR", sans-serif;
@@ -64,17 +12,72 @@ button{
   color : white;
 }
 
-.font-menu{
-  font-family: "Yeon Sung", system-ui;
-  font-weight: 400;
-  font-style: normal;
+/* 헤더 */
+header{
+  height: 110px;
+  width: 100%;
+  position: fixed;
+  background-color: #757575;
+  display: flex;
+  justify-content: center;
 }
 
+/* 마우스 호버시 손가락 모양 */
+button{
+  cursor: pointer;
+}
+
+/* 페이지 로고 */
+header>a>img{
+  height: 110px;
+  width: 110px;
+}
+
+/* 푸터 */
+footer{
+  width: 100%;
+  height: 125px;
+  background-color: #d9d9d9;
+}
+
+/* 메인 컨테이너 */
+#main-container {
+    width: 1200px;
+    height: 100%;
+    /*알아서 넣기*/
+    background-color: #FFFEF1;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* 메인 */
+main {
+    padding-top: 110px;
+    height: 100%;
+    width: 100%;
+    background-color: #a6a6a6;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 110px;
+}
+
+/* 버튼 커스텀 */
+button{
+  border-radius: 13px;
+  padding : 0px 20px;
+  height: 40px;
+  background-color: #f59d85;
+  border : 0px;
+}
+
+/*  페이지 제목*/
 .pagetitle{
   font-size : 30px;
   color : #F38A6E;
 
-  /* padding-top : 100px; */
   height: 110px;
   line-height: 110px;
   
@@ -83,6 +86,7 @@ button{
   font-style: normal;
 }
 
+/* 목록으로 이동 */
 .back-list{
   height: 50px;
   width: 80px;
@@ -95,12 +99,7 @@ button{
   margin-top: 30px;
 }
 
-.p-title {
-  color: #F38A6E;
-  font-size: 36px;
-  text-align: center;
-}
-
+/* 디테일 컨테이너 */
 .detail-container {
   background-color: #FFFEF1;
   display: flex;
@@ -109,12 +108,21 @@ button{
   height: 100%;
 }
 
+/* 페이지 제목 영역 */
 #detail-container-list{
   display: flex;
   margin-top: 100px;
   justify-content: space-between;
 }
 
+/* 작성자 프로필 사진 */
+.img-user-profile{
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+/* 내용 영역 */
 .div-detail-area {
   width: 100%;
   /* height: 100%; */
@@ -124,41 +132,37 @@ button{
   font-size:18px;
 }
 
+/* 대표 이미지 */
 .img-detail {
   width: 600px;
   height: 500px;
 }
 
+/* 대표 이미지 영역 */
 .div-img {
   display: flex;
   justify-content: center;
 }
 
+/* 작성날짜 */
 .div-write-date {
   display: flex;
   justify-content: flex-end;
 }
 
-.p-admin-info-title{
-  font-size: 20px;
-  color: #F38A6E;
-}
+/* 내용 글 영역 */
 .div-admin-detail{
   margin-top:50px;
   
 }
 
-.div-admin-detail-button{
-  margin-top:50px;
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 100px;
-}
+/* 내용 글 영역 */
 .div-admin-info-detail{
   display: flex;
   justify-content: center;
 }
 
+/* 삭제 버튼 */
 .button-cancel{
   width: 120px;
   height: 55px;
@@ -171,32 +175,31 @@ button{
   border: 3px solid #ff0000;
 }
 
+/* 내용 영역 */
 .p-admin-detail-comment{
   width: 600px;
 }
 
-.img-user-profile{
-  width: 30px;
-  height: 30px;
-  border-radius: 30px;
-}
-
+/* 버튼 영역 */
 .div-button-area{
   margin : 50px 0px;
   display: flex;
   justify-content: center;
 }
 
+/* 댓글 영역 */
 .div-comment-area{
   border: 1px solid black;
   background-color: white;
 }
 
+/* 댓글 1개 */
 .div-comment-area>div{
   display: flex;
   border-bottom: 1px solid black;
 }
 
+/* 댓글 프로필 사진 */
 .div-comment-area>div>img{
   margin: 5px;
   height: 80px;
@@ -204,6 +207,7 @@ button{
   border-radius: 50%;
 }
 
+/* 삭제 버튼 */
 .div-comment-area>div>button{
   width: 70px;
   position: relative;
