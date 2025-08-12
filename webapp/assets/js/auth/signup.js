@@ -6,6 +6,7 @@ let noDupliP = document.querySelector(".p-no-duplication");
 let dupliP = document.querySelector(".p-duplication");
 let id = document.querySelector("input[name='id']");
 let pw = document.querySelector("input[name='pw']");
+let pwRe = document.querySelector("input[name='pwRe']");
 let birth = document.querySelector("input[name='birth']");
 let addressBasic = document.querySelector("input[name='addressBasic']");
 let addressAdd = document.querySelector("input[name='addressAdd']");
@@ -17,13 +18,20 @@ let injungPhone = document.querySelector(".input-cert");
 let injunging = document.querySelector(".button-injunging");
 let inputTerms = document.querySelectorAll(".input-terms");
 
+const buttonBack = document.querySelector('.button-back');
 const buttonSignUp = document.querySelector(".button-signup");
 const buttonInjung = document.querySelector(".button-injung");
 const inputEssential = document.querySelectorAll(".input-essential");
 const retry = document.querySelector(".button-retry");
 
+buttonBack.addEventListener('click',()=>{
+  history.back();
+});
+
 const idRegex = /^[a-z0-9]{5,19}$/;
 const pwRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$])[A-Za-z\d!@#$]{8,20}$/;
+
+let pwSameOrNo = true;
 
 buttonSignUp.addEventListener("click", (e) => {
   
@@ -46,6 +54,9 @@ buttonSignUp.addEventListener("click", (e) => {
         isWrite = false;
         break;
       }
+    }
+    if(!pwSameOrNo){
+      isWrite = false;
     }
     if (isWrite) {
       alert("회원가입 완료");
@@ -85,6 +96,25 @@ pw.addEventListener('blur', () => {
     warning.style.display = "block";
   } else {
     warning.style.display = "none";
+  }
+});
+
+pwRe.addEventListener('blur',()=>{
+  let nearWarning = pw.closest(".div-signup");
+  let nosame = nearWarning.querySelector(".p-nosame");
+  let same = nearWarning.querySelector(".p-same");
+  if(pw.value.length !== 0){
+    if(pw.value !== pwRe.value){
+      nosame.style.display = "block";
+      same.style.display = "none";
+      pwSameOrNo = false;
+    }
+    else{
+      nosame.style.display = "none";
+      same.style.display = "block";
+      pwSameOrNo = true;   
+    }
+
   }
 });
 
@@ -149,12 +179,14 @@ phoneNumber.addEventListener('blur', () => {
 });
 
 dupliButton.addEventListener('click', () => {
-  if (nickName.value === '가나다') {
-    noDupliP.style.display = 'none';
-    dupliP.style.display = 'block';
-  } else {
-    noDupliP.style.display = 'block';
-    dupliP.style.display = 'none';
+  if(nickName.value.length !== 0){
+    if (nickName.value === '가나다') {
+      noDupliP.style.display = 'none';
+      dupliP.style.display = 'block';
+    } else {
+      noDupliP.style.display = 'block';
+      dupliP.style.display = 'none';
+    }
   }
 });
 

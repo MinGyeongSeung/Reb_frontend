@@ -25,9 +25,6 @@ heart.addEventListener('click',()=>{
   }
 });
 
-
-let count = 3;
-
 let edit = document.querySelectorAll(".span-comment-edit");
 let commentAdd = document.querySelector(".input-comment");
 const buttonWrite = document.querySelector(".button-write");
@@ -40,7 +37,7 @@ buttonWrite.addEventListener('click', (e) => {
     newLi.innerHTML = '<div class="div-user-profile"><img src="./../../assets/img/karina.jpg" class="img-user-profile"></div>' +
       '<div class="div-user-info">' +
       '<div class="div-user-name-area">' +
-      `<p class="p-user-name">곰융</p><span class="span-comment-edit">수정</span>` +
+      '<p class="p-user-name">곰융</p><span class="span-comment-edit">수정</span>' +
       '</div>' +
       '<div class="div-user-text-area">' +
       '<p class="p-comment-text">' + commentAdd.value + '</p><span class="span-comment-delete">삭제</span>' +
@@ -49,31 +46,25 @@ buttonWrite.addEventListener('click', (e) => {
       '</div>';
     if (commentAdd != null && commentAdd.length != 0) {
       commentList.appendChild(newLi);
-      count++;
       commentAdd.value = "";
     }
 });
 
 commentList.addEventListener('click',(e)=>{
   console.log(e.target.classList);
-  if(e.target.classList.contains('span-comment-edit')){
-    
+  if(e.target.classList.value ==='span-comment-edit'){
+    console.log(e.target.parentNode.nextNode);
+    // const commentEdit = e.target.parentNode.nextSibling.firstChild;
+    // console.log(commentEdit);
   }
-  if(e.target.classList.contains('span-comment-delete')){
+  if(e.target.classList.value ==='span-comment-delete'){
     if(confirm("삭제하시겠습니까?")){
-      commentList.classList.remove();
+       const comment = e.target.parentNode.parentNode.parentNode;
+       comment.remove();
     }
   }
 });
 
-
-commentDelete.forEach(btn => {
-  btn.addEventListener('click', function(e){
-    const comment = e.target.parentNode.parentNode.parentNode;
-    comment.remove();
-    
-  });
-});
 
 
 

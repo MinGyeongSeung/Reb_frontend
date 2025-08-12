@@ -76,12 +76,12 @@ button {
   margin-top: 3%;
 }
 
-.main-title-text {
+.introduction-main-title-text {
   padding: 35px;
   font-size: 37px;
 }
 
-.main-title-logo {
+.introduction-main-title-logo {
   align-items: center;
   background-color: none;
   width: 130px;
@@ -101,8 +101,8 @@ button {
   flex-direction: column;
 }
 
-.logo-name {
-  color: rgb(245, 157, 133);
+.introduction-span-logo-name {
+  color: #F38A6E;
 }
 
 /* 소개글 CSS 시작 */
@@ -141,9 +141,7 @@ button {
   width: 100%;
 }
 
-.routine-meeting-title {
-  background-color: white;
-}
+
 
 .introduction-routine-meeting-image-container {
   background-color: white;
@@ -151,7 +149,7 @@ button {
   display: flex;
 }
 
-.introduction-routine-meeting-image-text {
+#introduction-routine-meeting-image-text {
   text-align: center;
 }
 
@@ -173,9 +171,9 @@ button {
   margin-top: 3%;
 }
 
-.introduction-class-title {
+/* .introduction-class-title {
   background-color: white;
-}
+} */
 
 .introduction-class-image-container {
   background-color: white;
@@ -183,7 +181,7 @@ button {
   display: flex;
 }
 
-.introduction-class-image-container-text {
+#introduction-class-image-container-text {
   text-align: center;
 }
 

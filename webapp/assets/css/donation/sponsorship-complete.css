@@ -16,8 +16,8 @@
 /* 메인 */
 main {
     /* height는 컨텐츠에 따라 */
-    height: 718px; 
-    min-height: calc(100vh - 235px);
+    height: 600px; 
+    min-height: calc(100vh - 255px);
     width: 100%;
     background-color: #FFFEF1;
     font-family: "Noto Sans KR", sans-serif;
@@ -25,6 +25,7 @@ main {
     font-weight: 400;
     font-style: normal;
 }
+
 
 /* 버튼 */
 button{
@@ -55,11 +56,12 @@ button{
 
 /* 후원 완료 텍스트 */
 .sponsorship-complete-text{
-  margin-top: 220px;
+  padding-top: 220px;
   font-size: 30px;
   font-weight: 700;
   line-height: 50px;
   text-align: center;
+  
 
   color:#f59d85;
 }
