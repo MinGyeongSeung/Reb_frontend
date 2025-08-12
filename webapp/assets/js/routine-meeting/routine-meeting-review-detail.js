@@ -9,7 +9,7 @@ back.addEventListener("click",()=>{
 deleteButton.addEventListener("click",(e)=>{
   if(confirm("정말 삭제하시겠습니까?")){
     alert("삭제 완료");
-    location.href = "./course-review-list.html";
+    location.href = "./routine-meeting-review-list.html";
   }
   else{
     e.preventDefault();
