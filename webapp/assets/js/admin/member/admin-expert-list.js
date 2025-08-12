@@ -1,22 +1,10 @@
-const search = document.querySelector("#main-search-menu");
-const dropdown = document.querySelector("#main-search-basic");
-const chooseMenu = document.querySelector("#main-search-basic>div>p");
 const modalBackground = document.querySelector("#modal-background");
 const acceptBtn = document.querySelectorAll(".accept");
 const cancelBtn = document.querySelectorAll(".cancel");
 const submitBtn = document.querySelector("#submit");
 const closeModal = document.querySelector("#close-modal");
 const returnMsg = document.querySelector("#return-message");
-
-dropdown.addEventListener('click', () => {
-  search.style.display = "block";
-});
-
-chooseMenu.addEventListener('blur', () => {
-  search.style.display = "none";
-});
-
-
+const logoutBtn = document.querySelector("header>button");
 
 
 acceptBtn.forEach(btn => {
@@ -48,7 +36,6 @@ closeModal.addEventListener(('click'), () => {
   modalBackground.style.display = "none";
 });
 
-const logoutBtn = document.querySelector("header>button");
 logoutBtn.addEventListener('click', ()=>{
   location.href= "./../login/admin-login.html";
 });

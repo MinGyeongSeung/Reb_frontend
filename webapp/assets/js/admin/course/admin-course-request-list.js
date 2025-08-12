@@ -1,16 +1,6 @@
-const search = document.querySelector("#main-search-menu");
-const dropdown = document.querySelector("#main-search-basic");
-const chooseMenu = document.querySelector("#main-search-basic>div>p");
+const logoutBtn = document.querySelector("#logout");
 
-dropdown.addEventListener('click', () => {
-  search.style.display = "block";
-});
 
-chooseMenu.addEventListener('blur', () => {
-  search.style.display = "none";
-});
-
-const logoutBtn = document.querySelector("header>section>button");
 logoutBtn.addEventListener('click', ()=>{
-  location.href= "./../login/admin-login.html";
+  location.href= "./../../../app/admin/login/admin-login.html";
 });

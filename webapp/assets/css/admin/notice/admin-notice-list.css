@@ -204,7 +204,7 @@ main{
 }
 
 /* 검색 영역 */
-#main-notice-search{
+#main-search{
   height: 45px;
   width: 840px;
   font-size: 20px;
@@ -213,19 +213,19 @@ main{
   margin: 30px 28px;
 }
 
-/* 검색 종류 */
-#main-notice-search-title>p{
-  height: 45px;
-  width: 100px;
-  border: 1px solid black;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* 검색 조건 영역 */
+.select-find {
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 45px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
 }
 
-/* 검색 입력 창 */
-#main-notice-search-input{
+/* 입력창 */
+#main-search-input{
   width: 370px;
   height: 45px;
   border-radius: 10px;
@@ -233,7 +233,7 @@ main{
   border: 1px solid black;
 }
 
-/* 검색 입력 form */
+/* 검색 form */
 form{
   display: flex;
   align-items: center;

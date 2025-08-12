@@ -175,6 +175,7 @@ main{
   color: black;
 }
 
+/* 검색 영역 */
 #main-search{
   height: 45px;
   width: 840px;
@@ -184,40 +185,18 @@ main{
   margin: 30px 28px;
 }
 
-#main-search-basic>div{
-  border: 1px solid black;
-  border-radius: 12px;
+/* 검색 조건 영역 */
+.select-find {
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 45px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
 }
 
-
-#main-search-menu{
-  display: none;
-}
-
-#main-search-menu>div{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#main-search-menu>div>p:first-child{
-  border-bottom: 1px solid black;
-}
-
-#main-search-menu>div>p{
-  align-self: center;
-}
-
-#main-search-basic>div>p{
-  height: 45px;
-  width: 102px;
-  border: 1px solid black;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+/* 입력창 */
 #main-search-input{
   width: 370px;
   height: 45px;
@@ -226,17 +205,20 @@ main{
   border: 1px solid black;
 }
 
+/* 검색 form */
 form{
   display: flex;
   align-items: center;
 }
 
+/* 돋보기 이미지 버튼 */
 form>button{
   background-color: white;
   border: 0;
   transform: translateX(-40px);
 }
 
+/* 돋보기 이미지 */
 form>button>img{
   height: 30px;
   width: 30px;
