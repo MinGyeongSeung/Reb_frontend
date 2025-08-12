@@ -26,7 +26,7 @@ addBtn.addEventListener("click", (e) => {
     }
     if (tf === true) {
       alert("등록 완료되었습니다.");
-      location.href = "./../../../app/admin/routine/admin-routine-detail.html";
+      location.href = "./../../../app/admin/notice/admin-notice-detail.html";
     }
     else {
       alert("모든 정보가 입력되어야 합니다");

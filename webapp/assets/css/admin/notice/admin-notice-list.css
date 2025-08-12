@@ -3,12 +3,14 @@
   padding: 0;
 }
 
+/* 폰트 */
 .font-menu {
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+/* 바디 */
 body {
   background-color: #757575;
   display: flex;
@@ -16,6 +18,7 @@ body {
   align-items: center;
 }
 
+/* 헤더 */
 header {
   display: flex;
   margin: auto;
@@ -30,28 +33,29 @@ header {
   justify-content: space-between;
 }
 
+/* 마우스 호버시 손가락 모양 */
 button{
   cursor: pointer;
 }
 
+/* 상단 목록 */
 header>p{
   margin : 0 30px;
 } 
 
-header>button{
-  height: 50px;
+/* 로그아웃 버튼 */
+header>button {
+  height: 30px;
   width: 50px;
-  border-radius: 50%;
-  margin: 15px 10px;
+  border-radius: 10px;
+  margin: 25px 20px;
+  background-color: black;
+  color: white;
+  border: 0;
+  font-size: 16px;
 }
 
-header>button>img{
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-}
-
-
+/* 메인 */
 main{
   background-color: white;
   height: 100vh;
@@ -60,6 +64,7 @@ main{
   top: 80px;
 }
 
+/* 사이드바 리스트 영역 */
 #main-admin-list-menu{
   background-color: #d9d9d9;
   height: 100vh;
@@ -68,6 +73,7 @@ main{
   transform: translate(-155px, -80px);
 }
 
+/* 사이드바 리스트 */
 #main-admin-list{
   margin: 150px 55px;
   width: 200px;
@@ -77,20 +83,24 @@ main{
   align-items: center;
 }
 
+/* 사이드바 리스트 목록 */
 #main-admin-list>li{
   font-size: 20px;
   margin: 20px 0;
 }
 
+/* 리스트 마우스 호버 시 폰트 사이즈 증가 */
 #main-admin-list>li:hover{
   font-size: 24px;
 }
 
+/* 텍스트 효과 삭제 */
 #main-admin-list>li>a{
   text-decoration: none;
   color: black;
 }
 
+/* 메인 영역 */
 #main-notice{
   background-color: white;
   width: 895px;
@@ -100,6 +110,7 @@ main{
   transform: translateX(155px);
 }
 
+/* 공지사항 리스트 제목 */
 #main-notice-list-title{
   background-color: #d9d9d9;
   margin-top: 100px;
@@ -110,31 +121,37 @@ main{
   font-size: 20px;
 }
 
+/* 공지사항 리스트 */
 #main-notice-list{
   width: 875px;
   font-size: 16px;
   height: 430px;
 }
 
+/* 마우스 호버시 리스트에 밑줄 */
 #main-notice-list>li:hover{
   text-decoration: underline;
 }
 
+/* 제목 영역 */
 .main-notice-title{
   width: 600px;
   text-align: center;
 }
 
+/* 작성자 영역 */
 .main-notice-author{
   width:115px;
   text-align: center;
 }
 
+/* 작성 날짜 영역 */
 .main-notice-create-date{
   width: 126px;
   text-align: center;
 }
 
+/* 공지사항 리스트 목록 */
 #main-notice-list>li{
   display: flex;
   height: 40px;
@@ -143,20 +160,24 @@ main{
   border-bottom: 3px solid #a7a7a7;
 }
 
+/* 필독 */
 .main-must-read{
   background-color: #ededed;
 }
 
+/* 디테일 페이지 이동 */
 .main-must-read-link{
   display: flex;
   text-decoration: none;
   color: red;
 }
 
+/* 제목 왼쪽 정렬 */
 #main-notice-list>li>a>p:first-child{
   text-align: left;
 }
 
+/* 등록 버튼 */
 #main-create-notice{
   background-color: #818181;
   height: 55px;
@@ -168,20 +189,21 @@ main{
   color: white;
 }
 
-
-
+/* 페이지네이션 */
 #main-page-number{
   display: flex;
   width: 370px;
   font-size: 20px;
 }
 
+/* 페이지네이션 버튼 커스텀 */
 #main-page-number>a{
   margin: 0 28px;
   text-decoration: none;
   color: black;
 }
 
+/* 검색 영역 */
 #main-notice-search{
   height: 45px;
   width: 840px;
@@ -191,6 +213,7 @@ main{
   margin: 30px 28px;
 }
 
+/* 검색 종류 */
 #main-notice-search-title>p{
   height: 45px;
   width: 100px;
@@ -201,6 +224,7 @@ main{
   align-items: center;
 }
 
+/* 검색 입력 창 */
 #main-notice-search-input{
   width: 370px;
   height: 45px;
@@ -209,17 +233,20 @@ main{
   border: 1px solid black;
 }
 
+/* 검색 입력 form */
 form{
   display: flex;
   align-items: center;
 }
 
+/* 돋보기 이미지 버튼 */
 form>button{
   background-color: white;
   border: 0;
   transform: translateX(-40px);
 }
 
+/* 돋보기 이미지 */
 form>button>img{
   height: 30px;
   width: 30px;

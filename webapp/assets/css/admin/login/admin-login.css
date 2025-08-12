@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+/* 메인 */
 main {
   background-color: #EEEEEE;
   height: 100vh;
@@ -12,6 +13,7 @@ main {
   align-items: center;
 }
 
+/* 로그인 영역 */
 #main-login {
   height: 900px;
   width: 1200px;
@@ -20,6 +22,7 @@ main {
   align-items: center;
 }
 
+/* 사이트 로고 */
 #main-login-logo {
   height: 300px;
   width: 300px;
@@ -27,6 +30,7 @@ main {
   top: 40px;
 }
 
+/* 페이지 이름 영역 */
 p {
   font-size: 48px;
   font-family: "IBM Plex Sans KR", sans-serif;
@@ -34,11 +38,13 @@ p {
   font-style: normal;
 }
 
+/* 아이디, 비밀번호 form */
 form {
   display: flex;
   flex-direction: column;
 }
 
+/* 아이디, 비밀번호 입력창 */
 #main-login-id,
 #main-login-pw {
   height: 60px;
@@ -49,6 +55,7 @@ form {
   font-size: 32px;
 }
 
+/* 로그인 버튼 */
 #main-login-submit {
   background-color: #818181;
   color: white;
@@ -61,11 +68,13 @@ form {
   cursor: pointer;
 }
 
+/* 경고 메세지 영역 */
 div{
   height: 65px;
   width: 650px;
 }
 
+/* 경고 메세지 */
 #main-login-warning {
   font-size: 30px;
   color: red;

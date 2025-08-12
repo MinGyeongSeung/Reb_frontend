@@ -3,12 +3,14 @@
   padding: 0;
 }
 
+/* 폰트 */
 .font-menu {
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+/* 바디 */
 body {
   background-color: #757575;
   display: flex;
@@ -16,6 +18,7 @@ body {
   align-items: center;
 }
 
+/* 헤더 */
 header {
   display: flex;
   margin: auto;
@@ -30,28 +33,29 @@ header {
   justify-content: space-between;
 }
 
+/* 상단 메뉴 이름 배치 */
 header>p{
   margin : 0 30px;
 } 
 
+/* 마우스 호버시 손가락 모양 */
 button{
   cursor: pointer;
 }
 
-header>button{
-  height: 50px;
+/* 로그아웃 버튼 */
+header>button {
+  height: 30px;
   width: 50px;
-  border-radius: 50%;
-  margin: 15px 10px;
+  border-radius: 10px;
+  margin: 25px 20px;
+  background-color: black;
+  color: white;
+  border: 0;
+  font-size: 16px;
 }
 
-header>button>img{
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-}
-
-
+/* main */
 main{
   height: 100vh;
   display: flex;
@@ -59,6 +63,7 @@ main{
   top: 80px;
 }
 
+/* 사이드바 리스트 영역 */
 #main-admin-list-menu{
   background-color: #d9d9d9;
   height: 100vh;
@@ -67,6 +72,7 @@ main{
   transform: translate(-155px, -80px);
 }
 
+/* 사이드바 리스트 */
 #main-admin-list{
   margin: 150px 55px;
   width: 200px;
@@ -76,20 +82,24 @@ main{
   align-items: center;
 }
 
+/* 사이드바 리스트 목록 */
 #main-admin-list>li{
   font-size: 20px;
   margin: 20px 0;
 }
 
+/* 사이드바 리스트 목록 마우스 호버시 폰타 사이즈 증가 */
 #main-admin-list>li:hover{
   font-size: 24px;
 }
 
+/* 사이드바 리스트 스타일 제거 */
 #main-admin-list>li>a{
   text-decoration: none;
   color: black;
 }
 
+/* 메인 영역 */
 #main-sponsor{
   background-color: white;
   width: 895px;
@@ -99,11 +109,13 @@ main{
   transform: translateX(155px);
 }
 
+/* 총 후원금액 */
 #main-support-money{
   font-size: 22px;
   margin: 50px 0;
 }
 
+/* 후원자 리스트 제목 */
 #main-sponsor-list-title{
   background-color: #d9d9d9;
   height: 50px;
@@ -114,24 +126,28 @@ main{
   font-size: 22px;
 }
 
+/* 회원번호 영역 */
 .main-sponsor-list-number{
   margin: 0 30px;
   font-size: 20px;
   width: 100px;
 }
 
+/* 아이디 영역 */
 .main-sponsor-list-id{
   margin: 0 30px;
   font-size: 20px;
   width: 100px;
 }
 
+/* 닉네임 영역 */
 .main-sponsor-list-nickname{
   margin: 0 30px;
   font-size: 20px;
   width: 100px;
 }
 
+/* 후원금액 영역 */
 .main-sponsor-list-support{
   margin: 0 30px;
   font-size: 20px;
@@ -139,11 +155,13 @@ main{
   text-align: end;
 }
 
+/* 후원자 목록 리스트 */
 #main-sponsor-list{
   width: 850px;
   height: 530px;
 }
 
+/* 회원 리스트 목록 */
 #main-sponsor-list>li{
   height: 50px;
   display: flex;
@@ -153,6 +171,7 @@ main{
   line-height: 50px;
 }
 
+/* 페이지네이션 */
 #main-page-number{
   display: flex;
   width: 370px;
@@ -160,12 +179,14 @@ main{
   margin-top: 10px;
 }
 
+/* 스타일 제거 */
 #main-page-number>a{
   margin: 0 28px;
   text-decoration: none;
   color: black;
 }
 
+/* 검색 영역 */
 #main-search{
   height: 45px;
   width: 840px;
@@ -175,30 +196,35 @@ main{
   margin: 30px 28px;
 }
 
+/* 검색 아이디 */
 #main-search-basic>div{
   border: 1px solid black;
   border-radius: 12px;
 }
 
-
+/* 검색 드롭다운 */
 #main-search-menu{
   display: none;
 }
 
+/* 검색 드롭다운 영역 */
 #main-search-menu>div{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* 드롭다운 정렬 */
 #main-search-menu>div>p{
   align-self: center;
 }
 
+/* 드롭다운 밑줄 */
 #main-search-menu>div>p:first-child{
   border-bottom: 1px solid black;
 }
 
+/* 검색 스타일 */
 #main-search-basic>div>p{
   height: 45px;
   width: 102px;
@@ -209,6 +235,7 @@ main{
   align-items: center;
 }
 
+/* 입력창 */
 #main-search-input{
   width: 370px;
   height: 45px;
@@ -217,17 +244,20 @@ main{
   border: 1px solid black;
 }
 
+/* 검색 form */
 form{
   display: flex;
   align-items: center;
 }
 
+/* 돋보기 이미지 버튼 */
 form>button{
   background-color: white;
   border: 0;
   transform: translateX(-40px);
 }
 
+/* 돋보기 이미지 */
 form>button>img{
   height: 30px;
   width: 30px;

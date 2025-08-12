@@ -15,14 +15,20 @@
 </head>
 
 <body class="font-menu">
+  <!-- 헤더 -->
   <header>
+    <!-- 상단 목록 -->
     <p><strong>배너 등록</strong></p>
+    <!-- 로그아웃 버튼 -->
     <button>
-      <img src="./../../../assets/img/logout.png" alt="로그아웃">
+      logout
     </button>
   </header>
+  <!-- 메인 -->
   <main>
+    <!-- 사이드바 리스트 영역 -->
     <section id="main-admin-list-menu">
+      <!-- 사이드바 리스트 -->
       <ul id="main-admin-list">
         <li>
           <a href="./../notice/admin-notice-list.html">
@@ -66,15 +72,23 @@
         </li>
       </ul>
     </section>
+    <!-- 메인 영역 -->
     <section id="main-banner">
+      <!-- 배너명, 배너 파일 등록, 취소 영역 -->
       <div id="main-banner-div">
+        <!-- input 담은 form -->
         <form action="" method="get">
+          <!-- 배너 명 입력 -->
           <input type="text" id="main-banner-input-name" placeholder="배너 명">
+          <!-- 배너 이미지 파일 입력 -->
           <input type="file" placeholder="이미지 파일">
+          <!-- 등록, 취소 버튼 영역 -->
           <div id="main-banner-btn">
+            <!-- 등록 버튼 -->
             <button type="button">
               등록
             </button>
+            <!-- 취소 버튼 -->
             <button type="button">
               취소
             </button>

@@ -15,32 +15,39 @@
 </head>
 
 <body class="font-menu">
-<header>
+  <!-- 헤더 -->
+  <header>
+    <!-- 상단 목록 영역 -->
     <section>
+      <!-- 상단 목록 -->
       <p><strong>수업 목록</strong></p>
+      <!-- 로그아웃 버튼 -->
       <button>
-        <img src="./../../../assets/img/logout.png" alt="로그아웃">
+        logout
       </button>
     </section>
+    <!-- 하단 목록 영역 -->
     <section>
-    <ul>
-      <li>
-        <a href="./../course/admin-course-request-list.html">
-          <strong>개설 신청</strong>
-        </a>
-      </li>
-      <li>
-        <a href="./../course/admin-course-list.html">
-          수업 목록 리스트
-        </a>
-      </li>
-    </ul>
-
+      <!-- 하단 목록 리스트 -->
+      <ul>
+        <li>
+          <a href="./../course/admin-course-request-list.html">
+            <strong>개설 신청</strong>
+          </a>
+        </li>
+        <li>
+          <a href="./../course/admin-course-list.html">
+            수업 목록 리스트
+          </a>
+        </li>
+      </ul>
     </section>
   </header>
-  </header>
+  <!-- 메인 -->
   <main>
+    <!-- 사이드바 리스트 영역 -->
     <section id="main-admin-list-menu">
+      <!-- 사이드바 리스트 -->
       <ul id="main-admin-list">
         <li>
           <a href="./../notice/admin-notice-list.html">
@@ -84,17 +91,28 @@
         </li>
       </ul>
     </section>
+    <!-- 메인 영역 -->
     <section id="main-course-request">
+      <!-- 수업 요청 리스트 제목 -->
       <div id="main-course-request-list-title">
+        <!-- 회원번호 영역 -->
         <p class="main-course-request-number">회원번호</p>
+        <!-- 아이디 영역 -->
         <p class="main-course-request-id">아이디</p>
+        <!-- 닉네임 영역 -->
         <p class="main-course-request-nickname">닉네임</p>
+        <!-- 제목 영역 -->
         <p class="main-course-request-title">제목</p>
+        <!-- 요청 유형 영역 -->
         <p class="main-course-request-type">유형</p>
+        <!-- 시작 기간 영역 -->
         <p class="main-course-request-start">시작 기간</p>
+        <!-- 종료 기간 영역 -->
         <p class="main-course-request-end">종료 기간</p>
       </div>
+      <!-- 요청 목록 리스트 -->
       <ul id="main-course-request-list">
+        <!-- 요청 리스트 목록 -->
         <li>
           <a href="./admin-course-request-detail.html" class="main-course-request-link">
             <p class="main-course-request-number">123123</p>
@@ -118,6 +136,7 @@
           </a>
         </li>
       </ul>
+      <!-- 페이지네이션 -->
       <div id="main-page-number">
         <p>&lt</p>
         <a href="">1</a>
@@ -127,10 +146,13 @@
         <a href="">5</a>
         <p>&gt</p>
       </div>
+      <!-- 검색 영역 -->
       <div id="main-search">
+        <!-- 검색 종류 -->
         <div id="main-search-basic">
           <div>
             <p>▼제목</p>
+            <!-- 검색 드롭다운 -->
             <div id="main-search-menu">
               <div>
                 <p>회원번호</p>
@@ -140,8 +162,10 @@
             </div>
           </div>
         </div>
+        <!-- 검색 입력 창 -->
         <form action="" method="">
           <input type="text" id="main-search-input">
+          <!-- 돋보기 이미지 -->
           <button><img src="./../../../assets/img/search.jpg" alt="돋보기"></button>
         </form>
       </div>

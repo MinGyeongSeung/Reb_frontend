@@ -15,7 +15,7 @@ createBtn.addEventListener('click', ()=>{
   location.href= "./../../../app/admin/routine/admin-routine-create.html";
 });
 
-const logoutBtn = document.querySelector("header>button>img");
+const logoutBtn = document.querySelector("header>button");
 logoutBtn.addEventListener('click', ()=>{
   location.href= "./../login/admin-login.html";
 });
