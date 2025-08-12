@@ -34,7 +34,7 @@ button {
 }
 
 .font-main {
-  font-size: 18px;
+  font-size: 20px;
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -72,7 +72,7 @@ button {
 }
 
 .notice-detail-title-text {
-  font-size: 48px;
+  font-size: 30px;
   color: #f38a6e;
   font-weight: bold;
 }
