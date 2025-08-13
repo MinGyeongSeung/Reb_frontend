@@ -82,9 +82,9 @@ button:hover{
 
 .review-title {
   text-align: center;
-  width: 50%;
+  width: 60%;
 }
-
+.review-number,
 .review-like,
 .review-author {
   text-align: center;
@@ -93,7 +93,7 @@ button:hover{
 
 .review-date {
   text-align: center;
-  width: 30%;
+  width: 10%;
 }
 
 .ul-review-list {
