@@ -39,7 +39,7 @@ header>p {
 }
 
 /* 버튼 커서 손가락 모양 */
-button{
+button {
   cursor: pointer;
 }
 
@@ -109,11 +109,21 @@ main {
   transform: translateX(155px);
 }
 
+/* 리스트 출력되는 구역 */
+#main-banner-div {
+  background-color: white;
+  /* height: 1400px; */
+  width: 895px;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* 배너 리스트 제목 */
 .main-banner-title {
   height: 50px;
   width: 850px;
-  margin-top: 50px;
   background-color: #d9d9d9;
   display: flex;
   font-size: 24px;
@@ -151,7 +161,6 @@ main {
 
 /* 배너 리스트 */
 #main-banner-list {
-  height: 530px;
   border: 1px solid black;
   margin-bottom: 50px;
 }

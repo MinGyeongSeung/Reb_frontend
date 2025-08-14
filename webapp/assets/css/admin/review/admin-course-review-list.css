@@ -145,6 +145,13 @@ main {
   transform: translateX(155px);
 }
 
+#main-course-review-div{
+  width: 895px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* 수업 후기 리스트 제목 */
 #main-course-review-title {
   height: 50px;
@@ -177,11 +184,6 @@ main {
 .main-course-review-date{
   width: 120px;
   margin-right: 20px;
-}
-
-/* 수업 후기 리스트 */
-#main-course-review-list{
-  height: 530px;
 }
 
 /* 수업 후기 리스트 목록 */

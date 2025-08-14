@@ -62,6 +62,7 @@ main{
   display: flex;
   position: relative;
   top: 80px;
+  margin-bottom: 0;
 }
 
 /* 사이드바 리스트 영역 */
@@ -83,6 +84,7 @@ main{
   align-items: center;
 }
 
+
 /* 사이드바 리스트 목록 */
 #main-admin-list>li{
   font-size: 20px;
@@ -103,11 +105,20 @@ main{
 /* 메인 영역 */
 #main-notice{
   background-color: white;
+  height: 100vh;
   width: 895px;
   display: flex;
   flex-direction: column;
   align-items: center;
   transform: translateX(155px);
+}
+
+#main-notice-div{
+  width: 895px;
+  display: flex;
+  flex-direction: column;
+  align-items : center;
+  background-color: white;
 }
 
 /* 공지사항 리스트 제목 */
@@ -125,8 +136,8 @@ main{
 #main-notice-list{
   width: 875px;
   font-size: 16px;
-  height: 430px;
 }
+
 
 /* 마우스 호버시 리스트에 밑줄 */
 #main-notice-list>li:hover{
@@ -154,22 +165,17 @@ main{
 /* 공지사항 리스트 목록 */
 #main-notice-list>li{
   display: flex;
-  height: 40px;
+  height: 50px;
   align-items: center;
   padding: 0 17px;
   border-bottom: 3px solid #a7a7a7;
-}
-
-/* 필독 */
-.main-must-read{
-  background-color: #ededed;
 }
 
 /* 디테일 페이지 이동 */
 .main-must-read-link{
   display: flex;
   text-decoration: none;
-  color: red;
+  color: black;
 }
 
 /* 제목 왼쪽 정렬 */

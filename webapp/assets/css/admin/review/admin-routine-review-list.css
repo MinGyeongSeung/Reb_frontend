@@ -145,6 +145,13 @@ main {
   transform: translateX(155px);
 }
 
+#main-rt-review-div{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* 루틴 모임 후기 리스트 제목 */
 #main-rt-review-title {
   height: 50px;
@@ -177,11 +184,6 @@ main {
 .main-rt-review-date{
   width: 120px;
   margin-right: 20px;
-}
-
-/* 루틴 모임 후기 리스트 */
-#main-rt-review-list{
-  height: 530px;
 }
 
 /* 루틴 모임 후기 리스트 목록 */
