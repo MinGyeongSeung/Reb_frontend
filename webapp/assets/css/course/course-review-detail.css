@@ -223,7 +223,7 @@ button{
 .input-comment {
   border-radius: 15px;
   border: 0px;
-  width: 60%;
+  width: 90%;
   height: 20px;
   padding: 20px;
   font-family: "IBM Plex Sans KR", sans-serif;
@@ -235,12 +235,17 @@ button{
 
 .button-write {
   height: 60px;
+  float: right;
+}
+.form-comment-write{
+  width: 100%;
 }
 
 .div-comment-write {
   margin: 15px 0px;
   display: flex;
   justify-content: flex-start;
+  width: 100%;
 }
 .div-user-name-area, .div-user-text-area{
   width: 1200px;
