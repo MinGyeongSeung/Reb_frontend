@@ -44,7 +44,7 @@ buttonWrite.addEventListener('click', (e) => {
       '</div>' +
       '<p class="p-update-date">2025.07.02<span class="p-update-status"></span></p>' +
       '</div>';
-    if (commentAdd != null && commentAdd.length != 0) {
+    if (commentAdd.value != null && commentAdd.value.length != 0) {
       commentList.appendChild(newLi);
       commentAdd.value = "";
     }
