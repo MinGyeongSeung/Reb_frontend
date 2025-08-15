@@ -85,6 +85,19 @@ button {
   margin-left: 400px;
 }
 
+/* 목록으로 이동 */
+.back-list{
+  height: 50px;
+  width: 80px;
+  background-color: #818181;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
 .back-list {
   height: 50px;
   width: 80px;

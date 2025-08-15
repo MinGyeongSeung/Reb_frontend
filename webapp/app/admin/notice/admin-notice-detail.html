@@ -15,25 +15,32 @@
   <link
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Sans+KR&family=Yeon+Sung&display=swap"
     rel="stylesheet" />
+  <script defer src="./../../../assets/js/admin/notice/admin-notice-detail.js"></script>
   <title>공지사항 상세페이지</title>
 </head>
 
 <body>
   <header>
-    <img src="./../../../assets/img/team_logo.png" alt="">
+    <a href="./../../../app/admin/notice/admin-notice-list.html">
+      <img src="./../../../assets/img/team_logo.png" alt="">
+    </a>
   </header>
   <main>
     <div id="main-container">
 
       <!-- 게시글상세 -->
       <div class="notice-detail-containter">
-
-        <!-- <div class="notice-detail-title-text-containter"> -->
+        <div id="detail-container-list">
+          <!-- <div class="notice-detail-title-text-containter"> -->
           <div class="pagetitle font-main">
             사용자 편의성 UI 수정 사항
+            <!-- 목록 이동 버튼 -->
           </div>
-        <!-- </div> -->
-
+          <!-- </div> -->
+          <div class="back-list">
+            목록
+          </div>
+        </div>
         <div class="notice-detail-admin-image-containter">
           <div class="logo">
             <img src="./../../../assets/img/team_logo.png" class="logo-image" alt="로고" />
@@ -55,12 +62,19 @@
             하루 되시길 바라겠습니다.
           </div>
         </div>
+        <div id="main-btn-div">
+          <!-- 작성 버튼 -->
+          <button class="main-btn">수정</button>
+          <!-- 취소 버튼 -->
+          <button class="main-btn">삭제</button>
+        </div>
       </div>
-      
+
     </div>
   </main>
   <footer>
 
   </footer>
 </body>
+
 </html>
