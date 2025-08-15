@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+
 #main-container {
   width: 1200px;
   height: 100%;
@@ -14,10 +15,11 @@
   justify-content: center;
 }
 
-.pagetitle{
-  font-size : 30px;
-  color : #F38A6E;
-  padding-top : 100px;
+
+.pagetitle {
+  font-size: 30px;
+  color: #F38A6E;
+  padding-top: 100px;
   height: 110px;
   line-height: 110px;
   font-family: "Noto Sans KR", sans-serif;
@@ -26,6 +28,7 @@
   font-style: normal;
   font-weight: bold;
 }
+
 
 main {
   height: 1800px;
@@ -37,6 +40,7 @@ main {
   font-style: normal;
 }
 
+
 button {
   border-radius: 13px;
   padding: 0px 20px;
@@ -44,6 +48,7 @@ button {
   background-color: #f59d85;
   border: 0px;
 }
+
 
 .font-main {
   font-size: 18px;
@@ -53,6 +58,7 @@ button {
   font-style: normal;
   color: black;
 }
+
 
 .font-menu {
   font-family: "Yeon Sung", system-ui;
@@ -68,19 +74,33 @@ button {
   height: 100%;
 }
 
-.job-title {
 
+#job-list {
+  list-style: none;  /* 불릿 점 제거 */
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 100%;
 }
+
+/* 클릭 가능한 요소는 밑줄(팀 규칙) */
+#job-list a {
+  display: block;
+  text-decoration: underline;
+  color: inherit;
+}
+
 
 .job-board-box-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #f59d85;
+  background-color: #FFB29D;
   padding: 10px;
   color: white;
   border-bottom: 1px solid white;
 }
+
 
 .job-board-box-title {
   width: 500px;
@@ -89,12 +109,14 @@ button {
   font-size: 18px;
 }
 
+
 .job-board-box-requirements {
   width: 400px;
   color: white;
   text-align: center;
   font-size: 18px;
 }
+
 
 .job-board-box-day {
   width: 300px;
@@ -103,10 +125,6 @@ button {
   font-size: 18px;
 }
 
-.job-list-container {
-  background-color: white;
-  /* display: flex; */
-}
 
 .job-emphasize-container {
   background-color: white;
@@ -118,23 +136,28 @@ button {
   border-bottom: 1px solid #f59d85;
 }
 
+
 .job-emphasize-company-name-title-container {
   width: 500px;
 }
+
 
 .job-emphasize-company-requirements-container {
   width: 400px;
 }
 
+
 .job-emphasize-company-day-container {
   width: 300px;
 }
+
 
 .job-emphasize-company-name,
 .job-emphasize-company-title {
   font-size: 18px;
   text-align: center;
 }
+
 
 .job-emphasize-company-requirements-pay,
 .job-emphasize-company-requirements-first-career,
@@ -145,11 +168,13 @@ button {
   font-size: 18px;
 }
 
+
 .job-emphasize-company-requirements-D-Day {
   text-align: center;
   font-size: 18px;
   color: red;
 }
+
 
 .job-emphasize-company-requirements-deadline,
 .job-emphasize-company-requirements-registration-date {
@@ -157,9 +182,12 @@ button {
   font-size: 18px;
 }
 
+
 /* 채용공고 종료 */
 
+
 /* 검색 시작 */
+
 
 /* 페이지 영역 */
 #main-page-number {
@@ -172,12 +200,15 @@ button {
   margin-top: 2%;
 }
 
+
 #main-page-number>a {
   margin: 0 28px;
   text-decoration: none;
   color: black;
 }
+
 /* 페이지 영역끝  */
+
 
 /* 검색영역 시작 */
 #main-search {
@@ -189,14 +220,17 @@ button {
   margin: 30px 28px;
 }
 
+
 #main-search-basic>div {
   border: 1px solid black;
   border-radius: 12px;
 }
 
+
 #main-search-menu {
   display: none;
 }
+
 
 #main-search-menu>div {
   display: flex;
@@ -204,9 +238,11 @@ button {
   align-items: center;
 }
 
+
 #main-search-menu>div>p {
   align-self: center;
 }
+
 
 #main-search-basic>div>p {
   height: 45px;
@@ -218,6 +254,7 @@ button {
   align-items: center;
 }
 
+
 #main-search-input {
   width: 370px;
   height: 45px;
@@ -227,10 +264,12 @@ button {
   padding-right: 44px;
 }
 
+
 form {
   display: inline-block;
   position: relative;
 }
+
 
 form>button {
   background-color: white;
@@ -239,10 +278,12 @@ form>button {
   top: 3px;
 }
 
+
 form>button>img {
   height: 30px;
   width: 30px;
   border: 0px;
   cursor: pointer;
 }
+
 /* 검색영역 끝 */
