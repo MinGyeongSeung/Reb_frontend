@@ -148,13 +148,12 @@ a {
   gap: 12px;
 }
 
-
 .select-find {
   height: 50px;
   padding: 0 12px;
-  border: 0;
   border-radius: 10px;
   font-family: "IBM Plex Sans KR", sans-serif;
+  border : 1px solid black;
 }
 
 
@@ -166,7 +165,6 @@ a {
 }
 
 .input-find {
-  border-width: 0;
   background-color:white;
   border-radius: 15px;
   height: 50px;
@@ -174,6 +172,7 @@ a {
   outline: none;
   font-size: 16px;
   font-family: "IBM Plex Sans KR", sans-serif;
+  width: 365px;
 }
 
 
@@ -214,7 +213,6 @@ a {
 .button-write:hover {
   cursor: pointer;
 }
-
 .a-write{
   color:white;
    font-family: "IBM Plex Sans KR", sans-serif;

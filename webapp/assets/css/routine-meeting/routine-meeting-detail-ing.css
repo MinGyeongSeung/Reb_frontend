@@ -119,6 +119,7 @@ button:hover{
 .div-write-date {
   display: flex;
   justify-content: flex-end;
+  margin-top: 30px;
 }
 
 .p-expert-info-title {
@@ -190,4 +191,13 @@ button:hover{
 }
 .div-expert-info-detail > p{
   padding-top : 15px;
+}
+
+.p-host{
+  font-size: 20px;
+  text-align: end;
+  margin-bottom: 30px;
+}
+.span-host-name{
+  color: #F38A6E;
 }
