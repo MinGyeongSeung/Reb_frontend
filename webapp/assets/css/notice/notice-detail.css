@@ -51,13 +51,10 @@ button {
 .pagetitle {
   font-size: 30px;
   color: #f38a6e;
-
   padding-top: 100px;
   height: 110px;
   line-height: 110px;
-
   font-weight: 700;
-
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -65,16 +62,36 @@ button {
 
 /* 게시글상세 시작 */
 
+.notice-detail-title-text-containter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 목록 이동 */
+.back-list{
+  width: 80px;
+  background-color: #F38A6E;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+/* .notice-detail-title-text {
+  font-size: 30px;
+  color: #f38a6e;
+  font-weight: bold;
+} */
+
+
 .notice-detail-containter {
   padding: 0px 150px;
   padding-bottom: calc(30vh - 100px);
 }
 
-.notice-detail-title-text {
-  font-size: 30px;
-  color: #f38a6e;
-  font-weight: bold;
-}
+
 
 .board-box-writer {
   font-size: 18px;
@@ -132,7 +149,7 @@ button {
 
 /* 게시글상세 끝 */
 
-/* ===== 첨부파일 영역 ===== */
+/* 첨부파일 영역 */
 #attachment-section {
   margin-top: 40px;
   padding: 0 150px;
