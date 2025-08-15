@@ -54,15 +54,17 @@ function openModal(modalType) {
         .then(data => {
             modalContent.innerHTML = data;
             });
-    }else if(expertStatus === modalType){
-        modalTitle.innerHTML = "전문가 인증 상태";
+    }
+    // else if(expertStatus === modalType){
+    //     modalTitle.innerHTML = "전문가 인증 상태";
 
-        fetch("./../../app/mypage/expert-status.html")
-        .then(response => response.text())
-        .then(data => {
-            modalContent.innerHTML = data;
-            });
-    }else if(expertRejectionReason === modalType){
+    //     fetch("./../../app/mypage/expert-status.html")
+    //     .then(response => response.text())
+    //     .then(data => {
+    //         modalContent.innerHTML = data;
+    //         });
+    // }
+    else if(expertRejectionReason === modalType){
         modalTitle.innerHTML = "전문가 인증 반려 사유"
         
         fetch("./../../app/mypage/expert-rejection-reason.html")
