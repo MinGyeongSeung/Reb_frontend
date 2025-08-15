@@ -19,7 +19,7 @@
 .pagetitle {
   font-size: 30px;
   color: #F38A6E;
-  padding-top: 100px;
+  padding-top: 50px;
   height: 110px;
   line-height: 110px;
   font-family: "Noto Sans KR", sans-serif;
@@ -76,18 +76,19 @@ button {
 
 
 #job-list {
-  list-style: none;  /* 불릿 점 제거 */
-  margin: 0;
-  padding: 0;
+  list-style: none;
   background-color: white;
   width: 100%;
 }
 
-/* 클릭 가능한 요소는 밑줄(팀 규칙) */
 #job-list a {
   display: block;
-  text-decoration: underline;
+  text-decoration: none;
   color: inherit;
+}
+
+.job-emphasize-company-name-title-container:hover {
+  text-decoration: underline;
 }
 
 
@@ -106,7 +107,7 @@ button {
   width: 500px;
   color: white;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 
@@ -114,7 +115,7 @@ button {
   width: 400px;
   color: white;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 
@@ -122,7 +123,7 @@ button {
   width: 300px;
   color: white;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 
@@ -197,7 +198,7 @@ button {
   width: 370px;
   margin: 10px auto;
   justify-content: space-between;
-  margin-top: 2%;
+  margin-top: 40px;
 }
 
 
