@@ -16,7 +16,7 @@
 /* 메인 */
 main {
     /* height는 컨텐츠에 따라 */
-    height: 600px; 
+    height: auto; 
     min-height: calc(100vh - 235px);
     width: 100%;
     background-color: #FFFEF1;
@@ -66,14 +66,8 @@ button {
 /* 게시글상세 시작 */
 
 .notice-detail-containter {
-  /* position: relative; */
-  /* top: 70px; */
-  /* left: 150px; */
-    /* display: flex;
-  justify-content: center;
-  align-items: center; */
-
   padding: 0px 150px;
+  padding-bottom: calc(30vh - 100px);
 }
 
 .notice-detail-title-text {
@@ -137,3 +131,33 @@ button {
 }
 
 /* 게시글상세 끝 */
+
+/* ===== 첨부파일 영역 ===== */
+#attachment-section {
+  margin-top: 40px;
+  padding: 0 150px;
+}
+
+
+#attachment-list {
+  background-color: white;
+  border: 1px solid #f38a6e;
+  border-radius: 10px;
+}
+
+
+#attachment-list a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.attachment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 16px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #f38a6e;
+}
+
+
