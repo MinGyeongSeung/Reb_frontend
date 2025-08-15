@@ -1,9 +1,9 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-header{
+header {
   height: 110px;
   width: 100%;
   position: fixed;
@@ -12,80 +12,93 @@ header{
   justify-content: center;
 }
 
-header>a>img{
+header>a>img {
   height: 110px;
   width: 110px;
 }
 
-footer{
+footer {
   width: 100%;
   height: 125px;
   background-color: #d9d9d9;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
 #main-container {
-    width: 1200px;
-    height: 100%;
-    /*알아서 넣기*/
-    background-color: #FFFEF1;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+  width: 1200px;
+  height: 100%;
+  /*알아서 넣기*/
+  background-color: #FFFEF1;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
 main {
-    padding-top: 110px;
-    height: 100%;
-    width: 100%;
-    background-color: #a6a6a6;
-    font-family: "IBM Plex Sans KR", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  padding-top: 110px;
+  height: 100%;
+  width: 100%;
+  background-color: #a6a6a6;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-button{
+button {
   border-radius: 13px;
-  padding : 0px 20px;
+  padding: 0px 20px;
   margin: 50px;
   height: 40px;
   background-color: #f59d85;
-  border : 0px;
+  border: 0px;
 }
 
-.font-main{
+.font-main {
   font-size: 18px;
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color : white;
+  color: white;
 }
 
-#detail-container-list{
+#detail-container-list {
   display: flex;
   margin-top: 100px;
   justify-content: space-between;
 }
 
-.pagetitle{
-  font-size : 30px;
-  color : #F38A6E;
+.pagetitle {
+  font-size: 30px;
+  color: #F38A6E;
 
   height: 110px;
   line-height: 110px;
   align-self: center;
-  
+
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
   margin-left: 400px;
 }
 
+/* 목록으로 이동 */
 .back-list{
+  height: 50px;
+  width: 80px;
+  background-color: #818181;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.back-list {
   height: 50px;
   width: 80px;
   background-color: #818181;
@@ -119,7 +132,7 @@ button{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-size:18px;
+  font-size: 18px;
 }
 
 .img-detail {
@@ -138,43 +151,46 @@ button{
   justify-content: flex-end;
 }
 
-.p-expert-info-title{
+.p-expert-info-title {
   font-size: 20px;
   color: #F38A6E;
 }
-.div-expert-detail{
-  margin-top:50px;
-  
+
+.div-expert-detail {
+  margin-top: 50px;
+
 }
 
-.div-expert-detail-button{
-  margin-top:50px;
+.div-expert-detail-button {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
 }
-.div-expert-info-detail{
-  margin-left : 100px;
+
+.div-expert-info-detail {
+  margin-left: 100px;
 }
 
-.button-update  {
+.button-update {
   width: 100px;
   height: 45px;
-  color:white;
+  color: white;
   border-radius: 13px;
   padding: 0px 20px;
-  font-size : 20px;
+  font-size: 20px;
   background-color: #f59d85;
   border: 0px;
 }
-.button-delete{
+
+.button-delete {
   width: 100px;
   height: 45px;
   font-size: 30px;
   background-color: white;
   border-radius: 13px;
   padding: 0px 20px;
-  font-size : 20px;
-  color:#ff0000;
+  font-size: 20px;
+  color: #ff0000;
   border: 3px solid #ff0000;
 }

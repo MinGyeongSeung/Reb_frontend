@@ -93,33 +93,38 @@ main{
   background-color: white;
   height: 100vh;
   width: 895px;
+  transform: translateX(155px);
+}
+
+#main-routine-div{
+  width: 895px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translateX(155px);
+  background-color: white;
 }
 
 #main-routine-list-title{
   margin-top: 100px;
   background-color: #d9d9d9;
   display: flex;
-  height: 45px;
+  height: 50px;
   align-items: center;
   padding: 0 10px;
+  font-size: 20px;
 }
 
 #main-routine-list{
   width: 875px;
-  font-size: 14px;
-  height: 430px;
+  font-size: 16px;
 }
 
-#main-routine-list>li:hover{
+a>.main-routine-title:hover{
   text-decoration: underline;
 }
 
 .main-routine-number{
-  width: 70px;
+  width: 84px;
   text-align: center;
 }
 
@@ -128,7 +133,7 @@ main{
   text-align: center;
 }
 .main-routine-title{
-  width: 254px;
+  width: 240px;
   text-align: center;
 }
 .main-routine-count{
@@ -150,7 +155,7 @@ main{
 
 #main-routine-list>li{
   display: flex;
-  height: 40px;
+  height: 50px;
   align-items: center;
   padding: 0 10px;
   border-bottom: 3px solid #a7a7a7;
@@ -194,6 +199,7 @@ main{
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
+    cursor: pointer;
 }
 
 /* 입력창 */

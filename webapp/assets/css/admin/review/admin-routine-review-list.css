@@ -106,6 +106,7 @@ main {
   width: 310px;
   position: fixed;
   transform: translate(-155px, -80px);
+  z-index: 2;
 }
 
 /* 사이드바 리스트 */
@@ -145,6 +146,13 @@ main {
   transform: translateX(155px);
 }
 
+#main-rt-review-div{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* 루틴 모임 후기 리스트 제목 */
 #main-rt-review-title {
   height: 50px;
@@ -154,7 +162,7 @@ main {
   display: flex;
   text-align: center;
   line-height: 50px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 /* 후기 제목 */
@@ -179,11 +187,6 @@ main {
   margin-right: 20px;
 }
 
-/* 루틴 모임 후기 리스트 */
-#main-rt-review-list{
-  height: 530px;
-}
-
 /* 루틴 모임 후기 리스트 목록 */
 #main-rt-review-list>li{
   height: 50px;
@@ -192,10 +195,11 @@ main {
   text-align: center;
   line-height: 50px;
   border-bottom: 3px solid #a7a7a7;
+  font-size: 18px;
 }
 
 /* 루틴 모임 후기 리스트 목록에 마우스 호버시 밑줄 */
-#main-rt-review-list>li:hover{
+a>.main-rt-review-name:hover{
   text-decoration: underline;
 }
 
@@ -204,7 +208,6 @@ main {
   text-decoration: none;
   color: black;
   display: flex;
-  font-size: 20px;
 }
 
 /* 제목 좌측 정렬 */
@@ -246,6 +249,7 @@ main {
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
+    cursor: pointer;
 }
 
 /* 입력창 */
