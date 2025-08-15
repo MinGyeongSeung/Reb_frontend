@@ -101,6 +101,7 @@ form{
   border-radius: 25px;
   font-size: 30px;
   margin: 100px 56px 200px;
+  cursor: pointer;
 }
 
 /* 확인 버튼 */

@@ -3,6 +3,19 @@
   padding: 0;
 }
 
+/* 메인 */
+main {
+  /* height는 컨텐츠에 따라 */
+  /* height: 100vh; */
+  min-height: calc(100vh - 125px);
+  width: 100%;
+  background-color: #a6a6a6;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 header{
   height: 110px;
   width: 100%;
@@ -12,68 +25,25 @@ header{
   justify-content: center;
 }
 
-button{
-  cursor: pointer;
-}
-
 header>a>img{
-  height: 110px;
+  height: 100px;
   width: 110px;
 }
 
 footer{
   width: 100%;
   height: 125px;
-  background-color: #fff1cd;
+  background-color: #d9d9d9;
 }
 
+/* 메인 컨테이너 */
 #main-container {
-    width: 1200px;
-    height: calc(100vh - 235px);
-    background-color: #FFFEF1;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-}
-
-.notice-detail-title-text-containter{
-  display: flex;
-  justify-content: space-between;
-}
-
-.back-list{
-  height: 50px;
-  width: 80px;
-  background-color: #818181;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 20px;
-  color: white;
-  cursor: pointer;
-}
-
-main {
-    padding-top: 110px;
-    /* height는 컨텐츠에 따라 */
-    height: 900px; 
-    min-height: calc(100vh - 235px);
-    width: 100%;
-    background-color: #a6a6a6;
-    font-family: "Noto Sans KR", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-button{
-  border-radius: 20px;
-  width: 110px;
-  height: 55px;
-  background-color: #f59d85;
-  border: 0px;
-  margin: 45px;
-  color: white;
-  font-size: 22px;
+  width: 1200px;
+  min-height: calc(100vh - 125px);
+  background-color: #FFFEF1;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .font-main {
@@ -90,42 +60,67 @@ button{
   font-style: normal;
 }
 
+#detail-container-list{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .pagetitle {
   font-size: 30px;
   color: #f38a6e;
 
-  padding-top: 100px;
   height: 110px;
   line-height: 110px;
+
+  font-weight: 700;
 
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+/* 목록으로 이동 */
+.back-list{
+  height: 50px;
+  width: 80px;
+  background-color: #818181;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+
+
 /* 게시글상세 시작 */
 
 .notice-detail-containter {
-  min-height: 557px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  /* margin-top: 15%; */
-  /* margin-bottom: 15%; */
+  /* position: relative; */
+  /* top: 70px; */
+  /* left: 150px; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 100%;
+  padding: 50px 150px 0;
+  background-color: #FFFEF1;
 }
 
 .notice-detail-title-text {
-  font-size: 48px;
+  font-size: 30px;
   color: #f38a6e;
   font-weight: bold;
 }
 
 .board-box-writer {
-  font-size: 32px;
+  font-size: 18px;
 }
 
 .board-box-day {
-  font-size: 32px;
+  font-size: 18px;
 }
 
 .notice-detail-admin-image-containter {
@@ -137,8 +132,8 @@ button{
   border-radius: 50%;
   background-color: white;
   overflow: hidden;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border: 1px solid black;
 }
 
@@ -148,24 +143,24 @@ button{
 }
 
 .notice-detail-admin-containter {
-  margin-left: 1%;
+  margin-left: 1px;
 }
 
 .board-box-writer {
-  font-size: 32px;
+  font-size: 18px;
 }
 
 .board-box-day {
-  font-size: 32px;
+  font-size: 18px;
 }
 
 .notice-detail-text-content-containter {
-  margin: 20px;
+  /* margin: 20px; */
+  margin-top: 50px;
 }
 
 .notice-detail-text {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 18px;
   white-space: normal;
   /* 줄바꿈 허용 */
   word-break: break-word;
@@ -174,17 +169,35 @@ button{
   /* 내용 칸 밖으로 넘치지 않게 */
 }
 
-/* 게시글상세 끝 */
-
-.div-expert-detail-button{
-  margin-top:50px;
+#main-btn-div{
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
-.button-cancel{
-  background-color: white;
-  border: 2px solid red;
-  color: red;
+.main-btn{
+  height: 45px;
+  width: 100px;
+  border-radius: 13px;
+  font-size: 30px;
+  font-size: 20px;
+  padding: 0 20px;
+  margin: 0 56px 100px;
+  cursor: pointer;
 }
+
+/* 확인 버튼 */
+.main-btn:first-child{
+  background-color: #f59d85;
+  color: white;
+  border: 0;
+}
+
+/* 취소 버튼 */
+.main-btn:last-child{
+  background-color: white;
+  color: red;
+  border: 3px solid red;
+}
+
+/* 게시글상세 끝 */
