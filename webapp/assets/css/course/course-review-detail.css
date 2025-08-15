@@ -305,3 +305,18 @@
  .span-comment-delete:hover {
    cursor: pointer;
  }
+ .div-page {
+  display: flex;
+  justify-content: center;
+}
+.div-pagenation {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

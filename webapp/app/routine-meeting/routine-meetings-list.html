@@ -30,7 +30,7 @@
   <main>
     <div id="main-container">
       <div class="routine-list-container">
-        <p class="pagetitle">루틴 모임 목록</p>
+        <p class="pagetitle">루틴 모임 게시판</p>
         <ul class="ul-routine-list">
           <li class="li-routine-list-box">
             <a href="./routine-meeting-detail-ing.html">
@@ -131,13 +131,19 @@
         <div class="div-find">
           <form action="" method="get">
             <div class="div-find-form">
-              <select class="select-find">
-                <option value="title">제목</option>
-                <option value="name">모임장</option>
-              </select>
-              <input class="input-find" type="text">
-              <!-- 추후 submit 수정 -->
-              <button type="button" class="button-find"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <div class="find-container">
+                <select class="select-find">
+                  <option value="title">제목</option>
+                  <option value="name">모임장명</option>
+                </select>
+                <div class="input-group">
+                  <input class="input-find" type="text" />
+                  <button type="button" class="button-find">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+              <button type="button" class="button-write"><a href="./course-review-write.html" class="a-write">글 쓰기</a></button>
             </div>
           </form>
         </div>
