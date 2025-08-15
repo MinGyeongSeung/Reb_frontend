@@ -22,7 +22,7 @@
 /* 메인 */
 main {
   /* height는 컨텐츠에 따라 */
-  height: 1500px;
+  height: 1300px;
   min-height: calc(100vh - 235px);
   width: 100%;
   background-color: #FFFEF1;
@@ -38,8 +38,10 @@ button {
   padding: 0px 20px;
   height: 50px;
   background-color: #f59d85;
+  color : white;
   border: 0px;
   cursor: pointer;
+  font-size: 20px;
 }
 
 /* 메인 폰트 */
@@ -85,11 +87,36 @@ button {
   font-weight: 700;
 }
 
+#expert-status-file-date{
+  margin-right: 35px;
+}
+
+.expert-status-confirm-text{
+  display: flex;
+}
 
 .expert-status-text {
   display: flex;
 }
 
 #a-expert-status-file{
-  width : 800px;
+  width : 840px;
+}
+
+
+
+#expert-file-text{
+  line-height: 60px;;
+}
+
+#button-expert-status-rejection-reason{
+  margin: 0px;
+  padding : 0px;
+  color : black;
+  text-decoration: underline;
+  background-color: #ffffff00;
+  line-height: 20px;
+  height: 20px;
+
+  margin-right: 20px;
 }
