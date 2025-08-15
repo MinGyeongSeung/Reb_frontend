@@ -1,5 +1,6 @@
-const updateBtn = document.querySelector(".button-application");
-const deleteBtn = document.querySelector(".button-cancel");
+const updateBtn = document.querySelector(".main-btn:first-child");
+const deleteBtn = document.querySelector(".main-btn:last-child");
+const backListBtn = document.querySelector(".back-list");
 
 updateBtn.addEventListener('click', ()=>{
   location.href= "./../../../app/admin/notice/admin-notice-edit.html";
@@ -15,4 +16,8 @@ deleteBtn.addEventListener('click', ()=>{
 const moveBtn = document.querySelector(".back-list");
 moveBtn.addEventListener('click', ()=>{
   location.href= "./../../../app/admin/notice/admin-notice-list.html"
+});
+
+backListBtn.addEventListener('click', ()=>{
+  location.href= "./../../../app/admin/notice/admin-notice-list.html";
 });

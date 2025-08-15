@@ -20,9 +20,13 @@ dropBtn.addEventListener('click', () => {
 });
 
 submitBtn.addEventListener("click", () => {
-  alert("개설을 반려하였습니다.");
-  location.href = "./../../../app/admin/course/admin-course-request-list.html";
-  returnMsg.value = "";
+  if (returnMsg.value == "") {
+    alert("사유를 입력해주세요.");
+  } else {
+    alert("개설을 반려하였습니다.");
+    location.href = "./../../../app/admin/course/admin-course-request-list.html";
+    returnMsg.value = "";
+  }
 });
 
 closeModal.addEventListener(('click'), () => {
@@ -36,11 +40,11 @@ moveBtn.addEventListener('click', () => {
 });
 
 chooseBtn.addEventListener('click', () => {
-  updateBtn.style.display= "none";
-  deleteBtn.style.display= "none";
+  updateBtn.style.display = "none";
+  deleteBtn.style.display = "none";
 });
 
 viewBtn.addEventListener('click', () => {
-  updateBtn.style.display= "flex";
-  deleteBtn.style.display= "flex";
+  updateBtn.style.display = "flex";
+  deleteBtn.style.display = "flex";
 });

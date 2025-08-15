@@ -136,10 +136,15 @@ main{
   background-color: white;
   height: 100vh;
   width: 895px;
+  transform: translateX(155px);
+}
+
+#main-course-div{
+  width: 895px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translateX(155px);
+  background-color: white;
 }
 
 /* 수업 목록 리스트 제목 */
@@ -147,14 +152,15 @@ main{
   margin-top: 100px;
   background-color: #d9d9d9;
   display: flex;
-  height: 45px;
+  height: 50px;
   align-items: center;
   padding: 0 10px;
+  font-size: 20px;
 }
 
 /* 회원번호 영역 */
 .main-course-number{
-  width: 70px;
+  width: 84px;
   text-align: center;
 }
 
@@ -173,7 +179,7 @@ main{
 /* 제목 영역 */
 .main-course-title{
   margin-left: 40px;
-  width: 214px;
+  width: 200px;
   text-align: center;
 }
 
@@ -198,21 +204,20 @@ main{
 /* 수업 목록 리스트 */
 #main-course-list{
   width: 875px;
-  font-size: 14px;
-  height: 430px;
+  font-size: 18px;
 }
 
 /* 수업 리스트 목록 */
 #main-course-list>li{
   display: flex;
-  height: 40px;
+  height: 50px;
   align-items: center;
   padding: 0 10px;
   border-bottom: 3px solid #a7a7a7;
 }
 
 /* 수업 리스트 목록에 마우스 호버시 밑줄 */
-#main-course-list>li:hover{
+a>.main-course-title:hover{
   text-decoration: underline;
 }
 
@@ -262,6 +267,7 @@ main{
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
+    cursor: pointer;
 }
 
 /* 입력창 */
