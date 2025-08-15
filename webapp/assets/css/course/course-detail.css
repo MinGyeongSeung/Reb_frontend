@@ -2,6 +2,15 @@
   margin: 0;
   padding: 0;
 }
+.p-back {
+  float: right;
+  font-size: 24px;
+  margin-top: 15px ;
+}
+
+.p-back:hover {
+  cursor: pointer;
+}
 
 #header{
   height: 110px;
@@ -34,6 +43,7 @@ main {
     font-family: "IBM Plex Sans KR", sans-serif;
     font-weight: 400;
     font-style: normal;
+    min-height: calc(100vh - 235px);
 }
 
 button{
@@ -144,7 +154,9 @@ button:hover{
 .div-expert-edit-ing-button,
 .div-expert-delete-ing-button,
 .div-expert-before-button,
-.div-expert-after-button{
+.div-expert-after-button,
+.div-course-start-button,
+.div-course-end-button{
   margin-top:50px;
   display: flex;
   justify-content: center;
@@ -208,7 +220,9 @@ button:hover{
 .button-edit-ing,
 .button-delete-ing,
 .button-before,
-.button-after{
+.button-after,
+.button-course-start,
+.button-course-end{
   height: 50px;
   color:black;
   border-radius: 13px;

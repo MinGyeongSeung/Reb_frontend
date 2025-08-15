@@ -34,6 +34,7 @@ main {
   font-weight: 400;
   font-style: normal;
   padding-bottom: 130px;
+  min-height: calc(100vh - 235px);
 }
 
 button {
@@ -62,7 +63,7 @@ button {
   font-size: 30px;
   color: #F38A6E;
 
-  padding-top: 100px;
+  padding-top: 50px;
   height: 110px;
   line-height: 110px;
 
@@ -82,7 +83,8 @@ button:hover{
 
 .review-title {
   text-align: center;
-  width: 60%;
+  width: 70%;
+  
 }
 .review-number,
 .review-like,
@@ -139,40 +141,58 @@ a {
   color: black;
 }
 
+.find-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
 .select-find {
+  height: 50px;
+  padding: 0 12px;
+  border: 0;
   border-radius: 10px;
-  border: 0px;
-  height: 30px;
   font-family: "IBM Plex Sans KR", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+}
+
+
+.input-group {
+  border-radius: 15px;
+  height: 50px;
+  display: flex;
+  position: relative;
 }
 
 .input-find {
-  margin-top: 30px;
+  border-width: 0;
+  background-color:white;
   border-radius: 15px;
-  border: 0px;
-  width: 30%;
-  height: 30px;
-  padding: 10px;
+  height: 50px;
+  padding: 0 0 0 20px; 
+  outline: none;
+  font-size: 16px;
   font-family: "IBM Plex Sans KR", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
+
 .button-find {
-  border-radius: 15px;
-  border: 0px;
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-  background-color: #FFFEF1;
+  position: absolute;
+  top: 50%;
+  right: 10px; 
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 0;
+  background-color: white;
+  cursor: pointer;
 }
 
 .button-write {
   border-radius: 15px;
   border: 0px;
-  width: 147px;
+  width: 100px;
   height: 50px;
   padding: 10px;
   background-color: #F38A6E;
@@ -183,7 +203,25 @@ a {
   font-style: normal;
   /* display: none; */
 }
+.div-find-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
 
 .button-write:hover {
   cursor: pointer;
 }
+
+.a-write{
+  color:white;
+   font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.li-review-content:hover .review-title {
+  text-decoration: underline;
+}
+
