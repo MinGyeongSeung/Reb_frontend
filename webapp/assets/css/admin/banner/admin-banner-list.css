@@ -112,7 +112,7 @@ main {
 /* 리스트 출력되는 구역 */
 #main-banner-div {
   background-color: white;
-  /* height: 1400px; */
+  height: 1400px;
   width: 895px;
   margin-top: 90px;
   display: flex;
@@ -126,7 +126,7 @@ main {
   width: 850px;
   background-color: #d9d9d9;
   display: flex;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 50px;
   text-align: center;
 }
@@ -171,7 +171,7 @@ main {
   display: flex;
   text-align: center;
   line-height: 50px;
-  font-size: 20px;
+  font-size: 18px;
   border-bottom: 3px solid #a7a7a7;
 }
 

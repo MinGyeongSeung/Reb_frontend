@@ -135,12 +135,12 @@ main{
 /* 공지사항 리스트 */
 #main-notice-list{
   width: 875px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 
 /* 마우스 호버시 리스트에 밑줄 */
-#main-notice-list>li:hover{
+a>.main-notice-title:hover{
   text-decoration: underline;
 }
 
@@ -228,6 +228,7 @@ main{
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
+    cursor: pointer;
 }
 
 /* 입력창 */
