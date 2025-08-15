@@ -38,7 +38,6 @@ const expertRejectionReason = "expertRejectionReason";
 const courseRejectionReason = "courseRejectionReason";
 
 function openModal(modalType) {
-    
     if(expertFileUpload === modalType){
         modalTitle.innerHTML = "전문가 인증";
 
