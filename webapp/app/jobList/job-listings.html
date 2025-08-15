@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./../../assets/css/jobList/job-listings.css" />
 
+
   <link rel="stylesheet" href="./../../assets/css/header-login.css">
   <link rel="stylesheet" href="./../../assets/css/footer.css">
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,10 +24,13 @@
   <title>체용공고</title>
 </head>
 
+
 <body>
   <div id="header"></div>
   <main>
     <div id="main-container">
+
+
       <!-- 채용공고 -->
       <div class="job-container">
         <div class="job-title pagetitle">채용공고</div>
@@ -35,392 +41,260 @@
         </div>
         <!-- API를 활용하여 동적으로 만들예정 -->
 
-        <!-- 채용공고리스트 -->
-        <div class="job-list-container">
 
-          <!-- 회사정보 -->
-          <div class="job-emphasize-container">
-            <div class="job-emphasize-company-name-title-container">
-              <div class="job-emphasize-company-name font-main">
-                (주)플러스휴먼리소스
-              </div>
-              <div class="job-emphasize-company-title font-main">
-                해외영업, 반도체 외 경력 채용
-              </div>
-            </div>
+        <!-- 채용공고리스트 (UL로 전환) -->
+        <ul id="job-list">
+          <!-- 채용공고 1 -->
+          <li class="job-item">
+            <a href="">
+              <div class="job-emphasize-container">
+                <div class="job-emphasize-company-name-title-container">
+                  <div class="job-emphasize-company-name font-main">(주)플러스휴먼리소스</div>
+                  <div class="job-emphasize-company-title font-main">해외영업, 반도체 외 경력 채용</div>
+                </div>
 
-            <!-- 조건 -->
-            <div class="job-emphasize-company-requirements-container">
-              <div class="job-emphasize-company-requirements-pay font-main">
-                [급여] 회사내 규율에 따름
-              </div>
-              <div class="job-emphasize-company-requirements-first-career font-main">
-                [경력] 신입/경력 1년 | 학력무관
-              </div>
-              <div class="job-emphasize-company-requirements-working-day font-main">
-                [근무일수] 주 5일
-              </div>
-              <div class="job-emphasize-company-requirements-location font-main">
-                [위치] 서울 종로구
-              </div>
-            </div>
+                <div class="job-emphasize-company-requirements-container">
+                  <div class="job-emphasize-company-requirements-pay font-main">[급여] 회사내 규율에 따름</div>
+                  <div class="job-emphasize-company-requirements-first-career font-main">[경력] 신입/경력 1년 | 학력무관</div>
+                  <div class="job-emphasize-company-requirements-working-day font-main">[근무일수] 주 5일</div>
+                  <div class="job-emphasize-company-requirements-location font-main">[위치] 서울 종로구</div>
+                </div>
 
-            <!-- 마감 -->
-            <div class="job-emphasize-company-day-container">
-              <div class="job-emphasize-company-requirements-D-Day font-main">
-                D-7
+                <div class="job-emphasize-company-day-container">
+                  <div class="job-emphasize-company-requirements-D-Day font-main">D-7</div>
+                  <div class="job-emphasize-company-requirements-deadline font-main">마감일: 2025.08.10</div>
+                  <div class="job-emphasize-company-requirements-registration-date font-main">등록일: 2025.07.11</div>
+                </div>
               </div>
-              <div class="job-emphasize-company-requirements-deadline font-main">
-                마감일: 2025.08.10
-              </div>
-              <div class="job-emphasize-company-requirements-registration-date font-main">
-                등록일: 2025.07.11
-              </div>
-            </div>
-          </div>
+            </a>
+          </li>
 
-          <div class="job-emphasize-container">
-            <div class="job-emphasize-company-name-title-container">
-              <div class="job-emphasize-company-name font-main">
-                (주)플러스휴먼리소스
-              </div>
-              <div class="job-emphasize-company-title font-main">
-                해외영업, 반도체 외 경력 채용
-              </div>
-            </div>
+          <!-- 채용공고 2 -->
+          <li class="job-item">
+            <a href="">
+              <div class="job-emphasize-container">
+                <div class="job-emphasize-company-name-title-container">
+                  <div class="job-emphasize-company-name font-main">(주)플러스휴먼리소스</div>
+                  <div class="job-emphasize-company-title font-main">해외영업, 반도체 외 경력 채용</div>
+                </div>
 
-            <div class="job-emphasize-company-requirements-container">
-              <div class="job-emphasize-company-requirements-pay font-main">
-                [급여] 회사내 규율에 따름
-              </div>
-              <div class="job-emphasize-company-requirements-first-career font-main">
-                [경력] 신입/경력 1년 | 학력무관
-              </div>
-              <div class="job-emphasize-company-requirements-working-day font-main">
-                [근무일수] 주 5일
-              </div>
-              <div class="job-emphasize-company-requirements-location font-main">
-                [위치] 서울 종로구
-              </div>
-            </div>
+                <div class="job-emphasize-company-requirements-container">
+                  <div class="job-emphasize-company-requirements-pay font-main">[급여] 회사내 규율에 따름</div>
+                  <div class="job-emphasize-company-requirements-first-career font-main">[경력] 신입/경력 1년 | 학력무관</div>
+                  <div class="job-emphasize-company-requirements-working-day font-main">[근무일수] 주 5일</div>
+                  <div class="job-emphasize-company-requirements-location font-main">[위치] 서울 종로구</div>
+                </div>
 
-            <div class="job-emphasize-company-day-container">
-              <div class="job-emphasize-company-requirements-D-Day font-main">
-                D-7
+                <div class="job-emphasize-company-day-container">
+                  <div class="job-emphasize-company-requirements-D-Day font-main">D-7</div>
+                  <div class="job-emphasize-company-requirements-deadline font-main">마감일: 2025.08.10</div>
+                  <div class="job-emphasize-company-requirements-registration-date font-main">등록일: 2025.07.11</div>
+                </div>
               </div>
-              <div class="job-emphasize-company-requirements-deadline font-main">
-                마감일: 2025.08.10
-              </div>
-              <div class="job-emphasize-company-requirements-registration-date font-main">
-                등록일: 2025.07.11
-              </div>
-            </div>
-          </div>
+            </a>
+          </li>
 
-          <div class="job-emphasize-container">
-            <div class="job-emphasize-company-name-title-container">
-              <div class="job-emphasize-company-name font-main">
-                (주)플러스휴먼리소스
-              </div>
-              <div class="job-emphasize-company-title font-main">
-                해외영업, 반도체 외 경력 채용
-              </div>
-            </div>
+          <!-- 채용공고 3 -->
+          <li class="job-item">
+            <a href="">
+              <div class="job-emphasize-container">
+                <div class="job-emphasize-company-name-title-container">
+                  <div class="job-emphasize-company-name font-main">(주)플러스휴먼리소스</div>
+                  <div class="job-emphasize-company-title font-main">해외영업, 반도체 외 경력 채용</div>
+                </div>
 
-            <div class="job-emphasize-company-requirements-container">
-              <div class="job-emphasize-company-requirements-pay font-main">
-                [급여] 회사내 규율에 따름
-              </div>
-              <div class="job-emphasize-company-requirements-first-career font-main">
-                [경력] 신입/경력 1년 | 학력무관
-              </div>
-              <div class="job-emphasize-company-requirements-working-day font-main">
-                [근무일수] 주 5일
-              </div>
-              <div class="job-emphasize-company-requirements-location font-main">
-                [위치] 서울 종로구
-              </div>
-            </div>
+                <div class="job-emphasize-company-requirements-container">
+                  <div class="job-emphasize-company-requirements-pay font-main">[급여] 회사내 규율에 따름</div>
+                  <div class="job-emphasize-company-requirements-first-career font-main">[경력] 신입/경력 1년 | 학력무관</div>
+                  <div class="job-emphasize-company-requirements-working-day font-main">[근무일수] 주 5일</div>
+                  <div class="job-emphasize-company-requirements-location font-main">[위치] 서울 종로구</div>
+                </div>
 
-            <div class="job-emphasize-company-day-container">
-              <div class="job-emphasize-company-requirements-D-Day font-main">
-                D-7
+                <div class="job-emphasize-company-day-container">
+                  <div class="job-emphasize-company-requirements-D-Day font-main">D-7</div>
+                  <div class="job-emphasize-company-requirements-deadline font-main">마감일: 2025.08.10</div>
+                  <div class="job-emphasize-company-requirements-registration-date font-main">등록일: 2025.07.11</div>
+                </div>
               </div>
-              <div class="job-emphasize-company-requirements-deadline font-main">
-                마감일: 2025.08.10
-              </div>
-              <div class="job-emphasize-company-requirements-registration-date font-main">
-                등록일: 2025.07.11
-              </div>
-            </div>
-          </div>
+            </a>
+          </li>
 
-          <div class="job-emphasize-container">
-            <div class="job-emphasize-company-name-title-container">
-              <div class="job-emphasize-company-name font-main">
-                (주)플러스휴먼리소스
-              </div>
-              <div class="job-emphasize-company-title font-main">
-                해외영업, 반도체 외 경력 채용
-              </div>
-            </div>
+          <!-- 채용공고 4 -->
+          <li class="job-item">
+            <a href="">
+              <div class="job-emphasize-container">
+                <div class="job-emphasize-company-name-title-container">
+                  <div class="job-emphasize-company-name font-main">(주)플러스휴먼리소스)</div>
+                  <div class="job-emphasize-company-title font-main">해외영업, 반도체 외 경력 채용</div>
+                </div>
 
-            <div class="job-emphasize-company-requirements-container">
-              <div class="job-emphasize-company-requirements-pay font-main">
-                [급여] 회사내 규율에 따름
-              </div>
-              <div class="job-emphasize-company-requirements-first-career font-main">
-                [경력] 신입/경력 1년 | 학력무관
-              </div>
-              <div class="job-emphasize-company-requirements-working-day font-main">
-                [근무일수] 주 5일
-              </div>
-              <div class="job-emphasize-company-requirements-location font-main">
-                [위치] 서울 종로구
-              </div>
-            </div>
+                <div class="job-emphasize-company-requirements-container">
+                  <div class="job-emphasize-company-requirements-pay font-main">[급여] 회사내 규율에 따름</div>
+                  <div class="job-emphasize-company-requirements-first-career font-main">[경력] 신입/경력 1년 | 학력무관</div>
+                  <div class="job-emphasize-company-requirements-working-day font-main">[근무일수] 주 5일</div>
+                  <div class="job-emphasize-company-requirements-location font-main">[위치] 서울 종로구</div>
+                </div>
 
-            <div class="job-emphasize-company-day-container">
-              <div class="job-emphasize-company-requirements-D-Day font-main">
-                D-7
+                <div class="job-emphasize-company-day-container">
+                  <div class="job-emphasize-company-requirements-D-Day font-main">D-7</div>
+                  <div class="job-emphasize-company-requirements-deadline font-main">마감일: 2025.08.10</div>
+                  <div class="job-emphasize-company-requirements-registration-date font-main">등록일: 2025.07.11</div>
+                </div>
               </div>
-              <div class="job-emphasize-company-requirements-deadline font-main">
-                마감일: 2025.08.10
-              </div>
-              <div class="job-emphasize-company-requirements-registration-date font-main">
-                등록일: 2025.07.11
-              </div>
-            </div>
-          </div>
+            </a>
+          </li>
 
-          <div class="job-emphasize-container">
-            <div class="job-emphasize-company-name-title-container">
-              <div class="job-emphasize-company-name font-main">
-                (주)플러스휴먼리소스
-              </div>
-              <div class="job-emphasize-company-title font-main">
-                해외영업, 반도체 외 경력 채용
-              </div>
-            </div>
+          <!-- 채용공고 5 -->
+          <li class="job-item">
+            <a href="">
+              <div class="job-emphasize-container">
+                <div class="job-emphasize-company-name-title-container">
+                  <div class="job-emphasize-company-name font-main">(주)플러스휴먼리소스</div>
+                  <div class="job-emphasize-company-title font-main">해외영업, 반도체 외 경력 채용</div>
+                </div>
 
-            <div class="job-emphasize-company-requirements-container">
-              <div class="job-emphasize-company-requirements-pay font-main">
-                [급여] 회사내 규율에 따름
-              </div>
-              <div class="job-emphasize-company-requirements-first-career font-main">
-                [경력] 신입/경력 1년 | 학력무관
-              </div>
-              <div class="job-emphasize-company-requirements-working-day font-main">
-                [근무일수] 주 5일
-              </div>
-              <div class="job-emphasize-company-requirements-location font-main">
-                [위치] 서울 종로구
-              </div>
-            </div>
+                <div class="job-emphasize-company-requirements-container">
+                  <div class="job-emphasize-company-requirements-pay font-main">[급여] 회사내 규율에 따름</div>
+                  <div class="job-emphasize-company-requirements-first-career font-main">[경력] 신입/경력 1년 | 학력무관</div>
+                  <div class="job-emphasize-company-requirements-working-day font-main">[근무일수] 주 5일</div>
+                  <div class="job-emphasize-company-requirements-location font-main">[위치] 서울 종로구</div>
+                </div>
 
-            <div class="job-emphasize-company-day-container">
-              <div class="job-emphasize-company-requirements-D-Day font-main">
-                D-7
+                <div class="job-emphasize-company-day-container">
+                  <div class="job-emphasize-company-requirements-D-Day font-main">D-7</div>
+                  <div class="job-emphasize-company-requirements-deadline font-main">마감일: 2025.08.10</div>
+                  <div class="job-emphasize-company-requirements-registration-date font-main">등록일: 2025.07.11</div>
+                </div>
               </div>
-              <div class="job-emphasize-company-requirements-deadline font-main">
-                마감일: 2025.08.10
-              </div>
-              <div class="job-emphasize-company-requirements-registration-date font-main">
-                등록일: 2025.07.11
-              </div>
-            </div>
-          </div>
+            </a>
+          </li>
 
-          <div class="job-emphasize-container">
-            <div class="job-emphasize-company-name-title-container">
-              <div class="job-emphasize-company-name font-main">
-                (주)플러스휴먼리소스
-              </div>
-              <div class="job-emphasize-company-title font-main">
-                해외영업, 반도체 외 경력 채용
-              </div>
-            </div>
+          <!-- 채용공고 6 -->
+          <li class="job-item">
+            <a href="">
+              <div class="job-emphasize-container">
+                <div class="job-emphasize-company-name-title-container">
+                  <div class="job-emphasize-company-name font-main">(주)플러스휴먼리소스</div>
+                  <div class="job-emphasize-company-title font-main">해외영업, 반도체 외 경력 채용</div>
+                </div>
 
-            <div class="job-emphasize-company-requirements-container">
-              <div class="job-emphasize-company-requirements-pay font-main">
-                [급여] 회사내 규율에 따름
-              </div>
-              <div class="job-emphasize-company-requirements-first-career font-main">
-                [경력] 신입/경력 1년 | 학력무관
-              </div>
-              <div class="job-emphasize-company-requirements-working-day font-main">
-                [근무일수] 주 5일
-              </div>
-              <div class="job-emphasize-company-requirements-location font-main">
-                [위치] 서울 종로구
-              </div>
-            </div>
+                <div class="job-emphasize-company-requirements-container">
+                  <div class="job-emphasize-company-requirements-pay font-main">[급여] 회사내 규율에 따름</div>
+                  <div class="job-emphasize-company-requirements-first-career font-main">[경력] 신입/경력 1년 | 학력무관</div>
+                  <div class="job-emphasize-company-requirements-working-day font-main">[근무일수] 주 5일</div>
+                  <div class="job-emphasize-company-requirements-location font-main">[위치] 서울 종로구</div>
+                </div>
 
-            <div class="job-emphasize-company-day-container">
-              <div class="job-emphasize-company-requirements-D-Day font-main">
-                D-7
+                <div class="job-emphasize-company-day-container">
+                  <div class="job-emphasize-company-requirements-D-Day font-main">D-7</div>
+                  <div class="job-emphasize-company-requirements-deadline font-main">마감일: 2025.08.10</div>
+                  <div class="job-emphasize-company-requirements-registration-date font-main">등록일: 2025.07.11</div>
+                </div>
               </div>
-              <div class="job-emphasize-company-requirements-deadline font-main">
-                마감일: 2025.08.10
-              </div>
-              <div class="job-emphasize-company-requirements-registration-date font-main">
-                등록일: 2025.07.11
-              </div>
-            </div>
-          </div>
+            </a>
+          </li>
 
-          <div class="job-emphasize-container">
-            <div class="job-emphasize-company-name-title-container">
-              <div class="job-emphasize-company-name font-main">
-                (주)플러스휴먼리소스
-              </div>
-              <div class="job-emphasize-company-title font-main">
-                해외영업, 반도체 외 경력 채용
-              </div>
-            </div>
+          <!-- 채용공고 7 -->
+          <li class="job-item">
+            <a href="">
+              <div class="job-emphasize-container">
+                <div class="job-emphasize-company-name-title-container">
+                  <div class="job-emphasize-company-name font-main">(주)플러스휴먼리소스</div>
+                  <div class="job-emphasize-company-title font-main">해외영업, 반도체 외 경력 채용</div>
+                </div>
 
-            <div class="job-emphasize-company-requirements-container">
-              <div class="job-emphasize-company-requirements-pay font-main">
-                [급여] 회사내 규율에 따름
-              </div>
-              <div class="job-emphasize-company-requirements-first-career font-main">
-                [경력] 신입/경력 1년 | 학력무관
-              </div>
-              <div class="job-emphasize-company-requirements-working-day font-main">
-                [근무일수] 주 5일
-              </div>
-              <div class="job-emphasize-company-requirements-location font-main">
-                [위치] 서울 종로구
-              </div>
-            </div>
+                <div class="job-emphasize-company-requirements-container">
+                  <div class="job-emphasize-company-requirements-pay font-main">[급여] 회사내 규율에 따름</div>
+                  <div class="job-emphasize-company-requirements-first-career font-main">[경력] 신입/경력 1년 | 학력무관</div>
+                  <div class="job-emphasize-company-requirements-working-day font-main">[근무일수] 주 5일</div>
+                  <div class="job-emphasize-company-requirements-location font-main">[위치] 서울 종로구</div>
+                </div>
 
-            <div class="job-emphasize-company-day-container">
-              <div class="job-emphasize-company-requirements-D-Day font-main">
-                D-7
+                <div class="job-emphasize-company-day-container">
+                  <div class="job-emphasize-company-requirements-D-Day font-main">D-7</div>
+                  <div class="job-emphasize-company-requirements-deadline font-main">마감일: 2025.08.10</div>
+                  <div class="job-emphasize-company-requirements-registration-date font-main">등록일: 2025.07.11</div>
+                </div>
               </div>
-              <div class="job-emphasize-company-requirements-deadline font-main">
-                마감일: 2025.08.10
-              </div>
-              <div class="job-emphasize-company-requirements-registration-date font-main">
-                등록일: 2025.07.11
-              </div>
-            </div>
-          </div>
+            </a>
+          </li>
 
-          <div class="job-emphasize-container">
-            <div class="job-emphasize-company-name-title-container">
-              <div class="job-emphasize-company-name font-main">
-                (주)플러스휴먼리소스
-              </div>
-              <div class="job-emphasize-company-title font-main">
-                해외영업, 반도체 외 경력 채용
-              </div>
-            </div>
+          <!-- 채용공고 8 -->
+          <li class="job-item">
+            <a href="">
+              <div class="job-emphasize-container">
+                <div class="job-emphasize-company-name-title-container">
+                  <div class="job-emphasize-company-name font-main">(주)플러스휴먼리소스</div>
+                  <div class="job-emphasize-company-title font-main">해외영업, 반도체 외 경력 채용</div>
+                </div>
 
-            <div class="job-emphasize-company-requirements-container">
-              <div class="job-emphasize-company-requirements-pay font-main">
-                [급여] 회사내 규율에 따름
-              </div>
-              <div class="job-emphasize-company-requirements-first-career font-main">
-                [경력] 신입/경력 1년 | 학력무관
-              </div>
-              <div class="job-emphasize-company-requirements-working-day font-main">
-                [근무일수] 주 5일
-              </div>
-              <div class="job-emphasize-company-requirements-location font-main">
-                [위치] 서울 종로구
-              </div>
-            </div>
+                <div class="job-emphasize-company-requirements-container">
+                  <div class="job-emphasize-company-requirements-pay font-main">[급여] 회사내 규율에 따름</div>
+                  <div class="job-emphasize-company-requirements-first-career font-main">[경력] 신입/경력 1년 | 학력무관</div>
+                  <div class="job-emphasize-company-requirements-working-day font-main">[근무일수] 주 5일</div>
+                  <div class="job-emphasize-company-requirements-location font-main">[위치] 서울 종로구</div>
+                </div>
 
-            <div class="job-emphasize-company-day-container">
-              <div class="job-emphasize-company-requirements-D-Day font-main">
-                D-7
+                <div class="job-emphasize-company-day-container">
+                  <div class="job-emphasize-company-requirements-D-Day font-main">D-7</div>
+                  <div class="job-emphasize-company-requirements-deadline font-main">마감일: 2025.08.10</div>
+                  <div class="job-emphasize-company-requirements-registration-date font-main">등록일: 2025.07.11</div>
+                </div>
               </div>
-              <div class="job-emphasize-company-requirements-deadline font-main">
-                마감일: 2025.08.10
-              </div>
-              <div class="job-emphasize-company-requirements-registration-date font-main">
-                등록일: 2025.07.11
-              </div>
-            </div>
-          </div>
+            </a>
+          </li>
 
-          <div class="job-emphasize-container">
-            <div class="job-emphasize-company-name-title-container">
-              <div class="job-emphasize-company-name font-main">
-                (주)플러스휴먼리소스
-              </div>
-              <div class="job-emphasize-company-title font-main">
-                해외영업, 반도체 외 경력 채용
-              </div>
-            </div>
+          <!-- 채용공고 9 -->
+          <li class="job-item">
+            <a href="">
+              <div class="job-emphasize-container">
+                <div class="job-emphasize-company-name-title-container">
+                  <div class="job-emphasize-company-name font-main">(주)플러스휴먼리소스</div>
+                  <div class="job-emphasize-company-title font-main">해외영업, 반도체 외 경력 채용</div>
+                </div>
 
-            <div class="job-emphasize-company-requirements-container">
-              <div class="job-emphasize-company-requirements-pay font-main">
-                [급여] 회사내 규율에 따름
-              </div>
-              <div class="job-emphasize-company-requirements-first-career font-main">
-                [경력] 신입/경력 1년 | 학력무관
-              </div>
-              <div class="job-emphasize-company-requirements-working-day font-main">
-                [근무일수] 주 5일
-              </div>
-              <div class="job-emphasize-company-requirements-location font-main">
-                [위치] 서울 종로구
-              </div>
-            </div>
+                <div class="job-emphasize-company-requirements-container">
+                  <div class="job-emphasize-company-requirements-pay font-main">[급여] 회사내 규율에 따름</div>
+                  <div class="job-emphasize-company-requirements-first-career font-main">[경력] 신입/경력 1년 | 학력무관</div>
+                  <div class="job-emphasize-company-requirements-working-day font-main">[근무일수] 주 5일</div>
+                  <div class="job-emphasize-company-requirements-location font-main">[위치] 서울 종로구</div>
+                </div>
 
-            <div class="job-emphasize-company-day-container">
-              <div class="job-emphasize-company-requirements-D-Day font-main">
-                D-7
+                <div class="job-emphasize-company-day-container">
+                  <div class="job-emphasize-company-requirements-D-Day font-main">D-7</div>
+                  <div class="job-emphasize-company-requirements-deadline font-main">마감일: 2025.08.10</div>
+                  <div class="job-emphasize-company-requirements-registration-date font-main">등록일: 2025.07.11</div>
+                </div>
               </div>
-              <div class="job-emphasize-company-requirements-deadline font-main">
-                마감일: 2025.08.10
-              </div>
-              <div class="job-emphasize-company-requirements-registration-date font-main">
-                등록일: 2025.07.11
-              </div>
-            </div>
-          </div>
+            </a>
+          </li>
 
-          <div class="job-emphasize-container">
-            <div class="job-emphasize-company-name-title-container">
-              <div class="job-emphasize-company-name font-main">
-                (주)플러스휴먼리소스
-              </div>
-              <div class="job-emphasize-company-title font-main">
-                해외영업, 반도체 외 경력 채용
-              </div>
-            </div>
+          <!-- 채용공고 10 -->
+          <li class="job-item">
+            <a href="">
+              <div class="job-emphasize-container">
+                <div class="job-emphasize-company-name-title-container">
+                  <div class="job-emphasize-company-name font-main">(주)플러스휴먼리소스</div>
+                  <div class="job-emphasize-company-title font-main">해외영업, 반도체 외 경력 채용</div>
+                </div>
 
-            <div class="job-emphasize-company-requirements-container">
-              <div class="job-emphasize-company-requirements-pay font-main">
-                [급여] 회사내 규율에 따름
-              </div>
-              <div class="job-emphasize-company-requirements-first-career font-main">
-                [경력] 신입/경력 1년 | 학력무관
-              </div>
-              <div class="job-emphasize-company-requirements-working-day font-main">
-                [근무일수] 주 5일
-              </div>
-              <div class="job-emphasize-company-requirements-location font-main">
-                [위치] 서울 종로구
-              </div>
-            </div>
+                <div class="job-emphasize-company-requirements-container">
+                  <div class="job-emphasize-company-requirements-pay font-main">[급여] 회사내 규율에 따름</div>
+                  <div class="job-emphasize-company-requirements-first-career font-main">[경력] 신입/경력 1년 | 학력무관</div>
+                  <div class="job-emphasize-company-requirements-working-day font-main">[근무일수] 주 5일</div>
+                  <div class="job-emphasize-company-requirements-location font-main">[위치] 서울 종로구</div>
+                </div>
 
-            <div class="job-emphasize-company-day-container">
-              <div class="job-emphasize-company-requirements-D-Day font-main">
-                D-7
+                <div class="job-emphasize-company-day-container">
+                  <div class="job-emphasize-company-requirements-D-Day font-main">D-7</div>
+                  <div class="job-emphasize-company-requirements-deadline font-main">마감일: 2025.08.10</div>
+                  <div class="job-emphasize-company-requirements-registration-date font-main">등록일: 2025.07.11</div>
+                </div>
               </div>
-              <div class="job-emphasize-company-requirements-deadline font-main">
-                마감일: 2025.08.10
-              </div>
-              <div class="job-emphasize-company-requirements-rregistration-date font-main">
-                등록일: 2025.07.11
-              </div>
-            </div>
-          </div>
-        </div>
+            </a>
+          </li>
+        </ul>
+
 
         <!-- 페이지 영역 -->
         <div id="main-page-number">
@@ -433,14 +307,15 @@
           <p>&gt</p>
         </div>
 
+
         <!-- 검색 영역 -->
         <div id="main-search">
           <select class="select-find">
-            <option value="title">제목/기업명
+            <option value="title">기업명
             </option>
-            <option value="condition">조건</option>
-            <option value="day">작성날짜</option>
+            <option value="condition">제목</option>
           </select>
+
 
           <form action="" method="">
             <input type="text" id="main-search-input" />
@@ -449,11 +324,13 @@
             </button>
           </form>
         </div>
-
+      </div>
+    </div>
   </main>
   <div id="footer"></div>
 </body>
 <script src="./../../assets/js/header-login.js"></script>
 <script src="./../../assets/js/footer.js"></script>
+
 
 </html>
