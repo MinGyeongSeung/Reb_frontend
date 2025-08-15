@@ -107,7 +107,8 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px;
+  margin-top: 30px;
+  margin-bottom : 30px;
 }
 
 .div-pagenation {
@@ -191,9 +192,9 @@ button:hover {
 
 
 .select-find {
+  border: 1px solid black;
   height: 50px;
   padding: 0 12px;
-  border: 0;
   border-radius: 10px;
   font-family: "IBM Plex Sans KR", sans-serif;
 }
@@ -207,7 +208,7 @@ button:hover {
 }
 
 .input-find {
-  border-width: 0;
+  border: 1px solid black;
   background-color:white;
   border-radius: 15px;
   height: 50px;
@@ -215,6 +216,8 @@ button:hover {
   outline: none;
   font-size: 16px;
   font-family: "IBM Plex Sans KR", sans-serif;
+  width: 365px;
+
 }
 
 
