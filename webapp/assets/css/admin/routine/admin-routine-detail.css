@@ -36,6 +36,7 @@ button {
   align-items: center;
   justify-content: center;
   padding: 10px;
+  min-height: calc(100vh - 235px);
 }
 
 main {
@@ -46,6 +47,7 @@ main {
   font-family: "IBM Plex Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
+  min-height: calc(100vh - 235px);
 }
 
 button {
