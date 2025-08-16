@@ -18,12 +18,31 @@
 <body class="font-menu">
   <!-- 헤더 -->
   <header>
-    <!-- 상단 목록 -->
-    <p><strong>전문가 승인 목록</strong></p>
-    <!-- 로그아웃 버튼 -->
-    <button>
-      logout
-    </button>
+    <!-- 상단 목록 영역 -->
+    <section>
+      <!-- 상단 목록 -->
+      <p><strong>전문가 승인 목록</strong></p>
+      <!-- 로그아웃 버튼 -->
+      <button id="logout">
+        logout
+      </button>
+    </section>
+    <!-- 하단 목록 영역 -->
+    <section>
+      <!-- 하단 목록 리스트 -->
+      <ul>
+        <li>
+          <a href="./../../../app/admin/member/admin-expert-list.html">
+            <strong>전문가 인증 신청</strong>
+          </a>
+        </li>
+        <li>
+          <a href="./../../../app/admin/member/admin-expert-access-list.html">
+            전문가 목록
+          </a>
+        </li>
+      </ul>
+    </section>
   </header>
   <!-- 반려 모달 전체 창 -->
   <div id="modal-background">
@@ -31,7 +50,7 @@
     <div id="cancel-modal">
       <!-- 반려 모달 입력창 -->
       <div id="cancel-modal-in">
-        <p>전문가 승인 반려/승인 취소 사유</p>
+        <p>전문가 승인 반려 사유</p>
         <!-- 반려 모달 입력 form  -->
         <form action="" method="get" id="cancel-input">
           <!-- 반려 모달 입력 영역 -->

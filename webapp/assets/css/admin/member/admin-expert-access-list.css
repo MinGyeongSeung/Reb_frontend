@@ -141,137 +141,93 @@ button {
 }
 
 /* 메인 영역 */
-#main-expert {
+#main-expert-access {
   background-color: white;
   width: 895px;
   transform: translateX(155px);
 }
 
-#main-expert-div {
+/* 전문가 목록 영역 */
+#main-expert-access-div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
 }
 
-/* 전문가 리스트 제목 */
-#main-expert-list-title {
+/* 승인된 전문가 리스트 제목 */
+#main-expert-access-list-title {
+  border: 1px solid black;
   background-color: #d9d9d9;
   margin-top: 100px;
   display: flex;
   height: 50px;
   width: 860px;
-  font-size: 18px;
+  font-size: 20px;
   align-items: center;
   padding: 0 10px;
 }
 
-/* 전문가 승인 상태 영역 */
-.main-expert-list-status {
-  font-size: 18px;
-  width: 70px;
+/* 회원 번호 영역 */
+.main-expert-access-list-number {
+  width: 140px;
   text-align: center;
   align-self: center;
 }
 
-/* 전문가 아이디 영역 */
-.main-expert-list-id {
-  font-size: 18px;
+
+/* 아이디 영역 */
+.main-expert-access-list-id {
+  width: 140px;
+  text-align: center;
+  align-self: center;
+}
+
+/* 닉네임 영역 */
+.main-expert-access-list-nickname {
+  width: 140px;
+  text-align: center;
+  align-self: center;
+}
+
+.main-garbage-area{
+  width: 180px;
+}
+
+/* 전문가 분야 영역 */
+.main-expert-access-list-type {
   width: 120px;
   text-align: center;
-  align-self: center;
 }
 
-/* 전문가 닉네임 영역 */
-.main-expert-list-nickname {
-  font-size: 18px;
-  width: 100px;
-  text-align: center;
-  align-self: center;
-}
-
-/* 전문가 인적사항 영역 */
-.main-expert-list-info {
-  font-size: 18px;
-  width: 360px;
-  text-align: center;
-  margin-right: 10px
-}
-
-/* 전문가 승인/반려 영역 */
-.main-expert-list-approval {
-  font-size: 18px;
-  width: 100px;
+/* 전문가 승인 날짜 영역 */
+.main-expert-access-list-date {
+  width: 140px;
   text-align: center;
 }
 
-/* 전문가 첨부파일 영역 */
-.main-expert-list-file {
-  font-size: 18px;
-  width: 100px;
-  text-align: center;
-}
 
 /* 전문가 요청 리스트 */
-#main-expert-list {
+#main-expert-access-list {
   width: 880px;
 }
 
 /* 전문가 요청 리스트 목록 */
-#main-expert-list>li {
+#main-expert-access-list>li {
   list-style-type: none;
-  display: flex;
-  padding: 0 5px;
   height: 50px;
   border-bottom: 3px solid #a7a7a7;
   align-items: center;
 }
 
-/* 리스트 폰트 사이즈 */
-#main-expert-list>li>div>p {
-  margin: 0 10px;
-  font-size: 16px;
-  float: left;
+#main-expert-access-list>li>a{
+  padding: 0 10px;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  line-height: 50px;
 }
 
-/* 인적사항 배치 */
-.main-expert-list-approval {
-  padding: 5px;
-}
-
-/* 승인 반려 버튼 영역 */
-.main-expert-list-approval>button {
-  width: 40px;
-  height: 35px;
-  border-radius: 8px;
-  border: 0;
-  color: white;
-}
-
-/* 승인 버튼 */
-.accept {
-  background-color: #818181;
-}
-
-/* 반려 버튼 */
-.cancel {
-  background-color: #be0000;
-}
-
-/* 우측 간격 */
-.main-expert-list-file {
-  padding: 5px 0;
-}
-
-/* 다운로드 버튼 */
-.main-expert-list-file>a>button {
-  background-color: #818181;
-  width: 90px;
-  height: 35px;
-  border: 0;
-  border-radius: 8px;
-  color: white;
-}
 
 /* 페이지네이션 */
 #main-page-number {

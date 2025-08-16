@@ -1,0 +1,191 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* 폰트 */
+.font-menu {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 바디 */
+body {
+  background-color: #757575;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button{
+  cursor: pointer;
+}
+
+main{
+  background-color: white;
+  height: 100vh;
+  width: 700px;
+}
+
+main>div{
+  padding: 20px;
+
+  background-color: white;
+}
+
+#main-title-div{
+  border: 1px solid black;
+  width: 300px;
+}
+
+#main-basic-info{
+  border: 1px solid black;
+  margin-top: 40px;
+}
+
+.main-basic-info-title{
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#main-basic-info>div{
+  border: 1px solid black;
+  margin: 5px;
+  display: flex;
+  font-size: 18px;
+}
+
+#main-basic-info>div>p:first-child{
+  margin-right: 10px;
+}
+
+form{
+  border: 1px solid black;
+  margin: 30px 0;
+}
+
+ul>li{
+  list-style-type: none;
+}
+
+#main-input-license-title{
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+
+#main-input-license-title>button{
+  height: 35px;
+  width: 60px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(59, 59, 59);
+  color: white;
+  font-size: 18px;
+}
+
+.main-input-license-area{
+  border: 1px solid black;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-input-license-area>input{
+  height: 30px;
+  width: 400px;
+  font-size: 18px;
+}
+
+.delete-btn{
+  font-size: 14px;
+  height: 30px;
+  width: 35px;
+  text-align: end;
+  border: 0;
+  background-color: white;
+}
+
+
+#main-input-career-title{
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+
+#delete-career-btn{
+  height: 35px;
+  width: 60px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(59, 59, 59);
+  color: white;
+  font-size: 18px;
+}
+
+#main-input-career{
+  margin-top: 80px;
+}
+
+.main-input-career-area{
+  border: 1px solid black;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#main-input-career-title>button{
+  height: 35px;
+  width: 60px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(59, 59, 59);
+  color: white;
+  font-size: 18px;
+}
+
+
+.main-input-career-area>input{
+  height: 30px;
+  width: 400px;
+  font-size: 18px;
+}
+
+.main-input-career-area>button{
+  font-size: 14px;
+  height: 30px;
+  width: 35px;
+  text-align: end;
+  border: 0;
+  background-color: white;
+}
+
+#main-submit-btn-div{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+#main-submit-btn{
+  height: 50px;
+  width: 100px;
+  border-radius: 20px;
+  margin: 20px;
+  font-size: 18px;
+  background-color: #757575;
+  border: 0;
+  color: white;
+}
+
+#main-cancel-btn{
+  height: 50px;
+  width: 100px;
+  border-radius: 20px;
+  margin: 20px;
+  font-size: 18px;
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+}
+

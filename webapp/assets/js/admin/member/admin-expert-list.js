@@ -9,10 +9,7 @@ const logoutBtn = document.querySelector("header>button");
 
 acceptBtn.forEach(btn => {
   btn.addEventListener('click', function (e) {
-    const nextBtn = e.target.nextElementSibling;
-    nextBtn.style.width = "90px";
-    btn.style.display = "none";
-    nextBtn.innerText = "승인 취소";
+    location.href="./../../../app/admin/member/admin-expert-input-info.html";
   });
 });
 
