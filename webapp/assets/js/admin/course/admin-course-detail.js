@@ -11,23 +11,9 @@ moveBtn.addEventListener('click', () => {
 });
 
 deleteBtn.addEventListener('click', () => {
-  dropModal.style.display = "flex";
-  dropModal.style.zIndex = 5;
-});
-
-submitBtn.addEventListener("click", () => {
-  if (returnMsg.value == "") {
-    alert("사유를 입력해주세요.");
-  } else {
-    if (confirm("수업을 삭제하시겠습니까?")) {
-      alert("수업 삭제가 완료되었습니다..");
-      location.href = "./../../../app/admin/course/admin-course-list.html";
-      returnMsg.value = "";
-    }
+  if(confirm("정말로 삭제하시겠습니까?")){
+    alert("수업이 삭제되었습니다.");
+    location.href= "./../../../app/admin/notice/admin-notice-create.html";
   }
 });
 
-closeModal.addEventListener(('click'), () => {
-  dropModal.style.display = "none";
-  returnMsg.value = "";
-})
