@@ -42,17 +42,19 @@ main {
     font-family: "IBM Plex Sans KR", sans-serif;
     font-weight: 400;
     font-style: normal;
+    min-height: calc(100vh - 235px);
 }
 
 /* 메인 영역 */
 #main-container {
     width: 1200px;
-    height: 100%;
     /*알아서 넣기*/
     background-color: #FFFEF1;
     margin: auto;
+    padding: 10px;
     align-items: center;
     justify-content: center;
+    min-height: calc(100vh - 235px);
 }
 
 /* 버튼 커스텀 */
@@ -110,7 +112,6 @@ button{
   flex-direction: column;
   width: 1200px;
   height: 100%;
-  padding: 10px;
 }
 
 /* 내용 영역 */

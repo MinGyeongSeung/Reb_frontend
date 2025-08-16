@@ -9,7 +9,7 @@ const logoutBtn = document.querySelector("header>button");
 
 acceptBtn.forEach(btn => {
   btn.addEventListener('click', function (e) {
-    location.href="./../../../app/admin/member/admin-expert-input-info.html";
+    location.href = "./../../../app/admin/member/admin-expert-input-info.html";
   });
 });
 
@@ -19,11 +19,15 @@ cancelBtn.forEach(btn => {
     modalBackground.style.display = "flex";
     modalBackground.style.zIndex = 5;
     submitBtn.addEventListener('click', () => {
-      alert("취소/반려 사유 등록 완료");
-      returnMsg.value= "";
-      modalBackground.style.display = "none";
-      const list= e.target.parentNode.parentNode;
-      list.remove();
+      if (returnMsg.value == "") {
+        alert("사유를 입력해주세요")
+      } else {
+        alert("취소/반려 사유 등록 완료");
+        returnMsg.value = "";
+        modalBackground.style.display = "none";
+        const list = e.target.parentNode.parentNode;
+        list.remove();
+      }
     });
   });
 });
@@ -33,6 +37,6 @@ closeModal.addEventListener(('click'), () => {
   modalBackground.style.display = "none";
 });
 
-logoutBtn.addEventListener('click', ()=>{
-  location.href= "./../login/admin-login.html";
+logoutBtn.addEventListener('click', () => {
+  location.href = "./../login/admin-login.html";
 });

@@ -97,6 +97,7 @@ main {
 /* 메인 영역 */
 #main-banner {
   background-color: white;
+  height: 100vh;
   width: 895px;
   display: flex;
   flex-direction: column;
@@ -106,6 +107,7 @@ main {
 
 /* 배너명, 배너 파일 등록, 취소 영역 */
 #main-banner-div {
+  background-color: white;
   height: 250px;
   width: 350px;
   display: flex;
