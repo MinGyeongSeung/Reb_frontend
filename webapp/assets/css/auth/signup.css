@@ -203,46 +203,13 @@ button {
   color:green;
 }
 
-.input-email-first,
-.input-email-end {
+.input-email{
   border-radius: 15px;
   border: 0px;
-  width: 30%;
   font-size: 14px;
   height: 45px;
   padding: 10px;
   text-align: center;
-}
-
-.input-email-first {
-  margin-right: 10px;
-}
-
-.input-email-end {
-  margin-left: 10px;
-}
-
-
-.span-email-at {
-  font-size: 20px;
-  font-family: "IBM Plex Sans KR", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 50px;
-}
-
-.div-signup-email {
-  display: flex;
-  align-items: flex-end;
-  width: 80%;
-}
-
-.select-email {
-  border-radius: 15px;
-  border: 0px;
-  width: 30%;
-  font-size: 12px;
-  height: 60px;
 }
 
 .div-signup-radio {

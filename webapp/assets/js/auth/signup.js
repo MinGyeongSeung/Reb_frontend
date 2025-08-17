@@ -1,5 +1,3 @@
-const emailList = document.querySelector(".select-email");
-const emailInput = document.querySelector(".input-email-end");
 
 let dupliButton = document.querySelector(".button-no-duplication");
 let noDupliP = document.querySelector(".p-no-duplication");
@@ -13,6 +11,7 @@ let addressAdd = document.querySelector("input[name='addressAdd']");
 let userName = document.querySelector("input[name='name']");
 let nickName = document.querySelector("input[name='nickName']");
 let gender = document.querySelector("input[name='gender']");
+let email = document.querySelector("input[name='email']");
 let phoneNumber = document.querySelector("input[name='phoneNumber']");
 let injungPhone = document.querySelector(".input-cert");
 let injunging = document.querySelector(".button-injunging");
@@ -30,7 +29,7 @@ buttonBack.addEventListener('click',()=>{
 
 const idRegex = /^[a-z0-9]{5,19}$/;
 const pwRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$])[A-Za-z\d!@#$]{8,20}$/;
-
+const emailRegex = /^[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$/;
 let pwSameOrNo = true;
 
 buttonSignUp.addEventListener("click", (e) => {
@@ -69,15 +68,7 @@ buttonSignUp.addEventListener("click", (e) => {
   }
 });
 
-emailList.addEventListener('change', (e) => {
-  if (e.target.value != "choose") {
-    emailInput.value = e.target.value;
-    emailInput.disabled = true;
-  } else {
-    emailInput.value = "";
-    emailInput.disabled = false;
-  }
-});
+
 
 id.addEventListener('blur', () => {
   let nearWarning = id.closest(".div-signup");
@@ -229,4 +220,15 @@ retry.addEventListener('click', () => {
   retry.disabled = true;
   retry.style.color = "#d9d9d9";
   phoneNumber.value = "";
+});
+
+
+email.addEventListener('blur', () => {
+  let nearWarning = email.closest(".div-signup");
+  let warning = nearWarning.querySelector(".p-warning");
+  if (!emailRegex.test(email.value)) {
+    warning.style.display = "block";
+  } else {
+    warning.style.display = "none";
+  }
 });
