@@ -81,9 +81,15 @@ button:hover{
   line-height: 50px;
 }
 
-.review-title {
+.review-title-title{
   text-align: center;
   width: 70%;
+}
+
+.review-title {
+  text-align: left;
+  width: 70%;
+  padding-left: 15px;
   
 }
 .review-number,
