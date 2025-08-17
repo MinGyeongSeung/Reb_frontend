@@ -27,7 +27,7 @@
 }
 
 main {
-  height: 1250px;
+  height: 950px;
   min-height: calc(100vh - 235px);
   width: 100%;
   background-color: #fffef1;
@@ -66,7 +66,8 @@ button {
   display: flex;
   justify-content: space-around;
   background-color: #FFB29D;
-  padding: 10px;
+  /* padding: 10px; */
+  line-height: 50px;
   color: white;
   border-bottom: 1px solid white;
 }
@@ -122,7 +123,8 @@ button {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  /* padding: 20px; */
+  line-height: 50px;
   border-bottom: 1px solid #f59d85;
 }
 
@@ -179,72 +181,112 @@ button {
 /* 페이지 영역 끝 */
 
 /* 검색영역 시작 */
-#main-search {
-  height: 45px;
-  width: 840px;
-  font-size: 20px;
-  display: flex;
-  align-self: start;
-  margin: 30px 28px;
-}
 
-#main-search-basic>div {
-  border: 1px solid black;
-  border-radius: 12px;
-}
-
-#main-search-menu {
-  display: none;
-}
-
-#main-search-menu>div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#main-search-menu>div>p {
-  align-self: center;
-}
-
-#main-search-basic>div>p {
-  height: 45px;
-  width: 102px;
-  border: 1px solid black;
-  border-radius: 10px;
+.div-page {
   display: flex;
   justify-content: center;
+}
+
+.div-pagenation {
+  margin-top: 50px;
+  width: 50%;
+  display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
-#main-search-input {
-  width: 370px;
-  height: 45px;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.find-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.select-find {
+  height: 50px;
+  padding: 0 12px;
   border-radius: 10px;
-  margin: 0 5px;
-  border: 1px solid black;
-  padding-right: 44px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  border : 1px solid black;
 }
 
-form {
-  display: inline-block;
+
+.input-group {
+  border-radius: 15px;
+  height: 50px;
+  display: flex;
   position: relative;
 }
 
-form>button {
-  background-color: white;
-  position: absolute;
-  right: 6px;
-  top: 3px;
+.input-find {
+  background-color:white;
+  border-radius: 15px;
+  height: 50px;
+  padding: 0 0 0 20px; 
+  outline: none;
+  font-size: 16px;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  width: 365px;
 }
 
-form>button>img {
-  height: 30px;
-  width: 30px;
-  border: 0px;
+
+.button-find {
+  position: absolute;
+  top: 50%;
+  right: 10px; 
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 0;
+  background-color: white;
   cursor: pointer;
+}
+
+.button-write {
+  border-radius: 15px;
+  border: 0px;
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  background-color: #F38A6E;
+  color: white;
+  float: right;
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* display: none; */
+}
+.div-find-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+
+.button-write:hover {
+  cursor: pointer;
+}
+
+.a-write{
+  color:white;
+   font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.li-review-content:hover .review-title {
+  text-decoration: underline;
 }
 
 /* 검색영역 끝 */
 
 /* 검색종료 */
+
+
+
