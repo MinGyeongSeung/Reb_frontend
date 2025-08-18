@@ -85,14 +85,6 @@ form{
   margin: 30px 0;
 }
 
-#main-input-file{
-  margin: 100px 0;
-}
-
-#main-input-file>input{
-  margin: 5px;
-}
-
 #license{
   margin: 5px;
   padding: 10px;
